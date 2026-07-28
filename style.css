@@ -8,7 +8,6 @@
 }
 
 @theme {
-    --color-button-gradient: linear-gradient(to right, #FF3F3A, #F75E05);
-    --font-lato: Lato, sans-serif;
+    --fon9t-lato: Lato, sans-serif;
     --color-primary: #ff3f3a;
 }
