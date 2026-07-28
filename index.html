@@ -3,12 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <title>CreateX</title>
+    <script
+      src="https://kit.fontawesome.com/bf8b8f599c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>CreateX - Landing</title>
   </head>
-  <body>
-    <h1 class="text-amber-900 font-bold text-3xl">Hello world !</h1>
+  <body class="font-lato">
+    <!-- Header -->
+    <header class="p-4">
+      <div class="container flex justify-between">
+        <a href="index.html"
+          ><img src="images/logo/logo-dark.svg" width="130" alt="logo"
+        /></a>
+        <nav>
+          <ul class="flex gap-2 justify-start">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="">
+          <a href="#">Get consultation</a>
+          <a href="#" color-><i class="fa-regular fa-user"></i>Sign in/up</a>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
