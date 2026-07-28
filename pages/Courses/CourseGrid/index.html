@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Online Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <section class="container mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <p class="text-black font-semibold uppercase">Ready to learn?</p>
+            <h1 class="text-4xl font-bold mt-2">Our online courses</h1>
+        </div>
+        <div class="flex gap-4 rounded-md px-6 py-4 mb-12 justify-bitwin">
+            <div class="flex mr-[450px] items-center gap-8">
+                <button type="button"
+                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
+                    data-filter="all">
+                    All <sup class="text-xs">12</sup>
+                </button>
+                <button type="button"
+                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
+                    data-filter="marketing">
+                    Marketing <sup class="text-xs">4</sup>
+                </button>
+                <button type="button"
+                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
+                    data-filter="management">
+                    Management <sup class="text-xs">3</sup>
+                </button>
+                <button type="button"
+                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
+                    data-filter="hr">
+                    HR &amp; Recruiting <sup class="text-xs">5</sup>
+                </button>
+                <button type="button"
+                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
+                    data-filter="design">
+                    Design <sup class="text-xs">2</sup>
+                </button>
+                <button type="button"
+                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
+                    data-filter="development">
+                    Development <sup class="text-xs">3</sup>
+                </button>
+            </div>
+
+            <div class="relative w-full lg:w-64">
+                <input id="courseSearch" type="text" placeholder="Search courses"
+                    class="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2 text-sm text-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-300" />
+                <svg class="w-4 h-4 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" fill="none"
+                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="courseGrid">
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="marketing">
+                <img src="../../../images/image.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-green-500 text-white px-2 py-1 rounded">
+                        Marketing
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        The Ultimate Google Ads Training Course
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$100</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Jerome Bell
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ------ -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="management">
+                <img src="../../../images/images.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded">
+                        Management
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        Prduct Management Fundamentals
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$480</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Marvin McKinney
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="hr">
+                <img src="../../../images/efrbjgbjbg.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded">
+                        HR & Recruting
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        HR Management and Analytics
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$200</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Leslie Alexander Li
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="marketing">
+                <img src="../../../images/fhrgjrj.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#03CEA4] text-white px-2 py-1 rounded">
+                        Marketing
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        Brand Management & PR Communications
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$530</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Kristin Watson
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="design">
+                <img src="../../../images/sbfjsbgjbr.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded">
+                        Design
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        Graphic Design Basic
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$500</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Guy Hawkins
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="management">
+                <img src="../../../images/kfrnkgfrk.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded">
+                        Management
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        Business Development Management
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$400</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Dianne Russell
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="development">
+                <img src="../../../images/nkneknkbn.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#7772F1] text-white px-2 py-1 rounded">
+                        Development
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        Highload Software Architecture
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$600</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Brooklyn Simmons
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="hr">
+                <img src="../../../images/kmbmgbkgbi.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded">
+                        HR & Recruting
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        Human Resources – Selection and Recruitment
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$150</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Kathryn Murphy
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                data-category="design">
+                <img src="../../../images/nbvjnfbnbnt.png" alt="Course" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded">
+                        Design
+                    </span>
+                    <h2 class="text-[20px] font-[700] max-w-[342px] text-gray-800 leading-tight mt-5">
+                        User Experience. Human-centered Design
+                    </h2>
+                    <div class="flex items-center gap-3 mt-6">
+                        <span class="text-red-500 text-[18px] font-[700]">$240</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="text-[#787A80] text-[16px] font-[400]">
+                            by Cody Fisher
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
