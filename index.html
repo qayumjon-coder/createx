@@ -16,6 +16,14 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <title>CreateX - Landing</title>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --font-lato: Lato, sans-serif;
+        --color-primary: #ff3f3a;
+        --color-secondary: #f75e05;
+      }
+    </style>
   </head>
   <body class="font-lato">
     <!-- Header -->
@@ -27,27 +35,27 @@
         <nav class="self-start">
           <ul class="flex gap-2 justify-start mr-auto items-center">
             <li>
-              <a class="py-4 px-5 inline-block text-[#424551]" href="#"
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#"
                 >About</a
               >
             </li>
             <li>
-              <a class="py-4 px-5 inline-block text-[#424551]" href="#"
-                >Courses<i class="fa-solid fa-chevron-down w-1"></i
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold "
+                >Courses<i class="fa-solid fa-chevron-down w-1 ml-1"></i
               ></a>
             </li>
             <li>
-              <a class="py-4 px-5 inline-block text-[#424551]" href="#"
-                >Events<i class="fa-solid fa-chevron-down w-1"></i
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold "
+                >Events<i class="fa-solid fa-chevron-down w-1 ml-1"></i
               ></a>
             </li>
             <li>
-              <a class="py-4 px-5 inline-block text-[#424551]" href="#"
-                >Blog<i class="fa-solid fa-chevron-down w-1"></i
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold "
+                >Blog<i class="fa-solid fa-chevron-down w-1 ml-1"></i
               ></a>
             </li>
             <li>
-              <a class="py-4 px-5 inline-block text-[#424551]" href="#"
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#"
                 >Contacts</a
               >
             </li>
@@ -57,14 +65,17 @@
         <div class="justify-self-end">
           <a
             href="#"
-            class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-[#f75e05] text-[#424551]"
+            class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
             >Get consultation</a
           >
-          <a href="#" class="text-[#424551]"
-            ><i class="fa-regular fa-user"></i>Sign in/up</a
+          <a href="#" class="text-primary font-bold ml-6 "
+            ><i class="fa-regular fa-user mr-2"></i>Sign in/up</a
           >
         </div>
       </div>
     </header>
+
+
+
   </body>
 </html>
