@@ -1,19 +1,87 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style  type="text/tailwindcss">
+      @theme {
+        --font-lato: Lato, sans-serif;
+        --color-primary: #ff3f3a;
+        --color-secondary: #f75e05;
+      }
+    </style>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../../style.css" />
+     <script
+      src="https://kit.fontawesome.com/bf8b8f599c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    
   </head>
   <body>
+    <header class="p-4">
+      <div class="container flex justify-between items-center">
+        <a class="mr-12 pr-2" href="index.html"
+          ><img src="../../images/logo/logo-dark.svg" width="130" alt="logo"
+        /></a>
+        <nav class="self-start">
+          <ul class="flex gap-2 justify-start mr-auto items-center">
+            <li>
+              <a
+                class="py-4 px-5 inline-block text-[#424551] font-bold"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold"
+                >Courses<i class="fa-solid fa-chevron-down w-1 ml-1"></i
+              ></a>
+            </li>
+            <li>
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold"
+                >Events<i class="fa-solid fa-chevron-down w-1 ml-1"></i
+              ></a>
+            </li>
+            <li>
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold"
+                >Blog<i class="fa-solid fa-chevron-down w-1 ml-1"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="py-4 px-5 inline-block text-[#424551] font-bold"
+                href="#"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="justify-self-end">
+          <a
+            href="#"
+            class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
+            >Get consultation</a
+          >
+          <a href="#" class="text-primary font-bold ml-6"
+            ><i class="fa-regular fa-user mr-2"></i>Sign in/up</a
+          >
+        </div>
+      </div>
+    </header>
     <!-- About  -->
 
-    <section class="container pt-40">
+    <section class="container pt-20">
       <h3 class="font-lato uppercase font-bold mb-2 text-base">About us</h3>
       <div class="flex justify-between">
         <div class="max-w-200">
-          <h1 class="font-lato font-black text-5xl mb-8 text-gray-900">Createx Online School</h1>
+          <h1 class="font-lato font-black text-5xl mb-8 text-gray-900">
+            Createx Online School
+          </h1>
           <h3 class="font-lato font-bold text-xl pb-11 text-gray-900">
             Createx Online School is a leader in online studying. We have lots
             of courses and programs from the main market experts.
@@ -27,51 +95,51 @@
             events that we organise.
           </p>
 
-          <div class="pt-10 flex gap-8">
-            <a href="#">Explore events</a>
+          <div class="pt-10 flex gap-10">
+            <a href="#" class="border-1 border-[#FF3F3A]">Explore events</a>
             <a href="#">Browse courses</a>
           </div>
         </div>
         <div>
-            <img src="../../1-rasm.svg" alt="1-rasm">
+          <img src="../../1-rasm.svg" alt="1-rasm" />
         </div>
       </div>
     </section>
 
     <!-- Demo -->
     <section class="container">
-        <div>
-            <a href="#"></a>
-        <span>
-             Play Showreel
-        </span>
-        </div>
+      <div>
+        <a href="#"></a>
+        <span> Play Showreel </span>
+      </div>
 
+      <div class="flex">
         <div>
-            <div>
-                <img src="../../rasmlar/video-cover.jpg" alt="">
-            </div>
-            <div>
-                <h5>
-                    <span>1200</span>
-                    students graduated
-                </h5>
-                <h5>
-                    <span>84</span>
-                    completed courses
-                </h5>
-                <h5>
-                    <span>16</span>
-                    qualified tutors
-                </h5>
-                <h5>
-                    <span>
-                        5
-                    </span>
-                    years of experience
-                </h5>
-            </div>
+          <img
+            src="../../images/video-cover.jpg"
+            alt="video-cover"
+            class="max-w-100%"
+          />
         </div>
+        <div>
+          <h5>
+            <span>1200</span>
+            students graduated
+          </h5>
+          <h5>
+            <span>84</span>
+            completed courses
+          </h5>
+          <h5>
+            <span>16</span>
+            qualified tutors
+          </h5>
+          <h5>
+            <span> 5 </span>
+            years of experience
+          </h5>
+        </div>
+      </div>
     </section>
 
     <!-- Features -->
@@ -89,7 +157,6 @@
         </div>
     </section> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
   </body>
 </html>
