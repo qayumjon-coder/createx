@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.container{
+
+  @utility container {
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @theme {
+    --font-lato: Lato, sans-serif;
+    --color-primary: #ff3f3a;
+    --color-secondary: #f75e05;
+  }
