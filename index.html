@@ -22,6 +22,7 @@
     --color-primary-shadow: #ff3f3a80;
     --color-hero-bg: #f9dcd4;
     --color-primary-text: #1E212C;
+    --color-secondary-text: #424551;
   }
     </style>
 </head>
@@ -128,30 +129,131 @@
         </div>
     </section>
 
-    <section class="">
+    <section class="mt-25 bg-[url(./images/about-section.svg)] bg-no-repeat">
         <div class="container">
-            <div class="">
-                <div class=""><img src="./images/about-main-img.jpg" alt="about-main-img"></div>
+            <div class="flex pt-12 pb-24">
+                <div class="mr-26 pr-[15px]">
+                    <img src="./images/about-main-img.jpg" alt="about-main-img" class="w-full">
+                </div>
 
-                <div class="">
-                    <div class="">
-                        <h3>Who we are</h3>
-                        <h2>Why Createx?</h2>
+                <div class="pl-[15px]">
+                    <div>
+                        <h3 class="text-4 uppercase font-bold mb-2 text-primary-text">Who we are</h3>
+                        <h2 class="text-[46px] font-black mb-6 pb-4 text-primary-text">Why Createx?</h2>
                     </div>
                     <ul>
-                        <li><i class="fa-regular fa-circle-check"></i> A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-                        <li><i class="fa-regular fa-circle-check"></i> Vulputate placerat amet pulvinar lorem nisl.</li>
-                        <li><i class="fa-regular fa-circle-check"></i> Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-                        <li><i class="fa-regular fa-circle-check"></i> Etiam duis lobortis in fames ultrices commodo nibh.</li>
-                        <li><i class="fa-regular fa-circle-check"></i> Tincidunt sagittis neque sem ac eget.</li>
-                        <li><i class="fa-regular fa-circle-check"></i> Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+                        <li class="flex items-st text-4 font-normal text-secondary-text tracking-wide mb-2 pb-1"><i class="fa-regular fa-circle-check mt-2 mr-4 text-primary h-full"></i> <p>A fermentum in morbi pretium aliquam adipiscing donec tempus.</p></li>
+                        <li class="flex items-st text-4 font-normal text-secondary-text tracking-wide mb-2 pb-1"><i class="fa-regular fa-circle-check mt-2 mr-4 text-primary h-full"></i> <p>Vulputate placerat amet pulvinar lorem nisl.</p></li>
+                        <li class="flex items-st text-4 font-normal text-secondary-text tracking-wide mb-2 pb-1"><i class="fa-regular fa-circle-check mt-2 mr-4 text-primary h-full"></i> <p>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p></li>
+                        <li class="flex items-st text-4 font-normal text-secondary-text tracking-wide mb-2 pb-1"><i class="fa-regular fa-circle-check mt-2 mr-4 text-primary h-full"></i> <p>Etiam duis lobortis in fames ultrices commodo nibh.</p></li>
+                        <li class="flex items-st text-4 font-normal text-secondary-text tracking-wide mb-2 pb-1"><i class="fa-regular fa-circle-check mt-2 mr-4 text-primary h-full"></i> <p>Tincidunt sagittis neque sem ac eget.</p></li>
+                        <li class="flex items-st text-4 font-normal text-secondary-text tracking-wide mb-2 pb-1"><i class="fa-regular fa-circle-check mt-2 mr-4 text-primary h-full"></i> <p>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p></li>
                     </ul>
 
-                    <a href="#">More about us</a>
+                    <a class="inline-block mt-12 py-2.5 px-8 bg-linear-to-r from-primary to-secondary rounded-sm font-bold text-white hover:shadow hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease" href="#">More about us</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="container">
+            <div class="py-12">
+                <div>
+                    <h3 class="uppercase text-primary-text font-bold">Ready to learn?</h3>
+                    <div class="flex items-center justify-between mb-12 pb-2">
+                        <h2 class="text-[46px] text-primary-text font-black">Featured Courses</h2>
+                        <a href="#" class="border border-primary py-4 px-10.5 font-bold rounded-sm text-primary hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease">View all courses</a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-x-5 gap-y-[30px]">
+
+                    <a href="#" class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div class="bg-[url(./images/home-mentors/mentor-1.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                            
+                        </div>
+                        <div class="p-8 w-[60%]">
+                            <span class="inline-block py-1 px-2 mb-4 bg-emerald-500 text-white text-sm rounded-md">Marketing</span>
+
+                            <h5 class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">The Ultimate Google Ads Training Course</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span class="text-primary font-semibold">$100</span>|<p class="text-[#787A80]">by Jerome Bell</p></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div class="bg-[url(./images/home-mentors/mentor-2.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                            
+                        </div>
+                        <div class="p-8 w-[60%]">
+                            <span class="inline-block py-1 px-2 mb-4 bg-indigo-500 text-white text-sm rounded-md">Management</span>
+
+                            <h5 class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">Prduct Management Fundamentals</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span class="text-primary font-semibold">$480</span>|<p class="text-[#787A80]">by Jerome Bell</p></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div class="bg-[url(./images/home-mentors/mentor-3.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                            
+                        </div>
+                        <div class="p-8 w-[60%]">
+                            <span class="inline-block py-1 px-2 mb-4 bg-amber-500 text-white text-sm rounded-md">HR & Recruting</span>
+
+                            <h5 class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">HR  Management and Analytics</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span class="text-primary font-semibold">$200</span>|<p class="text-[#787A80]">by Jerome Bell</p></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div class="bg-[url(./images/home-mentors/mentor-4.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                            
+                        </div>
+                        <div class="p-8 w-[60%]">
+                            <span class="inline-block py-1 px-2 mb-4 bg-emerald-500 text-white text-sm rounded-md">Marketing</span>
+
+                            <h5 class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">Brand Management & PR Communications</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span class="text-primary font-semibold">$530</span>|<p class="text-[#787A80]">by Jerome Bell</p></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div class="bg-[url(./images/home-mentors/mentor-5.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                            
+                        </div>
+                        <div class="p-8 w-[60%]">
+                            <span class="inline-block py-1 px-2 mb-4 bg-indigo-500 text-white text-sm rounded-md">Management</span>
+
+                            <h5 class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">Business Development Management</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span class="text-primary font-semibold">$400</span>|<p class="text-[#787A80]">by Jerome Bell</p></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div class="bg-[url(./images/home-mentors/mentor-6.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                            
+                        </div>
+                        <div class="p-8 w-[60%]">
+                            <span class="inline-block py-1 px-2 mb-4 bg-rose-500 text-white text-sm rounded-md">Design</span>
+
+                            <h5 class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">Graphic Design Basic</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span class="text-primary font-semibold">$500</span>|<p class="text-[#787A80]">by Jerome Bell</p></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
 
 </body>
 
