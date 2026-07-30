@@ -19,13 +19,16 @@
     --font-lato: Lato, sans-serif;
     --color-primary: #ff3f3a;
     --color-secondary: #f75e05;
+    --color-primary-shadow: #ff3f3a80;
+    --color-hero-bg: #f9dcd4;
+    --color-primary-text: #1E212C;
   }
     </style>
 </head>
 
 <body class="font-lato">
     <!-- Header -->
-    <header class="p-4">
+    <header class="p-4 fixed top-0 w-full">
         <div class="container flex justify-between items-center">
             <a class="mr-12 pr-2" href="index.html"><img src="images/logo/logo-dark.svg" width="130" alt="logo" /></a>
 
@@ -33,7 +36,7 @@
             <nav class="self-start">
                 <ul class="flex gap-2 justify-start mr-auto items-center">
                     <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About</a>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
                     </li>
                     <li>
                         <select class="py-4 px-5 inline-block text-[#424551] font-bold">Courses
@@ -73,6 +76,83 @@
 
         </div>
     </header>
+
+    <section
+        class="h-screen bg-[url(./images/hero-bg.png)] bg-cover bg-no-repeat bg-center flex flex-col justify-between">
+        <div class="container h-full">
+            <div class="flex justify-between flex-col h-full">
+            <div class="flex items-center w-full h-full">
+                <div class="flex justify-between flex-col items-start mr-70 w-[50%]">
+
+                    <div class="flex items-center mb-6">
+                        <button
+                            class="bg-primary w-13 h-13 text-white rounded-full hover:shadow-[0_0_0_1rem_rgba(255,63,58,0.12)] transition-shadow duration-300 ease-in-out hover:cursor-pointer">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <p class="font-bold ml-5">Play showreel</p>
+                    </div>
+
+                    <h1 class="text-[64px] font-black mb-12 pb-4">Enjoy studying with Createx Online Courses</h1>
+
+                    <div class="flex gap-6">
+                        <a href="#"
+                            class="py-3 px-12 border border-primary rounded-sm font-bold text-primary hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300 hover:text-white">About
+                            us</a>
+                        <a href="#"
+                            class="py-3 px-12 bg-linear-to-r from-primary to-secondary rounded-sm font-bold text-white hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300">Explore
+                            courses</a>
+                    </div>
+                </div>
+
+                <div class="w-[50%]">
+                    <img class="align-middle" src="./images/illustration.png" alt="illustration">
+                </div>
+            </div>
+
+                <div class="py-6 mb-20">
+                    <ul class=" flex justify-between">
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">1200</span>Students graduated</li>
+                        <li class="flex items-center text-primary">•</li>
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">82</span>Completed courses</li>
+                        <li class="flex items-center text-primary">•</li>
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">16</span>Qualified tutors</li>
+                        <li class="flex items-center text-primary">•</li>
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">5</span>Years of experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container">
+            <div class="">
+                <div class=""><img src="./images/about-main-img.jpg" alt="about-main-img"></div>
+
+                <div class="">
+                    <div class="">
+                        <h3>Who we are</h3>
+                        <h2>Why Createx?</h2>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Tincidunt sagittis neque sem ac eget.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+                    </ul>
+
+                    <a href="#">More about us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
