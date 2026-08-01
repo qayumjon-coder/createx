@@ -6,3 +6,8 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.active{
+  color: #ff3f3a;
+  border-color: #ff3f3a;
+}
