@@ -1,81 +1,158 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script
-      src="https://kit.fontawesome.com/bf8b8f599c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>CreateX - Landing</title>
 
     <style type="text/tailwindcss">
-      @theme {
-        --font-lato: Lato, sans-serif;
-        --color-primary: #ff3f3a;
-        --color-secondary: #f75e05;
-      }
+        @theme {
+    --font-lato: Lato, sans-serif;
+    --color-primary: #ff3f3a;
+    --color-secondary: #f75e05;
+    --color-primary-shadow: #ff3f3a80;
+    --color-hero-bg: #f9dcd4;
+    --color-primary-text: #1E212C;
+  }
     </style>
-  </head>
-  <body class="font-lato">
-    <!-- Header -->
-    <header class="p-4">
-      <div class="container flex justify-between items-center">
-        <a class="mr-12 pr-2" href="index.html"
-          ><img src="images/logo/logo-dark.svg" width="130" alt="logo"
-        /></a>
-        <nav class="self-start">
-          <ul class="flex gap-2 justify-start mr-auto items-center">
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#"
-                >About</a
-              >
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold "
-                >Courses<i class="fa-solid fa-chevron-down w-1 ml-1"></i
-              ></a>
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold "
-                >Events<i class="fa-solid fa-chevron-down w-1 ml-1"></i
-              ></a>
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold "
-                >Blog<i class="fa-solid fa-chevron-down w-1 ml-1"></i
-              ></a>
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
+</head>
 
-        <div class="justify-self-end">
-          <a
-            href="#"
-            class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
-            >Get consultation</a
-          >
-          <a href="#" class="text-primary font-bold ml-6 "
-            ><i class="fa-regular fa-user mr-2"></i>Sign in/up</a
-          >
+<body class="font-lato">
+    <!-- Header -->
+    <header class="p-4 fixed top-0 w-full">
+        <div class="container flex justify-between items-center">
+            <a class="mr-12 pr-2" href="index.html"><img src="images/logo/logo-dark.svg" width="130" alt="logo" /></a>
+
+
+            <nav class="self-start">
+                <ul class="flex gap-2 justify-start mr-auto items-center">
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
+                    </li>
+                    <li>
+                        <select class="py-4 px-5 inline-block text-[#424551] font-bold">Courses
+
+                            <option value="1">Courses Grid</option>
+                            <option value="2">Single Course</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="py-4 px-5 inline-block text-[#424551] font-bold">Events
+
+                            <option value="1">Events List</option>
+                            <option value="2">Events Grid</option>
+                            <option value="3">Events Single</option>
+                            </a>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="py-4 px-5 inline-block text-[#424551] font-bold">Blog
+
+                            <option value="1">Blog Grid</option>
+                            <option value="2">Single Post</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="justify-self-end">
+                <a href="#"
+                    class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
+                    consultation</a>
+                <a href="#" class="text-primary font-bold ml-6"><i class="fa-regular fa-user mr-2"></i>Sign in/up</a>
+            </div>
+
         </div>
-      </div>
     </header>
 
+    <section
+        class="h-screen bg-[url(./images/hero-bg.png)] bg-cover bg-no-repeat bg-center flex flex-col justify-between">
+        <div class="container h-full">
+            <div class="flex justify-between flex-col h-full">
+            <div class="flex items-center w-full h-full">
+                <div class="flex justify-between flex-col items-start mr-70 w-[50%]">
 
+                    <div class="flex items-center mb-6">
+                        <button
+                            class="bg-primary w-13 h-13 text-white rounded-full hover:shadow-[0_0_0_1rem_rgba(255,63,58,0.12)] transition-shadow duration-300 ease-in-out hover:cursor-pointer">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <p class="font-bold ml-5">Play showreel</p>
+                    </div>
 
-  </body>
+                    <h1 class="text-[64px] font-black mb-12 pb-4">Enjoy studying with Createx Online Courses</h1>
+
+                    <div class="flex gap-6">
+                        <a href="#"
+                            class="py-3 px-12 border border-primary rounded-sm font-bold text-primary hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300 hover:text-white">About
+                            us</a>
+                        <a href="#"
+                            class="py-3 px-12 bg-linear-to-r from-primary to-secondary rounded-sm font-bold text-white hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300">Explore
+                            courses</a>
+                    </div>
+                </div>
+
+                <div class="w-[50%]">
+                    <img class="align-middle" src="./images/illustration.png" alt="illustration">
+                </div>
+            </div>
+
+                <div class="py-6 mb-20">
+                    <ul class=" flex justify-between">
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">1200</span>Students graduated</li>
+                        <li class="flex items-center text-primary">•</li>
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">82</span>Completed courses</li>
+                        <li class="flex items-center text-primary">•</li>
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">16</span>Qualified tutors</li>
+                        <li class="flex items-center text-primary">•</li>
+                        <li class="flex items-center text-[#424551]"><span
+                                class="text-[46px] text-primary-text font-black mr-2">5</span>Years of experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container">
+            <div class="">
+                <div class=""><img src="./images/about-main-img.jpg" alt="about-main-img"></div>
+
+                <div class="">
+                    <div class="">
+                        <h3>Who we are</h3>
+                        <h2>Why Createx?</h2>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Tincidunt sagittis neque sem ac eget.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+                    </ul>
+
+                    <a href="#">More about us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
 </html>
