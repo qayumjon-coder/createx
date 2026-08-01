@@ -23,7 +23,8 @@
     </style>
 </head>
 
-<body class="font-lato">
+<body class="font-lato overflow-x-hidden">
+    <!-- NAVBAR — o'zgarishsiz, asl holicha -->
     <nav class="p-4 fixed top-0 w-full bg-[#FDDDCF] z-50">
         <div class="container flex justify-between items-center">
             <a class="mr-12 pr-2" href="index.html">
@@ -90,6 +91,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- HEADER — o'zgarishsiz, asl holicha -->
     <header class="bg-[#FDDDCF] pt-[104px] pb-24">
         <div class="container">
             <div class="header-Text flex flex-col justify-center items-center text-center">
@@ -100,20 +103,23 @@
             </div>
         </div>
     </header>
-    <section class="pb-24">
-        <div class="max-w-6xl mx-auto px-6 pt-24 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-16">
+
+    <!-- THEMES + TIME/PRICE (responsive) -->
+    <section class="pb-12 md:pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 md:pt-24 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-10 lg:gap-16">
             <div>
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-10">We will talk about:</h1>
-                <div class="space-y-8">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 md:mb-10">We will talk
+                    about:</h1>
+                <div class="space-y-6 md:space-y-8">
                     <div>
                         <div class="flex items-start gap-3">
                             <span class="text-primary text-xl font-light leading-7 select-none">&minus;</span>
-                            <p class="text-lg leading-7">
+                            <p class="text-base sm:text-lg leading-7">
                                 <span class="text-primary font-semibold">Theme 1.</span>
                                 <span class="text-gray-900 font-semibold"> Aliquet lectus urna viverra in odio.</span>
                             </p>
                         </div>
-                        <p class="text-gray-500 text-[15px] leading-6 mt-3 ml-7">
+                        <p class="text-gray-500 text-sm sm:text-[15px] leading-6 mt-3 ml-7">
                             Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec
                             enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio
                             mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis.
@@ -122,7 +128,7 @@
                     </div>
                     <div class="flex items-start gap-3">
                         <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
-                        <p class="text-lg leading-7">
+                        <p class="text-base sm:text-lg leading-7">
                             <span class="text-primary font-semibold">Theme 2.</span>
                             <span class="text-gray-900 font-semibold"> Orci commodo, viverra orci mollis ut
                                 euismod.</span>
@@ -130,7 +136,7 @@
                     </div>
                     <div class="flex items-start gap-3">
                         <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
-                        <p class="text-lg leading-7">
+                        <p class="text-base sm:text-lg leading-7">
                             <span class="text-primary font-semibold">Theme 3.</span>
                             <span class="text-gray-900 font-semibold"> Sagittis vitae facilisi rutrum amet mauris
                                 quisque vel.</span>
@@ -138,7 +144,7 @@
                     </div>
                     <div class="flex items-start gap-3">
                         <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
-                        <p class="text-lg leading-7">
+                        <p class="text-base sm:text-lg leading-7">
                             <span class="text-primary font-semibold">Theme 4.</span>
                             <span class="text-gray-900 font-semibold"> In id dolor quis nunc, urna hendrerit
                                 pharetra.</span>
@@ -146,12 +152,14 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] p-8 h-fit px-[32px] py-[40px]">
+            <div
+                class="bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] p-6 sm:p-8 h-fit sm:px-[32px] sm:py-[40px]">
                 <p class="text-xs font-bold tracking-widest text-gray-800 mb-2">TIME</p>
-                <p class="text-primary font-bold text-xl mb-2">August 5, 11:00 &ndash; 14:00</p>
-                <p class="text-gray-400 text-sm leading-6 mb-6">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+                <p class="text-primary font-bold text-lg sm:text-xl mb-2">August 5, 11:00 &ndash; 14:00</p>
+                <p class="text-gray-400 text-sm leading-6 mb-6">Metus turpis sit lorem lacus, in elit tellus lacus.
+                </p>
                 <p class="text-xs font-bold tracking-widest text-gray-800 mb-2">PRICE</p>
-                <p class="text-primary font-bold text-xl mb-2">Free</p>
+                <p class="text-primary font-bold text-lg sm:text-xl mb-2">Free</p>
                 <p class="max-w-[429px] text-gray-400 text-sm leading-6 mb-6">
                     Nulla sem adipiscing adipiscing felis fringilla. Adipiscing
                     mauris quam ac elit tristique dis.
@@ -161,37 +169,43 @@
                     EVENT ON FACEBOOK
                 </a>
                 <button
-                    class="w-full bg-linear-to-r from-primary to-secondary hover:opacity-90 transition text-white font-bold text-sm py-4">
+                    class="w-full bg-linear-to-r from-primary to-secondary hover:opacity-90 transition text-white font-bold text-sm py-4 cursor-pointer">
                     Join the event
                 </button>
             </div>
         </div>
     </section>
-    <section class="container">
-        <div class="section_spiker flex gap-[135px] mt-[100px]">
-            <div class="spiker_img relative w-[495px] h-[580px] bg-[#FFCF2D]">
+
+    <!-- SPEAKER (responsive) -->
+    <section class="container mx-auto px-4">
+        <div class="section_spiker flex flex-col md:flex-row gap-10 md:gap-16 lg:gap-[135px] mt-16 md:mt-[100px] items-center md:items-stretch">
+            <div class="spiker_img relative w-full max-w-[380px] sm:max-w-[420px] md:w-[380px] lg:w-[495px] h-[420px] sm:h-[480px] md:h-[520px] lg:h-[580px] bg-[#FFCF2D] shrink-0">
                 <img src="../../images/bjnrngngjnjnkrgjn.png" alt="spiker"
                     class="absolute bottom-0 left-1/2 -translate-x-1/2 h-[115%] w-auto max-w-none object-contain">
             </div>
-            <div class="spiker_right">
+            <div class="spiker_right w-full text-center md:text-left">
                 <div class="spiker_text">
                     <h6 class="font-bold text-[16px] text-[#1E212C]">Speaker</h6>
-                    <h1 class="font-[900] text-[46px] text-[#1E212C]">Kathryn Murphy </h1>
-                    <p class="font-[400] text-[20px] text-[#787A80] mb-[32px]">Analyst and Marketing specialist in IT
+                    <h1 class="font-[900] text-3xl sm:text-4xl md:text-[46px] text-[#1E212C]">Kathryn Murphy </h1>
+                    <p class="font-[400] text-lg sm:text-xl text-[#787A80] mb-6 md:mb-[32px]">Analyst and Marketing
+                        specialist in IT
                         company</p>
-                    <p class="text-[16px] font-[700] max-w-[600px] text-[#424551]">Mattis adipiscing aliquam eu proin
-                        metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl,
+                    <p class="text-[15px] sm:text-[16px] font-[700] max-w-[600px] mx-auto md:mx-0 text-[#424551]">
+                        Mattis adipiscing aliquam eu proin
+                        metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante.
+                        Nisl,
                         amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh
-                        consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id
+                        consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea
+                        id
                         habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin
                         interdum quam. </p>
                 </div>
-                <div class="left_logo flex flex-wrap gap-[40px] mt-[40px]">
-                    <img src="../../images/logo.png" alt="">
-                    <img src="../../images/logo (1).png" alt="">
-                    <img src="../../images/logo (2).png" alt="">
+                <div class="left_logo flex flex-wrap justify-center md:justify-start gap-6 sm:gap-[40px] mt-8 sm:mt-[40px]">
+                    <img src="../../images/logo.png" alt="" class="h-6 sm:h-auto">
+                    <img src="../../images/logo (1).png" alt="" class="h-6 sm:h-auto">
+                    <img src="../../images/logo (2).png" alt="" class="h-6 sm:h-auto">
                 </div>
-                <div class="spiker_icon flex gap-[24px] items-center mt-[40px]">
+                <div class="spiker_icon flex justify-center md:justify-start gap-6 sm:gap-[24px] items-center mt-8 sm:mt-[40px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24 z">
                         <path d="M0 0h24v24H0z" fill="none" />
                         <path fill="#787a80"
@@ -215,16 +229,18 @@
                         <path fill="#787a80"
                             d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
                     </svg>
-
                 </div>
             </div>
         </div>
     </section>
-    <section class="container">
-        <div class="for flex gap-[138px] mt-[180px]">
-            <div class="for_text">
+
+    <!-- WHO WILL BENEFIT (responsive) -->
+    <section class="container mx-auto px-4">
+        <div class="for flex flex-col lg:flex-row gap-8 lg:gap-[138px] mt-20 md:mt-[180px]">
+            <div class="for_text shrink-0">
                 <h6 class="text-[16px] font-[700]">For whom?</h6>
-                <h1 class="text-[46px] font-[900] max-w-[492px]">Who will benefit from the event:</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-[46px] font-[900] max-w-[492px]">Who will benefit from the
+                    event:</h1>
             </div>
             <div class="for_check flex flex-col gap-4">
                 <div class="check flex items-start gap-3">
@@ -252,7 +268,8 @@
                                 clip-rule="evenodd" />
                         </g>
                     </svg>
-                    <p>Mobile app designers who want to improve their skills in solving business problems, creating and
+                    <p>Mobile app designers who want to improve their skills in solving business problems, creating
+                        and
                         testing human-centered interfaces</p>
                 </div>
 
@@ -273,10 +290,12 @@
         </div>
     </section>
 
+    <!-- NEWSLETTER (responsive) -->
     <section>
-        <div class="section_events mt-[180px]">
-            <div class="events_img container">
-                <div class="relative bg-[#fbe3dd] flex items-center px-[60px]">
+        <div class="section_events mt-20 md:mt-[180px]">
+            <div class="events_img container mx-auto px-4">
+                <div
+                    class="relative bg-[#fbe3dd] flex flex-col md:flex-row items-center px-6 sm:px-8 md:px-[60px] py-10 md:py-0 gap-8 md:gap-0">
 
                     <!-- dekorativ nuqtalar -->
                     <div class="absolute left-4 bottom-4 grid grid-cols-6 gap-1 opacity-40 pointer-events-none">
@@ -288,10 +307,10 @@
                         <span class="w-1 h-1 rounded-full bg-white"></span>
                     </div>
 
-                    <div class="events_img px-[60px] py-[60px]">
+                    <div class="events_img order-2 md:order-1 px-0 md:px-[60px] py-0 md:py-[60px] w-full md:w-auto max-w-[280px] sm:max-w-xs md:max-w-none mx-auto">
                         <img src="../../images/nbkjnjgbkjnknrnjgktnh.png" alt="" class="w-full h-auto">
                     </div>
-                    <div class="flex-1 w-full">
+                    <div class="flex-1 w-full order-1 md:order-2 text-center md:text-left">
                         <h2 class="text-xl md:text-2xl font-extrabold text-[#1b1b2f] leading-snug mb-4">
                             Don't want to miss the best events?<br>
                             Subscribe to our newsletter!
@@ -305,7 +324,8 @@
                             </button>
                         </form>
 
-                        <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer">
+                        <label
+                            class="flex items-center justify-center md:justify-start gap-2 text-xs text-gray-600 cursor-pointer">
                             <input type="checkbox" checked class="w-4 h-4 accent-[#f0522e] rounded">
                             I agree to receive communications from Creates Online School
                         </label>
@@ -315,11 +335,15 @@
             </div>
         </div>
     </section>
-    <section class="container">
-        <div class="flex gap-[150px] mt-[120px]">
-            <div>
-                <p class="text-xs font-bold tracking-widest text-gray-800 mb-3">DON'T MISS THE EVENT</p>
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-8">Leave a request</h1>
+
+    <!-- REQUEST FORM (responsive) -->
+    <section class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-[150px] mt-16 md:mt-[120px] items-center lg:items-start">
+            <div class="w-full max-w-[520px] lg:max-w-none">
+                <p class="text-xs font-bold tracking-widest text-gray-800 mb-3 text-center lg:text-left">DON'T MISS
+                    THE EVENT</p>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 text-center lg:text-left">Leave a
+                    request</h1>
 
                 <form class="space-y-5">
                     <div>
@@ -350,27 +374,30 @@
                     </p>
                 </form>
             </div>
-            <div class="flex justify-center">
-                <img src="../../images/hhy5h4uhihf.png" alt="" class="w-[600px] h-[468px]">
+            <div class="flex justify-center w-full">
+                <img src="../../images/hhy5h4uhihf.png" alt=""
+                    class="w-full max-w-[600px] h-auto lg:h-[468px] object-cover">
             </div>
         </div>
     </section>
 
-    <section class="bg-[#F4F5F6] py-[60px]">
-        <div class="section_check container">
-            <div class="check_text mb-[60px]">
-                <p class="text-[16px] font-[700] text-[#1E212C] mb-[8px]">Check other online events</p>
-                <h1 class="text-[46px] font-[900] text-[#1E212C]">You may be interested in</h1>
+    <!-- OTHER EVENTS (responsive) -->
+    <section class="bg-[#F4F5F6] py-12 md:py-[60px] mt-16 md:mt-0">
+        <div class="section_check container mx-auto px-4">
+            <div class="check_text mb-10 md:mb-[60px] text-center md:text-left">
+                <p class="text-[16px] font-[700] text-[#1E212C] mb-2">Check other online events</p>
+                <h1 class="text-3xl sm:text-4xl md:text-[46px] font-[900] text-[#1E212C]">You may be interested in
+                </h1>
             </div>
 
-            <div class="flex justify-between">
-                <div class=" bg-white  p-7 shadow-sm">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 sm:p-7 shadow-sm">
                     <div>
                         <h3 class="m-0 text-[#FF4B2B] text-xl font-bold">05 Aug</h3>
                         <p class="mt-1.5 text-gray-400 text-sm">11:00 – 14:00</p>
                     </div>
                     <div>
-                        <h2 class="mt-5 text-gray-900 text-base font-bold max-w-[342px]">
+                        <h2 class="mt-5 text-gray-900 text-base font-bold">
                             Formation of the organizational structure of the company in the face of uncertainty.
                         </h2>
                         <p class="mt-2 text-gray-400 text-sm">Online master-class</p>
@@ -382,13 +409,13 @@
                         </button>
                     </div>
                 </div>
-                <div class=" bg-white  p-7 shadow-sm">
+                <div class="bg-white p-6 sm:p-7 shadow-sm">
                     <div>
                         <h3 class="m-0 text-[#FF4B2B] text-xl font-bold">05 Aug</h3>
                         <p class="mt-1.5 text-gray-400 text-sm">11:00 – 14:00</p>
                     </div>
                     <div>
-                        <h2 class="mt-5 text-gray-900 text-base font-bold max-w-[342px]">
+                        <h2 class="mt-5 text-gray-900 text-base font-bold">
                             Formation of the organizational structure of the company in the face of uncertainty.
                         </h2>
                         <p class="mt-2 text-gray-400 text-sm">Online master-class</p>
@@ -400,13 +427,13 @@
                         </button>
                     </div>
                 </div>
-                <div class=" bg-white  p-7 shadow-sm">
+                <div class="bg-white p-6 sm:p-7 shadow-sm sm:col-span-2 lg:col-span-1">
                     <div>
                         <h3 class="m-0 text-[#FF4B2B] text-xl font-bold">05 Aug</h3>
                         <p class="mt-1.5 text-gray-400 text-sm">11:00 – 14:00</p>
                     </div>
                     <div>
-                        <h2 class="mt-5 text-gray-900 text-base font-bold max-w-[342px]">
+                        <h2 class="mt-5 text-gray-900 text-base font-bold">
                             Formation of the organizational structure of the company in the face of uncertainty.
                         </h2>
                         <p class="mt-2 text-gray-400 text-sm">Online master-class</p>
@@ -419,12 +446,16 @@
                     </div>
                 </div>
             </div>
-            <div class="check_sub flex justify-center items-center gap-[24px] mt-[60px]">
-                <h1 class="text-[28px] font-[700] text-[#1E212C]">Do you want more?</h1> 
-                <button class="bg-[#FF3F3A] cursor-pointer px-[40px] py-[12px] font-[700] text-[16px] text-white">Explore all events</button>   
+            <div
+                class="check_sub flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-[24px] mt-10 md:mt-[60px] text-center">
+                <h1 class="text-xl sm:text-2xl md:text-[28px] font-[700] text-[#1E212C]">Do you want more?</h1>
+                <button
+                    class="bg-[#FF3F3A] cursor-pointer px-8 sm:px-[40px] py-3 sm:py-[12px] font-[700] text-[16px] text-white w-full sm:w-auto">Explore
+                    all events</button>
             </div>
         </div>
     </section>
+
 </body>
 
 </html>
