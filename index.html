@@ -16,14 +16,15 @@
 
     <style type="text/tailwindcss">
         @theme {
-    --font-lato: Lato, sans-serif;
-    --color-primary: #ff3f3a;
-    --color-secondary: #f75e05;
-    --color-primary-shadow: #ff3f3a80;
-    --color-hero-bg: #f9dcd4;
-    --color-primary-text: #1E212C;
-    --color-secondary-text: #424551;
-  }
+            --font-lato: Lato, sans-serif;
+            --color-primary: #ff3f3a;
+            --color-secondary: #f75e05;
+            --color-primary-shadow: #ff3f3a80;
+            --color-hero-bg: #f9dcd4;
+            --color-primary-text: #1E212C;
+            --color-secondary-text: #424551;
+            --color-third-text: #787a80;
+        }
     </style>
 </head>
 
@@ -321,34 +322,159 @@
     </section>
 
     <section>
-        <div class="container ">
-            <h3>Our benefits</h3>
-            <h2>That’s how we do it</h2>
+        <div class="container">
+            <div class=" pt-12 pb-24">
+                <h3 class="font-bold text-4 uppercase mb-2 text-primary-text text-center">Our benefits</h3>
+                <h2 class="text-5xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we do it</h2>
 
-            <div>
-                <button onclick="expTutors()"><i class="fa-regular fa-star"></i>Experienced Tutors</button>
-                <button onclick="expTutors()"><i class="fa-regular fa-thumbs-up"></i>Feedback & Support</button>
-                <button onclick="expTutors()"><i class="fa-solid fa-layer-group"></i>24/7 Online Library</button>
-                <button onclick="expTutors()"><i class="fa-regular fa-comment"></i>Community</button>
-            </div>
-
-            <div>
-                <div>
-                    <h2>Only practicing tutors</h2>
-
-                    <p>Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris
-                        cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa.
-                        Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet
-                        enim, nisi tempus vehicula.
-                    </p>
+                <div class="grid grid-cols-4 pb-5 font-bold text-[#9a9ca5] transition-ease duration-300">
+                    <button data-tab="tutors"
+                        class="action-btn active py-2.5 px-5 hover:text-primary-text transition-ease duration-300 cursor-pointer"><i
+                            class="fa-regular fa-star mr-3"></i>Experienced Tutors</button>
+                    <button data-tab="feedback"
+                        class="action-btn py-2.5 px-5 hover:text-primary-text transition-ease duration-300 cursor-pointer"><i
+                            class="fa-regular fa-thumbs-up mr-3"></i>Feedback & Support</button>
+                    <button data-tab="library"
+                        class="action-btn py-2.5 px-5 hover:text-primary-text transition-ease duration-300 cursor-pointer"><i
+                            class="fa-solid fa-layer-group mr-3"></i>24/7 Online Library</button>
+                    <button data-tab="community"
+                        class="action-btn py-2.5 px-5 hover:text-primary-text transition-ease duration-300 cursor-pointer"><i
+                            class="fa-regular fa-comments mr-3"></i>Community</button>
                 </div>
 
-                <div>
-                    <img src="./images/benefits/01.svg" alt="benefits.img">
+                <div class="content-box flex mt-6 pt-4 items-center min-h-[418px]">
+                    <div class="w-[50%] mr-30">
+                        <h2 class="text-[32px] mb-6 font-black text-primary-text">Only practicing tutors</h2>
+
+                        <p class="text-secondary-text">
+                            Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi
+                            mauris
+                            cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+                            Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet
+                            enim, nisi tempus vehicula.
+                        </p>
+                    </div>
+
+                    <div class="w-[50%]">
+                        <img class="w-[85.72%]" src="./images/benefits/01.svg" alt="benefits.img">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section
+        class="bg-[url(./images/02-events-bg.svg)] bg-center bg-cover bg-no-repeat overflow-hidden py-4 lg:py-5 xl:py-10 bg-primary/20">
+        <div class="container">
+            <div class="py-4">
+                <h3 class="font-bold text-4 uppercase mb-2 text-primary-text text-center">Our benefits</h3>
+                <h2 class="text-5xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we do it</h2>
+
+                <div class="flex flex-col items-center">
+
+                    <div
+                        class="flex items-center bg-white mb-6 px-10 xl:px-12 py-5 md:py-0 flex-col md:flex-row w-full rounded-md">
+                        <div class="flex py-2 my-0 md:my-6 w-full md:w-auto">
+                            <h2 class="text-5xl font-extrabold text-primary">05</h2>
+                            <div class="ml-4 pl-1">
+                                <h6 class="pb-1 font-bold text-primary-text text-xl">August</h6>
+                                <p class="text-third-text">11:00 - 14:00</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 md:m-6 py-2 px-0 md:px-4">
+                            <a class="text-xl font-bold text-primary-text" href="#">Formation of the organizational
+                                structure of the company in the face of uncertainty.</a>
+                            <p class="text-third-text">Online master-class</p>
+                        </div>
+
+                        <a href="#" class="md:w-max text-sm py-2.5 px-8 border border-primary text-primary font-semibold w-full text-center rounded-sm hover:bg-primary hover:text-white 
+                            transition-ease duration-300 hover:shadow-lg shadow-primary-shadow ml-auto">View
+                            more</a>
+                    </div>
+
+                    <div
+                        class="flex items-center bg-white mb-6 px-10 xl:px-12 py-5 md:py-0 flex-col md:flex-row w-full rounded-md">
+                        <div class="flex py-2 my-0 md:my-6 w-full md:w-auto">
+                            <h2 class="text-5xl font-extrabold text-primary">24</h2>
+                            <div class="ml-4 pl-1">
+                                <h6 class="pb-1 font-bold text-primary-text text-xl">July</h6>
+                                <p class="text-third-text">11:00 - 12:30</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 md:m-6 py-2 px-0 md:px-4">
+                            <a class="text-xl font-bold text-primary-text" href="#">Building a customer service
+                                department. Best Practices.</a>
+                            <p class="text-third-text">Online lecture</p>
+                        </div>
+
+                        <a href="#"
+                            class="md:w-max text-sm py-2.5 px-8 border border-primary text-primary font-semibold w-full text-center rounded-sm hover:bg-primary 
+                            hover:text-white transition-ease duration-300 hover:shadow-lg shadow-primary-shadow ml-auto">
+                            View more</a>
+                    </div>
+
+                    <div
+                        class="flex items-center bg-white mb-6 px-10 xl:px-12 py-5 md:py-0 flex-col md:flex-row w-full rounded-md">
+                        <div class="flex py-2 my-0 md:my-6 w-full md:w-auto">
+                            <h2 class="text-5xl font-extrabold text-primary">16</h2>
+                            <div class="ml-4 pl-1">
+                                <h6 class="pb-1 font-bold text-primary-text text-xl">July</h6>
+                                <p class="text-third-text">10:00 - 13:00</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-6 md:m-6 py-2 px-0 md:px-4">
+                            <a class="text-xl font-bold text-primary-text" href="#">How to apply methods of speculative
+                                design in practice. Worldbuilding prototyping.</a>
+                            <p class="text-third-text">Online workshop</p>
+                        </div>
+
+                        <a href="#"
+                            class="md:w-max text-sm py-2.5 px-8 border border-primary text-primary font-semibold w-full 
+                            text-center rounded-sm hover:bg-primary hover:text-white transition-ease duration-300 hover:shadow-lg shadow-primary-shadow ml-auto">View
+                            more</a>
+                    </div>
+                </div>
+
+                <div class="w-full flex flex-col gap-5 md:flex-row items-center justify-center pt-6">
+                    <h4 class="text-3xl font-bold text-primary-text">Do you want more?</h4>
+                    <a class="w-full md:w-auto text-center md:ml-6 py-3.5 px-10.5 font-bold bg-linear-to-r from-primary to-secondary text-white rounded-sm hover:shadow-lg shadow-primary-shadow transition-ease duration-300"
+                        href="#">Explore all events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 pt-12 xl:pt-24">
+                <div class="mb-8">
+                    <div>
+                        <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Createx certificate</h3>
+                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">Your expertise will be confirmed
+                        </h2>
+
+                        <p class="mb-6 mr-0 xl:mr-90">
+                            We are accredited by international professional organizations and institutes:
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap">
+                        <img class="pr-4 mr-6" src="./images/eu-business-school.svg" alt="university-image">
+                        <img class="pr-4 mr-6" src="./images/mcgill-university.svg" alt="university-image">
+                        <img src="./images/incae-business-school.svg" alt="university-image">
+                    </div>
+                </div>
+                <div>
+                    <img w-full lg:w-auto src="./images/certificate.jpg" alt="certificate-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
