@@ -9,5 +9,6 @@
 
 .active{
   color: #ff3f3a;
-  border-color: #ff3f3a;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
 }
