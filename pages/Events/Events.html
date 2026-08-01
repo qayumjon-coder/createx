@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css" />
+    <title>CreateX - Landing</title>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-lato: Lato, sans-serif;
+            --color-primary: #ff3f3a;
+            --color-secondary: #f75e05;
+        }
+    </style>
+</head>
+
+<body class="font-lato overflow-x-hidden">
+    <nav class="p-4 fixed top-0 w-full bg-[#FDDDCF] z-50">
+        <div class="container flex justify-between items-center">
+            <a class="mr-12 pr-2" href="index.html">
+                <img src="../../images/logo/logo-dark.svg" width="130" alt="logo" />
+            </a>
+            <ul class="flex gap-2 justify-start mr-auto items-center self-start">
+                <li>
+                    <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
+                </li>
+
+                <li class="relative group">
+                    <button type="button" class="py-4 px-5 inline-flex items-center text-[#424551] font-bold">
+                        Courses
+                        <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <ul
+                        class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] py-2">
+                        <li><a class="block px-5 py-2 text-[#424551] hover:text-primary" href="#">Courses Grid</a>
+                        </li>
+                        <li><a class="block px-5 py-2 text-[#424551] hover:text-primary" href="#">Single Course</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="relative group">
+                    <button type="button" class="py-4 px-5 inline-flex items-center text-[#424551] font-bold">
+                        Events
+                        <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <ul
+                        class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] py-2">
+                        <li><a class="block px-5 py-2 text-[#424551] hover:text-primary" href="#">Events List</a>
+                        </li>
+                        <li><a class="block px-5 py-2 text-[#424551] hover:text-primary" href="#">Events Grid</a>
+                        </li>
+                        <li><a class="block px-5 py-2 text-[#424551] hover:text-primary" href="#">Events Single</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="relative group">
+                    <button type="button" class="py-4 px-5 inline-flex items-center text-[#424551] font-bold">
+                        Blog
+                        <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+                    </button>
+                    <ul
+                        class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-[180px] py-2">
+                        <li><a class="block px-5 py-2 text-[#424551] hover:text-primary" href="#">Blog Grid</a></li>
+                        <li><a class="block px-5 py-2 text-[#424551] hover:text-primary" href="#">Single Post</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
+                </li>
+            </ul>
+
+            <div class="justify-self-end">
+                <a href="#"
+                    class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
+                    consultation</a>
+                <a href="#" class="text-primary font-bold ml-6"><i class="fa-regular fa-user mr-2"></i>Sign in/up</a>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-[#FDDDCF] pt-[104px] pb-24">
+        <div class="container">
+            <div class="header-Text flex flex-col justify-center items-center text-center">
+                <h6 class="font-bold text-[16px] text-primary">Online lecture</h6>
+                <h1 class="font-[900] text-[46px] max-w-[1020px] mt-4">Formation of the organizational structure of
+                    the
+                    company in the face of uncertainty</h1>
+            </div>
+        </div>
+    </header>
+    <section class="pb-12 md:pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 md:pt-24 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-10 lg:gap-16">
+            <div>
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 md:mb-10">We will talk
+                    about:</h1>
+                <div class="space-y-6 md:space-y-8">
+                    <div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-primary text-xl font-light leading-7 select-none">&minus;</span>
+                            <p class="text-base sm:text-lg leading-7">
+                                <span class="text-primary font-semibold">Theme 1.</span>
+                                <span class="text-gray-900 font-semibold"> Aliquet lectus urna viverra in odio.</span>
+                            </p>
+                        </div>
+                        <p class="text-gray-500 text-sm sm:text-[15px] leading-6 mt-3 ml-7">
+                            Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec
+                            enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio
+                            mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis.
+                            Commodo nunc orci vitae accumsan id.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+                        <p class="text-base sm:text-lg leading-7">
+                            <span class="text-primary font-semibold">Theme 2.</span>
+                            <span class="text-gray-900 font-semibold"> Orci commodo, viverra orci mollis ut
+                                euismod.</span>
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+                        <p class="text-base sm:text-lg leading-7">
+                            <span class="text-primary font-semibold">Theme 3.</span>
+                            <span class="text-gray-900 font-semibold"> Sagittis vitae facilisi rutrum amet mauris
+                                quisque vel.</span>
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+                        <p class="text-base sm:text-lg leading-7">
+                            <span class="text-primary font-semibold">Theme 4.</span>
+                            <span class="text-gray-900 font-semibold"> In id dolor quis nunc, urna hendrerit
+                                pharetra.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] p-6 sm:p-8 h-fit sm:px-[32px] sm:py-[40px]">
+                <p class="text-xs font-bold tracking-widest text-gray-800 mb-2">TIME</p>
+                <p class="text-primary font-bold text-lg sm:text-xl mb-2">August 5, 11:00 &ndash; 14:00</p>
+                <p class="text-gray-400 text-sm leading-6 mb-6">Metus turpis sit lorem lacus, in elit tellus lacus.
+                </p>
+                <p class="text-xs font-bold tracking-widest text-gray-800 mb-2">PRICE</p>
+                <p class="text-primary font-bold text-lg sm:text-xl mb-2">Free</p>
+                <p class="max-w-[429px] text-gray-400 text-sm leading-6 mb-6">
+                    Nulla sem adipiscing adipiscing felis fringilla. Adipiscing
+                    mauris quam ac elit tristique dis.
+                </p>
+                <a href="#"
+                    class="inline-block text-primary text-sm font-bold tracking-wide underline underline-offset-4 mb-6">
+                    EVENT ON FACEBOOK
+                </a>
+                <button
+                    class="w-full bg-linear-to-r from-primary to-secondary hover:opacity-90 transition text-white font-bold text-sm py-4 cursor-pointer">
+                    Join the event
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-4">
+        <div class="section_spiker flex flex-col md:flex-row gap-10 md:gap-16 lg:gap-[135px] mt-16 md:mt-[100px] items-center md:items-stretch">
+            <div class="spiker_img relative w-full max-w-[380px] sm:max-w-[420px] md:w-[380px] lg:w-[495px] h-[420px] sm:h-[480px] md:h-[520px] lg:h-[580px] bg-[#FFCF2D] shrink-0">
+                <img src="../../images/bjnrngngjnjnkrgjn.png" alt="spiker"
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 h-[115%] w-auto max-w-none object-contain">
+            </div>
+            <div class="spiker_right w-full text-center md:text-left">
+                <div class="spiker_text">
+                    <h6 class="font-bold text-[16px] text-[#1E212C]">Speaker</h6>
+                    <h1 class="font-[900] text-3xl sm:text-4xl md:text-[46px] text-[#1E212C]">Kathryn Murphy </h1>
+                    <p class="font-[400] text-lg sm:text-xl text-[#787A80] mb-6 md:mb-[32px]">Analyst and Marketing
+                        specialist in IT
+                        company</p>
+                    <p class="text-[15px] sm:text-[16px] font-[700] max-w-[600px] mx-auto md:mx-0 text-[#424551]">
+                        Mattis adipiscing aliquam eu proin
+                        metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante.
+                        Nisl,
+                        amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh
+                        consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea
+                        id
+                        habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin
+                        interdum quam. </p>
+                </div>
+                <div class="left_logo flex flex-wrap justify-center md:justify-start gap-6 sm:gap-[40px] mt-8 sm:mt-[40px]">
+                    <img src="../../images/logo.png" alt="" class="h-6 sm:h-auto">
+                    <img src="../../images/logo (1).png" alt="" class="h-6 sm:h-auto">
+                    <img src="../../images/logo (2).png" alt="" class="h-6 sm:h-auto">
+                </div>
+                <div class="spiker_icon flex justify-center md:justify-start gap-6 sm:gap-[24px] items-center mt-8 sm:mt-[40px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24 z">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="#787a80"
+                            d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="#787a80"
+                            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="#787a80"
+                            d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="#787a80"
+                            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-4">
+        <div class="for flex flex-col lg:flex-row gap-8 lg:gap-[138px] mt-20 md:mt-[180px]">
+            <div class="for_text shrink-0">
+                <h6 class="text-[16px] font-[700]">For whom?</h6>
+                <h1 class="text-3xl sm:text-4xl md:text-[46px] font-[900] max-w-[492px]">Who will benefit from the
+                    event:</h1>
+            </div>
+            <div class="for_check flex flex-col gap-4">
+                <div class="check flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                        class="text-[#FF3F3A] w-6 h-6 shrink-0">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="currentColor">
+                            <path d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                            <path fill-rule="evenodd"
+                                d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m11 9a9 9 0 1 1 0-18a9 9 0 0 1 0 18"
+                                clip-rule="evenodd" />
+                        </g>
+                    </svg>
+                    <p>Specialists with more than 1 year of active work experience</p>
+                </div>
+
+                <div class="check flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                        class="text-[#FF3F3A] w-6 h-6 shrink-0">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="currentColor">
+                            <path d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                            <path fill-rule="evenodd"
+                                d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m11 9a9 9 0 1 1 0-18a9 9 0 0 1 0 18"
+                                clip-rule="evenodd" />
+                        </g>
+                    </svg>
+                    <p>Mobile app designers who want to improve their skills in solving business problems, creating
+                        and
+                        testing human-centered interfaces</p>
+                </div>
+
+                <div class="check flex items-start gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                        class="text-[#FF3F3A] w-6 h-6 shrink-0">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="currentColor">
+                            <path d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                            <path fill-rule="evenodd"
+                                d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m11 9a9 9 0 1 1 0-18a9 9 0 0 1 0 18"
+                                clip-rule="evenodd" />
+                        </g>
+                    </svg>
+                    <p>Professional designers who want to feel more confident in UX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section_events mt-20 md:mt-[180px]">
+            <div class="events_img container mx-auto px-4">
+                <div
+                    class="relative bg-[#fbe3dd] flex flex-col md:flex-row items-center px-6 sm:px-8 md:px-[60px] py-10 md:py-0 gap-8 md:gap-0">
+
+                    <!-- dekorativ nuqtalar -->
+                    <div class="absolute left-4 bottom-4 grid grid-cols-6 gap-1 opacity-40 pointer-events-none">
+                        <span class="w-1 h-1 rounded-full bg-white"></span>
+                        <span class="w-1 h-1 rounded-full bg-white"></span>
+                        <span class="w-1 h-1 rounded-full bg-white"></span>
+                        <span class="w-1 h-1 rounded-full bg-white"></span>
+                        <span class="w-1 h-1 rounded-full bg-white"></span>
+                        <span class="w-1 h-1 rounded-full bg-white"></span>
+                    </div>
+
+                    <div class="events_img order-2 md:order-1 px-0 md:px-[60px] py-0 md:py-[60px] w-full md:w-auto max-w-[280px] sm:max-w-xs md:max-w-none mx-auto">
+                        <img src="../../images/nbkjnjgbkjnknrnjgktnh.png" alt="" class="w-full h-auto">
+                    </div>
+                    <div class="flex-1 w-full order-1 md:order-2 text-center md:text-left">
+                        <h2 class="text-xl md:text-2xl font-extrabold text-[#1b1b2f] leading-snug mb-4">
+                            Don't want to miss the best events?<br>
+                            Subscribe to our newsletter!
+                        </h2>
+                        <form class="flex flex-col sm:flex-row gap-3 mb-3" onsubmit="return false;">
+                            <input type="email" placeholder="Your working email" required
+                                class="flex-1 bg-white border border-gray-200  px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300">
+                            <button type="submit"
+                                class="bg-[#f0522e] hover:bg-[#d8431f] transition-colors text-white text-sm font-semibold px-6 py-3 cursor-pointer whitespace-nowrap">
+                                Subscribe
+                            </button>
+                        </form>
+
+                        <label
+                            class="flex items-center justify-center md:justify-start gap-2 text-xs text-gray-600 cursor-pointer">
+                            <input type="checkbox" checked class="w-4 h-4 accent-[#f0522e] rounded">
+                            I agree to receive communications from Creates Online School
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-[150px] mt-16 md:mt-[120px] items-center lg:items-start">
+            <div class="w-full max-w-[520px] lg:max-w-none">
+                <p class="text-xs font-bold tracking-widest text-gray-800 mb-3 text-center lg:text-left">DON'T MISS
+                    THE EVENT</p>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 text-center lg:text-left">Leave a
+                    request</h1>
+
+                <form class="space-y-5">
+                    <div>
+                        <label class="block text-sm text-gray-500 mb-1">Full Name</label>
+                        <input type="text" placeholder="Your full name"
+                            class="w-full border border-gray-200 rounded-md px-4 py-3 text-sm placeholder-gray-400 ">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm text-gray-500 mb-1">Email</label>
+                        <input type="email" placeholder="Your working email"
+                            class="w-full border border-gray-200 rounded-md px-4 py-3 text-sm placeholder-gray-400 ">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm text-gray-500 mb-1">Phone</label>
+                        <input type="tel" placeholder="Your phone number"
+                            class="w-full border border-gray-200 rounded-md px-4 py-3 text-sm placeholder-gray-400 ">
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-orange-500 text-white font-semibold py-3 cursor-pointer text-sm">
+                        Join the event
+                    </button>
+
+                    <p class="text-xs text-gray-400">
+                        * You will receive a link to the online lecture in an email after registration.
+                    </p>
+                </form>
+            </div>
+            <div class="flex justify-center w-full">
+                <img src="../../images/hhy5h4uhihf.png" alt=""
+                    class="w-full max-w-[600px] h-auto lg:h-[468px] object-cover">
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#F4F5F6] py-12 md:py-[60px] mt-16 md:mt-0">
+        <div class="section_check container mx-auto px-4">
+            <div class="check_text mb-10 md:mb-[60px] text-center md:text-left">
+                <p class="text-[16px] font-[700] text-[#1E212C] mb-2">Check other online events</p>
+                <h1 class="text-3xl sm:text-4xl md:text-[46px] font-[900] text-[#1E212C]">You may be interested in
+                </h1>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 sm:p-7 shadow-sm">
+                    <div>
+                        <h3 class="m-0 text-[#FF4B2B] text-xl font-bold">05 Aug</h3>
+                        <p class="mt-1.5 text-gray-400 text-sm">11:00 – 14:00</p>
+                    </div>
+                    <div>
+                        <h2 class="mt-5 text-gray-900 text-base font-bold">
+                            Formation of the organizational structure of the company in the face of uncertainty.
+                        </h2>
+                        <p class="mt-2 text-gray-400 text-sm">Online master-class</p>
+                    </div>
+                    <div class="mt-5">
+                        <button
+                            class="w-full cursor-pointer py-3 bg-white border border-[#FF4B2B] rounded-xl text-[#FF4B2B] text-sm font-semibold hover:bg-orange-50 transition">
+                            View more
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white p-6 sm:p-7 shadow-sm">
+                    <div>
+                        <h3 class="m-0 text-[#FF4B2B] text-xl font-bold">05 Aug</h3>
+                        <p class="mt-1.5 text-gray-400 text-sm">11:00 – 14:00</p>
+                    </div>
+                    <div>
+                        <h2 class="mt-5 text-gray-900 text-base font-bold">
+                            Formation of the organizational structure of the company in the face of uncertainty.
+                        </h2>
+                        <p class="mt-2 text-gray-400 text-sm">Online master-class</p>
+                    </div>
+                    <div class="mt-5">
+                        <button
+                            class="w-full cursor-pointer py-3 bg-white border border-[#FF4B2B] rounded-xl text-[#FF4B2B] text-sm font-semibold hover:bg-orange-50 transition">
+                            View more
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white p-6 sm:p-7 shadow-sm sm:col-span-2 lg:col-span-1">
+                    <div>
+                        <h3 class="m-0 text-[#FF4B2B] text-xl font-bold">05 Aug</h3>
+                        <p class="mt-1.5 text-gray-400 text-sm">11:00 – 14:00</p>
+                    </div>
+                    <div>
+                        <h2 class="mt-5 text-gray-900 text-base font-bold">
+                            Formation of the organizational structure of the company in the face of uncertainty.
+                        </h2>
+                        <p class="mt-2 text-gray-400 text-sm">Online master-class</p>
+                    </div>
+                    <div class="mt-5">
+                        <button
+                            class="w-full cursor-pointer py-3 bg-white border border-[#FF4B2B] rounded-xl text-[#FF4B2B] text-sm font-semibold hover:bg-orange-50 transition">
+                            View more
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="check_sub flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-[24px] mt-10 md:mt-[60px] text-center">
+                <h1 class="text-xl sm:text-2xl md:text-[28px] font-[700] text-[#1E212C]">Do you want more?</h1>
+                <button
+                    class="bg-[#FF3F3A] cursor-pointer px-8 sm:px-[40px] py-3 sm:py-[12px] font-[700] text-[16px] text-white w-full sm:w-auto">Explore
+                    all events</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
