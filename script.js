@@ -23,8 +23,8 @@ const tabFunctions = {
 
 function expTutors() {
   contentBox.innerHTML = `
-                    <div class="w-[50%] mr-30">
-                        <h2 class="text-[32px] mb-6 font-black text-primary-text">Only practicing tutors</h2>
+                    <div class="md:w-[50%] w-full md:mr-30">
+                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors</h2>
 
                         <p class="text-secondary-text">
                             Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi
@@ -35,15 +35,15 @@ function expTutors() {
                         </p>
                     </div>
 
-                    <div class="w-[50%]">
-                        <img class="w-[85.72%]" src="./images/benefits/01.svg" alt="benefits.img">
+                    <div class="md:w-[50%] w-full">
+                        <img class="md:w-[85.72%] w-full" src="./images/benefits/01.svg" alt="benefits.img">
                     </div>`;
 }
 
 function feedback() {
     contentBox.innerHTML = `
-                    <div class="w-[50%] mr-30">
-                        <h2 class="text-[32px] mb-6 font-black text-primary-text">Always in touch, ready to support</h2>
+                    <div class="md:w-[50%] w-full md:mr-30">
+                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Always in touch, ready to support</h2>
 
                         <p class="text-secondary-text">
                             Faucibus erat massa elementum nec fermentum augue. Ante pellentesque dis et malesuada
@@ -54,15 +54,15 @@ function feedback() {
                         </p>
                     </div>
 
-                    <div class="w-[50%]">
-                        <img class="w-[85.72%]" src="./images/benefits/02.svg" alt="benefits.img">
+                    <div class="md:w-[50%] w-full">
+                        <img class="md:w-[85.72%] w-full" src="./images/benefits/02.svg" alt="benefits.img">
                     </div>`;
 }
 
 function library() {
     contentBox.innerHTML = `
-                    <div class="w-[50%] mr-30">
-                        <h2 class="text-[32px] mb-6 font-black text-primary-text">The most carefully selected materials
+                    <div class="md:w-[50%] w-full md:mr-30">
+                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">The most carefully selected materials
                         </h2>
 
                         <p class="text-secondary-text">
@@ -74,15 +74,15 @@ function library() {
                         </p>
                     </div>
 
-                    <div class="w-[50%]">
-                        <img class="w-[85.72%]" src="./images/benefits/03.svg" alt="benefits.img">
+                    <div class="md:w-[50%] w-full">
+                        <img class="md:w-[85.72%] w-full" src="./images/benefits/03.svg" alt="benefits.img">
                     </div>`;
 }
 
 function community(){
     contentBox.innerHTML = `
-                    <div class="w-[50%] mr-30">
-                        <h2 class="text-[32px] mb-6 font-black text-primary-text">Student communication
+                    <div class="md:w-[50%] w-full md:mr-30">
+                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Student communication
                         </h2>
 
                         <p class="text-secondary-text">
@@ -92,7 +92,7 @@ function community(){
                         </p>
                     </div>
 
-                    <div class="w-[50%]">
-                        <img class="w-[85.72%]" src="./images/benefits/04.svg" alt="benefits.img">
+                    <div class="md:w-[50%] w-full">
+                        <img class="md:w-[85.72%] w-full" src="./images/benefits/04.svg" alt="benefits.img">
                     </div>`;
 }

@@ -80,8 +80,8 @@
 
     <section
         class="h-screen bg-[url(./images/hero-bg.png)] bg-cover bg-no-repeat bg-center flex flex-col justify-between">
-        <div class="container h-full">
-            <div class="flex justify-between flex-col h-full">
+        <div class="container h-full overflow-y-hidden">
+            <div class="flex justify-between flex-col h-full mt-22">
                 <div class="flex items-center w-full h-full">
                     <div class="flex justify-between flex-col items-start mr-70 w-[50%]">
 
@@ -325,9 +325,9 @@
         <div class="container">
             <div class=" pt-12 pb-24">
                 <h3 class="font-bold text-4 uppercase mb-2 text-primary-text text-center">Our benefits</h3>
-                <h2 class="text-5xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we do it</h2>
+                <h2 class="md:text-5xl text-4xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we do it</h2>
 
-                <div class="grid grid-cols-4 pb-5 font-bold text-[#9a9ca5] transition-ease duration-300">
+                <div class="grid md:grid-cols-2 gap-y-4  lg:grid-cols-4 pb-5 font-bold text-[#9a9ca5] transition-ease duration-300">
                     <button data-tab="tutors"
                         class="action-btn active py-2.5 px-5 hover:text-primary-text transition-ease duration-300 cursor-pointer"><i
                             class="fa-regular fa-star mr-3"></i>Experienced Tutors</button>
@@ -342,9 +342,9 @@
                             class="fa-regular fa-comments mr-3"></i>Community</button>
                 </div>
 
-                <div class="content-box flex mt-6 pt-4 items-center min-h-[418px]">
-                    <div class="w-[50%] mr-30">
-                        <h2 class="text-[32px] mb-6 font-black text-primary-text">Only practicing tutors</h2>
+                <div class="content-box flex flex-col gap-5 md:flex-row mt-6 pt-4 items-center min-h-[418px]">
+                    <div class="md:w-[50%] w-full md:mr-30">
+                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors</h2>
 
                         <p class="text-secondary-text">
                             Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi
@@ -355,8 +355,8 @@
                         </p>
                     </div>
 
-                    <div class="w-[50%]">
-                        <img class="w-[85.72%]" src="./images/benefits/01.svg" alt="benefits.img">
+                    <div class="md:w-[50%] w-full">
+                        <img class="md:w-[85.72%] w-full" src="./images/benefits/01.svg" alt="benefits.img">
                     </div>
                 </div>
             </div>
@@ -473,7 +473,7 @@
             </div>
         </div>
     </section>
-
+    <script src="./data/home/courses.js"></script>
     <script src="script.js"></script>
 </body>
 
