@@ -1,5 +1,6 @@
 const contentBox = document.querySelector(".content-box");
-let actionBtns = document.querySelectorAll(".action-btn");
+let actionBtns = document.querySelectorAll(".action-btn"),
+    coursesGrid = document.querySelector(".courses_grid");
 
 actionBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -22,7 +23,7 @@ const tabFunctions = {
 };
 
 function expTutors() {
-  contentBox.innerHTML = `
+    contentBox.innerHTML = `
                     <div class="md:w-[50%] w-full md:mr-30">
                         <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors</h2>
 
@@ -79,7 +80,7 @@ function library() {
                     </div>`;
 }
 
-function community(){
+function community() {
     contentBox.innerHTML = `
                     <div class="md:w-[50%] w-full md:mr-30">
                         <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Student communication
@@ -96,3 +97,30 @@ function community(){
                         <img class="md:w-[85.72%] w-full" src="./images/benefits/04.svg" alt="benefits.img">
                     </div>`;
 }
+
+// Courses map
+
+let courseItem = courses.map(course => `
+                    <a href="#"
+                        class="flex flex-col sm:flex-row sm:h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div
+                            class="bg-[url(${course.image})] h-100 sm:h-auto bg-center bg-cover w-full sm:w-[40%] rounded-tl-xs rounded-bl-xs">
+
+                        </div>
+                        <div class="p-8 sm:w-[60%]" w-full>
+                            <span
+                                class="inline-block py-1 px-2 mb-4 bg-${course.tagColor} text-white text-sm rounded-md">${course.category}</span>
+
+                            <h5
+                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                                ${course.name}</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                                    class="text-primary font-semibold">$${course.price}</span>|<p class="text-[#787A80]">by ${course.by}</p>
+                            </div>
+                        </div>
+                    </a>
+    `
+).join("");
+
+coursesGrid.innerHTML = courseItem;
