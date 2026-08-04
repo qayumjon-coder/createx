@@ -1,6 +1,7 @@
 const contentBox = document.querySelector(".content-box");
 let actionBtns = document.querySelectorAll(".action-btn"),
-    coursesGrid = document.querySelector(".courses_grid");
+    coursesGrid = document.querySelector(".courses_grid"),
+    header = document.querySelector(".header");
 
 actionBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -124,3 +125,11 @@ let courseItem = courses.map(course => `
 ).join("");
 
 coursesGrid.innerHTML = courseItem;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 88){
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});

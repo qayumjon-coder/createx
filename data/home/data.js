@@ -37,7 +37,7 @@ let courses = [
     },
     {
         id: 5,
-        name: "Business Development Management",
+        name: "Business Development Management", 
         price: "400",
         category: "Management",
         tagColor: "indigo-500",
