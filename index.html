@@ -359,26 +359,39 @@
 
     <section>
         <div class="container">
-            <div>
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper ">
-                        <!-- Slides -->
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+            <div class="pt-50">
+
+                <div class="flex justify-between">
+                    <div>
+                        <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Best tutors are all here</h3>
+                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">
+                            Meet our team
+                        </h2>
                     </div>
 
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="flex items-center gap-3">
+                        <!-- If we need navigation buttons -->
+                        <div
+                            class="swiper-button-prev custom-btn-prev custom-btn static! m-0! w-11! h-11! flex rounded-full hover:bg-[#f0483e] transition-ease duration-200 group items-center justify-center text-primary-text after:hidden">
+                            <i class="fa-solid fa-arrow-left-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i></div>
+                        <div
+                            class="swiper-button-next custom-btn-next custom-btn static! m-0! w-11! h-11! rounded-full hover:bg-[#f0483e] transition-ease duration-200 group flex items-center justify-center text-white after:hidden">
+                            <i class="fa-solid fa-arrow-right-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i></div>
+                    </div>
+                </div>
 
+                <div class="swiper first-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper slide-box">
+                        <!-- Slides -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
     <script src="./data/home/data.js"></script>
     <script src="script.js"></script>
 </body>

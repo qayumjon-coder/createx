@@ -1,12 +1,13 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.first-swiper', {
   slidesPerView: 4,
   spaceBetween: 30,
   grabCursor: true,
   loop: true,
   loopAddBlankSlides: false,
   loopPreventsSliding: false,
+
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".custom-btn-next",
+    prevEl: ".custom-btn-prev"
   }
 });
