@@ -104,3 +104,46 @@ const cardData = [
         img: "../../images/team-img-8.jpg",
     }
 ]
+
+
+const latestPosts = [
+    {
+        id: 1,
+        type: "Podcast",
+        typeIcon: `<i class="fa-solid fa-microphone"></i>`,
+        image: "./images/blog/blogn1.png",
+        category: "Marketing",
+        date: "September 4, 2020",
+        duration: "36 min",
+        title: "What is traffic arbitrage and does it really make money?",
+        description: "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+        button: "Listen",
+        link: "https://createx.createx.studio/online-courses/blog-single.html"
+    },
+    {
+        id: 2,
+        type: "Video",
+        typeIcon: `<i class="fa-regular fa-circle-play"></i>`,
+        image: "./images/blog/blogn2.png",
+        category: "Management",
+        date: "August 25, 2020",
+        duration: "45 min",
+        title: "What to do and who to talk to if you want to get feedback on the product",
+        description: "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...",
+        button: "Watch",
+        link: "https://createx.createx.studio/online-courses/blog-single.html"
+    },
+    {
+        id: 3,
+        type: "Article",
+        typeIcon: `<i class="fa-regular fa-file-lines"></i>`,
+        image: "./images/blog/blogn3.png",
+        category: "Design",
+        date: "August 8, 2020",
+        duration,
+        title: "Should you choose a creative profession if you are attracted to creativity?",
+        description: "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
+        button: "Read",
+        link: "https://createx.createx.studio/online-courses/blog-single.html"
+    }
+]
