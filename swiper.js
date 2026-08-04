@@ -25,7 +25,7 @@ const swiperSec = new Swiper('.second-swiper', {
     },
 
     navigation: {
-        nextEl: ".second-btn-prev",
-        prevEl: ".second-btn-next"
+        nextEl: ".second-btn-next",
+        prevEl: ".second-btn-prev"
     }
 })

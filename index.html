@@ -358,7 +358,7 @@
     </section>
 
     <!-- Main -->
-    <main class="bg-[url(./images/Background-gray.png)]">
+    <main class="bg-[url(./images/Background-gray.png)] bg-center bg-cover bg-no-repeat">
         <section>
             <div class="container">
                 <div class="pt-50">
@@ -412,10 +412,10 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper ">
                                 <!-- Slides -->
-                                <div class="swiper-slide flex bg-white p-10 flex-row">
-                                    <div><img src="./images/braces.png" alt="braces-img"></div>
-                                    <div>
-                                        <p>Vero dolores exercitationem quidem eum sit accusamus. Quisquam cumque
+                                <div class="swiper-slide flex! mb-7 py-15 bg-white px-20 rounded-sm flex-row">
+                                    <div class="w-[7%]"><img src="./images/braces.png" alt="braces-img"></div>
+                                    <div class="w-[93%]">
+                                        <p class="mb-5! text-secondary-text text-xl">Vero dolores exercitationem quidem eum sit accusamus. Quisquam cumque
                                             nesciunt
                                             fugiat
                                             quae delectus quo earum deleniti, labore odio sint recusandae aperiam aut
@@ -427,17 +427,17 @@
                                         <div class="flex items-center gap-5">
                                             <img src="./images/para-1.jpg" class="w-18 h-18 rounded-full" alt="testimonial-1">
                                             <div>
-                                                <h5>Courtney Alexander</h5>
-                                                <p>Position, Company </p>
+                                                <h3 class="font-bold">Courtney Alexander</h3>
+                                                <p class="text-third-text">Position, Company </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide flex bg-white p-10 flex-row">
-                                    <div><img src="./images/braces.png" alt="braces-img"></div>
-                                    <div>
-                                        <p>Optio deleniti eos harum minus mollitia aut labore maxime rem ex dolores,
+                                <div class="swiper-slide flex! mb-7 py-15 bg-white px-20 rounded-sm flex-row">
+                                    <div class="w-[7%]"><img src="./images/braces.png" alt="braces-img"></div>
+                                    <div class="w-[93%]">
+                                        <p class="mb-5! text-secondary-text text-xl">Optio deleniti eos harum minus mollitia aut labore maxime rem ex dolores,
                                             dignissimos
                                             quidem exercitationem dicta praesentium quasi quia nam expedita sed
                                             blanditiis
@@ -449,24 +449,24 @@
                                         <div class="flex items-center gap-5">
                                             <img src="./images/para-2.jpg" class="w-18 h-18 rounded-full" alt="testimonial-2">
                                             <div>
-                                                <h5>Eleanor Pena</h5>
-                                                <p>Position, Course</p>
+                                                <h3 class="font-bold">Eleanor Pena</h3>
+                                                <p class="text-third-text">Position, Course</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="swiper-pagination second-swiper-pag static! mt-1"></div>
+                            <div class="swiper-pagination second-swiper-pag static! mt-1 transition-ease duration-200"></div>
 
                         </div>
 
                         <div
-                            class="swiper-button-prev second-btn-prev  hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 left-[-60px]">
+                            class="swiper-button-prev second-btn-prev hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 left-[-60px]">
                             <i class="fa-solid fa-arrow-left-long"></i>
                         </div>
                         <div
-                            class="swiper-button-next second-btn-next  hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 right-[-60px]">
+                            class="swiper-button-next second-btn-next hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 right-[-60px]">
                             <i class="fa-solid fa-arrow-right-long"></i>
                         </div>
                     </div>
@@ -474,6 +474,24 @@
             </div>
         </section>
     </main>
+
+    <section>
+        <div class="container">
+            <div class="py-25">
+                <div>
+                    <h3 class="uppercase text-primary-text font-bold">Ready to learn?</h3>
+                    <div class="flex items-center justify-between mb-12 pb-2">
+                        <h2 class="text-[46px] text-primary-text font-black">Featured Courses</h2>
+                        <a href="#"
+                            class="py-4 px-10.5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease">View
+                            all courses</a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
