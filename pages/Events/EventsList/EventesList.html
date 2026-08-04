@@ -111,7 +111,7 @@
 
                     <div class="flex items-center gap-2">
                         <span class="text-[14px] text-secondary-text">Event category</span>
-                        <select class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
+                        <select id="category-filter" class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
                             <option>All themes</option>
                             <option>Master-class</option>
                             <option>Lecture</option>
@@ -121,7 +121,7 @@
 
                     <div class="flex items-center gap-2">
                         <span class="text-[14px] text-secondary-text">Sort by</span>
-                        <select class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
+                        <select id="sort-filter" class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
                             <option>Newest</option>
                             <option>Oldest</option>
                         </select>
@@ -129,7 +129,7 @@
 
                     <div class="flex items-center gap-2">
                         <span class="text-[14px] text-secondary-text">Show</span>
-                        <input type="number" value="9" min="1"
+                        <input type="number" id="per-page" value="9" min="1"
                             class="w-[56px] text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-2 py-2 text-center" />
                         <span class="text-[14px] text-secondary-text">events per page</span>
                     </div>
@@ -137,7 +137,7 @@
 
                 <div class="flex items-center gap-3">
                     <div class="relative">
-                        <input type="text" placeholder="Search event..."
+                        <input type="text" id="search-input" placeholder="Search event..."
                             class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] pl-4 pr-9 py-2 w-[220px]" />
                         <i
                             class="fa-solid fa-magnifying-glass text-secondary-text text-[14px] absolute right-3 top-1/2 -translate-y-1/2"></i>
@@ -154,206 +154,12 @@
                 </div>
             </div>
 
-            <div class="flex flex-col gap-[20px]">
-                <div class="flex items-center justify-between gap-8 border border-[#E5E8ED] rounded-[4px] px-10 py-8 mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">
-                                05
-                            </span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">
-                                    August
-                                </p>
-                                <p class="text-[18px] text-[#787A80] mt-2">
-                                    11:00 – 14:00
-                                </p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">Formation of the organizational structure of the company in the face of uncertainty.</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">
-                                Online master-class
-                            </p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
+           <div class="flex flex-col gap-[20px]" id="events-container">
 
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] bg-[#FAFAFB] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">24</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">July</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">11:00 – 12:30</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">Building a customer service department: Best Practices</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online lecture</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
-
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">16</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">July</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">10:00 – 13:00</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">How to apply methods of speculative design in practice. Worldbuilding prototyping</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online workshop</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
-
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] bg-[#FAFAFB] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">10</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">July</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">9:00 – 14:00</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">Find and evaluate: search and assessment tools for candidates</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online workshop</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
-
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">27</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">June</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">15:00 – 19:00</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">Connection to Microsoft Excel and Google Sheets. Data Visualization in Power BI</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online master-class</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
-
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] bg-[#FAFAFB] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">15</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">June</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">10:00 – 12:00</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">Marketing or growth hacking: main differences and what business needs</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online lecture</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
-
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">02</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">June</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">11:00 – 13:00</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">How to brief a client and present your design to approve it from the first show</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online lecture</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
-
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] bg-[#FAFAFB] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">29</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">May</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">11:00 – 12:00</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">Who is a project manager and do I want to be PM?</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online lecture</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
-
-                <div class="flex items-center justify-between gap-8 px-10 py-8 border border-[#EDEDEF] rounded-[12px] mb-3">
-                    <div class="flex items-center gap-8 flex-1 min-w-0">
-                        <div class="flex items-center gap-5 shrink-0">
-                            <span class="text-[48px] font-[900] leading-none text-[#FF3F3A]">18</span>
-                            <div>
-                                <p class="text-[30px] font-[700] leading-none text-[#1E212C]">May</p>
-                                <p class="text-[18px] text-[#787A80] mt-2">10:00 – 12:00</p>
-                            </div>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="text-[20px] font-[600] text-primary-text truncate hover:text-[#FF3F3A] duration-300 cursor-pointer">
-                                <a href="#" class="hover:text-primary transition-colors">The company's business page as an additional tool to support the announcement of vacancies</a>
-                            </h3>
-                            <p class="text-[20px] text-[#787A80] mt-3">Online lecture</p>
-                        </div>
-                    </div>
-                    <button class="w-[180px] h-[52px] cursor-pointer border border-[#FF3F3A] text-[#FF3F3A] font-[700] text-[16px] rounded-[4px] transition-all duration-300 hover:bg-[#FF3F3A] hover:text-white">
-                        View more
-                    </button>
-                </div>
             </div>
         </div>
     </section>
+    <script  src="./EventsList.js"></script>
 </body>
 
 </html>
