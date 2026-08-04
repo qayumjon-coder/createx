@@ -30,7 +30,7 @@
 </head>
 
 <body class="font-lato">
-    <header class="header p-4 fixed top-0 w-full transition">
+    <header class="header p-4 fixed z-99 top-0 w-full transition ">
         <div class="container flex justify-between items-center">
             <a class="mr-12 pr-2" href="index.html"><img src="images/logo/logo-dark.svg" width="130" alt="logo" /></a>
 
@@ -45,7 +45,7 @@
 
                             <option value="1">Courses Grid</option>
                             <option value="2">Single Course</option>
-                          </select>
+                        </select>
                     </li>
                     <li>
                         <select class="py-4 px-5 inline-block text-[#424551] font-bold">Events
@@ -357,38 +357,123 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="pt-50">
+    <!-- Main -->
+    <main class="bg-[url(./images/Background-gray.png)]">
+        <section>
+            <div class="container">
+                <div class="pt-50">
 
-                <div class="flex justify-between">
-                    <div>
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Best tutors are all here</h3>
+                            <h2
+                                class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">
+                                Meet our team
+                            </h2>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <!-- If we need navigation buttons -->
+                            <div
+                                class="swiper-button-prev custom-btn-prev custom-btn static! m-0! w-11! h-11! flex rounded-full hover:bg-[#f0483e] transition-ease duration-200 group items-center justify-center text-primary-text after:hidden">
+                                <i
+                                    class="fa-solid fa-arrow-left-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i>
+                            </div>
+                            <div
+                                class="swiper-button-next custom-btn-next custom-btn static! m-0! w-11! h-11! rounded-full hover:bg-[#f0483e] transition-ease duration-200 group flex items-center justify-center text-white after:hidden">
+                                <i
+                                    class="fa-solid fa-arrow-right-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper first-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper slide-box">
+                            <!-- Slides -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-25">
+            <div class="container">
+                <div>
+                    <div class="w-full text-center">
                         <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Best tutors are all here</h3>
-                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">
+                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 mr-0">
                             Meet our team
                         </h2>
                     </div>
 
-                    <div class="flex items-center gap-3">
-                        <!-- If we need navigation buttons -->
-                        <div
-                            class="swiper-button-prev custom-btn-prev custom-btn static! m-0! w-11! h-11! flex rounded-full hover:bg-[#f0483e] transition-ease duration-200 group items-center justify-center text-primary-text after:hidden">
-                            <i class="fa-solid fa-arrow-left-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i></div>
-                        <div
-                            class="swiper-button-next custom-btn-next custom-btn static! m-0! w-11! h-11! rounded-full hover:bg-[#f0483e] transition-ease duration-200 group flex items-center justify-center text-white after:hidden">
-                            <i class="fa-solid fa-arrow-right-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i></div>
-                    </div>
-                </div>
+                    <div class="outer-swiper relative">
+                        <div class="swiper w-[80%] second-swiper ">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper ">
+                                <!-- Slides -->
+                                <div class="swiper-slide flex bg-white p-10 flex-row">
+                                    <div><img src="./images/braces.png" alt="braces-img"></div>
+                                    <div>
+                                        <p>Vero dolores exercitationem quidem eum sit accusamus. Quisquam cumque
+                                            nesciunt
+                                            fugiat
+                                            quae delectus quo earum deleniti, labore odio sint recusandae aperiam aut
+                                            nemo
+                                            placeat pariatur beatae dignissimos amet quos! A ipsam soluta possimus
+                                            quisquam
+                                            commodi natus nam aperiam ratione deleniti.</p>
 
-                <div class="swiper first-swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper slide-box">
-                        <!-- Slides -->
+                                        <div class="flex items-center gap-5">
+                                            <img src="./images/para-1.jpg" class="w-18 h-18 rounded-full" alt="testimonial-1">
+                                            <div>
+                                                <h5>Courtney Alexander</h5>
+                                                <p>Position, Company </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide flex bg-white p-10 flex-row">
+                                    <div><img src="./images/braces.png" alt="braces-img"></div>
+                                    <div>
+                                        <p>Optio deleniti eos harum minus mollitia aut labore maxime rem ex dolores,
+                                            dignissimos
+                                            quidem exercitationem dicta praesentium quasi quia nam expedita sed
+                                            blanditiis
+                                            alias
+                                            facere magnam pariatur asperiores. Ad et ullam eos maiores culpa reiciendis
+                                            delectus
+                                            ipsa. Eveniet tempora vel quo repellendus nihil, veniam numquam.</p>
+
+                                        <div class="flex items-center gap-5">
+                                            <img src="./images/para-2.jpg" class="w-18 h-18 rounded-full" alt="testimonial-2">
+                                            <div>
+                                                <h5>Eleanor Pena</h5>
+                                                <p>Position, Course</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination second-swiper-pag static! mt-1"></div>
+
+                        </div>
+
+                        <div
+                            class="swiper-button-prev second-btn-prev  hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 left-[-60px]">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div
+                            class="swiper-button-next second-btn-next  hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 right-[-60px]">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
