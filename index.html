@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
@@ -83,7 +84,8 @@
         <div class="container h-full">
             <div class="flex justify-between flex-col h-full mt-30 sm:mt-22">
                 <div class="flex items-center w-full h-full flex-col md:flex-row">
-                    <div class="flex justify-between items-center flex-col mt-10 sm:mt-10 lg:mt-0 md:items-start mr-0 md:mr-30 order-2 md:order-1 xl:mr-70 w-full ">
+                    <div
+                        class="flex justify-between items-center flex-col mt-10 sm:mt-10 lg:mt-0 md:items-start mr-0 md:mr-30 order-2 md:order-1 xl:mr-70 w-full ">
 
                         <div class="flex items-center mb-6">
                             <button
@@ -93,9 +95,12 @@
                             <p class="font-bold ml-5">Play showreel</p>
                         </div>
 
-                        <h1 class="text-[25px] sm:text-[36px] md:text-[48px] lg:text-[64px] text-center md:text-left font-black mb-12 pb-4">Enjoy studying with Createx Online Courses</h1>
+                        <h1
+                            class="text-[25px] sm:text-[36px] md:text-[48px] lg:text-[64px] text-center md:text-left font-black mb-12 pb-4">
+                            Enjoy studying with Createx Online Courses</h1>
 
-                        <div class="flex gap-6 text-center sm:text-left w-full sm:w-auto flex-col sm:flex-row  lg:flex-col lg:flex-row">
+                        <div
+                            class="flex gap-6 text-center sm:text-left w-full sm:w-auto flex-col sm:flex-row  lg:flex-col lg:flex-row">
                             <a href="#"
                                 class="py-3 px-12 w-full sm:w-auto border border-primary rounded-sm font-bold text-primary hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300 hover:text-white">About
                                 us</a>
@@ -188,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="courses_grid grid lg:grid-cols-2 gap-x-5 gap-y-[30px]">  
+                <div class="courses_grid grid lg:grid-cols-2 gap-x-5 gap-y-[30px]">
 
                 </div>
             </div>
@@ -199,9 +204,11 @@
         <div class="container">
             <div class=" pt-12 pb-24">
                 <h3 class="font-bold text-4 uppercase mb-2 text-primary-text text-center">Our benefits</h3>
-                <h2 class="md:text-5xl text-4xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we do it</h2>
+                <h2 class="md:text-5xl text-4xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we
+                    do it</h2>
 
-                <div class="grid md:grid-cols-2 gap-y-4  lg:grid-cols-4 pb-5 font-bold text-[#9a9ca5] transition-ease duration-300">
+                <div
+                    class="grid md:grid-cols-2 gap-y-4  lg:grid-cols-4 pb-5 font-bold text-[#9a9ca5] transition-ease duration-300">
                     <button data-tab="tutors"
                         class="action-btn active py-2.5 px-5 hover:text-primary-text transition-ease duration-300 cursor-pointer"><i
                             class="fa-regular fa-star mr-3"></i>Experienced Tutors</button>
@@ -218,7 +225,8 @@
 
                 <div class="content-box flex flex-col gap-5 md:flex-row mt-6 pt-4 items-center min-h-[418px]">
                     <div class="md:w-[50%] w-full md:mr-30">
-                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors</h2>
+                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors
+                        </h2>
 
                         <p class="text-secondary-text">
                             Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi
@@ -327,7 +335,8 @@
                 <div class="mb-8">
                     <div>
                         <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Createx certificate</h3>
-                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">Your expertise will be confirmed
+                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">
+                            Your expertise will be confirmed
                         </h2>
 
                         <p class="mb-6 mr-0 xl:mr-90">
@@ -347,6 +356,29 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="container">
+            <div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper ">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./data/home/data.js"></script>
     <script src="script.js"></script>
 </body>
