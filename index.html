@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
@@ -29,12 +30,12 @@
 </head>
 
 <body class="font-lato">
-    <header class="p-4 fixed top-0 w-full">
+    <header class="header p-4 fixed z-99 top-0 w-full transition ">
         <div class="container flex justify-between items-center">
             <a class="mr-12 pr-2" href="index.html"><img src="images/logo/logo-dark.svg" width="130" alt="logo" /></a>
 
 
-            <nav class="self-start">
+            <nav class="elf-start">
                 <ul class="flex gap-2 justify-start mr-auto items-center">
                     <li>
                         <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
@@ -80,10 +81,11 @@
 
     <section
         class="h-screen bg-[url(./images/hero-bg.png)] bg-cover bg-no-repeat bg-center flex flex-col justify-between">
-        <div class="container h-full overflow-y-hidden">
-            <div class="flex justify-between flex-col h-full mt-22">
-                <div class="flex items-center w-full h-full">
-                    <div class="flex justify-between flex-col items-start mr-70 w-[50%]">
+        <div class="container h-full">
+            <div class="flex justify-between flex-col h-full mt-30 sm:mt-22">
+                <div class="flex items-center w-full h-full flex-col md:flex-row">
+                    <div
+                        class="flex justify-between items-center flex-col mt-10 sm:mt-10 lg:mt-0 md:items-start mr-0 md:mr-30 order-2 md:order-1 xl:mr-70 w-full ">
 
                         <div class="flex items-center mb-6">
                             <button
@@ -93,35 +95,38 @@
                             <p class="font-bold ml-5">Play showreel</p>
                         </div>
 
-                        <h1 class="text-[64px] font-black mb-12 pb-4">Enjoy studying with Createx Online Courses</h1>
+                        <h1
+                            class="text-[25px] sm:text-[36px] md:text-[48px] lg:text-[64px] text-center md:text-left font-black mb-12 pb-4">
+                            Enjoy studying with Createx Online Courses</h1>
 
-                        <div class="flex gap-6">
+                        <div
+                            class="flex gap-6 text-center sm:text-left w-full sm:w-auto flex-col sm:flex-row  lg:flex-col lg:flex-row">
                             <a href="#"
-                                class="py-3 px-12 border border-primary rounded-sm font-bold text-primary hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300 hover:text-white">About
+                                class="py-3 px-12 w-full sm:w-auto border border-primary rounded-sm font-bold text-primary hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300 hover:text-white">About
                                 us</a>
                             <a href="#"
-                                class="py-3 px-12 bg-linear-to-r from-primary to-secondary rounded-sm font-bold text-white hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300">Explore
+                                class="py-3 px-12 w-full sm:w-auto bg-linear-to-r from-primary to-secondary rounded-sm font-bold text-white hover:shadow-primary-shadow hover:shadow-lg hover:bg-primary transition duration-300">Explore
                                 courses</a>
                         </div>
                     </div>
 
-                    <div class="w-[50%]">
+                    <div class="md:w-[50%] order-1 lg:order-2">
                         <img class="align-middle" src="./images/illustration.png" alt="illustration">
                     </div>
                 </div>
 
-                <div class="py-6 mb-20">
+                <div class="py-6 mb-20 hidden md:block">
                     <ul class=" flex justify-between">
-                        <li class="flex items-center text-[#424551]"><span
+                        <li class="flex items-center text-[#424551] flex-col lg:flex-row"><span
                                 class="text-[46px] text-primary-text font-black mr-2">1200</span>Students graduated</li>
                         <li class="flex items-center text-primary">•</li>
-                        <li class="flex items-center text-[#424551]"><span
+                        <li class="flex items-center text-[#424551] flex-col lg:flex-row"><span
                                 class="text-[46px] text-primary-text font-black mr-2">82</span>Completed courses</li>
                         <li class="flex items-center text-primary">•</li>
-                        <li class="flex items-center text-[#424551]"><span
+                        <li class="flex items-center text-[#424551] flex-col lg:flex-row"><span
                                 class="text-[46px] text-primary-text font-black mr-2">16</span>Qualified tutors</li>
                         <li class="flex items-center text-primary">•</li>
-                        <li class="flex items-center text-[#424551]"><span
+                        <li class="flex items-center text-[#424551] flex-col lg:flex-row"><span
                                 class="text-[46px] text-primary-text font-black mr-2">5</span>Years of experience</li>
                     </ul>
                 </div>
@@ -131,12 +136,12 @@
 
     <section class="mt-25 bg-[url(./images/about-section.svg)] bg-no-repeat">
         <div class="container">
-            <div class="flex pt-12 pb-24">
-                <div class="mr-26 pr-[15px]">
+            <div class="flex pt-12 pb-24 w-full flex-col lg:flex-row">
+                <div class="mr-26 pr-[15px] w-full">
                     <img src="./images/about-main-img.jpg" alt="about-main-img" class="w-full">
                 </div>
 
-                <div class="pl-[15px]">
+                <div class="pl-[15px] mt-5 lg:mt-0">
                     <div>
                         <h3 class="text-4 uppercase font-bold mb-2 text-primary-text">Who we are</h3>
                         <h2 class="text-[46px] font-black mb-6 pb-4 text-primary-text">Why Createx?</h2>
@@ -188,133 +193,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 gap-x-5 gap-y-[30px]">
-
-                    <a href="#"
-                        class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
-                        <div
-                            class="bg-[url(./images/home-mentors/mentor-1.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
-
-                        </div>
-                        <div class="p-8 w-[60%]">
-                            <span
-                                class="inline-block py-1 px-2 mb-4 bg-emerald-500 text-white text-sm rounded-md">Marketing</span>
-
-                            <h5
-                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
-                                The Ultimate Google Ads Training Course</h5>
-
-                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
-                                    class="text-primary font-semibold">$100</span>|<p class="text-[#787A80]">by Jerome
-                                    Bell</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#"
-                        class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
-                        <div
-                            class="bg-[url(./images/home-mentors/mentor-2.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
-
-                        </div>
-                        <div class="p-8 w-[60%]">
-                            <span
-                                class="inline-block py-1 px-2 mb-4 bg-indigo-500 text-white text-sm rounded-md">Management</span>
-
-                            <h5
-                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
-                                Prduct Management Fundamentals</h5>
-
-                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
-                                    class="text-primary font-semibold">$480</span>|<p class="text-[#787A80]">by Jerome
-                                    Bell</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#"
-                        class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
-                        <div
-                            class="bg-[url(./images/home-mentors/mentor-3.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
-
-                        </div>
-                        <div class="p-8 w-[60%]">
-                            <span class="inline-block py-1 px-2 mb-4 bg-amber-500 text-white text-sm rounded-md">HR &
-                                Recruting</span>
-
-                            <h5
-                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
-                                HR Management and Analytics</h5>
-
-                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
-                                    class="text-primary font-semibold">$200</span>|<p class="text-[#787A80]">by Jerome
-                                    Bell</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#"
-                        class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
-                        <div
-                            class="bg-[url(./images/home-mentors/mentor-4.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
-
-                        </div>
-                        <div class="p-8 w-[60%]">
-                            <span
-                                class="inline-block py-1 px-2 mb-4 bg-emerald-500 text-white text-sm rounded-md">Marketing</span>
-
-                            <h5
-                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
-                                Brand Management & PR Communications</h5>
-
-                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
-                                    class="text-primary font-semibold">$530</span>|<p class="text-[#787A80]">by Jerome
-                                    Bell</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#"
-                        class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
-                        <div
-                            class="bg-[url(./images/home-mentors/mentor-5.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
-
-                        </div>
-                        <div class="p-8 w-[60%]">
-                            <span
-                                class="inline-block py-1 px-2 mb-4 bg-indigo-500 text-white text-sm rounded-md">Management</span>
-
-                            <h5
-                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
-                                Business Development Management</h5>
-
-                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
-                                    class="text-primary font-semibold">$400</span>|<p class="text-[#787A80]">by Jerome
-                                    Bell</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#"
-                        class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
-                        <div
-                            class="bg-[url(./images/home-mentors/mentor-6.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
-
-                        </div>
-                        <div class="p-8 w-[60%]">
-                            <span
-                                class="inline-block py-1 px-2 mb-4 bg-rose-500 text-white text-sm rounded-md">Design</span>
-
-                            <h5
-                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
-                                Graphic Design Basic</h5>
-
-                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
-                                    class="text-primary font-semibold">$500</span>|<p class="text-[#787A80]">by Jerome
-                                    Bell</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="courses_grid grid lg:grid-cols-2 gap-x-5 gap-y-[30px]">
 
                 </div>
             </div>
@@ -325,9 +204,11 @@
         <div class="container">
             <div class=" pt-12 pb-24">
                 <h3 class="font-bold text-4 uppercase mb-2 text-primary-text text-center">Our benefits</h3>
-                <h2 class="md:text-5xl text-4xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we do it</h2>
+                <h2 class="md:text-5xl text-4xl font-extrabold text-primary-text text-center pb-2 mb-12">That’s how we
+                    do it</h2>
 
-                <div class="grid md:grid-cols-2 gap-y-4  lg:grid-cols-4 pb-5 font-bold text-[#9a9ca5] transition-ease duration-300">
+                <div
+                    class="grid md:grid-cols-2 gap-y-4  lg:grid-cols-4 pb-5 font-bold text-[#9a9ca5] transition-ease duration-300">
                     <button data-tab="tutors"
                         class="action-btn active py-2.5 px-5 hover:text-primary-text transition-ease duration-300 cursor-pointer"><i
                             class="fa-regular fa-star mr-3"></i>Experienced Tutors</button>
@@ -344,7 +225,8 @@
 
                 <div class="content-box flex flex-col gap-5 md:flex-row mt-6 pt-4 items-center min-h-[418px]">
                     <div class="md:w-[50%] w-full md:mr-30">
-                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors</h2>
+                        <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors
+                        </h2>
 
                         <p class="text-secondary-text">
                             Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi
@@ -453,7 +335,8 @@
                 <div class="mb-8">
                     <div>
                         <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Createx certificate</h3>
-                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">Your expertise will be confirmed
+                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">
+                            Your expertise will be confirmed
                         </h2>
 
                         <p class="mb-6 mr-0 xl:mr-90">
@@ -473,7 +356,154 @@
             </div>
         </div>
     </section>
-    <script src="./data/home/courses.js"></script>
+
+    <!-- Main -->
+    <main class="bg-[url(./images/Background-gray.png)] bg-center bg-cover bg-no-repeat">
+        <section>
+            <div class="container">
+                <div class="pt-50">
+
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Best tutors are all here</h3>
+                            <h2
+                                class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80">
+                                Meet our team
+                            </h2>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <!-- If we need navigation buttons -->
+                            <div
+                                class="swiper-button-prev custom-btn-prev custom-btn static! m-0! w-11! h-11! flex rounded-full hover:bg-[#f0483e] transition-ease duration-200 group items-center justify-center text-primary-text after:hidden">
+                                <i
+                                    class="fa-solid fa-arrow-left-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i>
+                            </div>
+                            <div
+                                class="swiper-button-next custom-btn-next custom-btn static! m-0! w-11! h-11! rounded-full hover:bg-[#f0483e] transition-ease duration-200 group flex items-center justify-center text-white after:hidden">
+                                <i
+                                    class="fa-solid fa-arrow-right-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper first-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper slide-box">
+                            <!-- Slides -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-25">
+            <div class="container">
+                <div>
+                    <div class="w-full text-center">
+                        <h3 class="font-bold text-4 uppercase mb-2 text-primary-text">Best tutors are all here</h3>
+                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 mr-0">
+                            Meet our team
+                        </h2>
+                    </div>
+
+                    <div class="outer-swiper relative">
+                        <div class="swiper w-[80%] second-swiper ">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper ">
+                                <!-- Slides -->
+                                <div class="swiper-slide flex! mb-7 py-15 bg-white px-20 rounded-sm flex-row">
+                                    <div class="w-[7%]"><img src="./images/braces.png" alt="braces-img"></div>
+                                    <div class="w-[93%]">
+                                        <p class="mb-5! text-secondary-text text-xl">Vero dolores exercitationem quidem
+                                            eum sit accusamus. Quisquam cumque
+                                            nesciunt
+                                            fugiat
+                                            quae delectus quo earum deleniti, labore odio sint recusandae aperiam aut
+                                            nemo
+                                            placeat pariatur beatae dignissimos amet quos! A ipsam soluta possimus
+                                            quisquam
+                                            commodi natus nam aperiam ratione deleniti.</p>
+
+                                        <div class="flex items-center gap-5">
+                                            <img src="./images/para-1.jpg" class="w-18 h-18 rounded-full"
+                                                alt="testimonial-1">
+                                            <div>
+                                                <h3 class="font-bold">Courtney Alexander</h3>
+                                                <p class="text-third-text">Position, Company </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide flex! mb-7 py-15 bg-white px-20 rounded-sm flex-row">
+                                    <div class="w-[7%]"><img src="./images/braces.png" alt="braces-img"></div>
+                                    <div class="w-[93%]">
+                                        <p class="mb-5! text-secondary-text text-xl">Optio deleniti eos harum minus
+                                            mollitia aut labore maxime rem ex dolores,
+                                            dignissimos
+                                            quidem exercitationem dicta praesentium quasi quia nam expedita sed
+                                            blanditiis
+                                            alias
+                                            facere magnam pariatur asperiores. Ad et ullam eos maiores culpa reiciendis
+                                            delectus
+                                            ipsa. Eveniet tempora vel quo repellendus nihil, veniam numquam.</p>
+
+                                        <div class="flex items-center gap-5">
+                                            <img src="./images/para-2.jpg" class="w-18 h-18 rounded-full"
+                                                alt="testimonial-2">
+                                            <div>
+                                                <h3 class="font-bold">Eleanor Pena</h3>
+                                                <p class="text-third-text">Position, Course</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination second-swiper-pag static! mt-1 transition-ease duration-200">
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="swiper-button-prev second-btn-prev hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 left-[-60px]">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div
+                            class="swiper-button-next second-btn-next hover:bg-primary rounded-full w-12! h-12! text-secondary-text! hover:text-white! transition-ease duration-200 right-[-60px]">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <div class="container">
+            <div class="py-25">
+                <div>
+                    <h3 class="uppercase text-primary-text font-bold">Our blog</h3>
+                    <div class="flex items-center justify-between mb-12 pb-2">
+                        <h2 class="text-[46px] text-primary-text font-black">Latest posts</h2>
+                        <a href="#"
+                            class="py-4 px-10.5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease">Go
+                            to blog</a>
+                    </div>
+                </div>
+
+                <div class="blog-grid-container grid grid-cols-3 gap-x-5">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="./data/home/data.js"></script>
     <script src="script.js"></script>
 </body>
 

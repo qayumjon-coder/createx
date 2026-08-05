@@ -111,7 +111,7 @@
 
                     <div class="flex items-center gap-2">
                         <span class="text-[14px] text-secondary-text">Event category</span>
-                        <select class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
+                        <select id="category-filter" class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
                             <option>All themes</option>
                             <option>Master-class</option>
                             <option>Lecture</option>
@@ -121,7 +121,7 @@
 
                     <div class="flex items-center gap-2">
                         <span class="text-[14px] text-secondary-text">Sort by</span>
-                        <select class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
+                        <select id="sort-filter" class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
                             <option>Newest</option>
                             <option>Oldest</option>
                         </select>
@@ -129,30 +129,37 @@
 
                     <div class="flex items-center gap-2">
                         <span class="text-[14px] text-secondary-text">Show</span>
-                        <input type="number" value="9" min="1"
-                            class="w-[56px] text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-2 py-2 text-center " />
+                        <input type="number" id="per-page" value="9" min="1"
+                            class="w-[56px] text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-2 py-2 text-center" />
                         <span class="text-[14px] text-secondary-text">events per page</span>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-3">
                     <div class="relative">
-                        <input type="text" placeholder="Search event..."
-                            class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] pl-4 pr-9 py-2 w-[220px] " />
+                        <input type="text" id="search-input" placeholder="Search event..."
+                            class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] pl-4 pr-9 py-2 w-[220px]" />
                         <i
                             class="fa-solid fa-magnifying-glass text-secondary-text text-[14px] absolute right-3 top-1/2 -translate-y-1/2"></i>
                     </div>
 
-                    <button type="button" class="w-9 h-9 flex items-center justify-center">
+                    <button type="button"
+                        class="h-[20px] flex items-center justify-center cursor-pointer  text-primary">
                         <i class="fa-solid fa-bars text-[14px]"></i>
                     </button>
-                    <button type="button" class="w-9 h-9 flex items-center justify-center">
+                    <button type="button"
+                        class="w-[20px] flex items-center justify-center cursor-pointer text-secondary-text">
                         <i class="fa-solid fa-table-cells-large text-[14px]"></i>
                     </button>
                 </div>
             </div>
+
+           <div class="flex flex-col gap-[20px]" id="events-container">
+
+            </div>
         </div>
     </section>
+    <script  src="./EventsList.js"></script>
 </body>
 
 </html>

@@ -3,8 +3,6 @@ const cardData = [
         name: "Dianne Russell",
         job: "Founder and CEO",
         img: "../../images/team-img-1.jpg",
-
-
     },
 
     {

@@ -1,5 +1,9 @@
 const contentBox = document.querySelector(".content-box");
-let actionBtns = document.querySelectorAll(".action-btn");
+let actionBtns = document.querySelectorAll(".action-btn"),
+    coursesGrid = document.querySelector(".courses_grid"),
+    header = document.querySelector(".header"),
+    slideBox = document.querySelector(".slide-box"),
+    blogGrid = document.querySelector(".blog-grid-container");
 
 actionBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -22,7 +26,7 @@ const tabFunctions = {
 };
 
 function expTutors() {
-  contentBox.innerHTML = `
+    contentBox.innerHTML = `
                     <div class="md:w-[50%] w-full md:mr-30">
                         <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Only practicing tutors</h2>
 
@@ -79,7 +83,7 @@ function library() {
                     </div>`;
 }
 
-function community(){
+function community() {
     contentBox.innerHTML = `
                     <div class="md:w-[50%] w-full md:mr-30">
                         <h2 class="md:text-[32px] text-2xl mb-6 font-black text-primary-text">Student communication
@@ -96,3 +100,102 @@ function community(){
                         <img class="md:w-[85.72%] w-full" src="./images/benefits/04.svg" alt="benefits.img">
                     </div>`;
 }
+
+// Courses map
+
+let courseItem = courses.map(course => `
+                    <a href="#"
+                        class="flex flex-col sm:flex-row sm:h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                        <div
+                            class="bg-[url(${course.image})] h-100 sm:h-auto bg-center bg-cover w-full sm:w-[40%] rounded-tl-xs rounded-bl-xs">
+
+                        </div>
+                        <div class="p-8 sm:w-[60%]" w-full>
+                            <span
+                                class="inline-block py-1 px-2 mb-4 bg-${course.tagColor} text-white text-sm rounded-md">${course.category}</span>
+
+                            <h5
+                                class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                                ${course.name}</h5>
+
+                            <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                                    class="text-primary font-semibold">$${course.price}</span>|<p class="text-[#787A80]">by ${course.by}</p>
+                            </div>
+                        </div>
+                    </a>
+    `
+).join("");
+
+coursesGrid.innerHTML = courseItem;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 88) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+let cardItem = cardData.map(card => `
+    <div class="swiper-slide team-1">
+        <div class="flex flex-col mb-10">
+          <div class="relative group overflow-hidden rounded-md">
+            <img class="w-full" src="${card.img}" alt="team-img-1">
+            <div class="absolute inset-0 bg-linear-to-t from-[#1E212C] via-[#1E212C]/40 to-transparent flex items-end justify-end p-5 gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href="#" class="text-white/80 hover:text-[#FFFFFF] transition-colors text-lg">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="text-white/80 hover:text-[#FFFFFF] transition-colors text-lg">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white/80 hover:text-[#FFFFFF] transition-colors text-lg">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+
+          </div>
+          <div>
+            <h4 class="text-[#424551] font-lato text-center text-xl font-bold pt-3">
+                ${card.name}
+            </h4>
+            <p class="text-[#787A80] text-center font-normal font-lato text-base">
+              ${card.job}
+            </p>
+          </div>
+        </div>
+      </div>
+`).join("");
+
+slideBox.innerHTML = cardItem;
+
+let blogLatest = latestPosts.map(post => `
+                    <div>
+                        <div class="w-full relative">
+                            <img class="w-full inline-block" src="${post.image}" alt="">
+                            <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text">
+                                ${post.typeIcon} ${post.type}
+                            </span>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-start mt-2 text-third-text gap-3">
+                                <p>${post.category}</p>|
+                                <p>${post.date}</p>
+                                <p>|</p>
+                                <p>${post.duration}</p>
+                            </div>
+
+                            <div class="mt-2">
+                                <h3 class="text-xl text-primary-text font-bold mb-3"><a href="#">${post.title}</a></h3>
+                                <p class="mb-4 text-third-text">${post.description}</p>
+                            </div>
+                            <a href="${post.link}" class="font-bold">${post.button}</a>
+                        </div>
+                    </div>
+    `).join("");
+
+blogGrid.innerHTML = blogLatest;
+
+/* 
+    
+*/
