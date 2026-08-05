@@ -140,7 +140,7 @@ const latestPosts = [
         image: "./images/blog/blogn3.png",
         category: "Design",
         date: "August 8, 2020",
-        duration,
+        duration: "",
         title: "Should you choose a creative profession if you are attracted to creativity?",
         description: "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
         button: "Read",
