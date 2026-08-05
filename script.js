@@ -2,7 +2,8 @@ const contentBox = document.querySelector(".content-box");
 let actionBtns = document.querySelectorAll(".action-btn"),
     coursesGrid = document.querySelector(".courses_grid"),
     header = document.querySelector(".header"),
-    slideBox = document.querySelector(".slide-box");
+    slideBox = document.querySelector(".slide-box"),
+    blogGrid = document.querySelector(".blog-grid-container");
 
 actionBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -128,7 +129,7 @@ let courseItem = courses.map(course => `
 coursesGrid.innerHTML = courseItem;
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 88){
+    if (window.scrollY > 88) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
@@ -166,6 +167,38 @@ let cardItem = cardData.map(card => `
 `).join("");
 
 slideBox.innerHTML = cardItem;
+
+let blogLatest = latestPosts.map(post => `
+                    <div>
+                        <div class="w-full relative">
+                            <a href="${post.link}"><img class="w-full inline-block" src="${post.image}" alt="post-image"></a>
+                            <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text flex items-center gap-1">
+                                ${post.typeIcon} ${post.type}
+                            </span>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-start mt-2 text-third-text gap-3">
+                                <p>${post.category}</p>|
+                                <p>${post.date}</p>
+                                <p>|</p>
+                                <p>${post.duration}</p>
+                            </div>
+
+                            <div class="mt-2">
+                                <h3 class="text-xl text-primary-text font-bold mb-3 hover:text-primary transition-ease duration-300"><a href="${post.link}">${post.title}</a></h3>
+                                <p class="mb-4 text-third-text">${post.description}</p>
+                            </div>
+
+                            <div>
+                                <a href="${post.link}" class="font-bold hover:text-primary transition-ease duration-300">${post.button}</a>
+                                <i class="fa-solid fa-arrow-right-long text-primary ml-3"></i>
+                            </div>
+                        </div>
+                    </div>
+    `).join("");
+
+blogGrid.innerHTML = blogLatest;
 
 /* 
     
