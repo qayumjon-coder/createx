@@ -50,4 +50,60 @@ const cardData = [
     }
 ]
 
+const Jobdata = [
+    {
+        Jobimg: "../../images/job-1.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-2.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-3.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-4.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-5.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-6.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-7.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-8.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-9.svg"
+    },
+
+    {
+        Jobimg: "../../images/job-10.svg"
+    },
+
+    {
+        Jobimg: "../../images/gabor.svg"
+    },
+
+    {
+        Jobimg: "../../images/exxon.svg"
+    },
+]
+
+const Blogdata = [
+    {
+        
+    }
+]
+
 
