@@ -171,8 +171,8 @@ slideBox.innerHTML = cardItem;
 let blogLatest = latestPosts.map(post => `
                     <div>
                         <div class="w-full relative">
-                            <img class="w-full inline-block" src="${post.image}" alt="">
-                            <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text">
+                            <a href="${post.link}"><img class="w-full inline-block" src="${post.image}" alt="post-image"></a>
+                            <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text flex items-center gap-1">
                                 ${post.typeIcon} ${post.type}
                             </span>
                         </div>
@@ -186,10 +186,14 @@ let blogLatest = latestPosts.map(post => `
                             </div>
 
                             <div class="mt-2">
-                                <h3 class="text-xl text-primary-text font-bold mb-3"><a href="#">${post.title}</a></h3>
+                                <h3 class="text-xl text-primary-text font-bold mb-3 hover:text-primary transition-ease duration-300"><a href="${post.link}">${post.title}</a></h3>
                                 <p class="mb-4 text-third-text">${post.description}</p>
                             </div>
-                            <a href="${post.link}" class="font-bold">${post.button}</a>
+
+                            <div>
+                                <a href="${post.link}" class="font-bold hover:text-primary transition-ease duration-300">${post.button}</a>
+                                <i class="fa-solid fa-arrow-right-long text-primary ml-3"></i>
+                            </div>
                         </div>
                     </div>
     `).join("");
