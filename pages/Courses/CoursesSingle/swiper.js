@@ -10,4 +10,14 @@ var swiper = new Swiper('.mySwiper', {
     nextEl: '.related-next',
     prevEl: '.related-prev',
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
 });
