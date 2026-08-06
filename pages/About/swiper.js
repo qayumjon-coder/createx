@@ -9,5 +9,14 @@ const swiper = new Swiper('.swiper.testimonials-swiper' , {
     
   },
   mousewheel: true,
-  loop: true
+  loop: true,
+  breakpoints:{{
+    640: {
+      navigation: {
+        
+      }
+    }
+  }
+
+  }
 });
