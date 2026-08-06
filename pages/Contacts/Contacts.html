@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacs</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style type="text/tailwindcss">
+        @theme {
+        --font-lato: Lato, sans-serif;
+        --color-primary: #ff3f3a;
+        --color-secondary: #f75e05;
+      }
+    </style>
+
+</head>
+
+<body class="font-lato">
+    <header class="header p-4 fixed z-99 top-0 w-full transition">
+        <div class="container flex justify-between items-center bg-[#fffff]">
+            <a class="mr-12 pr-2" href="index.html"><img src=".../../../../images/logo/logo-dark.svg" width="130"
+                    alt="logo" /></a>
+
+
+            <nav class="elf-start">
+                <ul class="flex gap-2 justify-start mr-auto items-center">
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
+                    </li>
+                    <li>
+                        <select class="py-4 px-5 inline-block text-[#424551] font-bold">Courses
+
+                            <option value="1">Courses Grid</option>
+                            <option value="2">Single Course</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="py-4 px-5 inline-block text-[#424551] font-bold">Events
+
+                            <option value="1">Events List</option>
+                            <option value="2">Events Grid</option>
+                            <option value="3">Events Single</option>
+                            </a>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="py-4 px-5 inline-block text-[#424551] font-bold">Blog
+
+                            <option value="1">Blog Grid</option>
+                            <option value="2">Single Post</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="justify-self-end">
+                <a href="#"
+                    class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
+                    consultation</a>
+                <a href="#" class="text-primary font-bold ml-6"><i class="fa-regular fa-user mr-2"></i>Sign in/up</a>
+            </div>
+
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+
+            <div class="hero__content max-w-[1230px] mt-[152px] flex justify-between mx-auto max-md:flex-col max-md:mx-[50px]">
+                <div class="hero__text">
+
+                    <div class="text__head">
+                        <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">CONTACT INFO</h6>
+                        <h1
+                            class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px]">
+                            Get in touch</h1>
+                    </div>
+                    <div class="contact__way flex flex-col gap-[24px]">
+                        <div class="st__way flex gap-[12px] mt-[40px]">
+                            <i class="fa-regular fa-comments text-primary"></i>
+                            <div class="texts">
+                                <p class="font-[700] text-[14px] leading-[150%] font-bold text-[#787A80]">Talk to us:
+                                </p>
+                                <p class="font-[400] text-[18px] leading-[150%] text-[#1E212C] font-lato">
+                                    hello@createx.com</p>
+                            </div>
+                        </div>
+                        <div class="nd__way flex gap-[12px]">
+                            <i class="fa-solid fa-mobile-screen text-primary"></i>
+                            <div class="texts">
+                                <p class="font-[700] text-[14px] leading-[150%] font-bold text-[#787A80]">Call us:</p>
+                                <p class="font-[400] text-[18px] leading-[150%] text-[#1E212C] font-lato">(405) 555-0128
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rd__way flex gap-[12px] mb-[48px]">
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div class="texts">
+                                <p class="font-[700] text-[14px] leading-[150%] font-bold text-[#787A80]">Address: </p>
+                                <p class="font-[400] text-[18px] leading-[150%] text-[#1E212C] font-lato">2464 Royal Ln.
+                                    Mesa, New Jersey 45463, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social">
+                        <div class="text mb-[24px]">
+                            <h6 class="font-lato font-[700] text-[16px] leading-[150%] tracking-[1px]">FOLLOW US:</h6>
+                        </div>
+                        <div class="social__media">
+                            <div class="social__link flex items-center gap-[24px] max-w-[304px] h-[24px]">
+                                <a href="#" class="text-[#787A80] hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-facebook-f text-[20px]"></i></a>
+                                <a href="#" class="text-[#787A80] hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-twitter text-[20px]"></i></a>
+                                <a href="#" class="text-[#787A80] hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-youtube text-[20px]"></i></a>
+                                <a href="#" class="text-[#787A80] hover:text-primary transition-colors"><i
+                                        class="fa-solid fa-paper-plane text-[20px]"></i></a>
+                                <a href="#" class="text-[#787A80] hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-instagram text-[20px]"></i></a>
+                                <a href="#" class="text-[#787A80] hover:text-primary transition-colors"><i
+                                        class="fa-brands fa-linkedin-in text-[20px]"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="hero__img">
+                    <div class="img max-md:mt-[60px]">
+                        <img src="../../images/contactmap.png" alt="Location">
+                    </div>
+                </div>
+            </div>
+
+            <section class="reply">
+        <div class="container">
+            <div class="reply__content max-w-[1230px] mt-[152px] mb-[120px] flex justify-between items-center gap-[60px] mx-auto max-md:flex-col">
+                <div class="reply__img max-w-[430px] shrink-0 max-md:max-w-[320px]">
+                    <div class="image">
+                        <img src="../../images/contactillustration.png" alt="" class="w-full h-auto">
+                    </div>
+                </div>
+                <div class="reply__text flex-1 max-w-[700px]">
+                    <div class="text__head">
+                        <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato uppercase tracking-[1px]">Any
+                            questions?</h6>
+                        <h1
+                            class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px]">
+                            Drop us a line</h1>
+                    </div>
+                    <div class="form mt-[32px]">
+                        <form action="#">
+                            <div class="for__forms grid grid-cols-2 gap-x-[24px] gap-y-[24px]">
+                                <div class="forms flex flex-col gap-[8px]">
+                                    <label for="name" class="text-[14px] font-bold text-[#1E212C]">First Name*</label>
+                                    <input type="text" name="name" id="name" placeholder="Your first name"
+                                        class="h-[52px] px-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary">
+                                </div>
+                                <div class="forms flex flex-col gap-[8px]">
+                                    <label for="lastname" class="text-[14px] font-bold text-[#1E212C]">Last Name*</label>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Your last name"
+                                        class="h-[52px] px-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary">
+                                </div>
+                                <div class="forms flex flex-col gap-[8px]">
+                                    <label for="email" class="text-[14px] font-bold text-[#1E212C]">Email*</label>
+                                    <input type="email" name="email" id="email" placeholder="Your working email"
+                                        class="h-[52px] px-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary">
+                                </div>
+                                <div class="forms flex flex-col gap-[8px]">
+                                    <label for="phone" class="text-[14px] font-bold text-[#1E212C]">Phone</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="Your phone number"
+                                        class="h-[52px] px-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary">
+                                </div>
+ 
+                                <div class="text__long col-span-2 flex flex-col gap-[8px]">
+                                    <label for="text" class="text-[14px] font-bold text-[#1E212C]">Message*</label>
+                                    <textarea name="text" id="text" rows="4" placeholder="Your message"
+                                        class="p-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary resize-none"></textarea>
+                                </div>
+                            </div>
+ 
+                            <div class="send__message flex items-center justify-between gap-[24px] mt-[24px] max-md:flex-col max-md:items-start">
+                                <div class="agree flex items-start gap-[10px]">
+                                    <input type="checkbox" id="agree-terms"
+                                        class="w-[18px] h-[18px] mt-[2px] accent-primary cursor-pointer shrink-0">
+                                    <label for="agree-terms"
+                                        class="text-[14px] leading-[150%] text-[#787A80] cursor-pointer">I agree to
+                                        receive communications from Createx Online School</label>
+                                </div>
+                                <div class="send shrink-0">
+                                    <button type="submit"
+                                        class="info__join flex items-center justify-center text-center max-w-[340px] h-[44px] px-[40px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] text-white font-bold whitespace-nowrap">
+                                        Send message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
