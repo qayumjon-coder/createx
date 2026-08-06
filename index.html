@@ -501,7 +501,7 @@
         </div>
     </section>
 
-    <section class="bg-[url(./images/subscribe-bg.png)] bg-cover bg-no-repeat py-24">
+    <section class="bg-[url(./images/subscribe-bg.png)] bg-cover bg-no-repeat py-24 bg-center">
         <div class="container">
             <div class="h-[506px] flex flex-col items-center justify-center">
                 <div>
@@ -512,13 +512,11 @@
                     </div>
                 </div>
 
-                <div class="w-[630px]">
-                    <form action="#" class="flex">
-                        <input type="email"
-                            class="w-[100%] h-full bg-white py-5 px-4 rounded-sm border-1 border-[#dadbdd]" required
-                            placeholder="Your working email">
-                        <button type="submit"
-                            class="ml-4 px-10.5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease">Subscribe</button>
+                <div class="w-full">
+                    <form action="#" class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
+                        <input type="email" class="w-full bg-white py-5 px-4 rounded-sm border-1 border-[#dadbdd] " required placeholder="Your working email">
+                        <button type="submit" class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
+                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer">Subscribe</button>
                     </form>
                 </div>
             </div>
