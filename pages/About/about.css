@@ -1,0 +1,23 @@
+.swiper-pagination span {
+    width: 30px !important;
+    height: 3px !important;
+    background: #000 !important;
+    border-radius: 0 !important;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: static !important;
+}
+
+.swiper-button-prev svg {
+    display: none !important;
+}
+
+.swiper-button-next svg {
+    display: none !important;
+}
+
+
+
