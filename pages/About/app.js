@@ -1,3 +1,8 @@
+import { jobData } from "../../data/about/collague.js";
+import { cardData } from "../../data/about/collague.js";
+import { latestPosts } from "../../data/about/collague.js";
+let blogGrid = document.querySelector(".blog-grid-container")
+
 const Teamviewer = document.querySelector(".team-viewer"),
   Teamitem = cardData
     .map(
@@ -38,15 +43,17 @@ Teamviewer.innerHTML = Teamitem;
 
 
 const jobGrid = document.querySelector(".grid-wrapper"),
-  JobItem = Jobdata.map(
+  JobItem = jobData.map(
     (jobs) => `
   <div>
-        <img src="${jobs.Jobimg}" class="opacity-40 text-[#000] grayscale hover:grayscale-0  hover:opacity-100  transition duration-300 cursor-pointer" alt="job-1">
+        <img src="${jobs.img}" class="opacity-40 text-[#000] grayscale hover:grayscale-0  hover:opacity-100  transition duration-300 cursor-pointer" alt="job-1">
       </div>
   `
   ).join("");
 
-  jobGrid.innerHTML = JobItem;
+
+
+jobGrid.innerHTML = JobItem;
 
 
   let header = document.querySelector("header")
@@ -95,9 +102,9 @@ if (typeof slideBox !== "undefined") {
 
 let blogLatest = latestPosts.map(post => `
                     <div>
-                        <div class="w-full relative">
-                            <img class="w-full inline-block" src="${post.image}" alt="">
-                            <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text">
+                        <div class="w-full relative overflow-hidden">
+                            <a href="${post.link}"><img class="w-full inline-block hover:scale-[1.1] transition duration-300 ease-in-out" src="${post.image}" alt="post-image"></a>
+                            <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text flex items-center gap-1">
                                 ${post.typeIcon} ${post.type}
                             </span>
                         </div>
@@ -114,11 +121,23 @@ let blogLatest = latestPosts.map(post => `
                                 <h3 class="text-xl text-primary-text font-bold mb-3 hover:text-primary transition-ease duration-300"><a href="${post.link}">${post.title}</a></h3>
                                 <p class="mb-4 text-third-text">${post.description}</p>
                             </div>
-                            <a href="${post.link}" class="font-bold hover:text-primary transition-ease duration-300">${post.button}</a>
-                            <i class="fa-solid fa-arrow-right-long text-primary ml-3"></i>
+
+                            <div>
+                                <a href="${post.link}" class="font-bold hover:text-primary transition-ease duration-300">${post.button}</a>
+                                <i class="fa-solid fa-arrow-right-long text-primary ml-3"></i>
+                            </div>
                         </div>
                     </div>
     `).join("");
 
-const blogGrid = document.querySelector(".blog-grid-container");
 blogGrid.innerHTML = blogLatest;
+
+
+
+
+ 
+
+
+
+
+

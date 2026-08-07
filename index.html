@@ -16,7 +16,7 @@
     <title>CreateX - Landing</title>
 
     <style type="text/tailwindcss">
-        @theme {
+        @theme: {
             --font-lato: Lato, sans-serif;
             --color-primary: #ff3f3a;
             --color-secondary: #f75e05;
@@ -501,25 +501,38 @@
         </div>
     </section>
 
-    <section>
+    <section class="bg-[url(./images/subscribe-bg.png)] bg-cover bg-no-repeat py-24 bg-center">
         <div class="container">
-            <div>
+            <div class="h-[506px] flex flex-col items-center justify-center">
                 <div>
                     <div class="mb-12 pb-2 text-center">
                         <h3 class="uppercase text-primary-text font-bold">Don’t miss anything</h3>
-                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black">Subscribe to the Createx School announcements</h2>
+                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black">Subscribe to the Createx
+                            School <br> announcements</h2>
                     </div>
                 </div>
 
-                <div>
-                    <form action="#">
-                        <input type="email" required placeholder="Your working email">
-                        <button type="submit">Subscribe</button>
+                <div class="w-full">
+                    <form action="#" class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
+                        <input type="email" class="w-full bg-white py-5 px-4 rounded-sm border-1 border-[#dadbdd] " required placeholder="Your working email">
+                        <button type="submit" class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
+                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="bg-[#1e212c]">
+        <div class="container">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>

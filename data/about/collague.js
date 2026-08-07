@@ -1,4 +1,4 @@
-﻿const cardData = [
+﻿export const cardData = [
     {
         name: "Dianne Russell",
         job: "Founder and CEO",
@@ -48,58 +48,10 @@
     }
 ]
 
-const Jobdata = [
-    {
-        Jobimg: "../../images/job-1.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-2.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-3.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-4.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-5.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-6.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-7.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-8.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-9.svg"
-    },
-
-    {
-        Jobimg: "../../images/job-10.svg"
-    },
-
-    {
-        Jobimg: "../../images/gabor.svg"
-    },
-
-    {
-        Jobimg: "../../images/exxon.svg"
-    },
-]
 
 
-const latestPosts = [
+
+export const latestPosts = [
     {
         id: 1,
         type: "Podcast",
@@ -141,5 +93,55 @@ const latestPosts = [
     }
 ]
 
+export const jobData = [
+    {
+        img: "../../images/job-1.svg"
+    },
+
+    {
+        img: "../../images/job-2.svg"
+    },
+
+    {
+        img: "../../images/job-3.svg"
+    },
+
+    {
+        img: "../../images/job-4.svg"
+    },
+
+    {
+        img: "../../images/job-5.svg"
+    },
+
+    {
+        img: "../../images/job-6.svg"
+    },
+
+    {
+        img: "../../images/job-7.svg"
+    },
+
+    {
+        img: "../../images/job-8.svg"
+    },
+
+    {
+        img: "../../images/job-9.svg"
+    },
+
+    {
+        img: "../../images/job-10.svg"
+    },
+
+    {
+        img: "../../images/exxon.svg"
+    },
+
+    {
+        img: "../../images/gabor.svg"
+    },
+
+]
 
 

@@ -10,13 +10,11 @@ const swiper = new Swiper('.swiper.testimonials-swiper' , {
   },
   mousewheel: true,
   loop: true,
-  breakpoints:{{
+  breakpoints:{
     640: {
-      navigation: {
-        
-      }
+      navigation: 1
     }
   }
-
-  }
 });
+
+

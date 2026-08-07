@@ -16,7 +16,7 @@
 
 
   <style type="text/tailwindcss">
-    @theme {
+    @theme{
         --font-lato: Lato, sans-serif;
         --color-primary: #ff3f3a;
         --color-secondary: #f75e05;
@@ -437,7 +437,7 @@
       Meet our team
     </h2> 
 
-    <div class="team-viewer grid grid-cols-1 gap-8 mt-20 mb-10 lg:grid-cols-3">
+    <div class="team-viewer grid grid-cols-1 gap-8 mt-20 mb-10 lg:grid-cols-4">
 
 
 
@@ -462,13 +462,13 @@
       </h3>
       <h2 class="text-center mt-5 text-5xl font-lato font-bold text-[#1E212C]">What our students say</h2>
 
-      <div class="spec-wrapper relative mx-12">
-        <div class="swiper w-250 testimonials-swiper">
+      <div class="spec-wrapper relative mx-0 md:mx-12">
+        <div class="swiper w-full!  lg:w-250 testimonials-swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="slider-wrapper bg-[#FFFFFF] mt-15 p-12 flex gap-5 rounded-md">
+            <div class="swiper-slide w-full!">
+              <div class="slider-wrapper bg-[#FFFFFF] mt-15 p-8 flex gap-5 rounded-lg!">
                 <div class="slider-image-wrap">
                   <img src="../../images/braces.png" alt="braces" class="w-28">
                 </div>
@@ -535,10 +535,10 @@
 
         <div class="flex items-center justify-center">
           <div
-            class="swiper-button-prev  hover:bg-[#FF3F3A] hover:text-white transition-colors cursor-pointer rounded-full">
+            class="swiper-button-prev  hover:bg-[#FF3F3A] hover:text-white transition-colors cursor-pointer rounded-full hidden! lg:block">
             <i class="fa-solid fa-arrow-left text-[#424551] hover:text-[#fff]"></i>
           </div>
-          <div class="swiper-button-next  hover:bg-[#FF3F3A]  transition-colors cursor-pointer rounded-full">
+          <div class="swiper-button-next  hover:bg-[#FF3F3A]  transition-colors cursor-pointer rounded-full hidden! lg:block">
             <i class="fa-solid fa-arrow-right text-[#424551] hover:text-[#fff]"></i>
           </div>
         </div>
@@ -553,12 +553,8 @@
     </div>
 
     <div class="grid-wrapper grid grid-cols-6 mt-20 gap-5">
-      <div>
-        <img src="../../images/job-1.svg" class="opacity-40 text-[#000]  hover:opacity-100 transition duration-300 cursor-pointer" alt="job-1">
-      </div>
-      </div>
     </div>
-
+      
 
   </section>
 
@@ -575,7 +571,7 @@
                     </div>
                 </div>
 
-                <div class="blog-grid-container grid lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1">
+                <div class="blog-grid-container grid group lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1">
 
                 </div>
 
@@ -583,10 +579,32 @@
         </div>
     </section>
 
+    <section class="bg-[url(../../images/subscribe-bg.png)] bg-cover bg-no-repeat py-24 bg-center">
+        <div class="container">
+            <div class="h-[506px] flex flex-col items-center justify-center">
+                <div>
+                    <div class="mb-12 pb-2 text-center">
+                        <h3 class="uppercase text-primary-text font-bold">Don’t miss anything</h3>
+                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black">Subscribe to the Createx
+                            School <br> announcements</h2>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <form action="#" class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
+                        <input type="email" class="w-full bg-white py-5 px-4 rounded-sm border-1 border-[#dadbdd] " required placeholder="Your working email">
+                        <button type="submit" class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
+                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="swiper.js"></script>
-  <script src="../../data/about/collague.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="../../data/about/collague.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 
 </html>

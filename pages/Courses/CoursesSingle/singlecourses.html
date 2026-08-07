@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,43 +25,12 @@
       }
     </style>
 
-  <style>
-    .related-nav {
-      display: flex;
-      align-items: center;
-    }
-
-    .related-prev,
-    .related-next {
-      width: 24px;
-      height: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #1E212C;
-      font-size: 16px;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-
-    .related-prev:hover,
-    .related-next:hover {
-      color: #FF3F3A;
-    }
-
-    .related-prev.swiper-button-disabled,
-    .related-next.swiper-button-disabled {
-      opacity: 0.3;
-      cursor: not-allowed;
-    }
-  </style>
-
 </head>
 
 <body>
 
   <div
-    class="set max-w-[1920] h-[468px] bg-[url('../../../images/singlecourse/backgroundtitle.png')] bg-cover bg-center bg-no-repeat">
+    class="set max-w-[1920] h-[468px] bg-[url('../../../images/singlecourse/backgroundtitle.png')] bg-cover bg-center bg-no-repeat max-md:h-[290px]">
     <div class="container">
 
       <header class="p-4">
@@ -101,11 +69,11 @@
         </div>
       </header>
       <div class="container">
-        <div class="hero__content mt-[120px] flex flex-col items-center text-center">
-          <p class="w-[69px] h-[24px] uppercase font-lato font-bold text-[16px] leading-[150%] text-[#FF3F3A]">Course
+        <div class="hero__content mt-[120px] flex flex-col items-center text-center max-[768px  max-md:mt-[30px]">
+          <p class="w-[69px] h-[24px] uppercase font-lato font-bold text-[16px] leading-[150%] text-[#FF3F3A] max-md:text-[16px]">Course
           </p>
           <h1
-            class="max-w[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle">
+            class="max-w[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle max-md:text-[24px]">
             User Experience. Principles of Human-Centered <br>
             Design</h1>
         </div>
@@ -117,7 +85,7 @@
   <!-- Course information -->
   <section class="course__information">
     <div class="container">
-      <div class="information__content max-w-[1230px] mx-auto flex justify-between gap-10 mt-[100px]">
+      <div class="information__content max-w-[1230px] mx-auto flex justify-between gap-10 mt-[100px] max-md:flex max-md:flex-col max-md:items-center">
         <div class="infromation__text max-w-[600px]">
           <h1 class="text-[46px] font-[900] leading-[130%] text-[#1E212C] font-lato">About the course</h1>
           <p class=" mt-[40px] text-[16px] leading-[160%] max-w-[600px] h-auto font-lato font-[400] text-[#424551]">
@@ -196,7 +164,8 @@
                   auctor orci vulputate faucibus quis ut.</p>
               </div>
 
-              <div class="info__price w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] mb-[40px]">
+              <div
+                class="info__price max-w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] mb-[40px] max-[992px]:mb-[60px]">
                 <h6
                   class="font-lato font-bold text-[14px] leading-[150%] uppercase tracking-[1px] text-[#1E212C] mb-[4px]">
                   Price
@@ -223,12 +192,12 @@
     <div class="container">
 
       <div class="middle__content max-w-[1230px] mt-[130px] mx-auto">
-        <div class="curator__content flex justify-between max-w-[1230px] max-h-[600px] mb-[180px]">
-          <div class="curator__img w-[495px] h-[600px] shrink-0 mr-[135px]">
+        <div class="curator__content flex justify-between max-w-[1230px] max-h-[600px] mb-[180px] max-md:flex max-md:flex-col max-md:items-center">
+          <div class="curator__img max-w-[495px] max-h-[600px] mr-[135px] max-[992px]:mr-[35px] max-md:h-[400px]">
             <img src="../../../images/singlecourse/curator-image.png" alt="Curator" class="w-full h-full object-cover">
           </div>
 
-          <div class="curator__text max-w-[600x]">
+          <div class="curator__text max-w-[600x] max-md:flex max-md:flex-col max-md:items-center">
             <h6
               class="font-lato font-bold leading-[150%] tracking-[1px] uppercase text-[#1E212C] max-w-[157px] max-h-[24px] mt-[18px]">
               Course curator</h6>
@@ -266,17 +235,18 @@
 
         <!-- Main steps--------- -->
 
-        <div class="steps__content max-w-[1230px] h-[347px] mx-auto flex flex-col items-center gap-10 mb-[170px] ">
-          <div class="steps__head flex flex-col">
+        <div class="steps__content max-w-[1230px] h-[347px] mx-auto flex flex-col items-center gap-10 mb-[170px] max-md:mt-[400px] max-[576px]:mb-[600px]">
+          <div class="steps__head flex flex-col max-[576px]:mt-[80px]">
             <p
               class="font-lato font-bold text-[16px] leading-[150%] tracking-[1px] text-center uppercase text-[#1E212C]">
               Main steps</p>
             <h1
-              class="font-lato font-black text-[46px] mt-[8px] leading-[130%] tracking-normal text-center text-[#1E212C]">
+              class="font-lato font-black text-[46px] mt-[8px] leading-[130%] tracking-normal text-center text-[#1E212C] max-md:text-[28px]">
               Online learning process</h1>
           </div>
-          <div class="steps__body flex justify-between">
-            <div class="step1 group max-w-[285px] max-h-[192px] mt-[24px]">
+          <div
+            class="steps__body flex justify-between max-[992px]:flex max-[992px]:flex-wrap max-[992px]:mx-[50px] max-[992px]:ml-[70px]">
+            <div class="step1 group max-w-[285px] max-h-[192px] mt-[24px] max-[992px]:mb-[40px] max-md:mx-[80px]">
               <div class="for__border flex items-center gap-4">
                 <div class="relative w-[116px] h-[116px] flex items-center justify-center">
                   <span
@@ -295,7 +265,7 @@
                 Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
             </div>
 
-            <div class="step2 group max-w-[285px] max-h-[192px] ml-[30px] mt-[24px]">
+            <div class="step2 group max-w-[285px] max-h-[192px] ml-[30px] mt-[24px] max-md:mx-[80px] max-[576px]:mt-[140px]">
               <div class="for__border flex items-center gap-4">
                 <div class="relative w-[116px] h-[116px] flex items-center justify-center">
                   <span
@@ -315,7 +285,7 @@
               </p>
             </div>
 
-            <div class="step3 group max-w-[285px] max-h-[192px] mx-[30px] mt-[24px]">
+            <div class="step3 group max-w-[285px] max-h-[192px] mx-[30px] mt-[24px] max-[992px]:ml-[0px] max-md:mx-[80px] max-[576px]:mt-[140px]">
               <div class="for__border flex items-center gap-4">
                 <div class="relative w-[116px] h-[116px] flex items-center justify-center">
                   <span
@@ -334,8 +304,8 @@
                 Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.</p>
             </div>
 
-            <div class="step4 group max-w-[285px] max-h-[192px] mt-[24px]">
-              <div class="for__border flex items-center gap-4">
+            <div class="step4 group max-w-[285px] max-h-[192px] mt-[24px] max-md:mx-[80px] max-[576px]:mt-[80px]">
+                            <div class="for__border flex items-center gap-4">
                 <div class="relative w-[116px] h-[116px] flex items-center justify-center">
                   <span
                     class="absolute inset-0 w-[116px] h-[116px] rounded-full bg-transparent group-hover:bg-primary/5 transition-colors duration-300">
@@ -361,7 +331,7 @@
         <!-- Discount section -->
 
         <section class="py-12">
-          <div class="relative max-w-7xl mx-auto px-4">
+          <div class="relative max-w-7xl mx-auto px-4 max-[992px]:mt-[130px] max-md:mt-[600px]">
 
             <!-- Background -->
             <div class="absolute inset-0 bg-[url('../../../images/singlecourse/background.png')] rounded-[4px]"></div>
@@ -444,8 +414,8 @@
         <!-- Benefit section -->
         <section class="benetfit">
           <section class="container">
-            <div class="for flex gap-[130px] mt-[120px] mx-auto mb-[126px] max-w-[1230px]">
-              <div class="for_text">
+            <div class="for flex gap-[130px] mt-[120px] mx-auto mb-[126px] max-w-[1230px] max-[992px]:gap-[30px] max-md:flex max-md:flex-col max-md:items-center">
+              <div class="for_text max-[992px]:mt-[120px]">
                 <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">FOR WHOM?</h6>
                 <h1
                   class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px]">
@@ -497,7 +467,7 @@
 
   <section class="program">
     <div class="container">
-      <div class="porgram__content flex justify-between max-w-[1230px] gap-[130px] mx-auto h-auto mt-[54px] mb-[120px]">
+      <div class="porgram__content flex justify-between max-w-[1230px] gap-[130px] mx-auto h-auto mt-[54px] mb-[120px] max-md:flex max-md:flex-col max-md:items-center max-md:mb-[-120px]">
         <div class="program__text max-w-[px]">
           <div class="text__head">
             <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">COURSE PROGRAM</h6>
@@ -575,7 +545,7 @@
           </div>
         </div>
         <div class="program__image w-1/2">
-          <div class="program__img max-w-[495px] max-h-[554px] ml-auto">
+          <div class="program__img max-w-[495px] h-[554px] ml-auto  max-[992px]:mt-[200px] max-md:mt-[0px] max-md:max-w-[340px] max-md:max-h-[400px] max-md:mt-[-70px]">
             <img src="../../../images/singlecourse/illustration.png" alt="">
           </div>
         </div>
@@ -588,7 +558,7 @@
   <!--  Registration section -->
   <section class="registration">
     <div class="container">
-      <div class="bg-[#F4F5F6] mt-16 sm:mt-[100px] py-12 sm:py-[80px]">
+      <div class="bg-[#F4F5F6] mt-16 sm:mt-[100px] py-12 sm:py-[80px] max-md:mt-[110px]">
         <section class="container mx-auto px-6 py-16 relative ">
           <div class="text-center mb-12 relative">
             <p class="font-semibold uppercase tracking-wide">Testimonials</p>
@@ -707,8 +677,8 @@
 
         <div class="registraion__course mt-[180px]">
           <div class="container">
-            <div class="register__content flex justify-between max-w-[1230px]  mx-auto h-auto">
-              <div class="registraion__image max-w-[550px] max-h-[503px]">
+            <div class="register__content flex justify-between max-w-[1230px]  mx-auto gap-[20px] h-auto max-md:flex max-md:flex-col max-md:items-center">
+              <div class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px]">
                 <img src="../../../images/singlecourse/illustrationregister.png" alt="Image">
               </div>
               <div class="for_register max-w-[495px]">
@@ -716,7 +686,7 @@
                   <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">Leave a request now and get
                     20% off!</h6>
                   <h1
-                    class="text-[46px] font-[900] max-w-[492px] mt-[8px] mb-[40px]  text-[#1E212C] leading-[130%] font-lato ml-[0px]">
+                    class="text-[46px] font-[900] max-w-[492px] mt-[8px] mb-[40px]  text-[#1E212C] leading-[130%] font-lato ml-[0px] max-md:text-[32px]">
                     Register for the course </h1>
                 </div>
                 <div class="for__form flex flex-col">
@@ -756,7 +726,7 @@
         <div class="other__text flex items-center justify-between mb-[60px]">
           <div>
             <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">Check other courses</h6>
-            <h1 class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px]">
+            <h1 class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px] max-md:text-[32px]">
               You may also like
             </h1>
           </div>
@@ -896,7 +866,7 @@
 
         <div class="more">
           <div class="more__course flex items-center justify-center gap-[40px] mb-[180px] mx-auto">
-            <h3 class="font-lato font-bold text-[28px] leading-[150%] text-[#1E212C]">
+            <h3 class="font-lato font-bold text-[28px] leading-[150%] text-[#1E212C] max-md:text-[22px]">
               Do you want more courses?
             </h3>
             <a href="#"
@@ -925,6 +895,7 @@
         el: '.testimonial-pagination',
         clickable: true,
       },
+
     });
 
     const relatedSwiper = new Swiper('.mySwiper', {
@@ -934,6 +905,16 @@
       navigation: {
         nextEl: '.related-next',
         prevEl: '.related-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
       },
     });
   </script>
