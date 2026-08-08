@@ -8,19 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <link rel="stylesheet" href="../../../style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <style type="text/tailwindcss">
-        @theme {
-        --font-lato: Lato, sans-serif;
-        --color-primary: #ff3f3a;
-        --color-secondary: #f75e05;
-      }
-    </style>
-
-</head>
+    
 
 <body class="font-lato">
     <header class="header p-4 fixed z-99 top-0 w-full transition">
@@ -75,7 +63,8 @@
     <section class="hero">
         <div class="container">
 
-            <div class="hero__content max-w-[1230px] mt-[152px] flex justify-between mx-auto max-md:flex-col max-md:mx-[50px]">
+            <div
+                class="hero__content max-w-[1230px] mt-[152px] flex justify-between mx-auto max-md:flex-col max-md:mx-[50px]">
                 <div class="hero__text">
 
                     <div class="text__head">
@@ -143,10 +132,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <section class="reply">
+    <section class="reply">
         <div class="container">
-            <div class="reply__content max-w-[1230px] mt-[152px] mb-[120px] flex justify-between items-center gap-[60px] mx-auto max-md:flex-col">
+            <div
+                class="reply__content max-w-[1230px] mt-[152px] mb-[120px] flex justify-between items-center gap-[60px] mx-auto max-md:flex-col">
                 <div class="reply__img max-w-[430px] shrink-0 max-md:max-w-[320px]">
                     <div class="image">
                         <img src="../../images/contactillustration.png" alt="" class="w-full h-auto">
@@ -154,7 +146,9 @@
                 </div>
                 <div class="reply__text flex-1 max-w-[700px]">
                     <div class="text__head">
-                        <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato uppercase tracking-[1px]">Any
+                        <h6
+                            class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato uppercase tracking-[1px]">
+                            Any
                             questions?</h6>
                         <h1
                             class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px]">
@@ -169,7 +163,8 @@
                                         class="h-[52px] px-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary">
                                 </div>
                                 <div class="forms flex flex-col gap-[8px]">
-                                    <label for="lastname" class="text-[14px] font-bold text-[#1E212C]">Last Name*</label>
+                                    <label for="lastname" class="text-[14px] font-bold text-[#1E212C]">Last
+                                        Name*</label>
                                     <input type="text" name="lastname" id="lastname" placeholder="Your last name"
                                         class="h-[52px] px-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary">
                                 </div>
@@ -183,15 +178,16 @@
                                     <input type="tel" name="phone" id="phone" placeholder="Your phone number"
                                         class="h-[52px] px-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary">
                                 </div>
- 
+
                                 <div class="text__long col-span-2 flex flex-col gap-[8px]">
                                     <label for="text" class="text-[14px] font-bold text-[#1E212C]">Message*</label>
                                     <textarea name="text" id="text" rows="4" placeholder="Your message"
                                         class="p-4 border border-[#D7DADD] rounded-[4px] text-[#1E212C] placeholder:text-[#9A9CA5] focus:outline-none focus:border-primary resize-none"></textarea>
                                 </div>
                             </div>
- 
-                            <div class="send__message flex items-center justify-between gap-[24px] mt-[24px] max-md:flex-col max-md:items-start">
+
+                            <div
+                                class="send__message flex items-center justify-between gap-[24px] mt-[24px] max-md:flex-col max-md:items-start">
                                 <div class="agree flex items-start gap-[10px]">
                                     <input type="checkbox" id="agree-terms"
                                         class="w-[18px] h-[18px] mt-[2px] accent-primary cursor-pointer shrink-0">
@@ -209,13 +205,12 @@
                         </form>
                     </div>
                 </div>
- 
+
             </div>
         </div>
     </section>
 
-        </div>
-    </section>
+
 
 </body>
 
