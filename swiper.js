@@ -1,10 +1,25 @@
 const swiper = new Swiper('.first-swiper', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 30,
     grabCursor: true,
     loop: true,
     loopAddBlankSlides: false,
     loopPreventsSliding: false,
+
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+        },
+
+        768: {
+            slidesPerView: 3,
+        },
+
+        1024: {
+            slidesPerView: 4
+        }
+
+    },
 
     navigation: {
         nextEl: ".custom-btn-next",
@@ -18,7 +33,7 @@ const swiperSec = new Swiper('.second-swiper', {
     grabCursor: true,
     loop: true,
 
-    
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true
