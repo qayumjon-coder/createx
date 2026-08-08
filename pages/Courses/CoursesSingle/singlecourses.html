@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=task_alt" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=remove" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=remove" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -19,10 +20,15 @@
 
   <style type="text/tailwindcss">
     @theme {
-        --font-lato: Lato, sans-serif;
-        --color-primary: #ff3f3a;
-        --color-secondary: #f75e05;
-      }
+            --font-lato: Lato, sans-serif;
+            --color-primary: #ff3f3a;
+            --color-secondary: #f75e05;
+            --color-primary-shadow: #ff3f3a80;
+            --color-hero-bg: #f9dcd4;
+            --color-primary-text: #1E212C;
+            --color-secondary-text: #424551;
+            --color-third-text: #787a80;
+        }
     </style>
 
 </head>
@@ -30,62 +36,187 @@
 <body>
 
   <div
-    class="set max-w-[1920] h-[468px] bg-[url('../../../images/singlecourse/backgroundtitle.png')] bg-cover bg-center bg-no-repeat max-md:h-[290px]">
-    <div class="container">
+    class="set max-w-[1920] h-[468px] bg-[url('../../../images/singlecourse/backgroundtitle.png')] bg-cover bg-center bg-no-repeat mt-[-120px] max-md:h-[290px]">
 
-      <header class="p-4">
-        <div class="container flex justify-between items-center">
-          <a class="mr-12 pr-2" href="../../../index.html"><img src="../../../images/logo/logo-dark.svg" width="130"
-              alt="logo" /></a>
-          <nav class="self-start">
-            <ul class="flex gap-2 justify-start mr-auto items-center">
-              <li>
-                <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About</a>
-              </li>
-              <li>
-                <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Courses<i
-                    class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
-              </li>
-              <li>
-                <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Events<i
-                    class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
-              </li>
-              <li>
-                <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Blog<i
-                    class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
-              </li>
-              <li>
-                <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
-              </li>
+    <header class="header p-4 fixed z-99 top-0  left-0  w-full flex transition h-22 items-center">
+      <div class="container flex justify-between items-center">
+        <a class="mr-12 pr-2" href="index.html">
+          <img src="../../../images/logo/logo-dark.svg" width="    130" alt="logo" />
+        </a>
+
+
+        <nav class="self-start hidden xl:flex">
+          <ul class="flex gap-2 justify-start mr-auto items-center">
+            <li>
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
+            </li>
+            <li class="list-item relative px-5">
+              <button
+                class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                <div class="py-4">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                </div>
+              </button>
+              <div
+                class="show-menu hidden border-third-text/20 shadow-lg shadow border absolute transition-ease duration-300 bg-white w-full">
+                <div class="dr-inner flex flex-col p-0">
+                  <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Courses
+                    Grid</a>
+                  <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                    Course</a>
+                </div>
+              </div>
+            </li>
+            <li class="list-item relative px-6">
+              <button
+                class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                <div class="py-4">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                </div>
+              </button>
+              <div
+                class="show-menu hidden border-third-text/20 shadow-lg shadow border absolute transition-ease duration-300 bg-white w-full ">
+                <div class="dr-inner flex flex-col p-0">
+                  <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                    list</a>
+                  <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                    Grid</a>
+                  <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                    Single</a>
+                </div>
+              </div>
+            </li>
+            <li class="list-item relative px-5">
+              <button
+                class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                <div class="py-4">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                </div>
+              </button>
+              <div
+                class="show-menu hidden border-third-text/20 shadow-lg shadow border absolute transition-ease duration-300 bg-white w-full">
+                <div class="dr-inner flex flex-col p-0">
+                  <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Blog
+                    Grid</a>
+                  <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                    Post</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex gap-5 items-center">
+          <div class="">
+            <a href="#"
+              class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
+              consultation</a>
+            <a href="#" class="text-primary hidden md:inline-block  font-bold ml-6"><i
+                class="fa-regular fa-user mr-2"></i>Sign
+              in/up</a>
+          </div>
+
+          <nav class="">
+            <button class="menu-btn xl:hidden block"><i
+                class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i></button>
+
+            <ul
+              class="menu shadow-xl shadow-black/10 overflow-hidden transition-all ease-in-out duration-300 absolute top-19 left-0 w-full xl:h-0 flex gap-2 justify-start mr-auto items-start bg-white xl:flex xl:flex-col">
+              <div class="container">
+                <li>
+                  <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                    href="#">About us</a>
+                </li>
+                <li>
+                  <button
+                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                    <div class="py-4">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                    </div>
+                  </button>
+                  <div class="dr-link transition-ease duration-300">
+                    <div class="dr-inner flex flex-col">
+                      <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Courses
+                        Grid</a>
+                      <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                        Course</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                    <div class="py-4">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                    </div>
+                  </button>
+                  <div class="dr-link2 transition-ease duration-300">
+                    <div class="dr-inner flex flex-col">
+                      <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                        list</a>
+                      <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                        Grid</a>
+                      <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                        Single</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button
+                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                    <div class="py-4">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                    </div>
+                  </button>
+                  <div class="dr-link3 transition-ease duration-300">
+                    <div class="dr-inner flex flex-col">
+                      <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Blog
+                        Grid</a>
+                      <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                        Post</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                    href="#">Contacts</a>
+                </li>
+
+                <div class="flex flex-col xl:hidden gap-5">
+
+                  <li><a href="#" class="text-primary inline-block md:hidden font-bold"><i
+                        class="fa-regular fa-user mr-2"></i>Sign
+                      in/up</a></li>
+                  <li><a href="#"
+                      class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold">Get
+                      consultation</a></li>
+
+                </div>
+              </div>
             </ul>
           </nav>
+        </div>
 
-          <div class="justify-self-end">
-            <a href="#"
-              class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
-              consultation</a>
-            <a href="#" class="text-primary font-bold ml-6 "><i class="fa-regular fa-user mr-2"></i>Sign in/up</a>
-          </div>
-        </div>
-      </header>
-      <div class="container">
-        <div class="hero__content mt-[120px] flex flex-col items-center text-center max-[768px  max-md:mt-[30px]">
-          <p class="w-[69px] h-[24px] uppercase font-lato font-bold text-[16px] leading-[150%] text-[#FF3F3A] max-md:text-[16px]">Course
-          </p>
-          <h1
-            class="max-w[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle max-md:text-[24px]">
-            User Experience. Principles of Human-Centered <br>
-            Design</h1>
-        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="hero__content mt-[120px] flex flex-col items-center text-center max-[768px]  max-md:mt-[30px]">
+        <p
+          class="w-[69px] h-[24px] mt-[120px] uppercase font-lato font-bold text-[16px] leading-[150%] text-[#FF3F3A] max-md:text-[12px] max-md:mt-[167px]">
+          Course
+        </p>
+        <h1
+          class="max-w[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle max-md:text-[18px]">
+          User Experience. Principles of Human-Centered <br>
+          Design</h1>
       </div>
     </div>
+
   </div>
 
 
   <!-- Course information -->
   <section class="course__information">
     <div class="container">
-      <div class="information__content max-w-[1230px] mx-auto flex justify-between gap-10 mt-[100px] max-md:flex max-md:flex-col max-md:items-center">
+      <div
+        class="information__content max-w-[1230px] mx-auto flex justify-between gap-10 mt-[100px] max-md:flex max-md:flex-col max-md:items-center">
         <div class="infromation__text max-w-[600px]">
           <h1 class="text-[46px] font-[900] leading-[130%] text-[#1E212C] font-lato">About the course</h1>
           <p class=" mt-[40px] text-[16px] leading-[160%] max-w-[600px] h-auto font-lato font-[400] text-[#424551]">
@@ -192,7 +323,8 @@
     <div class="container">
 
       <div class="middle__content max-w-[1230px] mt-[130px] mx-auto">
-        <div class="curator__content flex justify-between max-w-[1230px] max-h-[600px] mb-[180px] max-md:flex max-md:flex-col max-md:items-center">
+        <div
+          class="curator__content flex justify-between max-w-[1230px] max-h-[600px] mb-[180px] max-md:flex max-md:flex-col max-md:items-center">
           <div class="curator__img max-w-[495px] max-h-[600px] mr-[135px] max-[992px]:mr-[35px] max-md:h-[400px]">
             <img src="../../../images/singlecourse/curator-image.png" alt="Curator" class="w-full h-full object-cover">
           </div>
@@ -235,7 +367,8 @@
 
         <!-- Main steps--------- -->
 
-        <div class="steps__content max-w-[1230px] h-[347px] mx-auto flex flex-col items-center gap-10 mb-[170px] max-md:mt-[400px] max-[576px]:mb-[600px]">
+        <div
+          class="steps__content max-w-[1230px] h-[347px] mx-auto flex flex-col items-center gap-10 mb-[170px] max-md:mt-[400px] max-[576px]:mb-[600px]">
           <div class="steps__head flex flex-col max-[576px]:mt-[80px]">
             <p
               class="font-lato font-bold text-[16px] leading-[150%] tracking-[1px] text-center uppercase text-[#1E212C]">
@@ -265,7 +398,8 @@
                 Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
             </div>
 
-            <div class="step2 group max-w-[285px] max-h-[192px] ml-[30px] mt-[24px] max-md:mx-[80px] max-[576px]:mt-[140px]">
+            <div
+              class="step2 group max-w-[285px] max-h-[192px] ml-[30px] mt-[24px] max-md:mx-[80px] max-[576px]:mt-[140px]">
               <div class="for__border flex items-center gap-4">
                 <div class="relative w-[116px] h-[116px] flex items-center justify-center">
                   <span
@@ -285,7 +419,8 @@
               </p>
             </div>
 
-            <div class="step3 group max-w-[285px] max-h-[192px] mx-[30px] mt-[24px] max-[992px]:ml-[0px] max-md:mx-[80px] max-[576px]:mt-[140px]">
+            <div
+              class="step3 group max-w-[285px] max-h-[192px] mx-[30px] mt-[24px] max-[992px]:ml-[0px] max-md:mx-[80px] max-[576px]:mt-[140px]">
               <div class="for__border flex items-center gap-4">
                 <div class="relative w-[116px] h-[116px] flex items-center justify-center">
                   <span
@@ -305,7 +440,7 @@
             </div>
 
             <div class="step4 group max-w-[285px] max-h-[192px] mt-[24px] max-md:mx-[80px] max-[576px]:mt-[80px]">
-                            <div class="for__border flex items-center gap-4">
+              <div class="for__border flex items-center gap-4">
                 <div class="relative w-[116px] h-[116px] flex items-center justify-center">
                   <span
                     class="absolute inset-0 w-[116px] h-[116px] rounded-full bg-transparent group-hover:bg-primary/5 transition-colors duration-300">
@@ -414,7 +549,8 @@
         <!-- Benefit section -->
         <section class="benetfit">
           <section class="container">
-            <div class="for flex gap-[130px] mt-[120px] mx-auto mb-[126px] max-w-[1230px] max-[992px]:gap-[30px] max-md:flex max-md:flex-col max-md:items-center">
+            <div
+              class="for flex gap-[130px] mt-[120px] mx-auto mb-[126px] max-w-[1230px] max-[992px]:gap-[30px] max-md:flex max-md:flex-col max-md:items-center">
               <div class="for_text max-[992px]:mt-[120px]">
                 <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">FOR WHOM?</h6>
                 <h1
@@ -467,7 +603,8 @@
 
   <section class="program">
     <div class="container">
-      <div class="porgram__content flex justify-between max-w-[1230px] gap-[130px] mx-auto h-auto mt-[54px] mb-[120px] max-md:flex max-md:flex-col max-md:items-center max-md:mb-[-120px]">
+      <div
+        class="porgram__content flex justify-between max-w-[1230px] gap-[130px] mx-auto h-auto mt-[54px] mb-[120px] max-md:flex max-md:flex-col max-md:items-center max-md:mb-[-120px]">
         <div class="program__text max-w-[px]">
           <div class="text__head">
             <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">COURSE PROGRAM</h6>
@@ -545,7 +682,8 @@
           </div>
         </div>
         <div class="program__image w-1/2">
-          <div class="program__img max-w-[495px] h-[554px] ml-auto  max-[992px]:mt-[200px] max-md:mt-[0px] max-md:max-w-[340px] max-md:max-h-[400px] max-md:mt-[-70px]">
+          <div
+            class="program__img max-w-[495px] h-[554px] ml-auto  max-[992px]:mt-[200px] max-md:mt-[0px] max-md:max-w-[340px] max-md:max-h-[400px] max-md:mt-[-70px]">
             <img src="../../../images/singlecourse/illustration.png" alt="">
           </div>
         </div>
@@ -677,8 +815,10 @@
 
         <div class="registraion__course mt-[180px]">
           <div class="container">
-            <div class="register__content flex justify-between max-w-[1230px]  mx-auto gap-[20px] h-auto max-md:flex max-md:flex-col max-md:items-center">
-              <div class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px]">
+            <div
+              class="register__content flex justify-between max-w-[1230px]  mx-auto gap-[20px] h-auto max-md:flex max-md:flex-col max-md:items-center">
+              <div
+                class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px]">
                 <img src="../../../images/singlecourse/illustrationregister.png" alt="Image">
               </div>
               <div class="for_register max-w-[495px]">
@@ -693,15 +833,18 @@
                   <form action="#">
                     <label for="name" class="text-[#424551] font-normal text-base leading-[160%]">Full name</label>
                     <input type="text" id="name"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"  placeholder="Your full name">
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      placeholder="Your full name">
                     <label for="email"
                       class="text-[#424551] font-normal text-base leading-[160%] mb-[8px]">Email</label>
                     <input type="email" id="email"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none" placeholder="Your working email">
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      placeholder="Your working email">
                     <label for="phone"
                       class="text-[#424551] font-normal text-base leading-[160%] mb-[8px] ">Phone</label>
                     <input type="tel" id="phone"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[40px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none" placeholder="Your phone number">
+                      class="w-[495px] h-[52px] mt-[8px] mb-[40px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      placeholder="Your phone number">
                     <div
                       class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
                       <a href="#">Join the course</a>
@@ -726,7 +869,8 @@
         <div class="other__text flex items-center justify-between mb-[60px]">
           <div>
             <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">Check other courses</h6>
-            <h1 class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px] max-md:text-[32px]">
+            <h1
+              class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px] max-md:text-[32px]">
               You may also like
             </h1>
           </div>
@@ -848,8 +992,7 @@
                   class="bg-[url(../../../../images/home-mentors/mentor-6.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
                 </div>
                 <div class="p-8 w-[60%]">
-                  <span
-                    class="inline-block py-1 px-2 mb-4 bg-rose-500 text-white text-sm rounded-md">Design</span>
+                  <span class="inline-block py-1 px-2 mb-4 bg-rose-500 text-white text-sm rounded-md">Design</span>
                   <h5
                     class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
                     Graphic Design Basic</h5>
@@ -920,6 +1063,153 @@
   </script>
   <script src="./index.js"></script>
 
+
+  <section class="bg-[url(../../../images/subscribe-bg.png)] bg-cover bg-no-repeat py-24 bg-center">
+    <div class="container">
+      <div class="h-[506px] flex flex-col items-center justify-center">
+        <div>
+          <div class="mb-12 pb-2 text-center">
+            <h3 class="uppercase text-primary-text font-bold">Don’t miss anything</h3>
+            <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black">Subscribe to the Createx
+              School <br> announcements</h2>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <form action="#" class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
+            <input type="email"
+              class="w-full bg-white outline-0 focus:border-primary focus:shadow-primary-shadow/40 transition ease duration-300 focus:shadow-xl py-5 px-4 rounded-sm border-1 border-[#dadbdd] "
+              required placeholder="Your working email">
+            <button type="submit"
+              class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white
+                                                           hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#1e212c] pt-12">
+    <div class="container">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
+        <div class="col-span-1 lg:col-span-3">
+          <a href="#" class="mb-4 inline-block">
+            <img src="../../../images/logo/logo.png" alt="Site Logo">
+          </a>
+
+          <p class="text-[12px]  text-[#ffffff99] mb-6 pb-4">Createx Online School is a leader in online
+            studying. We have lots of
+            courses and programs from
+            the main market experts. We provide relevant approaches to online learning, internships and
+            employment in the largest companies in the country.
+          </p>
+
+          <div class="text-[#ffffff99] flex gap-5">
+            <a class="hover:text-primary transition ease duration-200" href="#"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i
+                class="fa-brands fa-telegram"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-span-3 md:col-span-2 order">
+          <h3 class="uppercase font-bold text-white mb-2 pb-1">Site map</h3>
+
+          <ul class="text-[#ffffff99] flex flex-col">
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/About/About.html">About
+                Us</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Courses/CourseGrid/index.html">Courses</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Events/Events.html">Events</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Blogs/Blogs.html">Blog</a>
+            </li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Contacts/Contacts.html">Contacts</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="md:col-span-2">
+          <h3 class="uppercase font-bold text-white mb-2 pb-1">Courses</h3>
+
+          <ul class="text-[#ffffff99] flex flex-col">
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Courses/CourseGrid/index.html">Marketing</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Courses/CourseGrid/index.html">Management</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Courses/CourseGrid/index.html">HR &
+                Recruting</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Courses/CourseGrid/index.html">Design</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                href="./pages/Courses/CourseGrid/index.html">Development</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-span-3 md:col-span-2">
+          <h3 class="uppercase font-bold text-white mb-2 pb-1">Contact us</h3>
+
+          <ul class="text-[#ffffff99] flex flex-col">
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                  class="fa-solid fa-mobile-screen"></i> (405) 555-0128</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                  class="fa-regular fa-comments"></i> hello@example.com</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-span-3">
+          <h3 class="uppercase font-bold text-white mb-2 pb-1">Sign up to our newsletter</h3>
+
+          <form action="# flex flex-col">
+            <div class="mb-2 pb-1 w-full flex items-center relative">
+              <input class="py-2.5 pl-4 pr-12 rounded-sm border border-white/10 bg-white/10 text-third-text focus:bg-white transition ease duration-300 outline-0 focus:border-[#ff3f3a66]
+       w-full" type="email" placeholder="Email adress" required>
+              <i class="fa-solid fa-arrow-right-long absolute text-white right-6"></i>
+            </div>
+
+            <p class="text-white text-[10px]">*Subscribe to our newsletter to receive early discount offers,
+              updates and
+              new products info.
+            </p>
+          </form>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="p-2 bg-secondary-text/40">
+      <div class="container flex items-center justify-between py-1">
+        <p class="text-white text-xs">© All rights reserved. Made with <i
+            class="fa-regular fa-heart text-primary px-1"></i>
+          by Createx Studio</p>
+        <div class="flex gap-3 text-sm items-center">
+          <p class="text-white">Back to top</p>
+          <button class="back-top px-4 py-3 bg-primary rounded-sm text-white cursor-pointer"><i
+              class="fa-solid fa-chevron-up"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
