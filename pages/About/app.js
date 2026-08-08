@@ -1,4 +1,5 @@
 import { jobData } from "../../data/about/collague.js";
+import { blogImg } from '../../data/about/collague.js';
 import { cardData } from "../../data/about/collague.js";
 import { latestPosts } from "../../data/about/collague.js";
 let blogGrid = document.querySelector(".blog-grid-container")
@@ -43,6 +44,7 @@ Teamviewer.innerHTML = Teamitem;
 
 
 const jobGrid = document.querySelector(".grid-wrapper"),
+      blogSwiper = document.querySelector(".blog-wrapper"),
   JobItem = jobData.map(
     (jobs) => `
   <div>
@@ -52,8 +54,22 @@ const jobGrid = document.querySelector(".grid-wrapper"),
   ).join("");
 
 
-
 jobGrid.innerHTML = JobItem;
+
+const blogItem = blogImg.map(
+  (blogimages) => `
+    <div class="swiper-slide">
+      <img src="${blogimages.img}" class="opacity-40 text-[#000] grayscale hover:grayscale-0  hover:opacity-100  transition duration-300 cursor-pointer" alt="job-1">
+       <img src="${blogimages.img2}" class="opacity-40 text-[#000] grayscale hover:grayscale-0  hover:opacity-100  transition duration-300 cursor-pointer" alt="job-1">
+    </div>
+  `
+
+
+).join("");
+
+
+
+blogSwiper.innerHTML = blogItem;
 
 
   let header = document.querySelector("header")
