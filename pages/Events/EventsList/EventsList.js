@@ -103,43 +103,38 @@ function renderEvents(data) {
 
     data.forEach((event) => {
         eventsContainer.innerHTML += `
-     <div class="w-full flex flex-col lg:flex-row lg:items-center justify-between gap-6 border border-[#E5E5E5] rounded-lg p-6 lg:p-8 hover:shadow-lg transition duration-300">
+        <div class="flex items-center justify-between gap-8 border border-[#E5E8ED] rounded-xl p-6 hover:shadow-lg duration-300">
+            <div class="flex items-center gap-5">
+                <div class="text-center min-w-[80px]">
+                    <h2 class="text-[48px] font-black text-[#FF3F3A] leading-none">
+                        ${event.date.getDate()}
+                    </h2>
 
-    <!-- Date -->
-    <div class="flex items-center gap-4 lg:min-w-[180px]">
-        <h2 class="text-[48px] font-black text-[#FF3F3A] leading-none">
-            ${String(event.date.getDate()).padStart(2, "0")}
-        </h2>
+                    <p class="text-[20px] font-bold text-[#1E212C]">
+                        ${monthNames[event.date.getMonth()]}
+                    </p>
+                </div>
+                <div>
+                    <p class="text-[#787A80] text-sm">
+                        ${event.time}
+                    </p>
 
-        <div>
-            <p class="text-[20px] font-bold text-[#1E212C] leading-none">
-                ${monthNames[event.date.getMonth()]}
-            </p>
+                    <h2 class="text-[20px] font-bold text-[#1E212C] mt-2">
+                        ${event.title}
+                    </h2>
 
-            <p class="text-[#787A80] text-[16px] mt-2">
-                ${event.time}
-            </p>
+                    <p class="text-[#787A80] mt-2">
+                        ${event.format}
+                    </p>
+                </div>
+            </div>
+            <a href="${event.link}"
+               class="border border-[#FF3F3A] text-[#FF3F3A] font-bold px-8 py-3 rounded hover:bg-[#FF3F3A] hover:text-white duration-300">
+                View more
+            </a>
+
         </div>
-    </div>
-
-    <!-- Content -->
-    <div class="flex-1">
-        <h2 class="text-[20px] font-bold text-[#1E212C] leading-[150%] hover:text-[#FF3F3A] transition duration-300 cursor-pointer">
-            ${event.title}
-        </h2>
-
-        <p class="text-[#787A80] mt-2">
-            ${event.format}
-        </p>
-    </div>
-
-    <!-- Button -->
-    <a href="${event.link}"
-        class="w-full lg:w-auto text-center border border-[#FF3F3A] text-[#FF3F3A] font-bold px-8 py-3 rounded hover:bg-[#FF3F3A] hover:text-white transition duration-300">
-        View more
-    </a>
-
-</div>      `;
+        `;
     });
 }
 
