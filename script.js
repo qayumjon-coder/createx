@@ -116,7 +116,9 @@ function community() {
 
 // Courses map
 
-let courseItem = courses.map(course => `
+let courseItem = "";
+if (typeof window.courses !== "undefined" && Array.isArray(window.courses)) {
+    courseItem = window.courses.map(course => `
                     <a href="#"
                         class="flex flex-col sm:flex-row sm:h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
                         <div
@@ -137,9 +139,12 @@ let courseItem = courses.map(course => `
                         </div>
                     </a>
     `
-).join("");
+    ).join("");
+}
 
-coursesGrid.innerHTML = courseItem;
+if (coursesGrid) {
+    coursesGrid.innerHTML = courseItem;
+}
 
 
 // Header scroll event
