@@ -30,7 +30,7 @@
 </head>
 
 <body class="font-lato">
-    <header class="header p-4 fixed z-99 top-0 w-full transition ">
+    <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
         <div class="container flex justify-between items-center">
             <a class="mr-12 pr-2" href="index.html">
                 <img src="images/logo/logo-dark.svg" width="130" alt="logo" />
@@ -44,11 +44,11 @@
                     </li>
                     <li class="list-item relative px-5">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
                             <div class="py-4">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
                         </button>
-                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                        <div class="show-menu hidden border-third-text/20 shadow-lg shadow border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
                                 <a href="#"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300">Courses
@@ -61,11 +61,11 @@
                     </li>
                     <li class="list-item relative px-6">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
                             <div class="py-4">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
                         </button>
-                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full ">
+                        <div class="show-menu hidden border-third-text/20 shadow-lg shadow border absolute transition-ease duration-300 bg-white w-full ">
                             <div class="dr-inner flex flex-col p-0">
                                 <a href="#"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300">Events
@@ -81,11 +81,11 @@
                     </li>
                     <li class="list-item relative px-5">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
                             <div class="py-4">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
                         </button>
-                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                        <div class="show-menu hidden border-third-text/20 shadow-lg shadow border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
                                 <a href="#"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300">Blog
@@ -472,7 +472,7 @@
                     </div>
                 </div>
                 <div>
-                    <img w-full lg:w-auto src="./images/certificate.jpg" alt="certificate-image">
+                    <img class="w-full lg:w-auto shadow-black/30 shadow-2xl" src="./images/certificate.jpg" alt="certificate-image">
                 </div>
             </div>
         </div>
@@ -636,7 +636,7 @@
                 <div class="w-full">
                     <form action="#"
                         class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
-                        <input type="email" class="w-full bg-white py-5 px-4 rounded-sm border-1 border-[#dadbdd] "
+                        <input type="email" class="w-full bg-white outline-0 focus:border-primary focus:shadow-primary-shadow/40 transition ease duration-300 focus:shadow-xl py-5 px-4 rounded-sm border-1 border-[#dadbdd] "
                             required placeholder="Your working email">
                         <button type="submit"
                             class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
@@ -649,8 +649,8 @@
 
     <footer class="bg-[#1e212c] pt-12">
         <div class="container">
-            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
-                <div class="lg:col-span-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
+                <div class="col-span-1 lg:col-span-3">
                     <a href="#" class="mb-4 inline-block">
                         <img src="./images/logo/logo.png" alt="Site Logo">
                     </a>
@@ -678,7 +678,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 order">
+                <div class="col-span-3 md:col-span-2 order">
                     <h3 class="uppercase font-bold text-white mb-2 pb-1">Site map</h3>
 
                     <ul class="text-[#ffffff99] flex flex-col">
@@ -699,7 +699,7 @@
 
                 </div>
 
-                <div class="col-span-2">
+                <div class="md:col-span-2">
                     <h3 class="uppercase font-bold text-white mb-2 pb-1">Courses</h3>
 
                     <ul class="text-[#ffffff99] flex flex-col">
@@ -718,7 +718,7 @@
 
                 </div>
 
-                <div class="col-span-2">
+                <div class="col-span-3 md:col-span-2">
                     <h3 class="uppercase font-bold text-white mb-2 pb-1">Contact us</h3>
 
                     <ul class="text-[#ffffff99] flex flex-col">
@@ -759,7 +759,7 @@
                     by Createx Studio</p>
                 <div class="flex gap-3 text-sm items-center">
                     <p class="text-white">Back to top</p>
-                    <button class="px-4 py-3 bg-primary rounded-sm text-white cursor-pointer"><i
+                    <button class="back-top px-4 py-3 bg-primary rounded-sm text-white cursor-pointer"><i
                             class="fa-solid fa-chevron-up"></i></button>
                 </div>
             </div>
