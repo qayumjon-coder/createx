@@ -9,9 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=task_alt" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=remove" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="../../../style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <style type="text/tailwindcss">
     @theme {
         --font-lato: Lato, sans-serif;
@@ -23,59 +28,64 @@
 </head>
 
 <body>
-  <div
-    class="set max-w-[1920] h-[468px] bg-[url('../../../images/singlecourse/backgroundtitle.png')] bg-cover bg-center bg-no-repeat">
-    <header class="p-4">
-      <div class="container flex justify-between items-center">
-        <a class="mr-12 pr-2" href="../../../index.html"><img src="../../../images/logo/logo-dark.svg" width="130"
-            alt="logo" /></a>
-        <nav class="self-start">
-          <ul class="flex gap-2 justify-start mr-auto items-center">
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About</a>
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Courses<i
-                  class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Events<i
-                  class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Blog<i
-                  class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
-            </li>
-            <li>
-              <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
-            </li>
-          </ul>
-        </nav>
 
-        <div class="justify-self-end">
-          <a href="#"
-            class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
-            consultation</a>
-          <a href="#" class="text-primary font-bold ml-6 "><i class="fa-regular fa-user mr-2"></i>Sign in/up</a>
-        </div>
-      </div>
-    </header>
+  <div
+    class="set max-w-[1920] h-[468px] bg-[url('../../../images/singlecourse/backgroundtitle.png')] bg-cover bg-center bg-no-repeat max-md:h-[290px]">
     <div class="container">
-      <div class="hero__content mt-[120px] flex flex-col items-center text-center">
-        <p class="w-[69px] h-[24px] uppercase font-lato font-bold text-[16px] leading-[150%] text-[#FF3F3A]">Course</p>
-        <h1
-          class="max-w[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle">
-          User Experience. Principles of Human-Centered <br>
-          Design</h1>
+
+      <header class="p-4">
+        <div class="container flex justify-between items-center">
+          <a class="mr-12 pr-2" href="../../../index.html"><img src="../../../images/logo/logo-dark.svg" width="130"
+              alt="logo" /></a>
+          <nav class="self-start">
+            <ul class="flex gap-2 justify-start mr-auto items-center">
+              <li>
+                <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About</a>
+              </li>
+              <li>
+                <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Courses<i
+                    class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
+              </li>
+              <li>
+                <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Events<i
+                    class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
+              </li>
+              <li>
+                <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Blog<i
+                    class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
+              </li>
+              <li>
+                <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="justify-self-end">
+            <a href="#"
+              class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
+              consultation</a>
+            <a href="#" class="text-primary font-bold ml-6 "><i class="fa-regular fa-user mr-2"></i>Sign in/up</a>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="hero__content mt-[120px] flex flex-col items-center text-center max-[768px  max-md:mt-[30px]">
+          <p class="w-[69px] h-[24px] uppercase font-lato font-bold text-[16px] leading-[150%] text-[#FF3F3A] max-md:text-[16px]">Course
+          </p>
+          <h1
+            class="max-w[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle max-md:text-[24px]">
+            User Experience. Principles of Human-Centered <br>
+            Design</h1>
+        </div>
       </div>
     </div>
   </div>
 
 
   <!-- Course information -->
-  <section class="course__information container">
+  <section class="course__information">
     <div class="container">
-      <div class="information__content max-w-[1230px] mx-auto flex justify-between gap-10 mt-[100px] mb-[130px]">
+      <div class="information__content max-w-[1230px] mx-auto flex justify-between gap-10 mt-[100px] max-md:flex max-md:flex-col max-md:items-center">
         <div class="infromation__text max-w-[600px]">
           <h1 class="text-[46px] font-[900] leading-[130%] text-[#1E212C] font-lato">About the course</h1>
           <p class=" mt-[40px] text-[16px] leading-[160%] max-w-[600px] h-auto font-lato font-[400] text-[#424551]">
@@ -94,37 +104,30 @@
                 task_alt
               </i>A fermentum in morbi pretium aliquam adipiscing donec tempus.
             </li>
-            <li>
-            <li>
             <li
               class="max-w-[568px] flex items-center gap-[8px] left-[32px] font-lato font-[400] text-[16px] leading-[160%] text-[#424551]">
               <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
                 task_alt
               </i>Vulputate placerat amet pulvinar lorem nisl.
             </li>
-            <li>
             <li
               class="max-w-[568px] flex items-center gap-[8px] left-[32px] font-lato font-[400] text-[16px] leading-[160%] text-[#424551]">
               <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
                 task_alt
               </i>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
             </li>
-            <li>
             <li
               class="max-w-[568px] flex items-center gap-[8px] left-[32px] font-lato font-[400] text-[16px] leading-[160%] text-[#424551]">
               <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
                 task_alt
               </i>Etiam duis lobortis in fames ultrices commodo nibh.
             </li>
-            <li>
-
             <li
-              class="max-w-[568px] flex items-center gap-[8px] left-[32px]font-lato font-[400] text-[16px] leading-[160%] text-[#424551]">
+              class="max-w-[568px] flex items-center gap-[8px] left-[32px] font-lato font-[400] text-[16px] leading-[160%] text-[#424551]">
               <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
                 task_alt
               </i>Fringilla in nec risus congue venenatis pretium posuere nec.
             </li>
-            <li>
             <li
               class="max-w-[568px] left-[32px] flex items-center gap-[16px] font-lato font-[400] text-[16px] leading-[160%] text-[#424551]">
               <i class="material-symbols-outlined text-[#FF3F3A]">
@@ -161,7 +164,8 @@
                   auctor orci vulputate faucibus quis ut.</p>
               </div>
 
-              <div class="info__price w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] mb-[40px]">
+              <div
+                class="info__price max-w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] mb-[40px] max-[992px]:mb-[60px]">
                 <h6
                   class="font-lato font-bold text-[14px] leading-[150%] uppercase tracking-[1px] text-[#1E212C] mb-[4px]">
                   Price
@@ -183,138 +187,739 @@
   </section>
 
   <!-- ------------------------ -->
-<section class="middle">    
-  <div class="container">
+  <section
+    class="middle relative overflow-hidden pt-[100px] bg-[url('../../../images/singlecourse/Backgroundmiddle.png')] bg-no-repeat bg-position-[-155px_150px]">
+    <div class="container">
 
-          <div class="middle__content max-w-[1230px] mx-auto">
-               <div class="curator__content flex justify-between max-w-[1230px] max-h-[600px] mb-[180px]"> 
-        <div class="curator__img w-[495px] h-[600px] shrink-0 mr-[135px]">
-          <img src="../../../images/singlecourse/curator-image.png" alt="Curator" class="w-full h-full object-cover">
-        </div>
+      <div class="middle__content max-w-[1230px] mt-[130px] mx-auto">
+        <div class="curator__content flex justify-between max-w-[1230px] max-h-[600px] mb-[180px] max-md:flex max-md:flex-col max-md:items-center">
+          <div class="curator__img max-w-[495px] max-h-[600px] mr-[135px] max-[992px]:mr-[35px] max-md:h-[400px]">
+            <img src="../../../images/singlecourse/curator-image.png" alt="Curator" class="w-full h-full object-cover">
+          </div>
 
-        <div class="curator__text max-w-[600x]">
-          <h6 class="font-lato font-bold leading-[150%] tracking-[1px] uppercase text-[#1E212C] max-w-[157px] max-h-[24px] mt-[18px]">Course curator</h6>
-          <h1 class="font-lato font-black text-[46px] leading-[130%] tracking-normal text-[#1E212C] mt-[8px]">Cody Fisher</h1>
-          <p class="font-lato font-normal text-[20px] leading-[150%] text-[#787A80] mt-[16px]">Senior UX designer in IT Product Company</p>
-          <p class="font-lato font-bold text-[16px] leading-[160%] text-[#424551] mt-[32px]"><i class="fa-regular fa-star text-[#FF3F3A]"></i>4.9 rate</p>
-          <p class="font-lato font-bold text-[16px] leading-[160%] text-[#424551] mt-[4px]"><i class="fa-regular fa-circle-play text-[#FF3F3A]"></i>4 courses</p>
-          <p class="font-lato font-bold text-[16px] leading-[160%] text-[#424551] mt-[4px]"><i class="fa-solid fa-user text-[#FF3F3A]"></i>350 students</p>
-          <p class="max-w-[600px] mt-[32px] font-lato font-normal text-[16px] leading-[160%] text-[#424551]">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate
-            venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit mo rbi
-            odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac
-            commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique
-            sollicitudin interdum quam. </p>
-          <div class="social__link mt-[40px]">
-            <a href="#"><i class="fa-brands fa-facebook-f w-[24px] h-[24px] mx-[10px]  text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
-            <a href="#"><i class="fa-brands fa-behance w-[24px] h-[24px] mx-[10px] text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter w-[24px] h-[24px] mx-[10px] text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in w-[24px] h-[24px] mx-[10   px] text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
+          <div class="curator__text max-w-[600x] max-md:flex max-md:flex-col max-md:items-center">
+            <h6
+              class="font-lato font-bold leading-[150%] tracking-[1px] uppercase text-[#1E212C] max-w-[157px] max-h-[24px] mt-[18px]">
+              Course curator</h6>
+            <h1 class="font-lato font-black text-[46px] leading-[130%] tracking-normal text-[#1E212C] mt-[8px]">Cody
+              Fisher</h1>
+            <p class="font-lato font-normal text-[20px] leading-[150%] text-[#787A80] mt-[16px]">Senior UX designer in
+              IT Product Company</p>
+            <p class="font-lato font-bold text-[16px] leading-[160%] text-[#424551] mt-[32px]"><i
+                class="fa-regular fa-star text-[#FF3F3A]"></i>4.9 rate</p>
+            <p class="font-lato font-bold text-[16px] leading-[160%] text-[#424551] mt-[4px]"><i
+                class="fa-regular fa-circle-play text-[#FF3F3A]"></i>4 courses</p>
+            <p class="font-lato font-bold text-[16px] leading-[160%] text-[#424551] mt-[4px]"><i
+                class="fa-solid fa-user text-[#FF3F3A]"></i>350 students</p>
+            <p class="max-w-[600px] mt-[32px] font-lato font-normal text-[16px] leading-[160%] text-[#424551]">Mattis
+              adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate
+              venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit mo rbi
+              odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac
+              commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique
+              sollicitudin interdum quam. </p>
+            <div class="social__link mt-[40px]">
+              <a href="#"><i
+                  class="fa-brands fa-facebook-f w-[24px] h-[24px] mx-[10px]  text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-behance w-[24px] h-[24px] mx-[10px] text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-twitter w-[24px] h-[24px] mx-[10px] text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
+              <a href="#"><i
+                  class="fa-brands fa-linkedin-in w-[24px] h-[24px] mx-[10px] text-[#787A80] hover:text-[#FF3F3A] hover:w-5 hover:h-5"></i></a>
 
+            </div>
           </div>
         </div>
+
+
+
+        <!-- Main steps--------- -->
+
+        <div class="steps__content max-w-[1230px] h-[347px] mx-auto flex flex-col items-center gap-10 mb-[170px] max-md:mt-[400px] max-[576px]:mb-[600px]">
+          <div class="steps__head flex flex-col max-[576px]:mt-[80px]">
+            <p
+              class="font-lato font-bold text-[16px] leading-[150%] tracking-[1px] text-center uppercase text-[#1E212C]">
+              Main steps</p>
+            <h1
+              class="font-lato font-black text-[46px] mt-[8px] leading-[130%] tracking-normal text-center text-[#1E212C] max-md:text-[28px]">
+              Online learning process</h1>
+          </div>
+          <div
+            class="steps__body flex justify-between max-[992px]:flex max-[992px]:flex-wrap max-[992px]:mx-[50px] max-[992px]:ml-[70px]">
+            <div class="step1 group max-w-[285px] max-h-[192px] mt-[24px] max-[992px]:mb-[40px] max-md:mx-[80px]">
+              <div class="for__border flex items-center gap-4">
+                <div class="relative w-[116px] h-[116px] flex items-center justify-center">
+                  <span
+                    class="absolute inset-0 w-[116px] h-[116px] rounded-full bg-transparent group-hover:bg-primary/5 transition-colors duration-300">
+                  </span>
+                  <h1
+                    class="relative font-lato font-black text-[46px] whitespace-nowrap leading-[130%] text-[#D7DADD] align-middle group-hover:text-[#FF3F3A] w-21 h-21 bg-transparent group-hover:bg-primary/10 rounded-full flex items-center justify-center transition-colors duration-300">
+                    01
+                  </h1>
+                </div>
+                <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
+              </div>
+              <p class="font-lato mt-[0px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">
+                Watching online video lectures</p>
+              <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80] mt-[8px]">
+                Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+            </div>
+
+            <div class="step2 group max-w-[285px] max-h-[192px] ml-[30px] mt-[24px] max-md:mx-[80px] max-[576px]:mt-[140px]">
+              <div class="for__border flex items-center gap-4">
+                <div class="relative w-[116px] h-[116px] flex items-center justify-center">
+                  <span
+                    class="absolute inset-0 w-[116px] h-[116px] rounded-full bg-transparent group-hover:bg-primary/5 transition-colors duration-300">
+                  </span>
+                  <h1
+                    class="relative font-lato font-black text-[46px] leading-[130%] text-[#D7DADD] align-middle group-hover:text-[#FF3F3A] w-21 h-21 bg-transparent group-hover:bg-primary/10 rounded-full flex items-center justify-center transition-colors duration-300">
+                    02
+                  </h1>
+                </div>
+                <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
+              </div>
+              <p class="font-lato mt-[0px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">
+                Passing test</p>
+              <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80] mt-[8px]">
+                Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea.
+              </p>
+            </div>
+
+            <div class="step3 group max-w-[285px] max-h-[192px] mx-[30px] mt-[24px] max-[992px]:ml-[0px] max-md:mx-[80px] max-[576px]:mt-[140px]">
+              <div class="for__border flex items-center gap-4">
+                <div class="relative w-[116px] h-[116px] flex items-center justify-center">
+                  <span
+                    class="absolute inset-0 w-[116px] h-[116px] rounded-full bg-transparent group-hover:bg-primary/5 transition-colors duration-300">
+                  </span>
+                  <h1
+                    class="relative font-lato font-black text-[46px] leading-[130%] text-[#D7DADD] align-middle group-hover:text-[#FF3F3A] w-21 h-21 bg-transparent group-hover:bg-primary/10 rounded-full flex items-center justify-center transition-colors duration-300">
+                    03
+                  </h1>
+                </div>
+                <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
+              </div>
+              <p class="font-lato mt-[0px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">
+                Passing test</p>
+              <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80] mt-[8px]">
+                Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.</p>
+            </div>
+
+            <div class="step4 group max-w-[285px] max-h-[192px] mt-[24px] max-md:mx-[80px] max-[576px]:mt-[80px]">
+                            <div class="for__border flex items-center gap-4">
+                <div class="relative w-[116px] h-[116px] flex items-center justify-center">
+                  <span
+                    class="absolute inset-0 w-[116px] h-[116px] rounded-full bg-transparent group-hover:bg-primary/5 transition-colors duration-300">
+                  </span>
+                  <h1
+                    class="relative font-lato font-black text-[46px] leading-[130%] text-[#D7DADD] align-middle group-hover:text-[#FF3F3A] w-21 h-21 bg-transparent group-hover:bg-primary/10 rounded-full flex items-center justify-center transition-colors duration-300">
+                    04
+                  </h1>
+                </div>
+
+                <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
+              </div>
+
+              <p class="font-lato mt-[0px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">
+                Corrections if needed</p>
+              <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80] mt-[8px]">
+                Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Discount section -->
+
+        <section class="py-12">
+          <div class="relative max-w-7xl mx-auto px-4 max-[992px]:mt-[130px] max-md:mt-[600px]">
+
+            <!-- Background -->
+            <div class="absolute inset-0 bg-[url('../../../images/singlecourse/background.png')] rounded-[4px]"></div>
+
+            <div class="relative z-10 px-4 lg:px-10 py-8">
+
+              <!-- Header -->
+              <div class="flex flex-col md:flex-row md:items-start items-center justify-between gap-6 mb-8">
+
+                <h2 class="text-3xl font-bold text-center md:text-left">
+                  20% discount for early birds!
+                </h2>
+
+                <!-- Countdown -->
+                <div class="flex gap-6 text-center">
+                  <div>
+                    <span class="block text-3xl font-bold">0</span>
+                    <span class="text-gray-500 text-sm">Days</span>
+                  </div>
+
+                  <div>
+                    <span class="block text-3xl font-bold">0</span>
+                    <span class="text-gray-500 text-sm">Hours</span>
+                  </div>
+
+                  <div>
+                    <span class="block text-3xl font-bold">0</span>
+                    <span class="text-gray-500 text-sm">Mins</span>
+                  </div>
+
+                  <div>
+                    <span class="block text-3xl font-bold">0</span>
+                    <span class="text-gray-500 text-sm">Secs</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Form -->
+              <form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div>
+                  <label for="discount-name" class="block text-lg font-medium mb-2">
+                    Full name
+                  </label>
+                  <input type="text" id="discount-name" placeholder="Your full name"
+                    class="w-full border bg-[white] border-gray-300 rounded-[4px] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    required>
+                </div>
+
+                <div>
+                  <label for="discount-email" class="block text-lg font-medium mb-2">
+                    Email
+                  </label>
+                  <input type="email" id="discount-email" placeholder="Your working email"
+                    class="w-full bg-[white] border border-gray-300 rounded-[4px] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    required>
+                </div>
+
+                <div>
+                  <label for="discount-tel" class="block text-lg font-medium mb-2">
+                    Phone
+                  </label>
+                  <input type="tel" id="discount-tel" placeholder="Your phone number"
+                    class="w-full bg-[white]  border border-gray-300 rounded-[4px] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                </div>
+
+                <div class="flex items-end">
+                  <button type="submit"
+                    class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition">
+                    Join the course
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Benefit section -->
+        <section class="benetfit">
+          <section class="container">
+            <div class="for flex gap-[130px] mt-[120px] mx-auto mb-[126px] max-w-[1230px] max-[992px]:gap-[30px] max-md:flex max-md:flex-col max-md:items-center">
+              <div class="for_text max-[992px]:mt-[120px]">
+                <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">FOR WHOM?</h6>
+                <h1
+                  class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px]">
+                  Who
+                  will benefit from the event:</h1>
+              </div>
+              <div class="for_check flex flex-col gap-4 mt-[36px] max-w-[600px]">
+                <div class="check flex items-start gap-3">
+                  <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
+                    task_alt
+                  </i>
+                  <p class="font-lato font-[700] text-[20px] leading-[150%] text-[#424551]">Specialists with more than 1
+                    year of active work experience</p>
+                </div>
+
+                <div class="check flex items-start gap-3 mt-[20px]">
+                  <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
+                    task_alt
+                  </i>
+                  <p class="font-lato font-[700] text-[20px] leading-[150%] text-[#424551]">Mobile app designers who
+                    want to improve their skills in solving business problems, creating and
+                    testing human-centered interfaces</p>
+                </div>
+
+                <div class="check flex items-start gap-3 mt-[20px]">
+                  <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
+                    task_alt
+                  </i>
+                  <p class="font-lato font-[700] text-[20px] leading-[150%] text-[#424551]">Professional designers who
+                    want to feel more confident in UX</p>
+                </div>
+                <div class="check flex items-start gap-3 mt-[20px]">
+                  <i class="material-symbols-outlined text-[#FF3F3A] mr-[8px]">
+                    task_alt
+                  </i>
+                  <p class="font-lato font-[700] text-[20px] leading-[150%] text-[#424551]">Specialists who would like
+                    to structure their knowledge, fill in the gaps</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
       </div>
-
-
-
-      <!-- Main steps--------- -->
-
-      <div class="steps__content max-w-[1230px] h-[347px] mx-auto flex flex-col items-center gap-10 mb-[170px] ">
-        <div class="steps__head flex flex-col">
-          <p class="font-lato font-bold text-[16px] leading-[150%] tracking-[1px] text-center uppercase text-[#1E212C]">Main steps</p>
-          <h1 class="font-lato font-black text-[46px] mt-[8px] leading-[130%] tracking-normal text-center text-[#1E212C]">Online learning process</h1>
-        </div>
-        <div class="steps__body flex justify-between">
-          <div class="step1 max-w-[285px] max-h-[192px] mt-[24px]">
-                        <div class="for__border flex items-center gap-4">
-            <h1 class="font-lato  font-black text-[46px] max-w-[285px] whitespace-nowrap  leading-[130%] text-[#D7DADD] align-middle hover:text-[#FF3F3A] w-21 h-21 hover:bg-primary/10 rounded-full flex items-center justify-center">01</h1>
-            <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
-            </div>
-            <p class="font-lato mt-[16px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">Watching online video lectures</p>
-            <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80] mt-[8px]">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
-          </div>
-          <div class="step2 max-w-[285px] max-h-[192px] ml-[30px]  mt-[24px]">
-                        <div class="for__border flex items-center gap-4">
-            <h1 class="font-lato font-black text-[46px] leading-[130%] text-[#D7DADD] align-middle hover:text-[#FF3F3A] w-21 h-21 hover:bg-primary/10 rounded-full flex items-center justify-center">02</h1>
-            <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
-            </div>
-            <p class="font-lato mt-[16px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">Passing test</p>
-            <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80]  mt-[8px]">Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea.
-            </p>
-          </div>
-          <div class="step3 max-w-[285px] max-h-[192px] mx-[30px]  mt-[24px]">
-                        <div class="for__border flex items-center gap-4">
-            <h1 class="font-lato font-black text-[46px] leading-[130%] text-[#D7DADD] align-middle hover:text-[#FF3F3A] w-21 h-21 hover:bg-primary/10 rounded-full flex items-center justify-center">03</h1>
-            <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
-            </div>
-            <p class="font-lato mt-[16px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">Passing test</p>
-            <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80]  mt-[8px]">Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.</p>
-
-          </div>
-          <div class="step4 max-w-[285px] max-h-[192px]  mt-[24px]">
-            <div class="for__border flex items-center gap-4">
-            <h1 class="font-lato font-black text-[46px] leading-[130%] text-[#D7DADD] align-middle hover:text-[#FF3F3A] w-21 h-21 hover:bg-primary/10 rounded-full flex items-center justify-center">04 </h1>
-            <div class="flex-1 border-t-[2px] border-dashed border-[#D7DADD]"></div>
-            </div>
-            <p class="font-lato mt-[16px] font-black text-[20px] leading-[130%] text-[#1E212C] align-middle">Corrections if needed</p>
-            <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80]  mt-[8px]">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.</p>
-
-          </div>
-        </div>
-      </div>
-      
-      <!-- Discount section -->
-
-      <div class="discount max-w-[1230px] h-[347px] mx-auto flex flex-col items-center">
-        <div class="discount__time">
-          <div class="discount__text">
-            <h2>20% discount for early birds!</h2>
-          </div>
-          <div class="discount__timer">
-            <div class="days">
-              <h5>0</h5>
-              <p>Days</p>
-            </div>
-            <div class="hours">
-              <h5>0</h5>
-              <p>Hours</p>
-            </div>
-            <div class="mins">
-              <h5>0</h5>
-              <p>Mins</p>
-            </div>
-            <div class="sec">
-              <h5>0</h5>
-              <p>Sec</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="name__input">
-            <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" placeholder="Your full name">
-        </div>
-        <div class="email__input">
-             <label for="email">Email</labe`l>
-             <input type="email" name="email"  id="email" placeholder="Your working email">
-        </div>
-        <div class="phone__input ">
-            <label for="phone">Phone</label>
-            <input type="number" name="phone" id="phone" placeholder="Your phone number">
-        </div>
-
-        <div
-          class="discount__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[166px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
-          <a href="#">Join the course</a>
-        </div>
-      </div>
-
-
-      
-    
     </div>
+  </section>
+
+  <!-- Course Program -->
+
+  <section class="program">
+    <div class="container">
+      <div class="porgram__content flex justify-between max-w-[1230px] gap-[130px] mx-auto h-auto mt-[54px] mb-[120px] max-md:flex max-md:flex-col max-md:items-center max-md:mb-[-120px]">
+        <div class="program__text max-w-[px]">
+          <div class="text__head">
+            <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">COURSE PROGRAM</h6>
+            <h1 class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px]">
+              What will you learn</h1>
+          </div>
+          <div class="program__lessons mt-[60px]">
+            <div>
+              <div class="flex items-start gap-3 mt-[20px]">
+                <span class="text-primary text-xl font-light leading-7 select-none">&minus;</span>
+                <p class="text-lg leading-7">
+                  <span class="text-primary font-semibold">Theme 1.</span>
+                  <span class="text-gray-900 font-semibold"> Aliquet lectus urna viverra in odio.</span>
+                </p>
+              </div>
+              <p class="text-gray-500 text-[15px] leading-6 mt-3 ml-7 max-w-[560px]">
+                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec
+                enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio
+                mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis.
+                Commodo nunc orci vitae accumsan id.
+              </p>
+            </div>
+            <div class="flex items-start gap-3 mt-[20px]">
+              <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+              <p class="text-lg leading-7">
+                <span class="text-primary font-semibold">Theme 2.</span>
+                <span class="text-gray-900 font-semibold"> Orci commodo, viverra orci mollis ut
+                  euismod.</span>
+              </p>
+            </div>
+            <div class="flex items-start gap-3 mt-[20px]">
+              <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+              <p class="text-lg leading-7">
+                <span class="text-primary font-semibold">Theme 3.</span>
+                <span class="text-gray-900 font-semibold"> Sagittis vitae facilisi rutrum amet mauris
+                  quisque vel.</span>
+              </p>
+            </div>
+            <div class="flex items-start gap-3 mt-[20px]">
+              <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+              <p class="text-lg leading-7">
+                <span class="text-primary font-semibold">Theme 4.</span>
+                <span class="text-gray-900 font-semibold"> In id dolor quis nunc, urna hendrerit
+                  pharetra.</span>
+              </p>
+            </div>
+            <div class="flex items-start gap-3 mt-[20px]">
+              <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+              <p class="text-lg leading-7">
+                <span class="text-primary font-semibold">Theme 5.</span>
+                <span class="text-gray-900 font-semibold"> Est, ut tempus id rutrum facilisi.</span>
+              </p>
+            </div>
+            <div class="flex items-start gap-3 mt-[20px]">
+              <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+              <p class="text-lg leading-7">
+                <span class="text-primary font-semibold">Theme 6.</span>
+                <span class="text-gray-900 font-semibold"> Amet nec in pellentesque.</span>
+              </p>
+            </div>
+            <div class="flex items-start gap-3 mt-[20px]">
+              <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+              <p class="text-lg leading-7">
+                <span class="text-primary font-semibold">Theme 7.</span>
+                <span class="text-gray-900 font-semibold"> Massa vel arcu mauris, id vel rhoncus mattis quis.</span>
+              </p>
+            </div>
+            <div class="flex items-start gap-3 mt-[20px]">
+              <span class="text-primary text-xl font-light leading-7 select-none">&plus;</span>
+              <p class="text-lg leading-7">
+                <span class="text-primary font-semibold">Theme 8.</span>
+                <span class="text-gray-900 font-semibold"> Neque, cursus sapien nullam id.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="program__image w-1/2">
+          <div class="program__img max-w-[495px] h-[554px] ml-auto  max-[992px]:mt-[200px] max-md:mt-[0px] max-md:max-w-[340px] max-md:max-h-[400px] max-md:mt-[-70px]">
+            <img src="../../../images/singlecourse/illustration.png" alt="">
+          </div>
+        </div>
+      </div>
 
     </div>
   </section>
+
+
+  <!--  Registration section -->
+  <section class="registration">
+    <div class="container">
+      <div class="bg-[#F4F5F6] mt-16 sm:mt-[100px] py-12 sm:py-[80px] max-md:mt-[110px]">
+        <section class="container mx-auto px-6 py-16 relative ">
+          <div class="text-center mb-12 relative">
+            <p class="font-semibold uppercase tracking-wide">Testimonials</p>
+            <h2 class="text-3xl sm:text-4xl font-bold mt-2 relative inline-block">
+              What our students say
+            </h2>
+          </div>
+
+          <div class="relative max-w-3xl mx-auto">
+            <button type="button"
+              class="testimonial-prev hidden lg:flex absolute left-[-70px] top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white hover:bg-linear-to-r hover:from-primary hover:to-secondary shadow-md items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-all duration-300">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button type="button"
+              class="testimonial-next hidden lg:flex absolute right-[-70px] top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white hover:bg-linear-to-r hover:from-primary hover:to-secondary shadow-md items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-all duration-300">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div class="swiper testimonials-swiper overflow-visible">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide h-auto">
+                  <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                    <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                      viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                      turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                      Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                    </p>
+                    <div class="flex items-center gap-3 mt-8">
+                      <img src="../../../images/frrgfvurb.png" alt="Eleanor Pena"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-gray-800">Eleanor Pena</h3>
+                        <p class="text-gray-400 text-sm">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide h-auto">
+                  <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                    <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                      viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                      turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                      Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                    </p>
+                    <div class="flex items-center gap-3 mt-8">
+                      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guy Hawkins"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-gray-800">Guy Hawkins</h3>
+                        <p class="text-gray-400 text-sm">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide h-auto">
+                  <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                    <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                      viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                      turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                      Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                    </p>
+                    <div class="flex items-center gap-3 mt-8">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Kristin Watson"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-gray-800">Kristin Watson</h3>
+                        <p class="text-gray-400 text-sm">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide h-auto">
+                  <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                    <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                      viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                      turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                      Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                    </p>
+                    <div class="flex items-center gap-3 mt-8">
+                      <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Cody Fisher"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-gray-800">Cody Fisher</h3>
+                        <p class="text-gray-400 text-sm">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide h-auto">
+                  <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                    <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                      viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                      turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                      Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                    </p>
+                    <div class="flex items-center gap-3 mt-8">
+                      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dianne Russell"
+                        class="w-14 h-14 rounded-full object-cover">
+                      <div>
+                        <h3 class="font-bold text-gray-800">Dianne Russell</h3>
+                        <p class="text-gray-400 text-sm">Position, Course</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-pagination flex justify-center items-center gap-2 mt-8"></div>
+          </div>
+        </section>
+
+        <div class="registraion__course mt-[180px]">
+          <div class="container">
+            <div class="register__content flex justify-between max-w-[1230px]  mx-auto gap-[20px] h-auto max-md:flex max-md:flex-col max-md:items-center">
+              <div class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px]">
+                <img src="../../../images/singlecourse/illustrationregister.png" alt="Image">
+              </div>
+              <div class="for_register max-w-[495px]">
+                <div class="register__text">
+                  <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">Leave a request now and get
+                    20% off!</h6>
+                  <h1
+                    class="text-[46px] font-[900] max-w-[492px] mt-[8px] mb-[40px]  text-[#1E212C] leading-[130%] font-lato ml-[0px] max-md:text-[32px]">
+                    Register for the course </h1>
+                </div>
+                <div class="for__form flex flex-col">
+                  <form action="#">
+                    <label for="name" class="text-[#424551] font-normal text-base leading-[160%]">Full name</label>
+                    <input type="text" id="name"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"  placeholder="Your full name">
+                    <label for="email"
+                      class="text-[#424551] font-normal text-base leading-[160%] mb-[8px]">Email</label>
+                    <input type="email" id="email"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none" placeholder="Your working email">
+                    <label for="phone"
+                      class="text-[#424551] font-normal text-base leading-[160%] mb-[8px] ">Phone</label>
+                    <input type="tel" id="phone"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[40px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none" placeholder="Your phone number">
+                    <div
+                      class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
+                      <a href="#">Join the course</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Other courses -->
+
+  <section class="other__courses">
+    <div class="container">
+      <div class="other__content mt-[120px]">
+
+        <div class="other__text flex items-center justify-between mb-[60px]">
+          <div>
+            <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato">Check other courses</h6>
+            <h1 class="text-[46px] font-[900] max-w-[492px] mt-[8px] text-[#1E212C] leading-[130%] font-lato ml-[0px] max-md:text-[32px]">
+              You may also like
+            </h1>
+          </div>
+
+          <div class="related-nav flex gap-[16px]">
+            <div class="related-prev"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="related-next"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper w-full h-full mx-auto">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide flex items-center justify-center bg-[#FFFF]  mb-[85px]  text-center text-[18px]">
+              <a href="#"
+                class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                <div
+                  class="bg-[url(../../../images/home-mentors/mentor-1.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                </div>
+                <div class="p-8 w-[60%]">
+                  <span
+                    class="inline-block py-1 px-2 mb-4 bg-emerald-500 text-white text-sm rounded-md">Marketing</span>
+                  <h5
+                    class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                    The Ultimate Google Ads Training Course</h5>
+                  <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                      class="text-primary font-semibold">$100</span>|<p class="text-[#787A80]">by Jerome
+                      Bell</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center bg-[#FFFF] text-center text-[18px]">
+              <a href="#"
+                class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                <div
+                  class=" bg-[url('../../../images/home-mentors/mentor-2.jpg')] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                </div>
+                <div class="p-8 w-[60%]">
+                  <span
+                    class="inline-block py-1 px-2 mb-4 bg-indigo-500 text-white text-sm rounded-md">Management</span>
+                  <h5
+                    class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                    Prduct Management Fundamentals</h5>
+                  <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                      class="text-primary font-semibold">$480</span>|<p class="text-[#787A80]">by Jerome
+                      Bell</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center bg-[#FFFF] text-center text-[18px]">
+              <a href="#"
+                class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                <div
+                  class="bg-[url(../../../../images/home-mentors/mentor-3.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                </div>
+                <div class="p-8 w-[60%]">
+                  <span class="inline-block py-1 px-2 mb-4 bg-amber-500 text-white text-sm rounded-md">HR &
+                    Recruting</span>
+                  <h5
+                    class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                    HR Management and Analytics</h5>
+                  <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                      class="text-primary font-semibold">$200</span>|<p class="text-[#787A80]">by Jerome
+                      Bell</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center bg-[#FFFF] text-center text-[18px]">
+              <a href="#"
+                class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                <div
+                  class="bg-[url(../../../../images/home-mentors/mentor-4.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                </div>
+                <div class="p-8 w-[60%]">
+                  <span
+                    class="inline-block py-1 px-2 mb-4 bg-emerald-500 text-white text-sm rounded-md">Marketing</span>
+                  <h5
+                    class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                    Brand Management & PR Communications</h5>
+                  <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                      class="text-primary font-semibold">$530</span>|<p class="text-[#787A80]">by Jerome
+                      Bell</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center bg-[#FFFF] text-center text-[18px]">
+              <a href="#"
+                class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                <div
+                  class="bg-[url(../../../../images/home-mentors/mentor-5.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                </div>
+                <div class="p-8 w-[60%]">
+                  <span
+                    class="inline-block py-1 px-2 mb-4 bg-indigo-500 text-white text-sm rounded-md">Management</span>
+                  <h5
+                    class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                    Business Development Management</h5>
+                  <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                      class="text-primary font-semibold">$400</span>|<p class="text-[#787A80]">by Jerome
+                      Bell</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center bg-[#FFFF] text-center text-[18px]">
+              <a href="#"
+                class="flex h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
+                <div
+                  class="bg-[url(../../../../images/home-mentors/mentor-6.jpg)] bg-center bg-cover w-[40%] rounded-tl-xs rounded-bl-xs">
+                </div>
+                <div class="p-8 w-[60%]">
+                  <span
+                    class="inline-block py-1 px-2 mb-4 bg-rose-500 text-white text-sm rounded-md">Design</span>
+                  <h5
+                    class="group-hover:text-primary transition duration-300 transition-ease text-xl font-bold py-1 mb-4">
+                    Graphic Design Basic</h5>
+                  <div class="flex items-center gap-1 text-[#e5e8ed]"><span
+                      class="text-primary font-semibold">$500</span>|<p class="text-[#787A80]">by Jerome
+                      Bell</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="more">
+          <div class="more__course flex items-center justify-center gap-[40px] mb-[180px] mx-auto">
+            <h3 class="font-lato font-bold text-[28px] leading-[150%] text-[#1E212C] max-md:text-[22px]">
+              Do you want more courses?
+            </h3>
+            <a href="#"
+              class="info__join flex items-center justify-center w-[202px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] text-white font-bold">
+              View all courses
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const testimonialsSwiper = new Swiper('.testimonials-swiper', {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 1,
+      speed: 600,
+      navigation: {
+        nextEl: '.testimonial-next',
+        prevEl: '.testimonial-prev',
+      },
+      pagination: {
+        el: '.testimonial-pagination',
+        clickable: true,
+      },
+
+    });
+
+    const relatedSwiper = new Swiper('.mySwiper', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.related-next',
+        prevEl: '.related-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+  <script src="./index.js"></script>
+
 </body>
 
 </html>
