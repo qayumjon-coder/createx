@@ -228,7 +228,7 @@ menuBtn.addEventListener("click", () => {
     menu.classList.toggle("open");
     menuBtn.innerHTML = '<i class="fa-solid fa-xmark text-[25px] text-secondary-text cursor-pointer"></i>';
 
-    if(!menu.classList.contains("open")){
+    if (!menu.classList.contains("open")) {
         menuBtn.innerHTML = '<i class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i>';
     }
 });
@@ -242,8 +242,8 @@ dropdownBtns.forEach((btn) => {
 });
 
 backTop.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
 });

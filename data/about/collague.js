@@ -145,3 +145,54 @@ export const jobData = [
 ]
 
 
+export const blogImg = [
+    {
+        img: "../../images/job-1.svg",
+        img2: "../../images/job-2.svg"
+    },
+
+    {
+        img: "../../images/job-3.svg",
+        img2: "../../images/job-4.svg"
+    },
+
+    {
+        img: "../../images/job-5.svg",
+        img2: "../../images/job-6.svg"
+    },
+
+    {
+        img: "../../images/job-7.svg",
+        img2: "../../images/job-8.svg"
+    },
+
+    {
+        img: "../../images/job-9.svg",
+        img2: "../../images/job-10.svg"
+    },
+
+    {
+        img: "../../images/exxon.svg",
+        img2: "../../images/gabor.svg"
+    },
+
+    {
+        img: "../../images/job-7.svg",
+        img2: "../../images/job-8.svg"
+    },
+
+    {
+        img: "../../images/job-9.svg",
+        img2: "../../images/job-10.svg"
+    },
+
+    {
+        img: "../../images/exxon.svg",
+        img2: "../../images/gabor.svg"
+    },
+
+    
+    
+]
+
+
