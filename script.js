@@ -185,9 +185,9 @@ let cardItem = cardData.map(card => `
 slideBox.innerHTML = cardItem;
 
 let blogLatest = latestPosts.map(post => `
-                    <div>
-                        <div class="w-full relative">
-                            <a href="${post.link}"><img class="w-full inline-block" src="${post.image}" alt="post-image"></a>
+                    <div class="group">
+                        <div class="w-full relative overflow-hidden">
+                            <a href="${post.link}"><img class="w-full group-hover:scale-110 transition ease duration-300 inline-block " src="${post.image}" alt="post-image"></a>
                             <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text flex items-center gap-1">
                                 ${post.typeIcon} ${post.type}
                             </span>
