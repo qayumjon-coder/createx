@@ -30,7 +30,7 @@ const events = [
         title: "Formation of the organizational structure of the company in the face of uncertainty.",
         category: "Master-class",
         format: "Online master-class",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ const events = [
         title: "Building a customer service department: Best Practices",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ const events = [
         title: "How to apply methods of speculative design in practice. Worldbuilding prototyping",
         category: "Workshop",
         format: "Online workshop",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ const events = [
         title: "Find and evaluate: search and assessment tools for candidates",
         category: "Workshop",
         format: "Online workshop",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 5,
@@ -66,7 +66,7 @@ const events = [
         title: "Connection to Microsoft Excel and Google Sheets. Data Visualization in Power BI",
         category: "Master-class",
         format: "Online master-class",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 6,
@@ -75,7 +75,7 @@ const events = [
         title: "Marketing or growth hacking: main differences and what business needs",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 7,
@@ -84,7 +84,7 @@ const events = [
         title: "How to brief a client and present your design to approve it from the first show",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 8,
@@ -93,7 +93,7 @@ const events = [
         title: "Who is a project manager and do I want to be PM?",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 9,
@@ -102,7 +102,7 @@ const events = [
         title: "The company's business page as an additional tool to support the announcement of vacancies",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
 ];
 
@@ -112,49 +112,53 @@ function renderEvents(data) {
 
     data.forEach((event) => {
         eventsContainer.innerHTML += `
-        <div class="flex items-center justify-between gap-8 border border-[#E5E8ED] rounded-xl p-6 hover:shadow-lg duration-300">
-            <div class="flex items-center gap-5">
-                <div class="text-center min-w-[80px]">
-                    <h2 class="text-[48px] font-black text-[#FF3F3A] leading-none">
-                        ${event.date.getDate()}
-                    </h2>
+     <div class="w-full flex flex-col lg:flex-row lg:items-center justify-between gap-6 border border-[#E5E5E5] rounded-lg p-6 lg:p-8 hover:shadow-lg transition duration-300">
 
-                    <p class="text-[20px] font-bold text-[#1E212C]">
-                        ${monthNames[event.date.getMonth()]}
-                    </p>
-                </div>
-                <div>
-                    <p class="text-[#787A80] text-sm">
-                        ${event.time}
-                    </p>
+    <!-- Date -->
+    <div class="flex items-center gap-4 lg:min-w-[180px]">
+        <h2 class="text-[48px] font-black text-[#FF3F3A] leading-none">
+            ${String(event.date.getDate()).padStart(2, "0")}
+        </h2>
 
-                    <h2 class="text-[20px] font-bold text-[#1E212C] mt-2">
-                        ${event.title}
-                    </h2>
+        <div>
+            <p class="text-[20px] font-bold text-[#1E212C] leading-none">
+                ${monthNames[event.date.getMonth()]}
+            </p>
 
-                    <p class="text-[#787A80] mt-2">
-                        ${event.format}
-                    </p>
-                </div>
-            </div>
-            <a href="${event.link}"
-               class="border border-[#FF3F3A] text-[#FF3F3A] font-bold px-8 py-3 rounded hover:bg-[#FF3F3A] hover:text-white duration-300">
-                View more
-            </a>
-
+            <p class="text-[#787A80] text-[16px] mt-2">
+                ${event.time}
+            </p>
         </div>
-        `;
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1">
+        <h2 class="text-[20px] font-bold text-[#1E212C] leading-[150%] transition duration-300">
+            <a href="${event.link}" class="hover:text-[#FF3F3A] cursor-pointer">${event.title}</a>
+        </h2>
+
+        <p class="text-[#787A80] mt-2">
+            ${event.format}
+        </p>
+    </div>
+
+    <!-- Button -->
+    <a href="${event.link}"
+        class="w-full lg:w-auto text-center border border-[#FF3F3A] text-[#FF3F3A] font-bold px-8 py-3 rounded hover:bg-[#FF3F3A] hover:text-white transition duration-300">
+        View more
+    </a>
+
+</div>      `;
     });
 }
 
 renderEvents(events);
 
-
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("open");
     menuBtn.innerHTML = '<i class="fa-solid fa-xmark text-[25px] text-secondary-text cursor-pointer"></i>';
 
-    if (!menu.classList.contains("open")) {
+    if(!menu.classList.contains("open")){
         menuBtn.innerHTML = '<i class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i>';
     }
 });
@@ -168,8 +172,8 @@ dropdownBtns.forEach((btn) => {
 });
 
 backTop.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
 });
