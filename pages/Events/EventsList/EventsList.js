@@ -1,7 +1,10 @@
-let menuBtn = document.querySelector(".menu-btn");
-let menu = document.querySelector(".menu");
-let dropdownBtns = document.querySelectorAll(".dropdown-btn");
+const tabs = document.querySelectorAll('.filter-tab');
+const cards = document.querySelectorAll('.course-card');
 
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+const backTop = document.querySelector('.back-top');
 
 
 const monthNames = [
@@ -27,7 +30,7 @@ const events = [
         title: "Formation of the organizational structure of the company in the face of uncertainty.",
         category: "Master-class",
         format: "Online master-class",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 2,
@@ -36,7 +39,7 @@ const events = [
         title: "Building a customer service department: Best Practices",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 3,
@@ -45,7 +48,7 @@ const events = [
         title: "How to apply methods of speculative design in practice. Worldbuilding prototyping",
         category: "Workshop",
         format: "Online workshop",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 4,
@@ -54,7 +57,7 @@ const events = [
         title: "Find and evaluate: search and assessment tools for candidates",
         category: "Workshop",
         format: "Online workshop",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 5,
@@ -63,7 +66,7 @@ const events = [
         title: "Connection to Microsoft Excel and Google Sheets. Data Visualization in Power BI",
         category: "Master-class",
         format: "Online master-class",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 6,
@@ -72,7 +75,7 @@ const events = [
         title: "Marketing or growth hacking: main differences and what business needs",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 7,
@@ -81,7 +84,7 @@ const events = [
         title: "How to brief a client and present your design to approve it from the first show",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 8,
@@ -90,7 +93,7 @@ const events = [
         title: "Who is a project manager and do I want to be PM?",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
     {
         id: 9,
@@ -99,7 +102,7 @@ const events = [
         title: "The company's business page as an additional tool to support the announcement of vacancies",
         category: "Lecture",
         format: "Online lecture",
-        link: "#",
+        link: "../Events.html",
     },
 ];
 
@@ -130,8 +133,8 @@ function renderEvents(data) {
 
     <!-- Content -->
     <div class="flex-1">
-        <h2 class="text-[20px] font-bold text-[#1E212C] leading-[150%] hover:text-[#FF3F3A] transition duration-300 cursor-pointer">
-            ${event.title}
+        <h2 class="text-[20px] font-bold text-[#1E212C] leading-[150%] transition duration-300">
+            <a href="${event.link}" class="hover:text-[#FF3F3A] cursor-pointer">${event.title}</a>
         </h2>
 
         <p class="text-[#787A80] mt-2">
@@ -151,7 +154,6 @@ function renderEvents(data) {
 
 renderEvents(events);
 
-
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("open");
     menuBtn.innerHTML = '<i class="fa-solid fa-xmark text-[25px] text-secondary-text cursor-pointer"></i>';
@@ -167,4 +169,11 @@ dropdownBtns.forEach((btn) => {
         submenu.classList.toggle("open");
         submenu.classList.toggle("hidden");
     });
+});
+
+backTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
 });

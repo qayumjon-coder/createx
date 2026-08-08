@@ -15,7 +15,8 @@ let actionBtns = document.querySelectorAll(".action-btn"),
     showMenu3 = document.querySelector(".show-menu3"),
     toggleMenuBtn = document.querySelector(".toggle-menu-btn"),
     toggleMenuBtn2 = document.querySelector(".toggle-menu-btn2"),
-    toggleMenuBtn3 = document.querySelector(".toggle-menu-btn3");
+    toggleMenuBtn3 = document.querySelector(".toggle-menu-btn3"),
+    backTop = document.querySelector(".back-top");
 
 actionBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -115,7 +116,9 @@ function community() {
 
 // Courses map
 
-let courseItem = courses.map(course => `
+let courseItem = "";
+if (typeof window.courses !== "undefined" && Array.isArray(window.courses)) {
+    courseItem = window.courses.map(course => `
                     <a href="#"
                         class="flex flex-col sm:flex-row sm:h-60 border border-[#e5e8ed] shadow-xl shadow-black/4 group hover:shadow-xl hover:shadow-black/10 transition duration-300 transition-ease rounded-sm">
                         <div
@@ -136,9 +139,12 @@ let courseItem = courses.map(course => `
                         </div>
                     </a>
     `
-).join("");
+    ).join("");
+}
 
-coursesGrid.innerHTML = courseItem;
+if (coursesGrid) {
+    coursesGrid.innerHTML = courseItem;
+}
 
 
 // Header scroll event
@@ -184,9 +190,9 @@ let cardItem = cardData.map(card => `
 slideBox.innerHTML = cardItem;
 
 let blogLatest = latestPosts.map(post => `
-                    <div>
-                        <div class="w-full relative">
-                            <a href="${post.link}"><img class="w-full inline-block" src="${post.image}" alt="post-image"></a>
+                    <div class="group">
+                        <div class="w-full relative overflow-hidden">
+                            <a href="${post.link}"><img class="w-full group-hover:scale-110 transition ease duration-300 inline-block " src="${post.image}" alt="post-image"></a>
                             <span class="absolute left-3 top-3 p-1 rounded-sm bg-white text-secondary-text flex items-center gap-1">
                                 ${post.typeIcon} ${post.type}
                             </span>
@@ -222,7 +228,7 @@ menuBtn.addEventListener("click", () => {
     menu.classList.toggle("open");
     menuBtn.innerHTML = '<i class="fa-solid fa-xmark text-[25px] text-secondary-text cursor-pointer"></i>';
 
-    if(!menu.classList.contains("open")){
+    if (!menu.classList.contains("open")) {
         menuBtn.innerHTML = '<i class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i>';
     }
 });
@@ -233,4 +239,11 @@ dropdownBtns.forEach((btn) => {
         submenu.classList.toggle("open");
         submenu.classList.toggle("hidden");
     });
+});
+
+backTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
 });
