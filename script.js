@@ -15,7 +15,8 @@ let actionBtns = document.querySelectorAll(".action-btn"),
     showMenu3 = document.querySelector(".show-menu3"),
     toggleMenuBtn = document.querySelector(".toggle-menu-btn"),
     toggleMenuBtn2 = document.querySelector(".toggle-menu-btn2"),
-    toggleMenuBtn3 = document.querySelector(".toggle-menu-btn3");
+    toggleMenuBtn3 = document.querySelector(".toggle-menu-btn3"),
+    backTop = document.querySelector(".back-top");
 
 actionBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -233,4 +234,11 @@ dropdownBtns.forEach((btn) => {
         submenu.classList.toggle("open");
         submenu.classList.toggle("hidden");
     });
+});
+
+backTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
 });
