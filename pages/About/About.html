@@ -1,16 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="uz">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
+  <title data-i18n="about_page_title">About</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="../../style.css" />
   <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="about.css">
-
 
   <style type="text/tailwindcss">
     @theme {
@@ -33,73 +32,68 @@
         <img src="../../images/logo/logo-dark.svg" width="130" alt="logo" />
       </a>
 
-
       <nav class="self-start hidden xl:flex">
         <ul class="flex gap-2 justify-start mr-auto items-center">
           <li>
-            <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
+            <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="nav_about">About us</a>
           </li>
           <li class="list-item relative px-5">
             <button
               class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
-              <div class="py-4">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
-              </div>
+              <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i></div>
             </button>
             <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
               <div class="dr-inner flex flex-col p-0">
-                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Courses
-                  Grid</a>
-                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
-                  Course</a>
+                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_courses_grid">Courses Grid</a>
+                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_single_course">Single Course</a>
               </div>
             </div>
           </li>
           <li class="list-item relative px-6">
             <button
               class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
-              <div class="py-4">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
-              </div>
+              <div class="py-4"><span data-i18n="nav_events">Events</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i></div>
             </button>
             <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full ">
               <div class="dr-inner flex flex-col p-0">
-                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
-                  list</a>
-                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
-                  Grid</a>
-                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
-                  Single</a>
+                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_list">Events list</a>
+                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_grid">Events Grid</a>
+                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_single">Events Single</a>
               </div>
             </div>
           </li>
           <li class="list-item relative px-5">
             <button
               class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
-              <div class="py-4">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
-              </div>
+              <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i></div>
             </button>
             <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
               <div class="dr-inner flex flex-col p-0">
-                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Blog
-                  Grid</a>
-                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
-                  Post</a>
+                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_blog_grid">Blog Grid</a>
+                <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_single_post">Single Post</a>
               </div>
             </div>
           </li>
           <li>
-            <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
+            <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="nav_contacts">Contacts</a>
           </li>
         </ul>
       </nav>
 
       <div class="flex gap-5 items-center">
+        <!-- TIL O'ZGARTIRISH MENYUSI -->
+        <select id="lang-switcher" onchange="changeLanguage(this.value)" class="bg-transparent text-[#424551] font-bold outline-none cursor-pointer">
+            <option value="uz">UZ</option>
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+        </select>
+
         <div class="">
           <a href="#"
-            class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
+            class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold" data-i18n="btn_consultation">Get
             consultation</a>
           <a href="#" class="text-primary hidden md:inline-block  font-bold ml-6"><i
-              class="fa-regular fa-user mr-2"></i>Sign
-            in/up</a>
+              class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign in/up</span></a>
         </div>
 
         <nav class="">
@@ -111,69 +105,55 @@
             <div class="container">
               <li>
                 <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
-                  href="#">About us</a>
+                  href="#" data-i18n="nav_about">About us</a>
               </li>
               <li>
                 <button
                   class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-                  <div class="py-4">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
-                  </div>
+                  <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i></div>
                 </button>
                 <div class="dr-link transition-ease duration-300">
                   <div class="dr-inner flex flex-col">
-                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Courses
-                      Grid</a>
-                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
-                      Course</a>
+                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_courses_grid">Courses Grid</a>
+                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_single_course">Single Course</a>
                   </div>
                 </div>
               </li>
               <li>
                 <button
                   class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-                  <div class="py-4">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
-                  </div>
+                  <div class="py-4"><span data-i18n="nav_events">Events</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i></div>
                 </button>
                 <div class="dr-link2 transition-ease duration-300">
                   <div class="dr-inner flex flex-col">
-                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
-                      list</a>
-                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
-                      Grid</a>
-                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Events
-                      Single</a>
+                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_list">Events list</a>
+                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_grid">Events Grid</a>
+                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_single">Events Single</a>
                   </div>
                 </div>
               </li>
               <li>
                 <button
                   class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-                  <div class="py-4">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
-                  </div>
+                  <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i></div>
                 </button>
                 <div class="dr-link3 transition-ease duration-300">
                   <div class="dr-inner flex flex-col">
-                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Blog
-                      Grid</a>
-                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300">Single
-                      Post</a>
+                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_blog_grid">Blog Grid</a>
+                    <a href="#" class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_single_post">Single Post</a>
                   </div>
                 </div>
               </li>
               <li>
                 <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
-                  href="#">Contacts</a>
+                  href="#" data-i18n="nav_contacts">Contacts</a>
               </li>
 
               <div class="flex flex-col xl:hidden gap-5">
-
                 <li><a href="#" class="text-primary inline-block md:hidden font-bold"><i
-                      class="fa-regular fa-user mr-2"></i>Sign
-                    in/up</a></li>
+                      class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign in/up</span></a></li>
                 <li><a href="#"
-                    class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold">Get
-                    consultation</a></li>
-
+                    class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold" data-i18n="btn_consultation">Get consultation</a></li>
               </div>
             </div>
           </ul>
@@ -186,21 +166,21 @@
 
   <section class="mt-22">
     <div class="container">
-      <h3 class="font-lato uppercase font-bold mb-2 text-base pt-15 lg:pt-25 text-center lg:text-left">
+      <h3 class="font-lato uppercase font-bold mb-2 base pt-15 lg:pt-25 text-center lg:text-left" data-i18n="about_page_subtitle">
         About us
       </h3>
       <div class="flex flex-col lg:flex-row justify-between gap-10">
         <div class="max-w-200">
           <h1
-            class="font-lato font-black text-3xl mb-8 text-gray-900 sm:text-4xl lg:text-5xl mb-8 text-center lg:text-left">
+            class="font-lato font-black text-3xl mb-8 text-gray-900 sm:text-4xl lg:text-5xl text-center lg:text-left" data-i18n="about_page_heading">
             Createx Online School
           </h1>
-          <h3 class="font-lato font-bold text-xl pb-8 text-gray-900 text-center lg:text-left">
+          <h3 class="font-lato font-bold text-xl pb-8 text-gray-900 text-center lg:text-left" data-i18n="about_page_lead">
             Createx Online School is a leader in online studying. We have lots
             of courses and programs from the main market experts.
           </h3>
 
-          <p class="text-gray-800 font-normal font-lato text-base text-center lg:text-left">
+          <p class="text-gray-800 font-normal font-lato text-base text-center lg:text-left" data-i18n="about_page_desc">
             We provide relevant approaches to online learning, internships and
             employment in the largest companies in the country. Our educational
             programs help you get a new specialty from scratch. During your
@@ -210,10 +190,10 @@
 
           <div class="pt-10 flex flex-col sm:flex-row gap-5 sm:gap-10">
             <a href="#"
-              class="border border-[#FF3F3A] px-12 py-3 font-lato rounded font-bold text-base bg-clip-text text-transparent bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] transition duration-300 ease-in-out hover:text-white hover:bg-clip-border text-center lg:text-left">Explore
+              class="border border-[#FF3F3A] px-12 py-3 font-lato rounded font-bold text-base bg-clip-text text-transparent bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] transition duration-300 ease-in-out hover:text-white hover:bg-clip-border text-center lg:text-left" data-i18n="about_explore_events">Explore
               events</a>
             <a href="#"
-              class="border border-[#FF3F3A] px-12 py-3 font-lato rounded font-bold text-base text-white bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] transition-all duration-500 ease-in-out hover:shadow-[0_10px_25px_-5px_rgba(255,63,58,0.4)] text-center lg:text-left">Browse
+              class="border border-[#FF3F3A] px-12 py-3 font-lato rounded font-bold text-base text-white bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] transition-all duration-500 ease-in-out hover:shadow-[0_10px_25px_-5px_rgba(255,63,58,0.4)] text-center lg:text-left" data-i18n="about_browse_courses">Browse
               courses</a>
           </div>
         </div>
@@ -234,7 +214,7 @@
         </span>
       </button>
 
-      <span class="text-[#1E212C] font-lato text-sm font-bold">
+      <span class="text-[#1E212C] font-lato text-sm font-bold" data-i18n="about_play_showreel">
         Play Showreel
       </span>
     </div>
@@ -246,19 +226,19 @@
       <div>
         <h5 class="text-[#1E212C] font-lato font-bold flex items-center gap-2 mb-10 flex-col lg:flex-row">
           <span class="font-black text-5xl tracking-[1px] text-[#FF3F3A] font-lato">1200</span>
-          students graduated
+          <span data-i18n="stat_students">students graduated</span>
         </h5>
         <h5 class="text-[#1E212C] font-lato font-bold flex items-center gap-2 mb-10 flex-col lg:flex-row">
           <span class="font-black text-5xl tracking-[1px] text-[#FF3F3A] font-lato">84</span>
-          completed courses
+          <span data-i18n="stat_courses">completed courses</span>
         </h5>
         <h5 class="text-[#1E212C] font-lato font-bold flex items-center gap-2 mb-10 flex-col lg:flex-row">
           <span class="font-black text-5xl tracking-[1px] text-[#FF3F3A] font-lato">16</span>
-          qualified tutors
+          <span data-i18n="stat_tutors">qualified tutors</span>
         </h5>
         <h5 class="text-[#1E212C] font-lato font-bold flex items-center gap-2 mb-10 flex-col lg:flex-row">
           <span class="font-black text-5xl tracking-[1px] text-[#FF3F3A] font-lato">5</span>
-          years of experience
+          <span data-i18n="stat_experience">years of experience</span>
         </h5>
       </div>
     </div>
@@ -267,55 +247,48 @@
 
   <!-- Features -->
   <section class="container">
-    <h6 class="text-center pt-40 uppercase text-[#1E212C] font-lato tracking-[1px] font-bold">We always stand for</h6>
-    <h2 class="text-center mt-6 text-5xl font-lato font-black">Our core values</h2>
+    <h6 class="text-center pt-40 uppercase text-[#1E212C] font-lato tracking-[1px] font-bold" data-i18n="values_subtitle">We always stand for</h6>
+    <h2 class="text-center mt-6 text-5xl font-lato font-black" data-i18n="values_title">Our core values</h2>
     <div class="container">
       <div class="flex mt-20 flex-col gap-5 lg:gap-3 lg:flex-row">
         <div class="text-center flex flex-col items-center flex-1 px-6">
           <img src="../../images/logo/svg-grid-1.svg" alt="svg-grid-1">
-          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4">Structured Approach</h3>
-          <p class="text-[#787A80] font-lato font-normal mt-3 text-base">Aenean urna dictum adipiscing nec, cras
-            quisque. Nunc in mauris.</p>
+          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4" data-i18n="value_1_title">Structured Approach</h3>
+          <p class="text-[#787A80] font-lato font-normal mt-3 text-base" data-i18n="value_1_desc">Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.</p>
         </div>
 
         <div class="w-px bg-linear-to-b from-gray-50 via-gray-300 to-gray-50"></div>
 
         <div class="text-center flex flex-col items-center flex-1 px-6">
           <img src="../../images/logo/svg-grid-2.svg" alt="svg-grid-1">
-          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4">Professional Feedbacks</h3>
-          <p class="text-[#787A80] font-lato font-normal mt-3 text-base">Culpa nostrud commodo ea consequat
-            reprehenderit aliquip. </p>
+          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4" data-i18n="value_2_title">Professional Feedbacks</h3>
+          <p class="text-[#787A80] font-lato font-normal mt-3 text-base" data-i18n="value_2_desc">Culpa nostrud commodo ea consequat reprehenderit aliquip. </p>
         </div>
 
         <div class="w-px bg-linear-to-b from-gray-50 via-gray-300 to-gray-50"></div>
 
         <div class="text-center flex flex-col items-center flex-1 px-6">
           <img src="../../images/logo/svg-grid-3.svg" alt="svg-grid-1">
-          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4">Efficiency</h3>
-          <p class="text-[#787A80] font-lato font-normal mt-3 text-base">Viverra scelerisque consequat net. Adipisicing
-            esse consequat. </p>
+          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4" data-i18n="value_3_title">Efficiency</h3>
+          <p class="text-[#787A80] font-lato font-normal mt-3 text-base" data-i18n="value_3_desc">Viverra scelerisque consequat net. Adipisicing esse consequat. </p>
         </div>
 
         <div class="w-px bg-linear-to-b from-gray-50 via-gray-300 to-gray-50"></div>
 
         <div class="text-center flex flex-col items-center flex-1 px-6">
           <img src="../../images/logo/svg-grid-4.svg" alt="svg-grid-1">
-          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4">Flexible Shedule</h3>
-          <p class="text-[#787A80] font-lato font-normal mt-3 text-base">Aute eiusmod dolore dolore deserunt veniam ad
-            deserunt. </p>
+          <h3 class="font-lato font-bold text-xl text-[#1E212C] mt-4" data-i18n="value_4_title">Flexible Shedule</h3>
+          <p class="text-[#787A80] font-lato font-normal mt-3 text-base" data-i18n="value_4_desc">Aute eiusmod dolore dolore deserunt veniam ad deserunt. </p>
         </div>
       </div>
-
-
     </div>
     </div>
   </section>
 
   <!-- Directions -->
   <section class="container">
-    <h6 class="pt-40 text-center mb-5 uppercase tracking-[1px] font-lato text-[#1E212C] font-bold">Our main directions
-    </h6>
-    <h2 class="text-center font-lato text-5xl font-black pb-14">What do we teach</h2>
+    <h6 class="pt-40 text-center mb-5 uppercase tracking-[1px] font-lato text-[#1E212C] font-bold" data-i18n="directions_subtitle">Our main directions</h6>
+    <h2 class="text-center font-lato text-5xl font-black pb-14" data-i18n="directions_title">What do we teach</h2>
     <div class="direction-viewer grid grid-cols-1 gap-8 lg:grid-cols-3 sm:grid-cols-2">
       <div class="w-full rounded-sm group hover:shadow-xl shadow-[#00000010] transition duration-300 transition-ease">
         <div class="border-[#E5E8ED] border-solid border overflow-hidden rounded-sm">
@@ -325,8 +298,8 @@
           </a>
           <div class="hover:shadow-sm bg-[#fff] pt-5">
             <span
-              class="bg-[#03CEA4] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3">Marketing</span>
-            <p class="font-lato font-normal text-[#424551] p-5">
+              class="bg-[#03CEA4] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3" data-i18n="dir_marketing">Marketing</span>
+            <p class="font-lato font-normal text-[#424551] p-5" data-i18n="dir_text_1">
               Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
               scelerisque consequat.
             </p>
@@ -334,13 +307,12 @@
             <div>
               <div class="pb-5 flex items-center gap-3">
                 <a href="#"
-                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base">Check
+                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base" data-i18n="dir_check_courses">Check
                   courses</a>
                 <i class="fa-solid fa-arrow-right text-[#FF3F3A]"></i>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -352,15 +324,15 @@
           </a>
           <div class="hover:shadow-sm bg-[#fff] pt-5">
             <span
-              class="bg-[#5A87FC] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3">Management</span>
-            <p class="font-lato font-normal text-[#424551] p-5">
+              class="bg-[#5A87FC] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3" data-i18n="dir_management">Management</span>
+            <p class="font-lato font-normal text-[#424551] p-5" data-i18n="dir_text_2">
               Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
               scelerisque consequat.
             </p>
             <div>
               <div class="pb-5 flex items-center gap-3">
                 <a href="#"
-                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base">Check
+                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base" data-i18n="dir_check_courses">Check
                   courses</a>
                 <i class="fa-solid fa-arrow-right text-[#FF3F3A]"></i>
               </div>
@@ -377,9 +349,9 @@
           </a>
           <div class="hover:shadow-sm bg-[#fff] pt-5">
             <span
-              class="bg-[#F89828] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3">HR
+              class="bg-[#F89828] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3" data-i18n="dir_hr">HR
               & Recruting</span>
-            <p class="font-lato font-normal text-[#424551] p-5">
+            <p class="font-lato font-normal text-[#424551] p-5" data-i18n="dir_text_3">
               Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
               scelerisque consequat.
             </p>
@@ -387,13 +359,12 @@
             <div>
               <div class="pb-5 flex items-center gap-3">
                 <a href="#"
-                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base">Check
+                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base" data-i18n="dir_check_courses">Check
                   courses</a>
                 <i class="fa-solid fa-arrow-right text-[#FF3F3A]"></i>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -405,8 +376,8 @@
           </a>
           <div class="hover:shadow-sm bg-[#fff] pt-5">
             <span
-              class="bg-[#F52F6E] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3">Design</span>
-            <p class="font-lato font-normal text-[#424551] p-5">
+              class="bg-[#F52F6E] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3" data-i18n="dir_design">Design</span>
+            <p class="font-lato font-normal text-[#424551] p-5" data-i18n="dir_text_4">
               Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
               scelerisque consequat.
             </p>
@@ -414,13 +385,12 @@
             <div>
               <div class="pb-5 flex items-center gap-3">
                 <a href="#"
-                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base">Check
+                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base" data-i18n="dir_check_courses">Check
                   courses</a>
                 <i class="fa-solid fa-arrow-right text-[#FF3F3A]"></i>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -432,8 +402,8 @@
           </a>
           <div class="hover:shadow-sm bg-[#fff] pt-5">
             <span
-              class="bg-[#7772F1] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3">Development</span>
-            <p class="font-lato font-normal text-[#424551] p-5">
+              class="bg-[#7772F1] text-[#fff] font-lato rounded-sm font-bold ml-6 pt-1 inline-block pr-3 pb-1 pl-3" data-i18n="dir_dev">Development</span>
+            <p class="font-lato font-normal text-[#424551] p-5" data-i18n="dir_text_5">
               Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
               scelerisque consequat.
             </p>
@@ -441,19 +411,18 @@
             <div>
               <div class="pb-5 flex items-center gap-3">
                 <a href="#"
-                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base">Check
+                  class="pl-5 hover:text-[#FF3F3A] transition-all duration-300 ease-in font-lato font-bold text-base" data-i18n="dir_check_courses">Check
                   courses</a>
                 <i class="fa-solid fa-arrow-right text-[#FF3F3A]"></i>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
       <div class="w-full h-105 bg-[#f9f9f9] rounded-sm">
         <div class="flex items-center justify-center h-100">
-          <p class="text-center font-bold font-lato text-xl text-[#424551]">
+          <p class="text-center font-bold font-lato text-xl text-[#424551]" data-i18n="dir_coming_soon">
             New studying program
             <br>
             coming soon...
@@ -462,70 +431,48 @@
       </div>
     </div>
   </section>
+
   <section class="container">
     <div>
-      <h3 class="pt-30  font-lato uppercase text-[#1E212C] tracking-[1px] text-base font-bold text-center lg:text">
+      <h3 class="pt-30 font-lato uppercase text-[#1E212C] tracking-[1px] text-base font-bold text-center lg:text-left" data-i18n="process_subtitle">
         Studying process</h3>
-      <h2 class="font-lato font-black text-[46px] text-[#1E212C] text-center lg:text-left font-bold lg:font-black">
+      <h2 class="font-lato font-black text-[46px] text-[#1E212C] text-center lg:text-left" data-i18n="process_title">
         That's how we do it</h2>
       <div class="mt-20 grid grid-cols-1 lg:grid-cols-2">
         <div>
           <div class="flex">
-            <div class="flex flex-col items-center mr-8
-          before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0
-          after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2
-          
-          "></div>
+            <div class="flex flex-col items-center mr-8 before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0 after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2"></div>
             <div class="pb-10">
-              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs">Step 1</h4>
-              <h3 class="font-lato font-bold text-[#1E212C] text-xl">Watching online video lectures</h3>
-              <p class="text-[#787A80] text-base font-lato font-normal mt-2">Aliquam turpis viverra quam sit interdum
-                blandit posuere <br> pellentesque. Nisl, imperdiet gravida massa
-                neque.</p>
+              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs" data-i18n="step_1">Step 1</h4>
+              <h3 class="font-lato font-bold text-[#1E212C] text-xl" data-i18n="step_1_title">Watching online video lectures</h3>
+              <p class="text-[#787A80] text-base font-lato font-normal mt-2" data-i18n="step_1_desc">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
             </div>
           </div>
 
           <div class="flex">
-            <div class="flex flex-col items-center mr-8
-          before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0
-          after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2
-          
-          "></div>
+            <div class="flex flex-col items-center mr-8 before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0 after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2"></div>
             <div class="pb-10">
-              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs">Step 2</h4>
-              <h3 class="font-lato font-bold text-[#1E212C] text-xl">Passing test</h3>
-              <p class="text-[#787A80] text-base font-lato font-normal mt-2">Facilisis pellentesque quis accumsan
-                ultricies. Eu egestas eget <br> feugiat lacus, amet, sollicitudin egestas
-                laoreet etiam.</p>
+              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs" data-i18n="step_2">Step 2</h4>
+              <h3 class="font-lato font-bold text-[#1E212C] text-xl" data-i18n="step_2_title">Passing test</h3>
+              <p class="text-[#787A80] text-base font-lato font-normal mt-2" data-i18n="step_2_desc">Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas laoreet etiam.</p>
             </div>
           </div>
 
           <div class="flex">
-            <div class="flex flex-col items-center mr-8
-          before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0
-          after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2
-          
-          "></div>
+            <div class="flex flex-col items-center mr-8 before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0 after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2"></div>
             <div class="pb-10">
-              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs">Step 3</h4>
-              <h3 class="font-lato font-bold text-[#1E212C] text-xl">Curator's feedback </h3>
-              <p class="text-[#787A80] text-base font-lato font-normal mt-2">Eget amet, enim pharetra leo egestas nisi,
-                odio imperdiet <br> facilisis. Aliquet orci varius volutpat egestas
-                facilisi lobortis. </p>
+              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs" data-i18n="step_3">Step 3</h4>
+              <h3 class="font-lato font-bold text-[#1E212C] text-xl" data-i18n="step_3_title">Curator's feedback</h3>
+              <p class="text-[#787A80] text-base font-lato font-normal mt-2" data-i18n="step_3_desc">Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas facilisi lobortis.</p>
             </div>
           </div>
 
           <div class="flex">
-            <div class="flex flex-col items-center mr-8
-          before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0
-          after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2
-          
-          "></div>
+            <div class="flex flex-col items-center mr-8 before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#FF3F3A] before:shrink-0 after:content-[''] after:w-px after:flex-1 after:bg-[#E5E8ED] after:mt-2"></div>
             <div class="pb-10">
-              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs">Step 4</h4>
-              <h3 class="font-lato font-bold text-[#1E212C] text-xl">Corrections if needed</h3>
-              <p class="text-[#787A80] text-base font-lato font-normal mt-2">Non tempor pulvinar tincidunt aliquam.
-                Placerat ultricies <br> malesuada dui auctor.</p>
+              <h4 class="uppercase text-[#787A80] font-bold font-lato text-xs" data-i18n="step_4">Step 4</h4>
+              <h3 class="font-lato font-bold text-[#1E212C] text-xl" data-i18n="step_4_title">Corrections if needed</h3>
+              <p class="text-[#787A80] text-base font-lato font-normal mt-2" data-i18n="step_4_desc">Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.</p>
             </div>
           </div>
         </div>
@@ -538,67 +485,41 @@
 
   <!-- Team -->
   <section class="container">
-    <h6 class="pt-42 text-center font-lato uppercase text-[#1E212C] font-bold text-base">
+    <h6 class="pt-42 text-center font-lato uppercase text-[#1E212C] font-bold text-base" data-i18n="team_subtitle">
       Best tutors are all here
     </h6>
-    <h2 class="text-center pt-3 font-black font-lato text-[#1E212C] text-5xl">
+    <h2 class="text-center pt-3 font-black font-lato text-[#1E212C] text-5xl" data-i18n="team_title">
       Meet our team
     </h2>
-
-    <div class="team-viewer grid grid-cols-1 gap-8 mt-20 mb-10 lg:grid-cols-4">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+    <div class="team-viewer grid grid-cols-1 gap-8 mt-20 mb-10 lg:grid-cols-4"></div>
   </section>
 
   <section class="bg-[#F4F5F6] pb-20">
     <div class="container">
-      <h3 class="text-center text-[#1E212C] uppercase font-lato pt-25 font-bold tracking-[1px] text-base">Testimonials
-      </h3>
-      <h2 class="text-center mt-5 text-5xl font-lato font-bold text-[#1E212C] mb-10">What our students say</h2>
+      <h3 class="text-center text-[#1E212C] uppercase font-lato pt-25 font-bold tracking-[1px] text-base" data-i18n="test_subtitle">Testimonials</h3>
+      <h2 class="text-center mt-5 text-5xl font-lato font-bold text-[#1E212C] mb-10" data-i18n="test_title">What our students say</h2>
 
       <div class="spec-wrapper relative mx-0 md:mx-12">
         <div class="swiper testimonials-swiper max-w-200">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide ">
-              <div class="slider-wrapper bg-[#FFFFFF]  p-8 flex gap-5  ">
+              <div class="slider-wrapper bg-[#FFFFFF] p-8 flex gap-5">
                 <div class="slider-image-wrap">
                   <img src="../../images/braces.png" alt="braces" class="w-28">
                 </div>
                 <div class="slider-item flex gap-5 flex-col">
                   <div class="slider-text">
-                    <p class="font-lato text-[#424551] font-normal text-xl">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus
-                      lobortis
-                      fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non.
-                      Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam
-                      integer
-                      in.
+                    <p class="font-lato text-[#424551] font-normal text-xl" data-i18n="test_1_text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu.
                     </p>
                   </div>
-
                   <div class="para-wrap flex items-center gap-3 pt-5">
                     <div class="para-img-wrap">
                       <img src="../../images/para-1.jpg" alt="para-1" class="w-20 rounded-full">
                     </div>
                     <div class="para-name">
                       <h3 class="font-lato font-bold text-[#1E212C] text-base">Courtney Alexander</h3>
-                      <p class="text-[#787A80] font-lato text-sm font-normal">Position, Company</p>
+                      <p class="text-[#787A80] font-lato text-sm font-normal" data-i18n="test_1_pos">Position, Company</p>
                     </div>
                   </div>
                 </div>
@@ -611,84 +532,65 @@
                 </div>
                 <div class="slider-item flex gap-5 flex-col">
                   <div class="slider-text">
-                    <p class="font-lato text-[#424551] font-normal text-xl">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus
-                      lobortis
-                      fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non.
-                      Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam
-                      integer
-                      in.
+                    <p class="font-lato text-[#424551] font-normal text-xl" data-i18n="test_2_text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu.
                     </p>
                   </div>
-
                   <div class="para-wrap flex items-center gap-3 pt-5">
                     <div class="para-img-wrap">
                       <img src="../../images/para-2.jpg" alt="para-1" class="w-20 rounded-full">
                     </div>
                     <div class="para-name">
                       <h3 class="font-lato font-bold text-[#1E212C] text-base">Eleanor Pena</h3>
-                      <p class="text-[#787A80] font-lato text-sm font-normal">Position, Course</p>
+                      <p class="text-[#787A80] font-lato text-sm font-normal" data-i18n="test_2_pos">Position, Course</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- If we need pagination -->
           <div class="swiper-pagination mt-8"></div>
-
-          <!-- If we need navigation buttons -->
-
         </div>
 
         <div class="flex items-center justify-center">
-          <div
-            class="swiper-button-prev  hover:bg-[#FF3F3A] hover:text-white transition-colors cursor-pointer rounded-full hidden! lg:flex! ">
+          <div class="swiper-button-prev hover:bg-[#FF3F3A] hover:text-white transition-colors cursor-pointer rounded-full hidden! lg:flex!">
             <i class="fa-solid fa-arrow-left text-[#424551] hover:text-[#fff]"></i>
           </div>
-          <div
-            class="swiper-button-next  hover:bg-[#FF3F3A]  transition-colors cursor-pointer rounded-full hidden! lg:flex!">
+          <div class="swiper-button-next hover:bg-[#FF3F3A] transition-colors cursor-pointer rounded-full hidden! lg:flex!">
             <i class="fa-solid fa-arrow-right text-[#424551] hover:text-[#fff]"></i>
           </div>
         </div>
       </div>
     </div>
-    <!-- Slider main container -->
 
     <div class="container">
       <div class="jobs pt-30">
-        <h6 class="font-lato text-[#1E212C] uppercase tracking-[1px] font-bold text-center">best jobs for you</h6>
-        <h1 class="font-lato font-black text-5xl text-center pt-3">Our students work here</h1>
+        <h6 class="font-lato text-[#1E212C] uppercase tracking-[1px] font-bold text-center" data-i18n="jobs_subtitle">best jobs for you</h6>
+        <h1 class="font-lato font-black text-5xl text-center pt-3" data-i18n="jobs_title">Our students work here</h1>
       </div>
 
-      <div class="grid-wrapper grid grid-cols-6 mt-20 gap-5 hidden!">
-      </div>
+      <div class="grid-wrapper grid grid-cols-6 mt-20 gap-5 hidden!"></div>
 
       <div class="swiper blog-swiper">
-        <div class="swiper-wrapper blog-wrapper pt-10">
-        </div>
+        <div class="swiper-wrapper blog-wrapper pt-10"></div>
       </div>
-
+    </div>
   </section>
 
   <section>
     <div class="container">
       <div class="py-25">
         <div>
-          <h3 class="uppercase text-primary-text font-bold">Our blog</h3>
+          <h3 class="uppercase text-primary-text font-bold" data-i18n="blog_subtitle">Our blog</h3>
           <div class="flex items-center flex-wrap gap-3 justify-between mb-12 pb-2">
-            <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black">Latest posts</h2>
+            <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black" data-i18n="blog_title">Latest posts</h2>
             <a href="#"
-              class="py-4 px-10.5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease">Go
+              class="py-4 px-10.5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease" data-i18n="blog_btn">Go
               to blog</a>
           </div>
         </div>
 
-        <div class="blog-grid-container grid group lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1">
-        </div>
-
-
-
+        <div class="blog-grid-container grid group lg:grid-cols-3 md:grid-cols-2 gap-10 grid-cols-1"></div>
       </div>
     </div>
   </section>
@@ -698,19 +600,18 @@
       <div class="h-[506px] flex flex-col items-center justify-center">
         <div>
           <div class="mb-12 pb-2 text-center">
-            <h3 class="uppercase text-primary-text font-bold">Don’t miss anything</h3>
-            <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black">Subscribe to the Createx
+            <h3 class="uppercase text-primary-text font-bold" data-i18n="sub_subtitle">Don’t miss anything</h3>
+            <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black" data-i18n="sub_title">Subscribe to the Createx
               School <br> announcements</h2>
           </div>
         </div>
 
         <div class="w-full">
           <form action="#" class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
-            <input type="email" class="w-full bg-white py-5 px-4 rounded-sm border-1 border-[#dadbdd] " required
-              placeholder="Your working email">
+            <input type="email" class="w-full bg-white py-5 px-4 rounded-sm border-1 border-[#dadbdd]" required
+              placeholder="Your working email" data-i18n-placeholder="sub_placeholder">
             <button type="submit"
-              class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
-                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer">Subscribe</button>
+              class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer" data-i18n="sub_btn">Subscribe</button>
           </form>
         </div>
       </div>
@@ -725,110 +626,69 @@
             <img src="../../images/logo/logo.png" alt="Site Logo">
           </a>
 
-          <p class="text-[12px]  text-[#ffffff99] mb-6 pb-4">Createx Online School is a leader in online
-            studying. We have lots of
-            courses and programs from
-            the main market experts. We provide relevant approaches to online learning, internships and
-            employment in the largest companies in the country.
+          <p class="text-[12px] text-[#ffffff99] mb-6 pb-4" data-i18n="ft_desc">Createx Online School is a leader in online
+            studying. We have lots of courses and programs from the main market experts.
           </p>
 
           <div class="text-[#ffffff99] flex gap-5">
-            <a class="hover:text-primary transition ease duration-200" href="#"><i
-                class="fa-brands fa-facebook-f"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-twitter"></i></a>
             <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a class="hover:text-primary transition ease duration-200" href="#"><i
-                class="fa-brands fa-telegram"></i></a>
-            <a class="hover:text-primary transition ease duration-200" href="#"><i
-                class="fa-brands fa-instagram"></i></a>
-            <a class="hover:text-primary transition ease duration-200" href="#"><i
-                class="fa-brands fa-linkedin-in"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
         <div class="col-span-2 order">
-          <h3 class="uppercase font-bold text-white mb-2 pb-1">Site map</h3>
-
+          <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_sitemap">Site map</h3>
           <ul class="text-[#ffffff99] flex flex-col">
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/About/About.html">About
-                Us</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Courses/CourseGrid/index.html">Courses</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Events/Events.html">Events</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Blogs/Blogs.html">Blog</a>
-            </li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Contacts/Contacts.html">Contacts</a>
-            </li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="./pages/About/About.html" data-i18n="ft_about">About Us</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="./pages/Courses/CourseGrid/index.html" data-i18n="ft_courses">Courses</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="./pages/Events/Events.html" data-i18n="ft_events">Events</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="./pages/Blogs/Blogs.html" data-i18n="ft_blog">Blog</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="./pages/Contacts/Contacts.html" data-i18n="ft_contacts">Contacts</a></li>
           </ul>
-
         </div>
 
         <div class="col-span-2">
-          <h3 class="uppercase font-bold text-white mb-2 pb-1">Courses</h3>
-
+          <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_courses_title">Courses</h3>
           <ul class="text-[#ffffff99] flex flex-col">
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Courses/CourseGrid/index.html">Marketing</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Courses/CourseGrid/index.html">Management</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Courses/CourseGrid/index.html">HR &
-                Recruting</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Courses/CourseGrid/index.html">Design</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
-                href="./pages/Courses/CourseGrid/index.html">Development</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#" data-i18n="ft_c_marketing">Marketing</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#" data-i18n="ft_c_management">Management</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#" data-i18n="ft_c_hr">HR & Recruting</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#" data-i18n="ft_c_design">Design</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#" data-i18n="ft_c_dev">Development</a></li>
           </ul>
-
         </div>
 
         <div class="col-span-2">
-          <h3 class="uppercase font-bold text-white mb-2 pb-1">Contact us</h3>
-
+          <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_contact_title">Contact us</h3>
           <ul class="text-[#ffffff99] flex flex-col">
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
-                  class="fa-solid fa-mobile-screen"></i> (405) 555-0128</a></li>
-            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
-                  class="fa-regular fa-comments"></i> hello@example.com</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i class="fa-solid fa-mobile-screen"></i> (405) 555-0128</a></li>
+            <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i class="fa-regular fa-comments"></i> hello@example.com</a></li>
           </ul>
-
         </div>
 
         <div class="col-span-3">
-          <h3 class="uppercase font-bold text-white mb-2 pb-1">Sign up to our newsletter</h3>
-
-          <form action="# flex flex-col">
+          <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_sub_title">Sign up to our newsletter</h3>
+          <form action="#" class="flex flex-col">
             <div class="mb-2 pb-1 w-full flex items-center relative">
-              <input class="py-2.5 pl-4 pr-12 rounded-sm border border-white/10 bg-white/10 text-third-text focus:bg-white transition ease duration-300 outline-0 focus:border-[#ff3f3a66]
- w-full" type="email" placeholder="Email adress" required>
+              <input class="py-2.5 pl-4 pr-12 rounded-sm border border-white/10 bg-white/10 text-third-text focus:bg-white transition ease duration-300 outline-0 focus:border-[#ff3f3a66] w-full" type="email" placeholder="Email adress" required data-i18n-placeholder="sub_placeholder">
               <i class="fa-solid fa-arrow-right-long absolute text-white right-6"></i>
             </div>
-
-            <p class="text-white text-[10px]">*Subscribe to our newsletter to receive early discount offers,
-              updates and
-              new products info.
-            </p>
+            <p class="text-white text-[10px]" data-i18n="ft_sub_desc">*Subscribe to our newsletter to receive early discount offers...</p>
           </form>
-
         </div>
       </div>
-
-
     </div>
 
     <div class="p-2 bg-secondary-text/40">
       <div class="container flex items-center justify-between py-1">
-        <p class="text-white text-xs">© All rights reserved. Made with <i
-            class="fa-regular fa-heart text-primary px-1"></i>
-          by Createx Studio</p>
+        <p class="text-white text-xs"><span data-i18n="ft_copy_1">© All rights reserved. Made with</span> <i class="fa-regular fa-heart text-primary px-1"></i> <span data-i18n="ft_copy_2">by Createx Studio</span></p>
         <div class="flex gap-3 text-sm items-center">
-          <p class="text-white">Back to top</p>
-          <button class="px-4 py-3 bg-primary rounded-sm text-white cursor-pointer"><i
-              class="fa-solid fa-chevron-up"></i></button>
+          <p class="text-white" data-i18n="ft_back_top">Back to top</p>
+          <button class="px-4 py-3 bg-primary rounded-sm text-white cursor-pointer"><i class="fa-solid fa-chevron-up"></i></button>
         </div>
       </div>
     </div>
@@ -838,7 +698,7 @@
   <script src="swiper.js"></script>
   <script type="module" src="../../data/about/collague.js"></script>
   <script type="module" src="app.js"></script>
-    <script src="../../i18n.js"></script>
+  <script src="../../i18n.js"></script>
 </body>
 
 </html>
