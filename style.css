@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Lato", sans-serif;
+}
 
 .container {
   max-width: 1440px;
@@ -46,17 +51,25 @@
   min-height: 0;
 }
 
-.show-menu{
+.open-sidebar{
+  right: 0;
+}
+
+.for-d-none{
+  display: none;
+}
+
+.show-menu {
   width: 150px;
   padding: 10px;
   border-radius: 5px;
 }
-.show-menu a{
+.show-menu a {
   display: inline-block;
   padding: 5px 0;
 }
 
-.list-item:hover .show-menu{
+.list-item:hover .show-menu {
   display: block;
 }
 
@@ -86,9 +99,23 @@
   min-height: 0;
 }
 
-
 .swiper-slide {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+}
+
+/* Single Course Sidebar scroller */
+
+.scroller::-webkit-scrollbar {
+  width: 9px;
+  background-color: transparent;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  width: 3px;
+  background-color: #0005;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  background-clip: content-box;
 }
