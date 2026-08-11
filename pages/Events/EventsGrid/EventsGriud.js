@@ -16,7 +16,7 @@ const monthNames = [
 const eventsGrid = [
   {
     id: 1,
-    date: new Date(2026, 7, 05),
+    date: new Date(2026, 7, 5),
     time: "11:00 – 14:00",
     title: "Formation of the organizational structure of the company in the face of uncertainty.",
     category: "Master-class",
