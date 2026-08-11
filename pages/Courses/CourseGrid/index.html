@@ -28,7 +28,7 @@
     <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
         <div class="container flex justify-between items-center">
             <a class="mr-12 pr-2" href="index.html">
-                <img src="../../images/logo/logo-dark.svg" width="130" alt="logo" />
+                <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
             </a>
 
             <nav class="self-start hidden xl:flex">
@@ -235,184 +235,252 @@
                 <p class="text-black font-semibold uppercase" data-i18n="courses_head_sub">Ready to learn?</p>
                 <h1 class="text-3xl sm:text-4xl font-bold mt-2" data-i18n="courses_head_title">Our online courses</h1>
             </div>
-            
+
             <div class="flex flex-col lg:flex-row rounded-md px-0 sm:px-6 py-4 mb-12 gap-6 lg:gap-8 lg:justify-between">
                 <div class="flex flex-wrap items-center gap-x-[20px] gap-y-3">
-                    <button type="button" class="filter-tab flex items-center gap-1 cursor-pointer text-gray-500 font-semibold pb-1 hover:text-primary" data-filter="all">
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 cursor-pointer text-gray-500 font-semibold pb-1 hover:text-primary"
+                        data-filter="all">
                         <span data-i18n="filter_all">All</span> <sup class="text-xs">12</sup>
                     </button>
-                    <button type="button" class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary" data-filter="marketing">
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary"
+                        data-filter="marketing">
                         <span data-i18n="filter_marketing">Marketing</span> <sup class="text-xs">4</sup>
                     </button>
-                    <button type="button" class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary" data-filter="management">
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary"
+                        data-filter="management">
                         <span data-i18n="filter_management">Management</span> <sup class="text-xs">3</sup>
                     </button>
-                    <button type="button" class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary" data-filter="hr">
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary"
+                        data-filter="hr">
                         <span data-i18n="filter_hr">HR &amp; Recruiting</span> <sup class="text-xs">5</sup>
                     </button>
-                    <button type="button" class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary" data-filter="design">
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary"
+                        data-filter="design">
                         <span data-i18n="filter_design">Design</span> <sup class="text-xs">2</sup>
                     </button>
-                    <button type="button" class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary" data-filter="development">
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1 hover:text-primary"
+                        data-filter="development">
                         <span data-i18n="filter_development">Development</span> <sup class="text-xs">3</sup>
                     </button>
                 </div>
 
                 <div class="relative w-full lg:w-64">
-                    <input id="courseSearch" type="text" placeholder="Search courses" class="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2 text-sm text-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-300" data-i18n-placeholder="courses_search_ph" />
-                    <svg class="w-4 h-4 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    <input id="courseSearch" type="text" placeholder="Search courses"
+                        class="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2 text-sm text-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-300"
+                        data-i18n-placeholder="courses_search_ph" />
+                    <svg class="w-4 h-4 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
             </div>
 
             <!-- Course cards (Karta ichidagi yo'nalish nomlari va o'qituvchilar) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="courseGrid">
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="marketing">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="marketing">
                     <a href="../CoursesSingle/singlecourses.html">
-                        <img src="../../../images/image.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                        <img src="../../../images/image.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     </a>
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-green-500 text-white px-2 py-1 rounded" data-i18n="tag_marketing">Marketing</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
-                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer" data-i18n="course_1_title">The Ultimate Google Ads Training Course</a>
+                        <span class="text-[14px] font-[400] inline-block bg-green-500 text-white px-2 py-1 rounded"
+                            data-i18n="tag_marketing">Marketing</span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer"
+                                data-i18n="course_1_title">The Ultimate Google Ads Training Course</a>
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$100</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Jerome Bell</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Jerome Bell</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="management">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="management">
                     <a href="../CoursesSingle/singlecourses.html">
-                        <img src="../../../images/images.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                        <img src="../../../images/images.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     </a>
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded" data-i18n="tag_management">Management</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
-                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer" data-i18n="course_2_title">Product Management Fundamentals</a>
+                        <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded"
+                            data-i18n="tag_management">Management</span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer"
+                                data-i18n="course_2_title">Product Management Fundamentals</a>
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$480</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Marvin McKinney</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Marvin McKinney</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="hr">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="hr">
                     <a href="../CoursesSingle/singlecourses.html">
-                        <img src="../../../images/efrbjgbjbg.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                        <img src="../../../images/efrbjgbjbg.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     </a>
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded" data-i18n="tag_hr">HR &amp; Recruiting</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
-                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer" data-i18n="course_3_title">HR Management and Analytics</a>
+                        <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded"
+                            data-i18n="tag_hr">HR &amp; Recruiting</span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer"
+                                data-i18n="course_3_title">HR Management and Analytics</a>
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$200</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Leslie Alexander Li</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Leslie Alexander Li</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="marketing">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="marketing">
                     <a href="../CoursesSingle/singlecourses.html">
-                        <img src="../../../images/fhrgjrj.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                        <img src="../../../images/fhrgjrj.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     </a>
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#03CEA4] text-white px-2 py-1 rounded" data-i18n="tag_marketing">Marketing</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
-                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer" data-i18n="course_4_title">Brand Management &amp; PR Communications</a>
+                        <span class="text-[14px] font-[400] inline-block bg-[#03CEA4] text-white px-2 py-1 rounded"
+                            data-i18n="tag_marketing">Marketing</span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer"
+                                data-i18n="course_4_title">Brand Management &amp; PR Communications</a>
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$530</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Kristin Watson</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Kristin Watson</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="design">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="design">
                     <a href="../CoursesSingle/singlecourses.html">
-                        <img src="../../../images/sbfjsbgjbr.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                        <img src="../../../images/sbfjsbgjbr.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     </a>
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded" data-i18n="tag_design">Design</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
-                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer" data-i18n="course_5_title">Graphic Design Basic</a>
+                        <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded"
+                            data-i18n="tag_design">Design</span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer"
+                                data-i18n="course_5_title">Graphic Design Basic</a>
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$500</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Guy Hawkins</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Guy
+                                Hawkins</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="management">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="management">
                     <a href="../CoursesSingle/singlecourses.html">
-                        <img src="../../../images/kfrnkgfrk.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                        <img src="../../../images/kfrnkgfrk.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     </a>
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded" data-i18n="tag_management">Management</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
-                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer" data-i18n="course_6_title">Business Development Management</a>
+                        <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded"
+                            data-i18n="tag_management">Management</span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer"
+                                data-i18n="course_6_title">Business Development Management</a>
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$400</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Dianne Russell</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Dianne Russell</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="development">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="development">
                     <a href="../CoursesSingle/singlecourses.html">
-                        <img src="../../../images/nkneknkbn.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                        <img src="../../../images/nkneknkbn.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     </a>
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#7772F1] text-white px-2 py-1 rounded" data-i18n="tag_development">Development</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
-                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer" data-i18n="course_7_title">Highload Software Architecture</a>
+                        <span class="text-[14px] font-[400] inline-block bg-[#7772F1] text-white px-2 py-1 rounded"
+                            data-i18n="tag_development">Development</span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer"
+                                data-i18n="course_7_title">Highload Software Architecture</a>
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$600</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Brooklyn Simmons</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Brooklyn Simmons</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="hr">
-                    <img src="../../../images/kmbmgbkgbi.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="hr">
+                    <img src="../../../images/kmbmgbkgbi.png" alt="Course"
+                        class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded" data-i18n="tag_hr">HR &amp; Recruiting</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 hover:text-red-500 transition duration-300 cursor-pointer" data-i18n="course_8_title">
+                        <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded"
+                            data-i18n="tag_hr">HR &amp; Recruiting</span>
+                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 hover:text-red-500 transition duration-300 cursor-pointer"
+                            data-i18n="course_8_title">
                             Human Resources – Selection and Recruitment
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$150</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Kathryn Murphy</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Kathryn Murphy</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300" data-category="design">
-                    <img src="../../../images/nbvjnfbnbnt.png" alt="Course" class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="design">
+                    <img src="../../../images/nbvjnfbnbnt.png" alt="Course"
+                        class="w-full h-auto align-middle transition-transform duration-300 ease-in-out">
                     <div class="p-6">
-                        <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded" data-i18n="tag_design">Design</span>
-                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 hover:text-red-500 transition duration-300 cursor-pointer" data-i18n="course_9_title">
+                        <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded"
+                            data-i18n="tag_design">Design</span>
+                        <h2 class="text-[18px] sm:text-[20px] font-[700] text-gray-800 leading-tight mt-5 hover:text-red-500 transition duration-300 cursor-pointer"
+                            data-i18n="course_9_title">
                             User Experience. Human-centered Design
                         </h2>
                         <div class="flex items-center gap-3 mt-6">
                             <span class="text-red-500 text-[18px] font-[700]">$240</span>
                             <span class="text-gray-300">|</span>
-                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span> Cody Fisher</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]"><span data-i18n="by_tutor">by</span>
+                                Cody Fisher</span>
                         </div>
                     </div>
                 </div>
@@ -421,52 +489,152 @@
     </div>
 
     <!-- Testimonials -->
-    <div class="bg-[#F4F5F6] mt-16 sm:mt-[100px] py-12 sm:py-[80px]">
-        <section class="container mx-auto px-6 py-16 relative">
+    <div class="mt-[100px]">
+        <section class="container mx-auto px-6 py-16 relative ">
             <div class="text-center mb-12 relative">
-                <p class="font-semibold uppercase tracking-wide" data-i18n="test_subtitle">Testimonials</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mt-2 relative inline-block" data-i18n="test_title">
+                <p class="font-semibold uppercase tracking-wide" data-i18n="testimonials-label">Testimonials</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-2 relative inline-block" data-i18n="testimonials-title">
                     What our students say
                 </h2>
             </div>
 
-            <div class="relative max-w-3xl mx-auto">
-                <button type="button" class="testimonial-prev hidden lg:flex absolute left-[-70px] top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg text-gray-600 hover:bg-orange-500 hover:text-white transition cursor-pointer">
+            <div class="relative max-w-4xl mx-auto px-16">
+                <button type="button"
+                    class="testimonial-prev hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white hover:bg-linear-to-r hover:from-primary hover:to-secondary shadow-md items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-all duration-300">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button type="button" class="testimonial-next hidden lg:flex absolute right-[-70px] top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg text-gray-600 hover:bg-orange-500 hover:text-white transition cursor-pointer">
+
+                <button type="button"
+                    class="testimonial-next hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white hover:bg-linear-to-r hover:from-primary hover:to-secondary shadow-md items-center justify-center text-gray-500 hover:text-white cursor-pointer transition-all duration-300">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
-
                 <div class="swiper testimonials-swiper overflow-visible">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide h-auto">
                             <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
-                                <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed" data-i18n="test_1_text">Lorem ipsum dolor sit amet...</p>
+                                <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed"
+                                    data-i18n="testimonial-1-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
                                 <div class="flex items-center gap-3 mt-8">
-                                    <img src="../../../images/frrgfvurb.png" alt="Eleanor Pena" class="w-14 h-14 rounded-full object-cover">
+                                    <img src="../../../images/frrgfvurb.png" alt="Eleanor Pena"
+                                        class="w-14 h-14 rounded-full object-cover">
                                     <div>
-                                        <h3 class="font-bold text-gray-800">Eleanor Pena</h3>
-                                        <p class="text-gray-400 text-sm" data-i18n="test_2_pos">Position, Course</p>
+                                        <h3 class="font-bold text-gray-800" data-i18n="testimonial-1-name">Eleanor Pena
+                                        </h3>
+                                        <p class="text-gray-400 text-sm" data-i18n="testimonial-role">Position, Course
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                                <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed"
+                                    data-i18n="testimonial-2-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                                <div class="flex items-center gap-3 mt-8">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guy Hawkins"
+                                        class="w-14 h-14 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="font-bold text-gray-800" data-i18n="testimonial-2-name">Guy Hawkins
+                                        </h3>
+                                        <p class="text-gray-400 text-sm" data-i18n="testimonial-role">Position, Course
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                                <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed"
+                                    data-i18n="testimonial-3-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                                <div class="flex items-center gap-3 mt-8">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Kristin Watson"
+                                        class="w-14 h-14 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="font-bold text-gray-800" data-i18n="testimonial-3-name">Kristin
+                                            Watson</h3>
+                                        <p class="text-gray-400 text-sm" data-i18n="testimonial-role">Position, Course
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                                <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed"
+                                    data-i18n="testimonial-4-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                                <div class="flex items-center gap-3 mt-8">
+                                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Cody Fisher"
+                                        class="w-14 h-14 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="font-bold text-gray-800" data-i18n="testimonial-4-name">Cody Fisher
+                                        </h3>
+                                        <p class="text-gray-400 text-sm" data-i18n="testimonial-role">Position, Course
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
+                                <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed"
+                                    data-i18n="testimonial-5-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
+                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
+                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                                <div class="flex items-center gap-3 mt-8">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dianne Russell"
+                                        class="w-14 h-14 rounded-full object-cover">
+                                    <div>
+                                        <h3 class="font-bold text-gray-800" data-i18n="testimonial-5-name">Dianne
+                                            Russell</h3>
+                                        <p class="text-gray-400 text-sm" data-i18n="testimonial-role">Position, Course
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="testimonial-pagination flex justify-center items-center gap-2 mt-8"></div>
             </div>
         </section>
     </div>
 
     <!-- Certificate -->
     <section class="container mx-auto px-6">
-        <div class="certifiqat flex flex-col lg:flex-row gap-10 lg:gap-[135px] mt-16 sm:mt-[100px] items-center lg:items-start">
+        <div
+            class="certifiqat flex flex-col lg:flex-row gap-10 lg:gap-[135px] mt-16 sm:mt-[100px] items-center lg:items-start">
             <div class="left">
                 <div class="left_t">
                     <h6 class="font-[700] text-[16px] text-[#1E212C]" data-i18n="cert_subtitle">Createx Certificate</h6>
-                    <h1 class="font-[900] text-[28px] sm:text-[36px] lg:text-[43px] text-[#1E212C] max-w-full lg:max-w-[392px] mt-[8px] mb-[24px] lg:mb-[40px]" data-i18n="cert_title">
+                    <h1 class="font-[900] text-[28px] sm:text-[36px] lg:text-[43px] text-[#1E212C] max-w-full lg:max-w-[392px] mt-[8px] mb-[24px] lg:mb-[40px]"
+                        data-i18n="cert_title">
                         Your expertise will be confirmed</h1>
-                    <p class="font-[400] text-[16px] text-[#424551] max-w-full lg:max-w-[390px]" data-i18n="cert_text">We are accredited by international professional organizations and institutes:</p>
+                    <p class="font-[400] text-[16px] text-[#424551] max-w-full lg:max-w-[390px]" data-i18n="cert_text">
+                        We are accredited by international professional organizations and institutes:</p>
                 </div>
                 <div class="left_logo flex flex-wrap gap-[40px] mt-[32px]">
                     <img src="../../../images/logo.png" alt="">
@@ -475,7 +643,8 @@
                 </div>
             </div>
             <div class="right_img w-full lg:w-auto">
-                <img src="../../../images/mngjngtjn.png" alt="" class="w-full h-auto shadow-[0px_4px_4px_-4px_#1E212C0D]">
+                <img src="../../../images/mngjngtjn.png" alt=""
+                    class="w-full h-auto shadow-[0px_4px_4px_-4px_#1E212C0D]">
             </div>
         </div>
     </section>
@@ -486,15 +655,22 @@
             <div class="h-[506px] flex flex-col items-center justify-center">
                 <div>
                     <div class="mb-12 pb-2 text-center">
-                        <h3 class="uppercase text-primary-text font-bold" data-i18n="sub_subtitle">Don’t miss anything</h3>
-                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black" data-i18n="sub_title">Subscribe to the Createx School <br> announcements</h2>
+                        <h3 class="uppercase text-primary-text font-bold" data-i18n="sub_subtitle">Don’t miss anything
+                        </h3>
+                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black" data-i18n="sub_title">
+                            Subscribe to the Createx School <br> announcements</h2>
                     </div>
                 </div>
 
                 <div class="w-full">
-                    <form action="#" class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
-                        <input type="email" class="w-full bg-white outline-0 focus:border-primary focus:shadow-primary-shadow/40 transition ease duration-300 focus:shadow-xl py-5 px-4 rounded-sm border-1 border-[#dadbdd]" required placeholder="Your working email" data-i18n-placeholder="sub_placeholder">
-                        <button type="submit" class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer" data-i18n="sub_btn">Subscribe</button>
+                    <form action="#"
+                        class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
+                        <input type="email"
+                            class="w-full bg-white outline-0 focus:border-primary focus:shadow-primary-shadow/40 transition ease duration-300 focus:shadow-xl py-5 px-4 rounded-sm border-1 border-[#dadbdd]"
+                            required placeholder="Your working email" data-i18n-placeholder="sub_placeholder">
+                        <button type="submit"
+                            class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer"
+                            data-i18n="sub_btn">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -502,7 +678,7 @@
     </section>
 
     <!-- Footer -->
-     <footer class="bg-[#1e212c] pt-12">
+    <footer class="bg-[#1e212c] pt-12">
         <div class="container">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
                 <div class="col-span-1 lg:col-span-3">

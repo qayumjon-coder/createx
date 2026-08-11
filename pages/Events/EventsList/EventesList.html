@@ -29,7 +29,7 @@
 </head>
 
 <body class="font-lato">
-    <header class="header p-4 fixed z-99 top-0 w-full transition bg-white shadow-md">
+    <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
         <div class="container flex justify-between items-center">
             <a class="mr-12 pr-2" href="index.html">
                 <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
@@ -38,83 +38,101 @@
             <nav class="self-start hidden xl:flex">
                 <ul class="flex gap-2 justify-start mr-auto items-center">
                     <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="nav-about-us">About us</a>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="../../../pages/About/About.html"
+                            data-i18n="nav_about">About
+                            us</a>
                     </li>
                     <li class="list-item relative px-5">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
-                            <div class="py-4" data-i18n="courses">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
+                                    class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
                         </button>
-                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                        <div
+                            class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
-                                <a href="#"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="courses-grid">Courses
+                                <a href="../../../pages/Courses/CourseGrid/index.html"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    data-i18n="nav_courses_grid">Courses
                                     Grid</a>
-                                <a href="#"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-course">Single
+                                <a href="../../../pages/Courses/CoursesSingle/singlecourses.html"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    data-i18n="nav_single_course">Single
                                     Course</a>
                             </div>
                         </div>
                     </li>
                     <li class="list-item relative px-6">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
-                            <div class="py-4" data-i18n="events">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4"><span data-i18n="nav_events">Events</span> <i
+                                    class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
                         </button>
-                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full ">
+                        <div
+                            class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full ">
                             <div class="dr-inner flex flex-col p-0">
-                                <a href="#"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-list">Events
+                                <a href="../../../pages/Events/EventsList/EventesList.html"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    data-i18n="nav_events_list">Events
                                     list</a>
-                                <a href="#"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-grid">Events
+                                <a href="../../../pages/Events/EventsGrid/EventsGrid.html"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    data-i18n="nav_events_grid">Events
                                     Grid</a>
-                                <a href="#"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-single">Events
+                                <a href="../../../pages/Events/Events.html"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    data-i18n="nav_events_single">Events
                                     Single</a>
                             </div>
                         </div>
                     </li>
                     <li class="list-item relative px-5">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
-                            <div class="py-4" data-i18n="blog">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i
+                                    class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
                         </button>
-                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                        <div
+                            class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
-                                <a href="#"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="blog-grid">Blog
+                                <a href="../../../pages/Blogs/Blogs.html"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    data-i18n="nav_blog_grid">Blog
                                     Grid</a>
-                                <a href="#"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-post">Single
+                                <a href="../../../pages/Blogs/SinglePost/SinglePost.html"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    data-i18n="nav_single_post">Single
                                     Post</a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="contacts">Contacts</a>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="./pages/Contacts/Contacts.html"
+                            data-i18n="nav_contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="flex gap-5 items-center">
-                <!-- TIL ALMASHTIRUVCHI SELECT MENYU -->
-                <select id="lang-switcher" onchange="changeLanguage(this.value)" class="bg-transparent text-[#424551] font-bold outline-none cursor-pointer">
+                <!-- TIL O'ZGARTIRISH MENYUSI QO'SHILDI -->
+                <select id="lang-switcher" onchange="changeLanguage(this.value)"
+                    class="bg-transparent text-[#424551] font-bold outline-none cursor-pointer">
                     <option value="uz">UZ</option>
                     <option value="ru">RU</option>
                     <option value="en">EN</option>
                 </select>
 
                 <div class="">
-                    <a href="#"
-                        class="py-2.5 hidden sm:inline-block px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold" data-i18n="get-consultation">Get
+                    <a href="../../../pages/Contacts/Contacts.html"
+                        class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
+                        data-i18n="btn_consultation">Get
                         consultation</a>
-                    <a href="#" class="text-primary hidden md:inline-block  font-bold ml-6" data-i18n="sign-in-up"><i
-                            class="fa-regular fa-user mr-2"></i>Sign
-                        in/up</a>
+                    <a href="../../../pages/Login/SignUp/SignUp.html"
+                        class="text-primary hidden md:inline-block  font-bold ml-6"><i
+                            class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign in/up</span></a>
                 </div>
 
                 <nav class="">
@@ -126,21 +144,24 @@
                         <div class="container">
                             <li>
                                 <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
-                                    href="#" data-i18n="about-us">About us</a>
+                                    href="../../../pages/About/About.html" data-i18n="nav_about">About us</a>
                             </li>
                             <li>
                                 <button
                                     class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-                                    <div class="py-4" data-i18n="courses">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
+                                            class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
                                 </button>
                                 <div class="dr-link transition-ease duration-300">
                                     <div class="dr-inner flex flex-col">
-                                        <a href="#"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="courses-grid">Courses
+                                        <a href="../../../pages/Courses/CourseGrid/index.html"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            data-i18n="nav_courses_grid">Courses
                                             Grid</a>
-                                        <a href="#"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-course">Single
+                                        <a href="../../../pages/Courses/CoursesSingle/singlecourses.html"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            data-i18n="nav_single_course">Single
                                             Course</a>
                                     </div>
                                 </div>
@@ -148,19 +169,23 @@
                             <li>
                                 <button
                                     class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-                                    <div class="py-4" data-i18n="events">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    <div class="py-4"><span data-i18n="nav_events">Events</span> <i
+                                            class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
                                 </button>
                                 <div class="dr-link2 transition-ease duration-300">
                                     <div class="dr-inner flex flex-col">
-                                        <a href="#"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-list">Events
+                                        <a href="../../../pages/Events/EventsList/EventesList.html"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            data-i18n="nav_events_list">Events
                                             list</a>
-                                        <a href="#"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-grid">Events
+                                        <a href="../../../pages/Events/EventsGrid/EventsGrid.html"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            data-i18n="nav_events_grid">Events
                                             Grid</a>
-                                        <a href="#"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-single">Events
+                                        <a href="../../../pages/Events/Events.html"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            data-i18n="nav_events_single">Events
                                             Single</a>
                                     </div>
                                 </div>
@@ -168,32 +193,39 @@
                             <li>
                                 <button
                                     class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-                                    <div class="py-4" data-i18n="blog">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i
+                                            class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
                                 </button>
                                 <div class="dr-link3 transition-ease duration-300">
                                     <div class="dr-inner flex flex-col">
-                                        <a href="#"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="blog-grid">Blog
+                                        <a href="../../../pages/Blogs/Blogs.html"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            data-i18n="nav_blog_grid">Blog
                                             Grid</a>
-                                        <a href="#"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-post">Single
+                                        <a href="../../../pages/Blogs/SinglePost/SinglePost.html"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            data-i18n="nav_single_post">Single
                                             Post</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
-                                    href="#" data-i18n="contacts">Contacts</a>
+                                    href="../../../pages/Contacts/Contacts.html" data-i18n="nav_contacts">Contacts</a>
                             </li>
 
                             <div class="flex flex-col xl:hidden gap-5">
-                                <li><a href="#" class="text-primary inline-block md:hidden font-bold" data-i18n="sign-in-up"><i
-                                            class="fa-regular fa-user mr-2"></i>Sign
-                                        in/up</a></li>
-                                <li><a href="#"
-                                        class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold" data-i18n="get-consultation">Get
+
+                                <li><a href="../../../pages/Login/SignUp/SignUp.html"
+                                        class="text-primary inline-block md:hidden font-bold"><i
+                                            class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign
+                                            in/up</span></a></li>
+                                <li><a href="../../../pages/Contacts/Contacts.html"
+                                        class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold"
+                                        data-i18n="btn_consultation">Get
                                         consultation</a></li>
+
                             </div>
                         </div>
                     </ul>
@@ -207,9 +239,10 @@
         <div class="master_section container">
 
             <div class="master_text">
-                <h6 class="text-[14px] md:text-[16px] font-[700] text-primary-text text-center" data-i18n="our-events">Our events</h6>
-                <h1
-                    class="text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-[900] text-primary-text text-center leading-tight" data-i18n="events-title">
+                <h6 class="text-[14px] md:text-[16px] font-[700] text-primary-text text-center" data-i18n="our-events">
+                    Our events</h6>
+                <h1 class="text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-[900] text-primary-text text-center leading-tight"
+                    data-i18n="events-title">
                     Lectures, workshops & master-classes
                 </h1>
             </div>
@@ -219,7 +252,8 @@
                 <div class="flex flex-wrap items-center gap-3 md:gap-4">
 
                     <div class="flex items-center gap-2">
-                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="event-category">Event category</span>
+                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="event-category">Event
+                            category</span>
                         <select id="category-filter"
                             class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
                             <option data-i18n="all-themes">All themes</option>
@@ -230,7 +264,8 @@
                     </div>
 
                     <div class="flex items-center gap-2">
-                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="sort-by">Sort by</span>
+                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="sort-by">Sort
+                            by</span>
                         <select id="sort-filter"
                             class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
                             <option data-i18n="newest">Newest</option>
@@ -242,13 +277,15 @@
                         <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="show">Show</span>
                         <input type="number" id="per-page" value="9" min="1"
                             class="w-[56px] text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-2 py-2 text-center" />
-                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="events-per-page">events per page</span>
+                        <span class="text-[14px] text-secondary-text whitespace-nowrap"
+                            data-i18n="events-per-page">events per page</span>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-3">
                     <div class="relative flex-1 md:flex-none">
-                        <input type="text" id="search-input" placeholder="Search event..." data-i18n-placeholder="search-event-placeholder"
+                        <input type="text" id="search-input" placeholder="Search event..."
+                            data-i18n-placeholder="search-event-placeholder"
                             class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] pl-4 pr-9 py-2 w-full md:w-[220px]" />
                         <i
                             class="fa-solid fa-magnifying-glass text-secondary-text text-[14px] absolute right-3 top-1/2 -translate-y-1/2"></i>
@@ -275,8 +312,10 @@
             <div class="h-[506px] flex flex-col items-center justify-center">
                 <div>
                     <div class="mb-12 pb-2 text-center">
-                        <h3 class="uppercase text-primary-text font-bold" data-i18n="don-t-miss-anything">Don’t miss anything</h3>
-                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black" data-i18n="subscribe-to-announcements">Subscribe to the Createx
+                        <h3 class="uppercase text-primary-text font-bold" data-i18n="don-t-miss-anything">Don’t miss
+                            anything</h3>
+                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black"
+                            data-i18n="subscribe-to-announcements">Subscribe to the Createx
                             School <br> announcements</h2>
                     </div>
                 </div>
@@ -289,7 +328,8 @@
                             required placeholder="Your working email">
                         <button type="submit"
                             class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
-                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer" data-i18n="subscribe">Subscribe</button>
+                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer"
+                            data-i18n="subscribe">Subscribe</button>
                     </form>
                 </div>
             </div>
