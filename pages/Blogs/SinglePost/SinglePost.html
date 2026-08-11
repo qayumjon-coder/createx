@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../style.css" />
+    <title data-i18n="sp_page_title">CreateX - Single Post</title>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-lato: Lato, sans-serif;
+            --color-primary: #ff3f3a;
+            --color-secondary: #f75e05;
+            --color-primary-shadow: #ff3f3a80;
+            --color-hero-bg: #f9dcd4;
+            --color-primary-text: #1E212C;
+            --color-secondary-text: #424551;
+            --color-third-text: #787a80;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-visible lg:overflow-x-visible">
+    <header class="header p-4 fixed z-40 top-0 w-full flex transition h-22 items-center">
+        <div class="container flex justify-between items-center">
+            <a class="mr-12 pr-2" href="index.html">
+                <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
+            </a>
+
+            <nav class="self-start hidden xl:flex">
+                <ul class="flex gap-2 justify-start mr-auto items-center">
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="nav_about">About us</a>
+                    </li>
+                    <li class="list-item relative px-5">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_courses_grid">Courses
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_single_course">Single
+                                    Course</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item relative px-6">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4"><span data-i18n="nav_events">Events</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="show-menu hidden border-third-text/20 shadow-lg  border absolute transition-ease duration-300 bg-white w-full ">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_list">Events
+                                    list</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_grid">Events
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_single">Events
+                                    Single</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item relative px-5">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-primary font-bold cursor-pointer">
+                            <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_blog_grid">Blog
+                                    Grid</a>
+                                <a href="#" class="font-semibold text-primary transition-ease duration-300" data-i18n="nav_single_post">Single
+                                    Post</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="nav_contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="flex gap-5 items-center">
+                <!-- TIL O'ZGARTIRISH MENYUSI -->
+                <select id="lang-switcher" onchange="changeLanguage(this.value)" class="bg-transparent text-[#424551] font-bold outline-none cursor-pointer">
+                    <option value="uz">UZ</option>
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                </select>
+
+                <div class="">
+                    <a href="#"
+                        class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold" data-i18n="btn_consultation">Get
+                        consultation</a>
+                    <a href="#" class="text-primary hidden md:inline-block  font-bold ml-6"><i
+                            class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign in/up</span></a>
+                </div>
+
+                <nav class="">
+                    <button class="menu-btn xl:hidden block"><i
+                            class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i></button>
+
+                    <ul
+                        class="menu shadow-xl shadow-black/10 overflow-hidden transition-all ease-in-out duration-300 absolute top-19 left-0 w-full xl:h-0 flex gap-2 justify-start mr-auto items-start bg-white xl:flex xl:flex-col">
+                        <div class="container">
+                            <li>
+                                <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                                    href="#" data-i18n="nav_about">About us</a>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_courses_grid">Courses
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_single_course">Single
+                                            Course</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4"><span data-i18n="nav_events">Events</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link2 transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_list">Events
+                                            list</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_grid">Events
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_events_single">Events
+                                            Single</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link3 transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_blog_grid">Blog
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="nav_single_post">Single
+                                            Post</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                                    href="#" data-i18n="nav_contacts">Contacts</a>
+                            </li>
+
+                            <div class="flex flex-col xl:hidden gap-5">
+                                <li><a href="#" class="text-primary inline-block md:hidden font-bold"><i
+                                            class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign
+                                        in/up</span></a></li>
+                                <li><a href="#"
+                                        class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold" data-i18n="btn_consultation">Get
+                                        consultation</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Single post -->
+    <section class="pt-40 mb-24">
+        <div class="container">
+            <div class="grid grid-cols-3 gap-5">
+                <div class="col-span-3 lg:col-span-2 lg:mr-10">
+                    <div class="flex text-third-text/20 gap-3 mb-4">
+                        <a href="#" class="flex items-center gap-3 text-third-text"><i
+                                class="fa-regular fa-newspaper"></i> <span data-i18n="sp_article">Article</span></a>|
+                        <a class="text-primary font-semibold" data-i18n="sp_category">HR&Recruting</a>
+                    </div>
+
+                    <h1 class="text-5xl font-bold text-primary-text mb-6" data-i18n="sp_main_title">HR statistics: job search, interviews, hiring and recruiting</h1>
+
+                    <div class="flex justify-between mb-6 flex-col sm:flex-row">
+                        <div class="flex items-center gap-5 text-third-text text-sm">
+                            <div>
+                                <a href="#"><i class="fa-regular fa-calendar"></i> <span data-i18n="sp_date">August 03, 2020</span></a>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-clock"></i> <span data-i18n="sp_read_time">4 min read</span>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-1 text-third-text items-center">
+                            <p class="text-secondary-text font-semibold" data-i18n="sp_share">Share:</p>
+                            <a href="#" class="flex hover:text-primary transition ease duration-300 w-8 h-8 items-center justify-center"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="flex hover:text-primary transition ease duration-300 w-8 h-8 items-center justify-center"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="flex hover:text-primary transition ease duration-300 w-8 h-8 items-center justify-center"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="rounded-md mb-12" src="../../../images/blog/single/01.jpg" alt="post image">
+                    </div>
+
+                    <p class="text-xl font-semibold mb-6 text-secondary-text" data-i18n="sp_p1">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio.</p>
+                    <p class="text-secondary-text mb-6" data-i18n="sp_p2">At facilisi sapien posuere eget nunc senectus proin nullam.</p>
+                    <p class="text-secondary-text mb-12" data-i18n="sp_p3">Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis.</p>
+
+                    <div class="flex gap-5 items-center mb-12">
+                        <img class="self-start" src="../../../images/braces.png" alt="Quote image">
+                        <p class="text-xl font-bold text-secondary-text" data-i18n="sp_quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu.
+                        </p>
+                    </div>
+
+                    <p class="text-secondary-text mb-6" data-i18n="sp_p4">
+                        Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis:
+                    </p>
+
+                    <ul class="mb-6">
+                        <li class="flex items-center gap-2 text-secondary-text mb-2"><i class="fa-regular fa-circle-check text-primary"></i><p data-i18n="sp_bullet_1">A fermentum in morbi pretium aliquam adipiscing donec tempus.</p></li>
+                        <li class="flex items-center gap-2 text-secondary-text mb-2"><i class="fa-regular fa-circle-check text-primary"></i><p data-i18n="sp_bullet_2">Vulputate placerat amet pulvinar lorem nisl.</p></li>
+                        <li class="flex items-center gap-2 text-secondary-text mb-2"><i class="fa-regular fa-circle-check text-primary"></i><p data-i18n="sp_bullet_3">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p></li>
+                        <li class="flex items-center gap-2 text-secondary-text mb-2"><i class="fa-regular fa-circle-check text-primary"></i><p data-i18n="sp_bullet_4">Etiam duis lobortis in fames ultrices commodo nibh.</p></li>
+                        <li class="flex items-center gap-2 text-secondary-text mb-2"><i class="fa-regular fa-circle-check text-primary"></i><p data-i18n="sp_bullet_5">Fringilla in nec risus congue venenatis pretium posuere nec.</p></li>
+                    </ul>
+
+                    <p class="text-secondary-text mb-6" data-i18n="sp_p5">
+                        Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo.
+                    </p>
+
+                    <div class="flex items-start sm:items-center justify-between gap-5 sm:gap-0 flex-col sm:flex-row">
+                        <div class="flex items-center gap-1 sm:gap-2 flex-wrap">
+                            <p class="font-bold text-primary-text" data-i18n="sp_tags">Tags:</p>
+                            <a class="py-1 px-4 border border-third-text/30 text-third-text font-semibold rounded-sm hover:border-primary hover:text-primary transition ease duration-300" href="#">#learning</a>
+                            <a class="py-1 px-4 border border-third-text/30 text-third-text font-semibold rounded-sm hover:border-primary hover:text-primary transition ease duration-300" href="#">#HR</a>
+                            <a class="py-1 px-4 border border-third-text/30 text-third-text font-semibold rounded-sm hover:border-primary hover:text-primary transition ease duration-300" href="#">#self-development</a>
+                        </div>
+
+                        <div class="flex text-third-text gap-2 items-center">
+                            <p class="text-secondary-text font-semibold" data-i18n="sp_share">Share:</p>
+                            <a class="w-8 h-8 flex items-center justify-center hover:text-primary transition ease duration-300" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="w-8 h-8 flex items-center justify-center hover:text-primary transition ease duration-300" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a class="w-8 h-8 flex items-center justify-center hover:text-primary transition ease duration-300" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="for-display-none hidden lg:block">
+                    <div class="sidebar transition-all ease-in-out duration-500 lg:bg-transparent bg-black/50 w-full lg:block flex items-center justify-end h-screen right-0 lg:w-auto lg:z-1 z-50 lg:h-auto fixed top-0 lg:static">
+                        <div class="scroller w-90 lg:w-full bg-white lg:h-auto h-full relative right-[-150%] lg:static transition-all ease-in-out duration-500 overflow-y-auto overflow-x-hidden">
+                            <div class="bg-white sticky right-0 top-0 z-100">
+                                <div class="lg:hidden w-90 flex items-center justify-between py-5 px-6 shadow-xl shadow-primary-text/10">
+                                    <p class="text-2xl font-semibold" data-i18n="sidebar_title">Sidebar</p>
+                                    <button class="close-btn text-third-text cursor-pointer hover:text-secondary-text transition ease duration-300 p-2 rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="relative top-0">
+                                <div class="relative mt-10 lg:mt-0 p-5 lg:p-0 xl:ml-12">
+                                    <div class="w-full lg:w-[80%] flex items-center mb-10">
+                                        <input class="py-2.5 pl-4 pr-12 w-full text-sm border border-third-text/40 rounded-sm text-secondary-text focus:border-primary/50 focus:shadow-lg focus:shadow-primary-shadow/19 transition ease duration-300 outline-0" type="text" placeholder="Search the blog" data-i18n-placeholder="sidebar_search">
+                                        <i class="fa-solid fa-magnifying-glass -ml-10 text-secondary-text"></i>
+                                    </div>
+
+                                    <div class="mb-8 pb-8">
+                                        <h3 class="uppercase mb-6 font-semibold" data-i18n="sidebar_author">Author</h3>
+                                        <div class="flex gap-5">
+                                            <div>
+                                                <img class="w-25 h-25 rounded-md" src="../../../images/blog/single/author.jpg" alt="">
+                                            </div>
+                                            <div>
+                                                <h4 class="text-xl font-semibold text-primary-text mb-1">Kristin Watson</h4>
+                                                <p class="mb-4 text-sm text-third-text" data-i18n="sidebar_author_role">Curator of Marketing Course</p>
+                                                <div class="flex items-center">
+                                                    <a href="#" class="w-8 h-8 flex items-center justify-center text-third-text"><i class="fa-brands fa-instagram text-xl"></i></a>
+                                                    <a href="#" class="w-8 h-8 flex items-center justify-center text-third-text"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                                                    <a href="#" class="w-8 h-8 flex items-center justify-center text-third-text"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <h3 class="mb-6 uppercase font-semibold" data-i18n="sidebar_recent">Recent posts</h3>
+                                        <div>
+                                            <div class="flex gap-5 mb-6">
+                                                <a href="#"><img class="w-25 h-25 rounded-md" src="../../../images/blog/single/th01.jpg" alt=""></a>
+                                                <div class="w-6/10 p-1">
+                                                    <p class="mb-1 gap-3 text-third-text text-sm flex items-center"><i class="fa-regular fa-calendar"></i><span data-i18n="rec_date_1">September 4, 2020</span></p>
+                                                    <h4 class="font-semibold text-primary-text" data-i18n="rec_title_1">What is traffic arbitrage and does it really make money?</h4>
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-5 mb-6">
+                                                <a href="#"><img class="w-25 h-25 rounded-md" src="../../../images/blog/single/th02.jpg" alt=""></a>
+                                                <div class="w-6/10 p-1">
+                                                    <p class="mb-1 gap-3 text-third-text text-sm flex items-center"><i class="fa-regular fa-calendar"></i><span data-i18n="rec_date_2">September 4, 2020</span></p>
+                                                    <h4 class="font-semibold text-primary-text" data-i18n="rec_title_2">Startup: how to build a team that will live longer than a year</h4>
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-5 mb-6">
+                                                <a href="#"><img class="w-25 h-25 rounded-md" src="../../../images/blog/single/th03.jpg" alt=""></a>
+                                                <div class="w-6/10 p-1">
+                                                    <p class="mb-1 gap-3 text-third-text text-sm flex items-center"><i class="fa-regular fa-calendar"></i><span data-i18n="rec_date_3">September 4, 2020</span></p>
+                                                    <h4 class="font-semibold text-primary-text" data-i18n="rec_title_3">What to do if you want to get feedback on the product</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pb-4 mb-8">
+                                        <h3 class="uppercase font-semibold text-primary-text mb-6" data-i18n="sidebar_tags">Tags</h3>
+                                        <div class="flex flex-wrap gap-1">
+                                            <a class="py-1 px-4 border rounded-sm font-semibold text-sm text-third-text border-secondary-text/40 inline-block mb-2 hover:text-primary hover:border-primary transition ease duration-300" href="#">#marketing</a>
+                                            <a class="py-1 px-4 border rounded-sm font-semibold text-sm text-third-text border-secondary-text/40 inline-block mb-2 hover:text-primary hover:border-primary transition ease duration-300" href="#">#recruiting</a>
+                                            <a class="py-1 px-4 border rounded-sm font-semibold text-sm text-third-text border-secondary-text/40 inline-block mb-2 hover:text-primary hover:border-primary transition ease duration-300" href="#">#coding</a>
+                                            <a class="py-1 px-4 border rounded-sm font-semibold text-sm text-third-text border-secondary-text/40 inline-block mb-2 hover:text-primary hover:border-primary transition ease duration-300" href="#">#learning</a>
+                                            <a class="py-1 px-4 border rounded-sm font-semibold text-sm text-third-text border-secondary-text/40 inline-block mb-2 hover:text-primary hover:border-primary transition ease duration-300" href="#">#HR</a>
+                                            <a class="py-1 px-4 border rounded-sm font-semibold text-sm text-third-text border-secondary-text/40 inline-block mb-2 hover:text-primary hover:border-primary transition ease duration-300" href="#">#self-development</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="fixed block lg:hidden bottom-0 w-full bg-primary hover:bg-primary z-10">
+        <button class="side-btn w-full flex items-center justify-center text-white py-4 gap-2 font-bold cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-sidebar-reverse" viewBox="0 0 16 16">
+                <path d="M16 3a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5-1v12H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm1 0h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-2z"/>
+            </svg>
+            <span data-i18n="sidebar_btn">Sidebar</span>
+        </button>
+    </div>
+
+    <section class="md:h-108.5 bg-[#f9f9f9] pb-10">
+        <div class="container">
+            <div class="flex items-center flex-col md:flex-row">
+                <div>
+                    <img class="w-full" src="../../../images/blog/single/illustration.png" alt="vector illustration image">
+                </div>
+                <div class="mt-26.5 lg:ml-26.5">
+                    <h2 class="text-3xl font-bold text-primary-text mb-12" data-i18n="news_title">Want to get the best articles weekly? Subscribe to our newsletter!</h2>
+                    <form class="flex flex-col gap-5">
+                        <div class="flex gap-5 flex-col sm:flex-row">
+                            <input type="email" name="Email" class="py-2.5 px-4 w-full sm:w-7/10 text-sm border border-third-text/30 rounded-sm text-secondary-text focus:border-primary/50 focus:shadow-lg focus:shadow-primary-shadow/19 transition ease duration-300 outline-0" placeholder="Your working email" id="forEmail required" data-i18n-placeholder="sub_placeholder">
+                            <button type="submit" class="bg-linear-to-r from-primary to-secondary px-8 py-2.5 text-white font-bold rounded-sm" data-i18n="sub_btn">Subscribe</button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="checkCom" class="focus:bg-primary rounded accent-primary w-4 h-4">
+                            <label for="checkCom" class="text-secondary-text" data-i18n="news_checkbox">I agree to receive communications from Createx Online School</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="pt-30 pb-30">
+                <div class="flex justify-between">
+                    <div>
+                        <h3 class="font-bold text-4 uppercase mb-2 text-primary-text" data-i18n="blog_subtitle">Our blog</h3>
+                        <h2 class="md:text-5xl text-3xl font-extrabold text-primary-text pb-2 mb-5 md:mb-12 xl:mr-80" data-i18n="blog_title">
+                            Latest posts
+                        </h2>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="swiper-button-prev custom-btn-prev custom-btn static! m-0! w-11! h-11! flex rounded-full hover:bg-[#f0483e] transition-ease duration-200 group items-center justify-center text-primary-text after:hidden">
+                            <i class="fa-solid fa-arrow-left-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i>
+                        </div>
+                        <div class="swiper-button-next custom-btn-next custom-btn static! m-0! w-11! h-11! rounded-full hover:bg-[#f0483e] transition-ease duration-200 group flex items-center justify-center text-white after:hidden">
+                            <i class="fa-solid fa-arrow-right-long text-xl text-secondary-text group-hover:text-white! font-normal transition-ease duration-200"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper blog-swiper">
+                    <div class="swiper-wrapper blog-slide"></div>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col gap-5 md:flex-row items-center justify-center pt-6 mb-6">
+                <h4 class="text-3xl font-bold text-primary-text" data-i18n="blog_more_q">Do you want more articles, podcasts and videos? </h4>
+                <a class="w-full md:w-auto text-center md:ml-6 py-3.5 px-10.5 font-bold bg-linear-to-r from-primary to-secondary text-white rounded-sm hover:shadow-lg shadow-primary-shadow transition-ease duration-300" href="#" data-i18n="blog_btn">Go to blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer qismi -->
+    <footer class="bg-[#1e212c] pt-12">
+        <!-- Footer kodlari... (oldingidek qoladi) -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="../../../i18n.js"></script>
+    <script src="blogSwiper.js"></script>
+</body>
+
+</html>

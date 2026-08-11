@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -162,4 +163,424 @@
     <script  src="./EventsList.js"></script>
 </body>
 
+=======
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/bf8b8f599c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../style.css" />
+    <title data-i18n="events_page_title">CreateX - Events List</title>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-lato: Lato, sans-serif;
+            --color-primary: #ff3f3a;
+            --color-secondary: #f75e05;
+            --color-primary-shadow: #ff3f3a80;
+            --color-hero-bg: #f9dcd4;
+            --color-primary-text: #1E212C;
+            --color-secondary-text: #424551;
+            --color-third-text: #787a80;
+        }
+    </style>
+</head>
+
+<body class="font-lato">
+    <header class="header p-4 fixed z-99 top-0 w-full transition bg-white shadow-md">
+        <div class="container flex justify-between items-center">
+            <a class="mr-12 pr-2" href="index.html">
+                <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
+            </a>
+
+            <nav class="self-start hidden xl:flex">
+                <ul class="flex gap-2 justify-start mr-auto items-center">
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="nav-about-us">About us</a>
+                    </li>
+                    <li class="list-item relative px-5">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4" data-i18n="courses">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="courses-grid">Courses
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-course">Single
+                                    Course</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item relative px-6">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4" data-i18n="events">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full ">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-list">Events
+                                    list</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-grid">Events
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-single">Events
+                                    Single</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item relative px-5">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4" data-i18n="blog">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="blog-grid">Blog
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-post">Single
+                                    Post</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#" data-i18n="contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="flex gap-5 items-center">
+                <!-- TIL ALMASHTIRUVCHI SELECT MENYU -->
+                <select id="lang-switcher" onchange="changeLanguage(this.value)" class="bg-transparent text-[#424551] font-bold outline-none cursor-pointer">
+                    <option value="uz">UZ</option>
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                </select>
+
+                <div class="">
+                    <a href="#"
+                        class="py-2.5 hidden sm:inline-block px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold" data-i18n="get-consultation">Get
+                        consultation</a>
+                    <a href="#" class="text-primary hidden md:inline-block  font-bold ml-6" data-i18n="sign-in-up"><i
+                            class="fa-regular fa-user mr-2"></i>Sign
+                        in/up</a>
+                </div>
+
+                <nav class="">
+                    <button class="menu-btn xl:hidden block"><i
+                            class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i></button>
+
+                    <ul
+                        class="menu shadow-xl shadow-black/10 overflow-hidden transition-all ease-in-out duration-300 absolute top-19 left-0 w-full xl:h-0 flex gap-2 justify-start mr-auto items-start bg-white xl:flex xl:flex-col">
+                        <div class="container">
+                            <li>
+                                <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                                    href="#" data-i18n="about-us">About us</a>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4" data-i18n="courses">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="courses-grid">Courses
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-course">Single
+                                            Course</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4" data-i18n="events">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link2 transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-list">Events
+                                            list</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-grid">Events
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="events-single">Events
+                                            Single</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4" data-i18n="blog">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link3 transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="blog-grid">Blog
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300" data-i18n="single-post">Single
+                                            Post</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                                    href="#" data-i18n="contacts">Contacts</a>
+                            </li>
+
+                            <div class="flex flex-col xl:hidden gap-5">
+                                <li><a href="#" class="text-primary inline-block md:hidden font-bold" data-i18n="sign-in-up"><i
+                                            class="fa-regular fa-user mr-2"></i>Sign
+                                        in/up</a></li>
+                                <li><a href="#"
+                                        class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold" data-i18n="get-consultation">Get
+                                        consultation</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="mt-[200px]">
+        <div class="master_section container">
+
+            <div class="master_text">
+                <h6 class="text-[14px] md:text-[16px] font-[700] text-primary-text text-center" data-i18n="our-events">Our events</h6>
+                <h1
+                    class="text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-[900] text-primary-text text-center leading-tight" data-i18n="events-title">
+                    Lectures, workshops & master-classes
+                </h1>
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row flex-wrap items-stretch md:items-center justify-between gap-4 mt-[32px] md:mt-[48px] mb-[24px]">
+                <div class="flex flex-wrap items-center gap-3 md:gap-4">
+
+                    <div class="flex items-center gap-2">
+                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="event-category">Event category</span>
+                        <select id="category-filter"
+                            class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
+                            <option data-i18n="all-themes">All themes</option>
+                            <option data-i18n="master-class">Master-class</option>
+                            <option data-i18n="lecture">Lecture</option>
+                            <option data-i18n="workshop">Workshop</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="sort-by">Sort by</span>
+                        <select id="sort-filter"
+                            class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-3 py-2">
+                            <option data-i18n="newest">Newest</option>
+                            <option data-i18n="oldest">Oldest</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="show">Show</span>
+                        <input type="number" id="per-page" value="9" min="1"
+                            class="w-[56px] text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] px-2 py-2 text-center" />
+                        <span class="text-[14px] text-secondary-text whitespace-nowrap" data-i18n="events-per-page">events per page</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="relative flex-1 md:flex-none">
+                        <input type="text" id="search-input" placeholder="Search event..." data-i18n-placeholder="search-event-placeholder"
+                            class="text-[14px] text-primary-text border border-[#E4E5E8] rounded-[8px] pl-4 pr-9 py-2 w-full md:w-[220px]" />
+                        <i
+                            class="fa-solid fa-magnifying-glass text-secondary-text text-[14px] absolute right-3 top-1/2 -translate-y-1/2"></i>
+                    </div>
+
+                    <button type="button"
+                        class="h-[20px] flex items-center justify-center cursor-pointer  text-primary">
+                        <i class="fa-solid fa-bars text-[14px]"></i>
+                    </button>
+                    <button type="button"
+                        class="w-[20px] flex items-center justify-center cursor-pointer text-secondary-text">
+                        <i class="fa-solid fa-table-cells-large text-[14px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 mb-[100px]" id="events-container">
+
+            </div>
+    </section>
+
+    <section class="bg-[url(../../../images/subscribe-bg.png)] bg-cover bg-no-repeat py-24 bg-center">
+        <div class="container">
+            <div class="h-[506px] flex flex-col items-center justify-center">
+                <div>
+                    <div class="mb-12 pb-2 text-center">
+                        <h3 class="uppercase text-primary-text font-bold" data-i18n="don-t-miss-anything">Don’t miss anything</h3>
+                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black" data-i18n="subscribe-to-announcements">Subscribe to the Createx
+                            School <br> announcements</h2>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <form action="#"
+                        class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
+                        <input type="email" data-i18n-placeholder="working-email-placeholder"
+                            class="w-full bg-white outline-0 focus:border-primary focus:shadow-primary-shadow/40 transition ease duration-300 focus:shadow-xl py-5 px-4 rounded-sm border-1 border-[#dadbdd] "
+                            required placeholder="Your working email">
+                        <button type="submit"
+                            class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
+                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer" data-i18n="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1e212c] pt-12">
+        <div class="container">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
+                <div class="col-span-1 lg:col-span-3">
+                    <a href="#" class="mb-4 inline-block">
+                        <img src="../../../images/logo/logo.png" alt="Site Logo">
+                    </a>
+
+                    <p class="text-[12px]  text-[#ffffff99] mb-6 pb-4" data-i18n="footer-about">Createx Online School is a leader in online
+                        studying. We have lots of
+                        courses and programs from
+                        the main market experts. We provide relevant approaches to online learning, internships and
+                        employment in the largest companies in the country.
+                    </p>
+
+                    <div class="text-[#ffffff99] flex gap-5">
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-telegram"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:col-span-2 order">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="footer-sitemap">Site map</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/About/About.html" data-i18n="about-us">About
+                                Us</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html" data-i18n="courses">Courses</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Events/Events.html" data-i18n="events">Events</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Blogs/Blogs.html" data-i18n="blog">Blog</a>
+                        </li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Contacts/Contacts.html" data-i18n="contacts">Contacts</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="md:col-span-2">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="footer-courses-heading">Courses</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html" data-i18n="category-marketing">Marketing</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html" data-i18n="category-management">Management</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html" data-i18n="category-hr">HR &
+                                Recruting</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html" data-i18n="category-design">Design</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html" data-i18n="category-development">Development</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-span-3 md:col-span-2">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="footer-contact-us">Contact us</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                                    class="fa-solid fa-mobile-screen"></i> <span data-i18n="footer-phone">(405) 555-0128</span></a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                                    class="fa-regular fa-comments"></i> <span data-i18n="footer-email">hello@example.com</span></a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-span-3">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="footer-newsletter-heading">Sign up to our newsletter</h3>
+
+                    <form action="# flex flex-col">
+                        <div class="mb-2 pb-1 w-full flex items-center relative">
+                            <input class="py-2.5 pl-4 pr-12 rounded-sm border border-white/10 bg-white/10 text-third-text focus:bg-white transition ease duration-300 outline-0 focus:border-[#ff3f3a66]
+ w-full" type="email" placeholder="Email adress" data-i18n-placeholder="email-address-placeholder" required>
+                            <i class="fa-solid fa-arrow-right-long absolute text-white right-6"></i>
+                        </div>
+
+                        <p class="text-white text-[10px]" data-i18n="footer-newsletter-disclaimer">*Subscribe to our newsletter to receive early discount offers,
+                            updates and
+                            new products info.
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="p-2 bg-secondary-text/40">
+            <div class="container flex items-center justify-between py-1">
+                <p class="text-white text-xs"><span data-i18n="footer-copyright">© All rights reserved. Made with</span> <i
+                        class="fa-regular fa-heart text-primary px-1"></i>
+                    <span data-i18n="footer-made-by">by Createx Studio</span></p>
+                <div class="flex gap-3 text-sm items-center">
+                    <p class="text-white" data-i18n="back-to-top">Back to top</p>
+                    <button class="back-top px-4 py-3 bg-primary rounded-sm text-white cursor-pointer"><i
+                            class="fa-solid fa-chevron-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../../i18n.js"></script>
+    <script src="./EventsList.js"></script>
+</body>
+
+>>>>>>> 597a6970cf8b3680e2b4ce7877ce0e5f2bc09789
 </html>
