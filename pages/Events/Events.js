@@ -5,6 +5,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const dropdownBtns = document.querySelectorAll('.dropdown-btn');
 const backTop = document.querySelector('.back-top');
+const header = document.querySelector('header')
 
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("open");
@@ -12,6 +13,16 @@ menuBtn.addEventListener("click", () => {
 
     if (!menu.classList.contains("open")) {
         menuBtn.innerHTML = '<i class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i>';
+    }
+});
+
+// Header scroll event
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 88) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
     }
 });
 
