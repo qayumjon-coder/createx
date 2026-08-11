@@ -11,7 +11,7 @@ function applyFilters() {
     });
 }
 
-tabs.forEach(tab => {
+tabs.forEach(tab    => {
     tab.addEventListener('click', () => {
         activeFilter = tab.dataset.filter;
         applyFilters();
