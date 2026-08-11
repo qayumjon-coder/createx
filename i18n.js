@@ -1648,7 +1648,7 @@ const translations = {
     sub_subtitle: "Don't miss anything",
     sub_title: "Subscribe to the Createx School announcements",
     sub_btn: "Subscribe",
-    ft_desc: "Createx Online School is a leader in online studying...",
+    ft_desc: "Createx Online School is a leader in onlinestudying. We have lots ofcourses and programs fromthe main market experts. We provide relevant approaches to online learning, internships andemployment in the largest companies in the country.",
     ft_sitemap: "Site map",
     ft_courses_heading: "Courses",
     category_marketing: "Marketing",
