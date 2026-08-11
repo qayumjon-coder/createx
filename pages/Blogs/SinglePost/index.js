@@ -18,7 +18,7 @@ const latestPosts = [
         duration: "36 min",
         title: "What is traffic arbitrage and does it really make money?",
         description: "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
-        buttonKey: "blog_listen",
+        buttonKey: `blog_listen`,
         link: "https://createx.createx.studio/online-courses/blog-single.html"
     },
     {
@@ -31,7 +31,7 @@ const latestPosts = [
         duration: "45 min",
         title: "What to do and who to talk to if you want to get feedback on the product",
         description: "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...",
-        buttonKey: "blog_watch",
+        buttonKey: `blog_watch`,
         link: "https://createx.createx.studio/online-courses/blog-single.html"
     },
     {
@@ -44,7 +44,7 @@ const latestPosts = [
         duration: "",
         title: "Should you choose a creative profession if you are attracted to creativity?",
         description: "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
-        buttonKey: "blog_read",
+        buttonKey: `blog_read`,
         link: "https://createx.createx.studio/online-courses/blog-single.html"
     },
     {
@@ -57,12 +57,11 @@ const latestPosts = [
         duration: "45 min",
         title: "Startup: how to build a team that will live longer than a year",
         description: "Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna...",
-        buttonKey: "blog_watch",
+        buttonKey: `blog_watch`,
         link: "https://createx.createx.studio/online-courses/blog-single.html"
     }
 ];
 
-// Posts map
 // Posts map
 let blogSlide = document.querySelector(".blog-slide");
 if (blogSlide) {

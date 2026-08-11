@@ -106,7 +106,7 @@ function renderEvents(data) {
 
   data.forEach((event) => {
     eventsContainer.innerHTML += `
-        <div class="flex flex-col pt-5 hover:shadow-lg duration-300 rounded-md border border-secondary-text/10 shadow-xl shadow-black/05 max-w-[390px] px-[24px] h-auto">
+        <div class="flex flex-col pt-5 hover:shadow-2xl duration-300 rounded-md border border-secondary-text/10 shadow-xl shadow-black/05 max-w-[390px] px-[24px] h-auto">
               <div class="flex flex-col">
                 <div class="flex gap-[4px] font-lat font-[700] text-[#FF3F3A] text-[28px] leading-[150%]">
                     <h2 >

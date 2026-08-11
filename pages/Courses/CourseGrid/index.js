@@ -5,6 +5,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const dropdownBtns = document.querySelectorAll('.dropdown-btn');
 const backTop = document.querySelector('.back-top');
+const header = document.querySelector("header");
 
 let activeFilter = 'all';
 
@@ -53,6 +54,16 @@ dropdownBtns.forEach(btn => {
 
     });
 
+});
+
+// Header scroll event
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 88) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
 });
 
 backTop.addEventListener('click', () => {
