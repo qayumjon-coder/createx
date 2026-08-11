@@ -20,15 +20,27 @@
 				--color-secondary-text: #424551;
 				--color-third-text: #787a80;
 			}
+
+			.filter-active {
+				color: #ff3f3a !important;
+				border: 1px solid #ff3f3a;
+				padding: 1rem;
+				border-radius: 6px;
+			}
+			.filter-active i {
+				color: inherit !important;
+			}
 		</style>
 </head>
 
 <body>
 	<header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
+	<header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
 		<div class="container flex justify-between items-center">
 			<a class="mr-12 pr-2" href="index.html">
 				<img src="../../images/logo/logo-dark.svg" width="130" alt="logo" />
 			</a>
+
 
 			<nav class="self-start hidden xl:flex">
 				<ul class="flex gap-2 justify-start mr-auto items-center">
@@ -39,9 +51,9 @@
 					</li>
 					<li class="list-item relative px-5">
 						<button
-							class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
-							<div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
-									class="fa-solid fa-angle-down text-sm ml-1"></i>
+							class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+							<div class="py-4">
+								Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
 							</div>
 						</button>
 						<div
@@ -60,9 +72,9 @@
 					</li>
 					<li class="list-item relative px-6">
 						<button
-							class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
-							<div class="py-4"><span data-i18n="nav_events">Events</span> <i
-									class="fa-solid fa-angle-down text-sm ml-1"></i>
+							class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+							<div class="py-4">
+								Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
 							</div>
 						</button>
 						<div
@@ -85,9 +97,9 @@
 					</li>
 					<li class="list-item relative px-5">
 						<button
-							class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
-							<div class="py-4"><span data-i18n="nav_blog">Blog</span> <i
-									class="fa-solid fa-angle-down text-sm ml-1"></i>
+							class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+							<div class="py-4">
+								Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
 							</div>
 						</button>
 						<div
@@ -125,9 +137,8 @@
 						class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
 						data-i18n="btn_consultation">Get
 						consultation</a>
-					<a href="../../pages/Login/SignUp/SignUp.html"
-						class="text-primary hidden md:inline-block  font-bold ml-6"><i
-							class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign in/up</span></a>
+					<a href="#" class="text-primary hidden md:inline-block font-bold ml-6"><i
+							class="fa-regular fa-user mr-2"></i>Sign in/up</a>
 				</div>
 
 				<nav class="">
@@ -143,9 +154,10 @@
 							</li>
 							<li>
 								<button
-									class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-									<div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
-											class="fa-solid fa-angle-down text-sm ml-1"></i>
+									class="hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+									<div class="py-4">
+										Courses
+										<i class="fa-solid fa-angle-down text-sm ml-1"></i>
 									</div>
 								</button>
 								<div class="dr-link transition-ease duration-300">
@@ -163,9 +175,9 @@
 							</li>
 							<li>
 								<button
-									class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-									<div class="py-4"><span data-i18n="nav_events">Events</span> <i
-											class="fa-solid fa-angle-down text-sm ml-1"></i>
+									class="hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+									<div class="py-4">
+										Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
 									</div>
 								</button>
 								<div class="dr-link2 transition-ease duration-300">
@@ -187,9 +199,9 @@
 							</li>
 							<li>
 								<button
-									class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
-									<div class="py-4"><span data-i18n="nav_blog">Blog</span> <i
-											class="fa-solid fa-angle-down text-sm ml-1"></i>
+									class="hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+									<div class="py-4">
+										Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
 									</div>
 								</button>
 								<div class="dr-link3 transition-ease duration-300">
@@ -211,16 +223,15 @@
 							</li>
 
 							<div class="flex flex-col xl:hidden gap-5">
-
-								<li><a href="../../pages/Login/SignUp/SignUp.html"
-										class="text-primary inline-block md:hidden font-bold"><i
-											class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign
-											in/up</span></a></li>
-								<li><a href="../../pages/Contacts/Contacts.html"
-										class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold"
-										data-i18n="btn_consultation">Get
-										consultation</a></li>
-
+								<li>
+									<a href="#" class="text-primary inline-block md:hidden font-bold"><i
+											class="fa-regular fa-user mr-2"></i>Sign in/up</a>
+								</li>
+								<li>
+									<a href="#"
+										class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold">Get
+										consultation</a>
+								</li>
 							</div>
 						</div>
 					</ul>
@@ -233,44 +244,41 @@
 
 	<section class="blog-grid-1">
 		<div class="container">
-			<div class="pt-[200px]">
+			<div class="pt-30 lg:pt-50">
 				<h5 class="text-[#1E212C] font-lato uppercase font-bold text-center">Our blog</h5>
 				<h2 class="text-[#1E212C] font-lato font-black text-5xl text-center mt-5">Createx School Journal</h2>
 			</div>
 
 			<div class="flex items-center justify-between mt-15">
-				<div>
-					<ul class="flex gap-10">
-						<li class="cursor-pointer group-hover:text-[#000]">
-							<span class="font-lato font-bold text-base text-[#FF3F3A] border p-4 rounded-md">All</span>
-						</li>
-						<li class="group">
-							<span
-								class="font-lato font-bold text-base text-[#9A9CA5] cursor-pointer group-hover:text-[#000] transition-colors duration-300">
-								<i class="fa-solid fa-file-lines text-[#9A9CA5] group-hover:text-[#000] mr-2"></i>
-								Articles</span>
-						</li>
-						<li class="group">
-							<span
-								class="font-lato font-bold text-base text-[#9A9CA5] cursor-pointer group-hover:text-[#000] transition-colors duration-300">
-								<i class="fa-regular fa-circle-play text-[#9A9CA5] group-hover:text-[#000] mr-2"></i>
+					<div> 
+						<ul class="flex gap-10">
+							<li class="cursor-pointer group-hover:text-[#000]">
+								<span class="font-lato font-bold text-base text-[#FF3F3A] border p-4 rounded-md">All</span>
+							</li>
+							<li class="group">
+								<span class="font-lato font-bold text-base text-[#9A9CA5] cursor-pointer group-hover:text-[#000] transition-colors duration-300">
+									<i class="fa-solid fa-file-lines text-[#9A9CA5] group-hover:text-[#000] mr-2"></i>
+									Articles</span>
+							</li>
+							<li class="group">
+								<span class="font-lato font-bold text-base text-[#9A9CA5] cursor-pointer group-hover:text-[#000] transition-colors duration-300">
+									<i class="fa-regular fa-circle-play text-[#9A9CA5] group-hover:text-[#000] mr-2"></i>
 								Videos</span>
-						</li>
-						<li class="group">
-							<span
-								class="font-lato font-bold text-base text-[#9A9CA5] cursor-pointer group-hover:text-[#000] transition-colors duration-300">
-								<i class="fa-solid fa-microphone text-[#9A9CA5] group-hover:text-[#000] mr-2"></i>
-								Podcasts
-							</span>
-						</li>
-					</ul>
-				</div>
+							</li>
+							<li class="group">
+								<span class="font-lato font-bold text-base text-[#9A9CA5] cursor-pointer group-hover:text-[#000] transition-colors duration-300">
+									<i class="fa-solid fa-microphone text-[#9A9CA5] group-hover:text-[#000] mr-2"></i>
+									Podcasts 
+								</span>
+							</li>
+						</ul>
+					</div>
+				
 
-
-				<div class="flex items-center gap-10">
-					<div class="flex gap-5 items-center">
+					<div class="flex items-center gap-10">
+						<div class="flex gap-5 items-center">
 						<label for="blog-category text-[#424551] font-lato">Blog category</label>
-						<select id="blog-category" class="border border-[#D7DADD] rounded-sm pt-3 pr-5 pl-4 pb-3">
+						<select  id="blog-category" class="border border-[#D7DADD] rounded-sm pt-3 pr-5 pl-4 pb-3">
 							<option value="">All articles</option>
 							<option value="">Marketing</option>
 							<option value="">Development</option>
@@ -291,14 +299,15 @@
 			</div>
 
 			<div class="grid grid-cols-8">
-
+				
 
 			</div>
 
 		</div>
 	</section>
-</body>
 
-<script src="blogData.js"></script>
+</body>
+<script type="module" src="blog-map.js"></script>
+<script type="module" src="blogData.js"></script>
 
 </html>
