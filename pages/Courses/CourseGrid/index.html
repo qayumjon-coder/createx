@@ -12,34 +12,84 @@
 
     <style type="text/tailwindcss">
         @theme {
-        --font-lato: Lato, sans-serif;
-        --color-primary: #ff3f3a;
-        --color-secondary: #f75e05;
-      }
+            --font-lato: Lato, sans-serif;
+            --color-primary: #ff3f3a;
+            --color-secondary: #f75e05;
+            --color-primary-shadow: #ff3f3a80;
+            --color-hero-bg: #f9dcd4;
+            --color-primary-text: #1E212C;
+            --color-secondary-text: #424551;
+            --color-third-text: #787a80;
+        }
     </style>
 </head>
 
-<body>
-    <header class="p-4 mb-[100px]">
-        <div class=" flex container justify-between items-center">
-            <a class="mr-12 pr-2" href="index.html"><img src="../../../images/logo/logo-dark.svg" width="130"
-                    alt="logo" /></a>
-            <nav class="self-start">
+<body class="font-lato">
+    <header class="header p-4 fixed z-99 top-0 w-full transition bg-white shadow-md">
+        <div class="container flex justify-between items-center">
+            <a class="mr-12 pr-2" href="index.html">
+                <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
+            </a>
+
+
+            <nav class="self-start hidden xl:flex">
                 <ul class="flex gap-2 justify-start mr-auto items-center">
                     <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About</a>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">About us</a>
                     </li>
-                    <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Courses<i
-                                class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
+                    <li class="list-item relative px-5">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300">Courses
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                                    Course</a>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Events<i
-                                class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
+                    <li class="list-item relative px-6">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full ">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                                    list</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                                    Single</a>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold ">Blog<i
-                                class="fa-solid fa-chevron-down w-1 ml-1"></i></a>
+                    <li class="list-item relative px-5">
+                        <button
+                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 dropdown-btn text-left text-[#424551] font-bold cursor-pointer">
+                            <div class="py-4">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                            </div>
+                        </button>
+                        <div class="show-menu hidden absolute transition-ease duration-300 bg-white w-full">
+                            <div class="dr-inner flex flex-col p-0">
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300">Blog
+                                    Grid</a>
+                                <a href="#"
+                                    class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                                    Post</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#">Contacts</a>
@@ -47,258 +97,372 @@
                 </ul>
             </nav>
 
-            <div class="justify-self-end">
-                <a href="#"
-                    class="py-2.5 px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
-                    consultation</a>
-                <a href="#" class="text-primary font-bold ml-6 "><i class="fa-regular fa-user mr-2"></i>Sign in/up</a>
+            <div class="flex gap-5 items-center">
+                <div class="">
+                    <a href="#"
+                        class="py-2.5 hidden sm:inline-block px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold">Get
+                        consultation</a>
+                    <a href="#" class="text-primary hidden md:inline-block  font-bold ml-6"><i
+                            class="fa-regular fa-user mr-2"></i>Sign
+                        in/up</a>
+                </div>
+
+                <nav class="">
+                    <button class="menu-btn xl:hidden block"><i
+                            class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i></button>
+
+                    <ul
+                        class="menu shadow-xl shadow-black/10 overflow-hidden transition-all ease-in-out duration-300 absolute top-19 left-0 w-full xl:h-0 flex gap-2 justify-start mr-auto items-start bg-white xl:flex xl:flex-col">
+                        <div class="container">
+                            <li>
+                                <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                                    href="#">About us</a>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4">Courses <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300">Courses
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                                            Course</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4">Events <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link2 transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                                            list</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300">Events
+                                            Single</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button
+                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    <div class="py-4">Blog <i class="fa-solid fa-angle-down text-sm ml-1"></i>
+                                    </div>
+                                </button>
+                                <div class="dr-link3 transition-ease duration-300">
+                                    <div class="dr-inner flex flex-col">
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300">Blog
+                                            Grid</a>
+                                        <a href="#"
+                                            class="text-secondary-text hover:text-primary transition-ease duration-300">Single
+                                            Post</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
+                                    href="#">Contacts</a>
+                            </li>
+
+                            <div class="flex flex-col xl:hidden gap-5">
+
+                                <li><a href="#" class="text-primary inline-block md:hidden font-bold"><i
+                                            class="fa-regular fa-user mr-2"></i>Sign
+                                        in/up</a></li>
+                                <li><a href="#"
+                                        class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold">Get
+                                        consultation</a></li>
+
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
             </div>
+
         </div>
     </header>
 
-    <section class="container mx-auto px-6 py-16">
-        <div class="text-center mb-12">
-            <p class="text-black font-semibold uppercase">Ready to learn?</p>
-            <h1 class="text-3xl sm:text-4xl font-bold mt-2">Our online courses</h1>
-        </div>
-        <div class="flex flex-col lg:flex-row rounded-md px-0 sm:px-6 py-4 mb-12 gap-6 lg:gap-8 lg:justify-between">
-            <div class="flex flex-wrap items-center gap-x-[20px] gap-y-3">
 
-                <button type="button"
-                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
-                    data-filter="all">
-                    All <sup class="text-xs">12</sup>
-                </button>
-                <button type="button"
-                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
-                    data-filter="marketing">
-                    Marketing <sup class="text-xs">4</sup>
-                </button>
-                <button type="button"
-                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
-                    data-filter="management">
-                    Management <sup class="text-xs">3</sup>
-                </button>
-                <button type="button"
-                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
-                    data-filter="hr">
-                    HR &amp; Recruiting <sup class="text-xs">5</sup>
-                </button>
-                <button type="button"
-                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
-                    data-filter="design">
-                    Design <sup class="text-xs">2</sup>
-                </button>
-                <button type="button"
-                    class="filter-tab flex items-center gap-1 text-gray-500 font-semibold pb-1 border-b-2 border-transparent"
-                    data-filter="development">
-                    Development <sup class="text-xs">3</sup>
-                </button>
+    <div class="mt-[200px]">
+        <section class="container mx-auto px-6 py-16">
+            <div class="text-center mb-12">
+                <p class="text-black font-semibold uppercase">Ready to learn?</p>
+                <h1 class="text-3xl sm:text-4xl font-bold mt-2">Our online courses</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row rounded-md px-0 sm:px-6 py-4 mb-12 gap-6 lg:gap-8 lg:justify-between">
+                <div class="flex flex-wrap items-center gap-x-[20px] gap-y-3">
+
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 cursor-pointer text-gray-500 font-semibold pb-1 hover:text-primary active:border- "
+                        data-filter="all">
+                        All <sup class="text-xs">12</sup>
+                    </button>
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1  hover:text-primary "
+                        data-filter="marketing">
+                        Marketing <sup class="text-xs">4</sup>
+                    </button>
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1  hover:text-primary "
+                        data-filter="management">
+                        Management <sup class="text-xs">3</sup>
+                    </button>
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1  hover:text-primary "
+                        data-filter="hr">
+                        HR &amp; Recruiting <sup class="text-xs">5</sup>
+                    </button>
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1  hover:text-primary "
+                        data-filter="design">
+                        Design <sup class="text-xs">2</sup>
+                    </button>
+                    <button type="button"
+                        class="filter-tab flex items-center gap-1 text-gray-500 cursor-pointer font-semibold pb-1  hover:text-primary "
+                        data-filter="development">
+                        Development <sup class="text-xs">3</sup>
+                    </button>
+                </div>
+
+                <div class="relative w-full lg:w-64">
+                    <input id="courseSearch" type="text" placeholder="Search courses"
+                        class="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2 text-sm text-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-300" />
+                    <svg class="w-4 h-4 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
             </div>
 
-            <div class="relative w-full lg:w-64">
-                <input id="courseSearch" type="text" placeholder="Search courses"
-                    class="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2 text-sm text-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-300" />
-                <svg class="w-4 h-4 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" fill="none"
-                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21 21l-4.35-4.35m1.35-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="courseGrid">
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="marketing">
-                <img src="../../../images/image.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-green-500 text-white px-2 py-1 rounded">
-                        Marketing
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        The Ultimate Google Ads Training Course
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$100</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Jerome Bell
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="courseGrid">
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="marketing">
+                    <a href="../CoursesSingle/singlecourses.html">
+                        <img src="../../../images/image.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    </a>
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-green-500 text-white px-2 py-1 rounded">
+                            Marketing
                         </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer">The Ultimate Google Ads Training Course</a>
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$100</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Jerome Bell
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------ -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="management">
+                    <a href="../CoursesSingle/singlecourses.html">
+                        <img src="../../../images/images.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    </a>
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded">
+                            Management
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer">Prduct Management Fundamentals</a>
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$480</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Marvin McKinney
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----- -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="hr">
+                    <a href="../CoursesSingle/singlecourses.html">
+                        <img src="../../../images/efrbjgbjbg.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    </a>
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded">
+                            HR & Recruting
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer">HR Management and Analytics</a>
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$200</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Leslie Alexander Li
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----- -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="marketing">
+                    <a href="../CoursesSingle/singlecourses.html">
+                        <img src="../../../images/fhrgjrj.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    </a>
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#03CEA4] text-white px-2 py-1 rounded">
+                            Marketing
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer">Brand Management & PR Communications</a>
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$530</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Kristin Watson
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----- -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="design">
+                    <a href="../CoursesSingle/singlecourses.html">
+                        <img src="../../../images/sbfjsbgjbr.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    </a>
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded">
+                            Design
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer">Graphic Design Basic</a>
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$500</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Guy Hawkins
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----- -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="management">
+                    <a href="../CoursesSingle/singlecourses.html">
+                        <img src="../../../images/kfrnkgfrk.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    </a>
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded">
+                            Management
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer">Business Development Management</a>
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$400</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Dianne Russell
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----- -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="development">
+                    <a href="../CoursesSingle/singlecourses.html">
+                        <img src="../../../images/nkneknkbn.png" alt="Course"
+                            class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    </a>
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#7772F1] text-white px-2 py-1 rounded">
+                            Development
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 transition duration-300">
+                            <a href="../CoursesSingle/singlecourses.html" class="hover:text-red-500 cursor-pointer">Highload Software Architecture</a>
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$600</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Brooklyn Simmons
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----- -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="hr">
+                    <img src="../../../images/kmbmgbkgbi.png" alt="Course"
+                        class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded">
+                            HR & Recruting
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 hover:text-red-500 transition duration-300 cursor-pointer">
+                            Human Resources – Selection and Recruitment
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$150</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Kathryn Murphy
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----- -->
+                <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+                    data-category="design">
+                    <img src="../../../images/nbvjnfbnbnt.png" alt="Course"
+                        class="w-full h-auto align-middle transition-transform duration-300 ease-in-out will-change-transform group-hover:scale-[1.08] cursor-pointer hover:scale-[1.08]">
+                    <div class="p-6">
+                        <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded">
+                            Design
+                        </span>
+                        <h2
+                            class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5 hover:text-red-500 transition duration-300 cursor-pointer">
+                            User Experience. Human-centered Design
+                        </h2>
+                        <div class="flex items-center gap-3 mt-6">
+                            <span class="text-red-500 text-[18px] font-[700]">$240</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="text-[#787A80] text-[16px] font-[400]">
+                                by Cody Fisher
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- ------ -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="management">
-                <img src="../../../images/images.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded">
-                        Management
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        Prduct Management Fundamentals
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$480</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Marvin McKinney
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="hr">
-                <img src="../../../images/efrbjgbjbg.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded">
-                        HR & Recruting
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        HR Management and Analytics
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$200</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Leslie Alexander Li
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="marketing">
-                <img src="../../../images/fhrgjrj.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#03CEA4] text-white px-2 py-1 rounded">
-                        Marketing
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        Brand Management & PR Communications
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$530</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Kristin Watson
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="design">
-                <img src="../../../images/sbfjsbgjbr.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded">
-                        Design
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        Graphic Design Basic
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$500</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Guy Hawkins
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="management">
-                <img src="../../../images/kfrnkgfrk.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#5A87FC] text-white px-2 py-1 rounded">
-                        Management
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        Business Development Management
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$400</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Dianne Russell
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="development">
-                <img src="../../../images/nkneknkbn.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#7772F1] text-white px-2 py-1 rounded">
-                        Development
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        Highload Software Architecture
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$600</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Brooklyn Simmons
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="hr">
-                <img src="../../../images/kmbmgbkgbi.png" alt="Course" class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#F89828] text-white px-2 py-1 rounded">
-                        HR & Recruting
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        Human Resources – Selection and Recruitment
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$150</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Kathryn Murphy
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="course-card bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
-                data-category="design">
-                <img src="../../../images/nbvjnfbnbnt.png" alt="Course"
-                    class="w-full h-48 sm:h-56 lg:h-64 object-cover">
-                <div class="p-6">
-                    <span class="text-[14px] font-[400] inline-block bg-[#F52F6E] text-white px-2 py-1 rounded">
-                        Design
-                    </span>
-                    <h2
-                        class="text-[18px] sm:text-[20px] font-[700] max-w-full lg:max-w-[342px] text-gray-800 leading-tight mt-5">
-                        User Experience. Human-centered Design
-                    </h2>
-                    <div class="flex items-center gap-3 mt-6">
-                        <span class="text-red-500 text-[18px] font-[700]">$240</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="text-[#787A80] text-[16px] font-[400]">
-                            by Cody Fisher
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <div class="bg-[#F4F5F6] mt-16 sm:mt-[100px] py-12 sm:py-[80px]">
         <section class="container mx-auto px-6 py-16 relative ">
             <div class="text-center mb-12 relative">
@@ -309,110 +473,168 @@
             </div>
 
             <div class="relative max-w-3xl mx-auto">
+
+                <!-- Prev Button -->
                 <button type="button"
-                    class="testimonial-prev hidden lg:flex absolute left-[-70px] top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-white shadow-md items-center justify-center text-gray-500 cursor-pointer">
+                    class="testimonial-prev hidden lg:flex absolute left-[-70px] top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg text-gray-600 hover:bg-orange-500 hover:text-white transition cursor-pointer">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
+
+                <!-- Next Button -->
                 <button type="button"
-                    class="testimonial-next hidden lg:flex absolute right-[-70px] top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-linear-to-r from-primary to-secondary shadow-lg items-center justify-center text-white cursor-pointer">
+                    class="testimonial-next hidden lg:flex absolute right-[-70px] top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg text-gray-600 hover:bg-orange-500 hover:text-white transition cursor-pointer">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
+
                 <div class="swiper testimonials-swiper overflow-visible">
                     <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
                                 <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
-                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
-                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
-                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Justo, amet lectus quam viverra mus lobortis fermentum
+                                    amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis
+                                    tempus ornare turpis quis non. Congue tortor in euismod
+                                    vulputate etiam eros. Pulvinar neque pharetra arcu diam
+                                    maecenas diam integer in.
                                 </p>
+
                                 <div class="flex items-center gap-3 mt-8">
                                     <img src="../../../images/frrgfvurb.png" alt="Eleanor Pena"
                                         class="w-14 h-14 rounded-full object-cover">
+
                                     <div>
-                                        <h3 class="font-bold text-gray-800">Eleanor Pena</h3>
-                                        <p class="text-gray-400 text-sm">Position, Course</p>
+                                        <h3 class="font-bold text-gray-800">
+                                            Eleanor Pena
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Position, Course
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Slide 2 -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
                                 <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
-                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
-                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
-                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Justo, amet lectus quam viverra mus lobortis fermentum
+                                    amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis
+                                    tempus ornare turpis quis non. Congue tortor in euismod
+                                    vulputate etiam eros. Pulvinar neque pharetra arcu diam
+                                    maecenas diam integer in.
                                 </p>
+
                                 <div class="flex items-center gap-3 mt-8">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guy Hawkins"
                                         class="w-14 h-14 rounded-full object-cover">
+
                                     <div>
-                                        <h3 class="font-bold text-gray-800">Guy Hawkins</h3>
-                                        <p class="text-gray-400 text-sm">Position, Course</p>
+                                        <h3 class="font-bold text-gray-800">
+                                            Guy Hawkins
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Position, Course
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Slide 3 -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
                                 <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
-                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
-                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
-                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Justo, amet lectus quam viverra mus lobortis fermentum
+                                    amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis
+                                    tempus ornare turpis quis non. Congue tortor in euismod
+                                    vulputate etiam eros. Pulvinar neque pharetra arcu diam
+                                    maecenas diam integer in.
                                 </p>
+
                                 <div class="flex items-center gap-3 mt-8">
                                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Kristin Watson"
                                         class="w-14 h-14 rounded-full object-cover">
+
                                     <div>
-                                        <h3 class="font-bold text-gray-800">Kristin Watson</h3>
-                                        <p class="text-gray-400 text-sm">Position, Course</p>
+                                        <h3 class="font-bold text-gray-800">
+                                            Kristin Watson
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Position, Course
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Slide 4 -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
                                 <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
-                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
-                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
-                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Justo, amet lectus quam viverra mus lobortis fermentum
+                                    amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis
+                                    tempus ornare turpis quis non. Congue tortor in euismod
+                                    vulputate etiam eros. Pulvinar neque pharetra arcu diam
+                                    maecenas diam integer in.
                                 </p>
+
                                 <div class="flex items-center gap-3 mt-8">
                                     <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Cody Fisher"
                                         class="w-14 h-14 rounded-full object-cover">
+
                                     <div>
-                                        <h3 class="font-bold text-gray-800">Cody Fisher</h3>
-                                        <p class="text-gray-400 text-sm">Position, Course</p>
+                                        <h3 class="font-bold text-gray-800">
+                                            Cody Fisher
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Position, Course
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Slide 5 -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white rounded-md shadow-lg p-6 sm:p-10">
                                 <p class="text-gray-600 text-[15px] sm:text-[17px] leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
-                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id
-                                    turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros.
-                                    Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Justo, amet lectus quam viverra mus lobortis fermentum
+                                    amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis
+                                    tempus ornare turpis quis non. Congue tortor in euismod
+                                    vulputate etiam eros. Pulvinar neque pharetra arcu diam
+                                    maecenas diam integer in.
                                 </p>
+
                                 <div class="flex items-center gap-3 mt-8">
                                     <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dianne Russell"
                                         class="w-14 h-14 rounded-full object-cover">
+
                                     <div>
-                                        <h3 class="font-bold text-gray-800">Dianne Russell</h3>
-                                        <p class="text-gray-400 text-sm">Position, Course</p>
+                                        <h3 class="font-bold text-gray-800">
+                                            Dianne Russell
+                                        </h3>
+                                        <p class="text-gray-400 text-sm">
+                                            Position, Course
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
+                <!-- Pagination -->
                 <div class="testimonial-pagination flex justify-center items-center gap-2 mt-8"></div>
+
             </div>
         </section>
     </div>
@@ -440,6 +662,152 @@
             </div>
         </div>
     </section>
+
+     <section class="bg-[url(../../../images/subscribe-bg.png)] bg-cover bg-no-repeat py-24 bg-center">
+        <div class="container">
+            <div class="h-[506px] flex flex-col items-center justify-center">
+                <div>
+                    <div class="mb-12 pb-2 text-center">
+                        <h3 class="uppercase text-primary-text font-bold">Don’t miss anything</h3>
+                        <h2 class="text-[30px] sm:text-[46px] text-primary-text font-black">Subscribe to the Createx
+                            School <br> announcements</h2>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <form action="#"
+                        class="flex items-center justify-center flex-col gap-5 it sm:flex-row md:mx-30 xl:mx-90">
+                        <input type="email"
+                            class="w-full bg-white outline-0 focus:border-primary focus:shadow-primary-shadow/40 transition ease duration-300 focus:shadow-xl py-5 px-4 rounded-sm border-1 border-[#dadbdd] "
+                            required placeholder="Your working email">
+                        <button type="submit"
+                            class="px-10.5 py-5 font-bold rounded-sm text-primary bg-linear-to-r from-primary to-secondary text-white 
+                                                     hover:shadow-lg hover:shadow-primary-shadow transition duration-300 transition-ease cursor-pointer">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1e212c] pt-12">
+        <div class="container">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
+                <div class="col-span-1 lg:col-span-3">
+                    <a href="#" class="mb-4 inline-block">
+                        <img src="../../../images/logo/logo.png" alt="Site Logo">         
+                    </a>
+
+                    <p class="text-[12px]  text-[#ffffff99] mb-6 pb-4">Createx Online School is a leader in online
+                        studying. We have lots of
+                        courses and programs from
+                        the main market experts. We provide relevant approaches to online learning, internships and
+                        employment in the largest companies in the country.
+                    </p>
+
+                    <div class="text-[#ffffff99] flex gap-5">
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-telegram"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:col-span-2 order">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1">Site map</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/About/About.html">About
+                                Us</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html">Courses</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Events/Events.html">Events</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Blogs/Blogs.html">Blog</a>
+                        </li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Contacts/Contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="md:col-span-2">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1">Courses</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html">Marketing</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html">Management</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html">HR &
+                                Recruting</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html">Design</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="./pages/Courses/CourseGrid/index.html">Development</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-span-3 md:col-span-2">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1">Contact us</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                                    class="fa-solid fa-mobile-screen"></i> (405) 555-0128</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                                    class="fa-regular fa-comments"></i> hello@example.com</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-span-3">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1">Sign up to our newsletter</h3>
+
+                    <form action="# flex flex-col">
+                        <div class="mb-2 pb-1 w-full flex items-center relative">
+                            <input class="py-2.5 pl-4 pr-12 rounded-sm border border-white/10 bg-white/10 text-third-text focus:bg-white transition ease duration-300 outline-0 focus:border-[#ff3f3a66]
+ w-full" type="email" placeholder="Email adress" required>
+                            <i class="fa-solid fa-arrow-right-long absolute text-white right-6"></i>
+                        </div>
+
+                        <p class="text-white text-[10px]">*Subscribe to our newsletter to receive early discount offers,
+                            updates and
+                            new products info.
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="p-2 bg-secondary-text/40">
+            <div class="container flex items-center justify-between py-1">
+                <p class="text-white text-xs">© All rights reserved. Made with <i
+                        class="fa-regular fa-heart text-primary px-1"></i>
+                    by Createx Studio</p>
+                <div class="flex gap-3 text-sm items-center">
+                    <p class="text-white">Back to top</p>
+                    <button class="back-top px-4 py-3 bg-primary rounded-sm text-white cursor-pointer"><i
+                            class="fa-solid fa-chevron-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
