@@ -1,3 +1,5 @@
+const tabs = document.querySelectorAll('.filter-tab');
+const cards = document.querySelectorAll('.course-card');
 // i18n uchun yordamchi funksiya
 function getTranslation(key) {
   const currentLang = localStorage.getItem('createx_lang') || 'uz';
