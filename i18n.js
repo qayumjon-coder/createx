@@ -1481,7 +1481,7 @@ const translations = {
     "theme-8-title": "Neque, cursus sapien nullam id.",
     "testimonials-label": "Testimonials",
     "testimonials-title": "What our students say",
-    "testimonial-1-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "testimonial-1-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "testimonial-1-name": "Eleanor Pena",
     "testimonial-role": "Position, Course",
     "testimonial-2-name": "Guy Hawkins",
