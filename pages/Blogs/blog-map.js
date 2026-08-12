@@ -2,6 +2,10 @@ import { blogdata } from "./blogData.js";
 
 const blogs = document.querySelector(".blog-uchun");
 const filterBtns = document.querySelectorAll(".filter-btn");
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+const dropdownBtns = document.querySelectorAll(".dropdown-btn");
+const backTop = document.querySelector(".back-top");
 
 function renderBlogs(data) {
 	let blogsMap = data.map(blogsItems => `<div class="group ${blogsItems.class || ''}">
@@ -47,3 +51,38 @@ filterBtns.forEach(btn => {
 });
 
 renderBlogs(blogdata);
+
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 88) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("open");
+    menuBtn.innerHTML = '<i class="fa-solid fa-xmark text-[25px] text-secondary-text cursor-pointer"></i>';
+
+    if (!menu.classList.contains("open")) {
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i>';
+    }
+});
+
+dropdownBtns.forEach((btn) => {
+    const submenu = btn.nextElementSibling;
+    btn.addEventListener("click", () => {
+        submenu.classList.toggle("open");
+        submenu.classList.toggle("hidden");
+    });
+});
+
+backTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+});
