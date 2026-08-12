@@ -187,3 +187,18 @@ if (backTop) {
         });
     });
 }
+
+const gridViewBtn = document.getElementById('grid-view-btn');
+const listViewBtn = document.getElementById('list-view-btn');
+
+if (gridViewBtn) {
+    gridViewBtn.addEventListener('click', () => {
+        window.location.href = '../EventsGrid/EventsGrid.html';
+    });
+}
+
+if (listViewBtn) {
+    listViewBtn.addEventListener('click', () => {
+        window.location.href = '../EventsList/EventesList.html';
+    });
+}
