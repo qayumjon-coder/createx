@@ -677,7 +677,22 @@ const translations = {
     ft_newsletter_disclaimer: "*Yangiliklar tarqatmasiga obuna bo'lib, erta chegirmalar haqida ma'lumot oling.",
     ft_copy_1: "© Barcha huquqlar himoyalangan.",
     ft_copy_2: "Createx Studio tomonidan",
-    ft_back_top: "Yuqoriga qaytish"
+    ft_back_top: "Yuqoriga qaytish",
+
+    blog_page_title: "Blog jadvali",
+    blog_page_heading: "Createx Maktab Jurnali",
+    blog_filter_all: "Barchasi",
+    blog_filter_articles: "Maqolalar",
+    blog_filter_videos: "Videolar",
+    blog_filter_podcasts: "Podkastlar",
+    blog_category: "Blog kategoriyasi",
+    blog_search_placeholder: "Blogni qidirish",
+    blog_category_all: "Barcha maqolalar",
+    blog_category_marketing: "Marketing",
+    blog_category_development: "Dasturlash",
+    blog_category_design: "Dizayn",
+    blog_category_management: "Menejment",
+    blog_category_hr: "HR va Rekrutment"
   },
   ru: {
     nav_about: "О нас",
@@ -1190,7 +1205,22 @@ const translations = {
     ft_newsletter_disclaimer: "*Подпишитесь, чтобы получать скидки и обновления.",
     ft_copy_1: "© Все права защищены.",
     ft_copy_2: "от Createx Studio",
-    ft_back_top: "Наверх"
+    ft_back_top: "Наверх",
+
+    blog_page_title: "Сетка блога",
+    blog_page_heading: "Журнал школы Createx",
+    blog_filter_all: "Все",
+    blog_filter_articles: "Статьи",
+    blog_filter_videos: "Видео",
+    blog_filter_podcasts: "Подкасты",
+    blog_category: "Категория блога",
+    blog_search_placeholder: "Поиск по блогу",
+    blog_category_all: "Все статьи",
+    blog_category_marketing: "Маркетинг",
+    blog_category_development: "Разработка",
+    blog_category_design: "Дизайн",
+    blog_category_management: "Менеджмент",
+    blog_category_hr: "HR и рекрутинг"
     
   },
   en: {
@@ -1714,7 +1744,22 @@ const translations = {
     btn_view_more: "View more",
     month_jan: "January", month_feb: "February", month_mar: "March", month_apr: "April",
     month_may: "May", month_jun: "June", month_jul: "July", month_aug: "August",
-    month_sep: "September", month_oct: "October", month_nov: "November", month_dec: "December"
+    month_sep: "September", month_oct: "October", month_nov: "November", month_dec: "December",
+
+    blog_page_title: "Blog Grid",
+    blog_page_heading: "Createx School Journal",
+    blog_filter_all: "All",
+    blog_filter_articles: "Articles",
+    blog_filter_videos: "Videos",
+    blog_filter_podcasts: "Podcasts",
+    blog_category: "Blog category",
+    blog_search_placeholder: "Search the blog",
+    blog_category_all: "All articles",
+    blog_category_marketing: "Marketing",
+    blog_category_development: "Development",
+    blog_category_design: "Design",
+    blog_category_management: "Management",
+    blog_category_hr: "HR & Recruiting"
   }
 };
 function updateContent(lang) {
