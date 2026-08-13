@@ -63,7 +63,7 @@ export const latestPosts = [
         title: "What is traffic arbitrage and does it really make money?",
         description: "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
         button: "Listen",
-        link: "https://createx.createx.studio/online-courses/blog-single.html"
+        link: "../../pages/Blogs/SinglePost/SinglePost.html"
     },
     {
         id: 2,
@@ -76,7 +76,7 @@ export const latestPosts = [
         title: "What to do and who to talk to if you want to get feedback on the product",
         description: "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...",
         button: "Watch",
-        link: "https://createx.createx.studio/online-courses/blog-single.html"
+        link: "../../pages/Blogs/SinglePost/SinglePost.html"
     },
     {
         id: 3,
@@ -89,7 +89,7 @@ export const latestPosts = [
         title: "Should you choose a creative profession if you are attracted to creativity?",
         description: "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
         button: "Read",
-        link: "https://createx.createx.studio/online-courses/blog-single.html"
+        link: "../../pages/Blogs/SinglePost/SinglePost.html"
     }
 ]
 

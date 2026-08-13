@@ -96,8 +96,8 @@ const translations = {
     about_page_title: "Biz haqimizda",
     about_page_subtitle: "Biz haqimizda",
     about_page_heading: "Createx Onlayn Maktabi",
-    about_page_lead: "Createx Onlayn Maktabi onlayn ta'lim sohasida yetakchi...",
-    about_page_desc: "Biz onlayn ta'lim, stajirovka va ish bilan ta'minlash bo'yicha...",
+    about_page_lead: "Createx Online School — onlayn ta'limda yetakchi. Bizda sohaning yetakchi mutaxassislaridan tuzilgan ko'plab kurslar va dasturlar mavjud.",
+    about_page_desc: "Biz mamlakatdagi eng yirik kompaniyalarda onlayn ta'lim, amaliyot va ishga joylashish bo'yicha dolzarb yondashuvlarni taqdim etamiz. Bizning ta'lim dasturlarimiz sizga noldan yangi mutaxassislik olishga yordam beradi. O'qish davomida biz sizga ish topishda ko'maklashamiz. Biz tashkil qiladigan kurslar va onlayn tadbirlarni ko'rib chiqing.",
     about_explore_events: "Tadbirlarni ko'rish",
     about_browse_courses: "Kurslarni ko'rib chiqish",
     about_play_showreel: "Videoni ko'rish",
@@ -118,11 +118,11 @@ const translations = {
     dir_hr: "HR va Rekrutment",
     dir_design: "Dizayn",
     dir_dev: "Dasturlash",
-    dir_text_1: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_2: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_3: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_4: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_5: "Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_1: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_2: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_3: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_4: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_5: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
     dir_check_courses: "Kurslarni tekshirish",
     dir_coming_soon: "Yangi o'quv dasturi\ntez kunda...",
     process_subtitle: "O'qish jarayoni",
@@ -444,7 +444,7 @@ const translations = {
     event_format_online_lecture: "Onlayn ma'ruza",
     event_format_online_workshop: "Onlayn seminar",
     btn_view_more: "Batafsil",
-     nav_about: "Biz haqimizda",
+    nav_about: "Biz haqimizda",
     nav_courses: "Kurslar",
     nav_courses_grid: "Kurslar jadvali",
     nav_single_course: "Bitta kurs",
@@ -597,11 +597,11 @@ const translations = {
     nav_contacts: "Aloqa",
     btn_consultation: "Konsultatsiya olish",
     btn_signin_up: "Kirish / Ro'yxatdan o'tish",
-    
+
     // Header Title
     es_online_lecture: "Onlayn ma'ruza",
     event_1_title: "Noaniqlik sharoitida kompaniyaning tashkiliy tuzilmasini shakllantirish.",
-    
+
     // Content Section
     es_we_will_talk: "Biz quyidagilar haqida gaplashamiz:",
     prog_theme1_title: "1-mavzu.",
@@ -613,7 +613,7 @@ const translations = {
     prog_theme3_text: "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
     prog_theme4_title: "4-mavzu.",
     prog_theme4_text: "In id dolor quis nunc, urna hendrerit pharetra.",
-    
+
     // Sidebar
     es_time: "VAQT",
     es_time_val: "Avgust 5, 11:00 – 14:00",
@@ -623,19 +623,19 @@ const translations = {
     es_price_desc: "Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.",
     es_fb_event: "FACEBOOK'DAGI TADBIR",
     es_join_event: "Tadbirga qo'shilish",
-    
+
     // Speaker
     es_speaker: "Spiker",
     es_speaker_role: "IT kompaniyada tahlilchi va marketing mutaxassisi",
     es_speaker_bio: "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante...",
-    
+
     // For whom
     "for-whom-label": "KIM UCHUN?",
     "who-will-benefit": "Tadbir kimga foydali bo'ladi:",
     "benefit-point-1": "1 yildan ortiq faol ish tajribasiga ega mutaxassislar",
     "benefit-point-2": "Mobil ilova dizaynerlari o'z ko'nikmalarini oshirishni xohlaydiganlar",
     "benefit-point-3": "UX sohasida o'ziga ishongan professional dizaynerlar",
-    
+
     // Newsletter & Footer
     es_miss_best: "Eng yaxshi tadbirlarni o'tkazib yubormoqchi emasmisiz? Bizning yangiliklarimizga obuna bo'ling!",
     sub_placeholder: "Ishchi elektron pochtangiz",
@@ -655,7 +655,7 @@ const translations = {
     btn_view_more: "Batafsil",
     events_more_text: "Yana kurslar xohlaysizmi?",
     events_btn: "Barcha tadbirlar",
-    
+
     // Common footer
     ft_desc: "Createx Onlayn Maktabi onlayn ta'lim sohasida yetakchi. Bizda asosiy bozor ekspertlaridan ko'plab kurslar mavjud.",
     ft_sitemap: "Sayt xaritasi",
@@ -789,8 +789,8 @@ const translations = {
     about_page_title: "О нас",
     about_page_subtitle: "О нас",
     about_page_heading: "Онлайн-школа Createx",
-    about_page_lead: "Createx Online School — лидер в онлайн-обучении...",
-    about_page_desc: "Мы предоставляем актуальные подходы к онлайн-обучению...",
+    about_page_lead: "Createx Online School — лидер в сфере онлайн-обучения. У нас множество курсов и программ, разработанных ведущими экспертами отрасли.",
+    about_page_desc: "Мы предлагаем актуальные подходы к онлайн-обучению, стажировкам и трудоустройству в крупнейших компаниях страны. Наши образовательные программы помогут вам получить новую специальность с нуля. В процессе обучения мы поможем вам найти работу. Ознакомьтесь с курсами и онлайн-мероприятиями, которые мы организуем.",
     about_explore_events: "Изучить мероприятия",
     about_browse_courses: "Посмотреть курсы",
     about_play_showreel: "Смотреть ролик",
@@ -811,11 +811,11 @@ const translations = {
     dir_hr: "HR и рекрутинг",
     dir_design: "Дизайн",
     dir_dev: "Разработка",
-    dir_text_1: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_2: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_3: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_4: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_5: "Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_1: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_2: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_3: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_4: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_5: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...Odio posuere netus quisque faucibus lectus arcu donec...",
     dir_check_courses: "Смотреть курсы",
     dir_coming_soon: "Новая учебная программа\nскоро...",
     process_subtitle: "Процесс обучения",
@@ -1134,7 +1134,7 @@ const translations = {
     // Header Title
     es_online_lecture: "Онлайн лекция",
     event_1_title: "Формирование организационной структуры компании в условиях неопределенности",
-    
+
     // Content
     es_we_will_talk: "Мы поговорим о:",
     prog_theme1_title: "Тема 1.",
@@ -1146,7 +1146,7 @@ const translations = {
     prog_theme3_text: "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
     prog_theme4_title: "Тема 4.",
     prog_theme4_text: "In id dolor quis nunc, urna hendrerit pharetra.",
-    
+
     es_time: "ВРЕМЯ",
     es_time_val: "5 августа, 11:00 – 14:00",
     es_time_desc: "Metus turpis sit lorem lacus, in elit tellus lacus.",
@@ -1155,17 +1155,17 @@ const translations = {
     es_price_desc: "Nulla sem adipiscing adipiscing felis fringilla.",
     es_fb_event: "СОБЫТИЕ В FACEBOOK",
     es_join_event: "Присоединиться к событию",
-    
+
     es_speaker: "Спикер",
     es_speaker_role: "Аналитик и специалист по маркетингу в IT-компании",
     es_speaker_bio: "Mattis adipiscing aliquam eu proin metus a iaculis faucibus...",
-    
+
     "for-whom-label": "ДЛЯ КОГО?",
     "who-will-benefit": "Кому будет полезно:",
     "benefit-point-1": "Специалисты с опытом работы более 1 года",
     "benefit-point-2": "Дизайнеры мобильных приложений",
     "benefit-point-3": "Профессиональные дизайнеры, желающие укрепить навыки UX",
-    
+
     es_miss_best: "Не хотите пропустить лучшие события? Подпишитесь на нашу рассылку!",
     sub_placeholder: "Ваш рабочий email",
     sub_btn: "Подписаться",
@@ -1184,7 +1184,7 @@ const translations = {
     btn_view_more: "Подробнее",
     events_more_text: "Хотите больше?",
     events_btn: "Все мероприятия",
-    
+
     ft_desc: "Онлайн-школа Createx — лидер в онлайн-обучении...",
     ft_sitemap: "Карта сайта",
     ft_about: "О нас",
@@ -1221,7 +1221,7 @@ const translations = {
     blog_category_design: "Дизайн",
     blog_category_management: "Менеджмент",
     blog_category_hr: "HR и рекрутинг"
-    
+
   },
   en: {
     nav_about: "About Us",
@@ -1318,8 +1318,8 @@ const translations = {
     about_page_title: "About",
     about_page_subtitle: "About us",
     about_page_heading: "Createx Online School",
-    about_page_lead: "Createx Online School is a leader in online studying...",
-    about_page_desc: "We provide relevant approaches to online learning...",
+    about_page_lead: "Createx Online School is a leader in online education. We have numerous courses and programs developed by leading experts in the field.",
+    about_page_desc: "We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.",
     about_explore_events: "Explore events",
     about_browse_courses: "Browse courses",
     about_play_showreel: "Play Showreel",
@@ -1340,11 +1340,11 @@ const translations = {
     dir_hr: "HR & Recruting",
     dir_design: "Design",
     dir_dev: "Development",
-    dir_text_1: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_2: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_3: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_4: "Odio posuere netus quisque faucibus lectus arcu donec...",
-    dir_text_5: "Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_1: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_2: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_3: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_4: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
+    dir_text_5: "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.Odio posuere netus quisque faucibus lectus arcu donec...",
     dir_check_courses: "Check courses",
     dir_coming_soon: "New studying program\ncoming soon...",
     process_subtitle: "Studying process",
@@ -1607,7 +1607,7 @@ const translations = {
     "footer-copyright": "© All rights reserved. Made with",
     "footer-made-by": "by Createx Studio",
     "back-to-top": "Back to top",
-   nav_about: "About Us",
+    nav_about: "About Us",
     nav_courses: "Courses",
     nav_courses_grid: "Courses Grid",
     nav_single_course: "Single Course",
@@ -1782,17 +1782,17 @@ function updateContent(lang) {
   document.documentElement.lang = lang;
 }
 
- 
+
 function changeLanguage(lang) {
   localStorage.setItem('createx_lang', lang);
   updateContent(lang);
- 
+
   // EventsGrid kartalarini ham qayta chizish (agar shu sahifada bo'lsa)
   if (typeof window.renderEvents === 'function' && window.eventsGridData) {
     window.renderEvents(window.eventsGridData);
   }
 }
- 
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('createx_lang') || 'uz';
