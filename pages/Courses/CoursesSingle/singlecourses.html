@@ -323,7 +323,7 @@
         <div class="information__dates">
           <div class="information__content bg-[#FFFFFF]">
             <div
-              class="information__card max-w-[495px] h-[550px] rounded-[4px] border border-[#E5E8ED] shadow-[0px_4px_4px_-4px_#1E212C08,0px_12px_10px_-6px_#9A9CA50A,0px_30px_24px_-10px_#9A9CA50D,0px_80px_80px_-20px_#9A9CA514]">
+              class="information__card max-w-[495px] h-[550px] rounded-[4px] border border-[#E5E8ED] shadow-[0px_4px_4px_-4px_#1E212C08,0px_12px_10px_-6px_#9A9CA50A,0px_30px_24px_-10px_#9A9CA50D,0px_80px_80px_-20px_#9A9CA514] max-[768px]:max-w-[420px] max-[768px]:h-[600px]">
 
               <div class="info__dates w-[431px] h-[90px] gap-[4px] mt-[40px] mx-[32px]">
                 <h6
@@ -339,7 +339,8 @@
                   in elit tellus lacus.</p>
               </div>
 
-              <div class="info__duration w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] max-[992px]:mb-[40px]">
+              <div
+                class="info__duration w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] max-[992px]:mb-[40px] max-[768px]:max-w-[400px]">
                 <h6
                   class="font-lato font-bold text-[14px] leading-[150%] uppercase tracking-[1px] text-[#1E212C] mb-[4px]"
                   data-i18n="duration-label">
@@ -368,7 +369,7 @@
                   adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
               </div>
               <div
-                class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
+                class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] max-[768px]:max-w-[360px]">
                 <a href="#" data-i18n="join-course">Join the course</a>
               </div>
             </div>
@@ -911,7 +912,7 @@
             <div
               class="register__content flex justify-between max-w-[1230px]  mx-auto gap-[20px] h-auto max-md:flex max-md:flex-col max-md:items-center">
               <div
-                class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px]">
+                class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px] ">
                 <img src="../../../images/singlecourse/illustrationregister.png" alt="Image">
               </div>
               <div class="for_register max-w-[495px]">
@@ -924,25 +925,26 @@
                     data-i18n="register-title">
                     Register for the course </h1>
                 </div>
-                <div class="for__form flex flex-col">
+                <div class="for__form flex flex-col max-[768px]:max-w-[300px]">
                   <form action="#">
-                    <label for="name" class="text-[#424551] font-normal text-base leading-[160%]"
+                    <label for="name"
+                      class="text-[#424551] font-normal text-base leading-[160%] max-[768px]:max-w-[200px] "
                       data-i18n="full-name-label">Full name</label>
                     <input type="text" id="name" data-i18n-placeholder="full-name-placeholder"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none max-[768px]:max-w-[300px]"
                       placeholder="Your full name">
                     <label for="email" class="text-[#424551] font-normal text-base leading-[160%] mb-[8px]"
                       data-i18n="email-label">Email</label>
                     <input type="email" id="email" data-i18n-placeholder="working-email-placeholder"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] max-[768px]:max-w-[300px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
                       placeholder="Your working email">
                     <label for="phone" class="text-[#424551] font-normal text-base leading-[160%] mb-[8px] "
                       data-i18n="phone-label">Phone</label>
                     <input type="tel" id="phone" data-i18n-placeholder="phone-placeholder"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[40px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[40px] max-[768px]:max-w-[300px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
                       placeholder="Your phone number">
                     <div
-                      class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
+                      class="info__join flex  text-center items-center justify-center text-center mx-[32px] max-[768px]:max-w-[300px]  mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
                       <a href="#" data-i18n="join-course">Join the course</a>
                     </div>
                   </form>
