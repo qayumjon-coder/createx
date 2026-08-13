@@ -31,7 +31,7 @@
 <body class="overflow-x-visible lg:overflow-x-visible">
     <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
         <div class="container flex justify-between items-center">
-            <a class="mr-12 pr-2" href="index.html">
+            <a class="mr-12 pr-2" href="../../../index.html">
                 <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
             </a>
 
@@ -90,7 +90,7 @@
                     </li>
                     <li class="list-item relative px-5">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                            class="toggle-menu-btn text-primary transition-ease duration-300 text-left font-bold cursor-pointer">
                             <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i
                                     class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
@@ -99,7 +99,7 @@
                             class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
                                 <a href="../../../pages/Blogs/Blogs.html"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    class="text-primary transition-ease duration-300"
                                     data-i18n="nav_blog_grid">Blog
                                     Grid</a>
                                 <a href="../../../pages/Blogs/SinglePost/SinglePost.html"
@@ -125,12 +125,12 @@
                     <option value="en">EN</option>
                 </select>
 
-                <div class="">
-                    <a href="../../../pages/Contacts/Contacts.html"
+                <div class="flex">
+                    <a href="./pages/Contacts/Contacts.html"
                         class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
                         data-i18n="btn_consultation">Get
                         consultation</a>
-                    <button type="button" class="signUpIn-btn text-primary font-bold" data-i18n="btn_signin_up">Sign in/up</button>
+                    <button type="button" class="signUpIn-btn text-primary font-bold hidden xl:block" data-i18n="btn_signin_up">Sign in/up</button>
                 </div>
 
                 <nav class="">
@@ -190,7 +190,7 @@
                             </li>
                             <li>
                                 <button
-                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    class="text-primary transition-ease duration-300 dropdown-btn w-full text-left font-bold cursor-pointer">
                                     <div class="py-4"><span data-i18n="nav_blog">Blog</span> <i
                                             class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
@@ -202,7 +202,7 @@
                                             data-i18n="nav_blog_grid">Blog
                                             Grid</a>
                                         <a href="../../../pages/Blogs/SinglePost/SinglePost.html"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            class="text-primary transition-ease duration-300"
                                             data-i18n="nav_single_post">Single
                                             Post</a>
                                     </div>
@@ -215,8 +215,9 @@
 
                             <div class="flex flex-col xl:hidden gap-5">
 
-                                <li><button type="button">Sign
-                                            in/up</button></li>
+                                <li> <button type="button" class="signUpIn-btn text-primary font-bold block xl:hidden"
+                                        data-i18n="btn_signin_up">Sign in/up</button>
+                                </li>
                                 <li><a href="../../../pages/Contacts/Contacts.html"
                                         class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold"
                                         data-i18n="btn_consultation">Get
@@ -346,7 +347,7 @@
 
                 <div class="for-display-none hidden lg:block">
                     <div
-                        class="sidebar transition-all ease-in-out duration-500 lg:bg-transparent bg-black/50 w-full lg:block flex items-center justify-end h-screen right-0 lg:w-auto lg:z-1 z-50 lg:h-auto fixed top-0 lg:static">
+                        class="sidebar transition-all ease-in-out duration-500 lg:bg-transparent bg-black/50 w-full lg:block flex items-center justify-end h-screen right-0 lg:w-auto lg:z-1 z-101 lg:h-auto fixed top-0 lg:static">
                         <div
                             class="scroller w-90 lg:w-full bg-white lg:h-auto h-full relative right-[-150%] lg:static transition-all ease-in-out duration-500 overflow-y-auto overflow-x-hidden">
                             <div class="bg-white sticky right-0 top-0 z-100">
@@ -558,7 +559,7 @@
         <div class="container">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
                 <div class="col-span-1 lg:col-span-3">
-                    <a href="#" class="mb-4 inline-block">
+                    <a href="../../../index.html" class="mb-4 inline-block">
                         <img src="../../../images/logo/logo.png" alt="Site Logo">
                     </a>
 
@@ -664,7 +665,7 @@
 
         </div>
 
-        <div class="p-2 bg-secondary-text/40">
+        <div class="p-2 bg-secondary-text/40 mb-14 lg:mb-0">
             <div class="container flex items-center justify-between py-1">
                 <p class="text-white text-xs"><span data-i18n="ft_copy_1">© All rights reserved. Made with</span> <i
                         class="fa-regular fa-heart text-primary px-1"></i>

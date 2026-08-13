@@ -22,7 +22,7 @@
 <body class="font-lato">
     <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
         <div class="container flex justify-between items-center">
-            <a class="mr-12 pr-2" href="index.html">
+            <a class="mr-12 pr-2" href="../../../index.html">
                 <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
             </a>
 
@@ -35,7 +35,7 @@
                     </li>
                     <li class="list-item relative px-5">
                         <button
-                            class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                            class="toggle-menu-btn text-primary transition-ease duration-300 text-left font-bold cursor-pointer">
                             <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
                                     class="fa-solid fa-angle-down text-sm ml-1"></i>
                             </div>
@@ -44,7 +44,7 @@
                             class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
                                 <a href="../../../pages/Courses/CourseGrid/index.html"
-                                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                    class="text-primary transition-ease duration-300"
                                     data-i18n="nav_courses_grid">Courses
                                     Grid</a>
                                 <a href="../../../pages/Courses/CoursesSingle/singlecourses.html"
@@ -116,13 +116,12 @@
                     <option value="en">EN</option>
                 </select>
 
-                <div class="">
-                    <a href="../../../pages/Contacts/Contacts.html"
+                <div class="flex">
+                    <a href="./pages/Contacts/Contacts.html"
                         class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
                         data-i18n="btn_consultation">Get
                         consultation</a>
-                    <button type="button" class="signUpIn-btn text-primary font-bold" data-i18n="btn_signin_up">Sign
-                        in/up</button>
+                    <button type="button" class="signUpIn-btn text-primary font-bold hidden xl:block" data-i18n="btn_signin_up">Sign in/up</button>
                 </div>
 
                 <nav class="">
@@ -138,7 +137,7 @@
                             </li>
                             <li>
                                 <button
-                                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                                    class="text-primary transition-ease duration-300 dropdown-btn w-full text-left font-bold cursor-pointer">
                                     <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
                                             class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
@@ -146,7 +145,7 @@
                                 <div class="dr-link transition-ease duration-300">
                                     <div class="dr-inner flex flex-col">
                                         <a href="../../../pages/Courses/CourseGrid/index.html"
-                                            class="text-secondary-text hover:text-primary transition-ease duration-300"
+                                            class="text-primary transition-ease duration-300"
                                             data-i18n="nav_courses_grid">Courses
                                             Grid</a>
                                         <a href="../../../pages/Courses/CoursesSingle/singlecourses.html"
@@ -207,8 +206,7 @@
 
                             <div class="flex flex-col xl:hidden gap-5">
 
-                                <li><button type="button">Sign
-                                        in/up</button></li>
+                                <button type="button" class="signUpIn-btn text-primary font-bold block xl:hidden" data-i18n="btn_signin_up">Sign in/up</button>
                                 <li><a href="../../../pages/Contacts/Contacts.html"
                                         class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold"
                                         data-i18n="btn_consultation">Get

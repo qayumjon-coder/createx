@@ -5,30 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="contact_page_title">Contacts</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../../../style.css">
-    <style>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-lato: Lato, sans-serif;
+            --color-primary: #ff3f3a;
+            --color-secondary: #f75e05;
+            --color-primary-shadow: #ff3f3a80;
+            --color-hero-bg: #f9dcd4;
+            --color-primary-text: #1E212C;
+            --color-secondary-text: #424551;
+            --color-third-text: #787a80;
+        }
         /* CSS to ensure text areas resize properly without breaking flex layout */
         textarea {
-            resize: vertical;
-            /* Only allow vertical resizing */
+            resize: vertical; /* Only allow vertical resizing */
         }
+
     </style>
 </head>
 
 <body class="font-lato">
     <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
-        <div class="container max-w-[1320px] flex justify-between items-center">
-            <a class="mr-12 pr-2" href="index.html">
-                <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
+        <div class="container flex justify-between items-center">
+            <a class="mr-12 pr-2" href="../../index.html">
+                <img src="../../images/logo/logo-dark.svg" width="130" alt="logo" />
             </a>
 
             <nav class="self-start hidden xl:flex">
                 <ul class="flex gap-2 justify-start mr-auto items-center">
                     <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="./pages/About/About.html"
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="../../pages/About/About.html"
                             data-i18n="nav_about">About
                             us</a>
                     </li>
@@ -42,11 +52,11 @@
                         <div
                             class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
-                                <a href="./pages/Courses/CourseGrid/index.html"
+                                <a href="../../pages/Courses/CourseGrid/index.html"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300"
                                     data-i18n="nav_courses_grid">Courses
                                     Grid</a>
-                                <a href="./pages/Courses/CoursesSingle/singlecourses.html"
+                                <a href="../../pages/Courses/CoursesSingle/singlecourses.html"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300"
                                     data-i18n="nav_single_course">Single
                                     Course</a>
@@ -63,15 +73,15 @@
                         <div
                             class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full ">
                             <div class="dr-inner flex flex-col p-0">
-                                <a href="./pages/Events/EventsList/EventesList.html"
+                                <a href="../../pages/Events/EventsList/EventesList.html"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300"
                                     data-i18n="nav_events_list">Events
                                     list</a>
-                                <a href="./pages/Events/EventsGrid/EventsGrid.html"
+                                <a href="../../pages/Events/EventsGrid/EventsGrid.html"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300"
                                     data-i18n="nav_events_grid">Events
                                     Grid</a>
-                                <a href="./pages/Events/Events.html"
+                                <a href="../../pages/Events/Events.html"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300"
                                     data-i18n="nav_events_single">Events
                                     Single</a>
@@ -88,11 +98,11 @@
                         <div
                             class="show-menu hidden border-third-text/20 shadow-lg border absolute transition-ease duration-300 bg-white w-full">
                             <div class="dr-inner flex flex-col p-0">
-                                <a href="./pages/Blogs/Blogs.html"
+                                <a href="../../pages/Blogs/Blogs.html"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300"
                                     data-i18n="nav_blog_grid">Blog
                                     Grid</a>
-                                <a href="./pages/Blogs/SinglePost/SinglePost.html"
+                                <a href="../../pages/Blogs/SinglePost/SinglePost.html"
                                     class="text-secondary-text hover:text-primary transition-ease duration-300"
                                     data-i18n="nav_single_post">Single
                                     Post</a>
@@ -100,13 +110,14 @@
                         </div>
                     </li>
                     <li>
-                        <a class="py-4 px-5 inline-block text-[#424551] font-bold" href="#"
-                            data-i18n="nav_contacts">Contacts</a>
+                        <a class="py-4 px-5 inline-block text-[#424551] font-bold"
+                            href="../../pages/Contacts/Contacts.html" data-i18n="nav_contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="flex gap-5 items-center">
+                <!-- TIL O'ZGARTIRISH MENYUSI QO'SHILDI -->
                 <select id="lang-switcher" onchange="changeLanguage(this.value)"
                     class="bg-transparent text-[#424551] font-bold outline-none cursor-pointer">
                     <option value="uz">UZ</option>
@@ -114,13 +125,13 @@
                     <option value="en">EN</option>
                 </select>
 
-                <div class="">
-                    <a href="#"
+                <div class="flex">
+                    <a href="./pages/Contacts/Contacts.html"
                         class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
                         data-i18n="btn_consultation">Get
                         consultation</a>
-                    <a href="#" class="text-primary hidden md:inline-block  font-bold ml-6"><i
-                            class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign in/up</span></a>
+                    <button type="button" class="signUpIn-btn text-primary font-bold hidden xl:block"
+                        data-i18n="btn_signin_up">Sign in/up</button>
                 </div>
 
                 <nav class="">
@@ -128,11 +139,11 @@
                             class="fa-solid fa-bars text-[20px] text-secondary-text cursor-pointer"></i></button>
 
                     <ul
-                        class="menu hidden fixed top-[88px] left-0 w-full h-[calc(100vh-88px)] overflow-y-auto flex-col gap-2 justify-start mr-auto items-start bg-white shadow-xl shadow-black/10 z-50 xl:hidden">
+                        class="menu shadow-xl shadow-black/10 overflow-hidden transition-all ease-in-out duration-300 absolute top-19 left-0 w-full xl:h-0 flex gap-2 justify-start mr-auto items-start bg-white xl:flex xl:flex-col">
                         <div class="container">
                             <li>
                                 <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
-                                    href="#" data-i18n="nav_about">About us</a>
+                                    href="../../pages/About/About.html" data-i18n="nav_about">About us</a>
                             </li>
                             <li>
                                 <button
@@ -141,13 +152,13 @@
                                             class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
                                 </button>
-                                <div class="dr-link hidden transition-ease duration-300">
+                                <div class="dr-link transition-ease duration-300">
                                     <div class="dr-inner flex flex-col">
-                                        <a href="#"
+                                        <a href="../../pages/Courses/CourseGrid/index.html"
                                             class="text-secondary-text hover:text-primary transition-ease duration-300"
                                             data-i18n="nav_courses_grid">Courses
                                             Grid</a>
-                                        <a href="#"
+                                        <a href="../../pages/Courses/CoursesSingle/singlecourses.html"
                                             class="text-secondary-text hover:text-primary transition-ease duration-300"
                                             data-i18n="nav_single_course">Single
                                             Course</a>
@@ -161,17 +172,17 @@
                                             class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
                                 </button>
-                                <div class="dr-link2 hidden transition-ease duration-300">
+                                <div class="dr-link2 transition-ease duration-300">
                                     <div class="dr-inner flex flex-col">
-                                        <a href="#"
+                                        <a href="../../pages/Events/EventsList/EventesList.html"
                                             class="text-secondary-text hover:text-primary transition-ease duration-300"
                                             data-i18n="nav_events_list">Events
                                             list</a>
-                                        <a href="#"
+                                        <a href="../../pages/Events/EventsGrid/EventsGrid.html"
                                             class="text-secondary-text hover:text-primary transition-ease duration-300"
                                             data-i18n="nav_events_grid">Events
                                             Grid</a>
-                                        <a href="#"
+                                        <a href="../../pages/Events/Events.html"
                                             class="text-secondary-text hover:text-primary transition-ease duration-300"
                                             data-i18n="nav_events_single">Events
                                             Single</a>
@@ -185,13 +196,13 @@
                                             class="fa-solid fa-angle-down text-sm ml-1"></i>
                                     </div>
                                 </button>
-                                <div class="dr-link3 hidden transition-ease duration-300">
+                                <div class="dr-link3 transition-ease duration-300">
                                     <div class="dr-inner flex flex-col">
-                                        <a href="#"
+                                        <a href="../../pages/Blogs/Blogs.html"
                                             class="text-secondary-text hover:text-primary transition-ease duration-300"
                                             data-i18n="nav_blog_grid">Blog
                                             Grid</a>
-                                        <a href="#"
+                                        <a href="../../pages/Blogs/SinglePost/SinglePost.html"
                                             class="text-secondary-text hover:text-primary transition-ease duration-300"
                                             data-i18n="nav_single_post">Single
                                             Post</a>
@@ -200,15 +211,15 @@
                             </li>
                             <li>
                                 <a class="py-4 px-0 w-full inline-block text-[#424551] font-bold hover:text-primary transition-ease duration-300"
-                                    href="#" data-i18n="nav_contacts">Contacts</a>
+                                    href="../../pages/Contacts/Contacts.html" data-i18n="nav_contacts">Contacts</a>
                             </li>
 
                             <div class="flex flex-col xl:hidden gap-5">
 
-                                <li><a href="#" class="text-primary inline-block md:hidden font-bold"><i
-                                            class="fa-regular fa-user mr-2"></i><span data-i18n="btn_signin_up">Sign
-                                            in/up</span></a></li>
-                                <li><a href="#"
+                                <li> <button type="button" class="signUpIn-btn text-primary font-bold block xl:hidden"
+                                        data-i18n="btn_signin_up">Sign in/up</button>
+                                </li>
+                                <li><a href="../../pages/Contacts/Contacts.html"
                                         class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold"
                                         data-i18n="btn_consultation">Get
                                         consultation</a></li>
@@ -224,7 +235,7 @@
 
     <section class="hero pt-32 pb-16">
         <div class="container">
-            <div class="max-w-[1230px] mx-auto flex flex-col md:flex-row justify-between items-center gap-10 mt-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10 mt-10">
                 <div class="hero__text w-full md:w-1/2">
                     <div class="text__head">
                         <h6 class="text-[16px] font-[700] text-[#1E212C] leading-[130%] font-lato"
@@ -292,9 +303,10 @@
         </div>
     </section>
 
+    <!-- BU QISM TO'G'RILANDI (Layout and forms) -->
     <section class="reply py-16 bg-white">
         <div class="container">
-            <div class="flex flex-col max-w-[1230px] mx-auto   md:flex-row justify-between items-start gap-12">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12">
                 <div class="reply__img w-full md:w-1/3 shrink-0 flex items-center justify-center">
                     <img src="../../../images/contactillustration.png" alt="Contact Illustration"
                         class="w-full max-w-[430px] h-auto">
@@ -358,7 +370,7 @@
                                     School</label>
                             </div>
                             <button type="submit"
-                                class="shrink-0 h-[52px] px-[40px] rounded-[4px] bg-gradient-to-r from-[#FF3F3A] to-[#F75E05] text-white font-bold whitespace-nowrap hover:shadow-lg transition-shadow duration-300"
+                                class="shrink-0 h-13 px-10 rounded-sm bg-linear-to-r from-[#FF3F3A] to-[#F75E05] text-white font-bold whitespace-nowrap hover:shadow-lg hover:shadow-primary-shadow cursor-pointer transition-shadow duration-300"
                                 data-i18n="form_submit">
                                 Send message
                             </button>
@@ -382,10 +394,10 @@
                 <div class="w-full max-w-[800px] mx-auto">
                     <form action="#" class="flex items-center justify-center flex-col sm:flex-row gap-5">
                         <input type="email"
-                            class="w-full sm:flex-1 bg-white outline-none focus:border-[#FF3F3A] focus:shadow-xl transition ease duration-300 py-4 px-4 rounded-sm border border-[#dadbdd]"
+                            class="w-full sm:flex-1 bg-white outline-none focus:border-[#FF3F3A] focus:shadow-xl focus:shadow-primary-shadow/20 transition ease duration-300 py-4 px-4 rounded-sm border border-[#dadbdd]"
                             required placeholder="Your working email" data-i18n-placeholder="sub_placeholder">
                         <button type="submit"
-                            class="px-10 py-4 font-bold rounded-sm text-white bg-gradient-to-r from-[#FF3F3A] to-[#F75E05] hover:shadow-lg transition duration-300 cursor-pointer"
+                            class="px-10 py-4 font-bold rounded-sm text-white bg-linear-to-r from-[#FF3F3A] to-[#F75E05] hover:shadow-primary-shadow hover:shadow-lg transition duration-300 cursor-pointer"
                             data-i18n="sub_btn">Subscribe</button>
                     </form>
                 </div>
@@ -393,118 +405,132 @@
         </div>
     </section>
 
-    <footer class="bg-[#1e212c] pt-12 pb-6">
+    <footer class="bg-[#1e212c] pt-12">
         <div class="container">
-            <div class="max-w-[1320px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
-                <div class="lg:col-span-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
+                <div class="col-span-1 lg:col-span-3">
                     <a href="#" class="mb-4 inline-block">
-                        <img src="../../../images/logo/logo.png" alt="Site Logo">
+                        <img src="../../images/logo/logo.png" alt="Site Logo">
                     </a>
 
-                    <p class="text-[12px] text-[#ffffff99] mb-6 pb-4" data-i18n="ft_desc">Createx Online School is a
-                        leader in online studying. We have lots of courses and programs from the main market experts. We
-                        provide relevant approaches to online learning, internships and employment in the largest
-                        companies in the country.</p>
+                    <p class="text-[12px]  text-[#ffffff99] mb-6 pb-4" data-i18n="ft_desc">Createx Online School is a
+                        leader in online
+                        studying. We have lots of
+                        courses and programs from
+                        the main market experts. We provide relevant approaches to online learning, internships and
+                        employment in the largest companies in the country.
+                    </p>
 
                     <div class="text-[#ffffff99] flex gap-5">
-                        <a class="hover:text-[#FF3F3A] transition ease duration-200" href="#"><i
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
                                 class="fa-brands fa-facebook-f"></i></a>
-                        <a class="hover:text-[#FF3F3A] transition ease duration-200" href="#"><i
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
                                 class="fa-brands fa-twitter"></i></a>
-                        <a class="hover:text-[#FF3F3A] transition ease duration-200" href="#"><i
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
                                 class="fa-brands fa-youtube"></i></a>
-                        <a class="hover:text-[#FF3F3A] transition ease duration-200" href="#"><i
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
                                 class="fa-brands fa-telegram"></i></a>
-                        <a class="hover:text-[#FF3F3A] transition ease duration-200" href="#"><i
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
                                 class="fa-brands fa-instagram"></i></a>
-                        <a class="hover:text-[#FF3F3A] transition ease duration-200" href="#"><i
+                        <a class="hover:text-primary transition ease duration-200" href="#"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
-                <div class="col-span-1 lg:col-span-2">
-                    <h3 class="uppercase font-bold text-white mb-4" data-i18n="ft_sitemap">Site map</h3>
-                    <ul class="text-[#ffffff99] flex flex-col gap-2">
-                        <li><a class="hover:text-white transition duration-200" href="./pages/About/About.html"
-                                data-i18n="ft_about">About Us</a></li>
-                        <li><a class="hover:text-white transition duration-200"
-                                href="./pages/Courses/CourseGrid/index.html" data-i18n="ft_courses">Courses</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="./pages/Events/Events.html"
-                                data-i18n="ft_events">Events</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="./pages/Blogs/Blogs.html"
-                                data-i18n="ft_blog">Blog</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="./pages/Contacts/Contacts.html"
-                                data-i18n="ft_contacts">Contacts</a></li>
+                <div class="col-span-3 md:col-span-2 order">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_sitemap">Site map</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../About/About.html" data-i18n="ft_about">About
+                                Us</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Courses/CourseGrid/index.html" data-i18n="ft_courses">Courses</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Events/Events.html" data-i18n="ft_events">Events</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Blogs/Blogs.html" data-i18n="ft_blog">Blog</a>
+                        </li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Contacts/Contacts.html" data-i18n="ft_contacts">Contacts</a>
+                        </li>
                     </ul>
+
                 </div>
 
-                <div class="col-span-1 lg:col-span-2">
-                    <h3 class="uppercase font-bold text-white mb-4" data-i18n="ft_courses_title">Courses</h3>
-                    <ul class="text-[#ffffff99] flex flex-col gap-2">
-                        <li><a class="hover:text-white transition duration-200" href="#"
-                                data-i18n="ft_c_marketing">Marketing</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="#"
-                                data-i18n="ft_c_management">Management</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="#" data-i18n="ft_c_hr">HR &
+                <div class="md:col-span-2">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_courses_title">Courses</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Courses/CourseGrid/index.html" data-i18n="ft_c_marketing">Marketing</a>
+                        </li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Courses/CourseGrid/index.html" data-i18n="ft_c_management">Management</a>
+                        </li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Courses/CourseGrid/index.html" data-i18n="ft_c_hr">HR &
                                 Recruting</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="#"
-                                data-i18n="ft_c_design">Design</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="#"
-                                data-i18n="ft_c_dev">Development</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Courses/CourseGrid/index.html" data-i18n="ft_c_design">Design</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease"
+                                href="../Courses/CourseGrid/index.html" data-i18n="ft_c_dev">Development</a></li>
                     </ul>
+
                 </div>
 
-                <div class="col-span-1 sm:col-span-2 lg:col-span-2">
-                    <h3 class="uppercase font-bold text-white mb-4" data-i18n="ft_contact_title">Contact us</h3>
-                    <ul class="text-[#ffffff99] flex flex-col gap-2">
-                        <li><a class="hover:text-white transition duration-200" href="tel:4055550128"><i
-                                    class="fa-solid fa-mobile-screen mr-2"></i> (405) 555-0128</a></li>
-                        <li><a class="hover:text-white transition duration-200" href="mailto:hello@example.com"><i
-                                    class="fa-regular fa-comments mr-2"></i> hello@example.com</a></li>
+                <div class="col-span-3 md:col-span-2">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_contact_title">Contact us</h3>
+
+                    <ul class="text-[#ffffff99] flex flex-col">
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                                    class="fa-solid fa-mobile-screen"></i> (405) 555-0128</a></li>
+                        <li class="mb-2"><a class="hover:text-white transition duration-200 ease" href="#"><i
+                                    class="fa-regular fa-comments"></i> hello@example.com</a></li>
                     </ul>
+
                 </div>
 
-                <div class="col-span-1 sm:col-span-2 lg:col-span-3">
-                    <h3 class="uppercase font-bold text-white mb-4" data-i18n="ft_sub_title">Sign up to our newsletter
-                    </h3>
-                    <form action="#" class="flex flex-col gap-3">
-                        <div class="w-full flex items-center relative">
-                            <input
-                                class="py-3 pl-4 pr-12 rounded-sm border border-white/20 bg-white/10 text-white placeholder-gray-400 focus:bg-white/20 transition ease duration-300 outline-none w-full"
-                                type="email" placeholder="Email address" required
-                                data-i18n-placeholder="sub_placeholder">
-                            <button type="submit"
-                                class="absolute right-4 text-white hover:text-[#FF3F3A] transition-colors"><i
-                                    class="fa-solid fa-arrow-right-long"></i></button>
+                <div class="col-span-3">
+                    <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_sub_title">Sign up to our
+                        newsletter</h3>
+
+                    <form action="# flex flex-col">
+                        <div class="mb-2 pb-1 w-full flex items-center relative">
+                            <input class="py-2.5 pl-4 pr-12 rounded-sm border border-white/10 bg-white/10 text-third-text focus:bg-white transition ease duration-300 outline-0 focus:border-[#ff3f3a66]
+ w-full" type="email" placeholder="Email adress" required>
+                            <i class="fa-solid fa-arrow-right-long absolute text-white right-6"></i>
                         </div>
-                        <p class="text-white/60 text-xs" data-i18n="ft_sub_desc">*Subscribe to our newsletter to receive
-                            early discount offers, updates and new products info.</p>
+
+                        <p class="text-white text-[10px]" data-i18n="ft_sub_desc">*Subscribe to our newsletter to
+                            receive early discount offers,
+                            updates and
+                            new products info.
+                        </p>
                     </form>
+
                 </div>
             </div>
+
+
         </div>
 
-        <div class="border-t border-white/10 mt-4 pt-6">
-            <div class="container max-w-[1320px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p class="text-white/80 text-sm">
-                    <span data-i18n="ft_copy_1">© All rights reserved. Made with</span>
-                    <i class="fa-solid fa-heart text-[#FF3F3A] mx-1"></i>
+        <div class="p-2 bg-secondary-text/40">
+            <div class="container flex items-center justify-between py-1">
+                <p class="text-white text-xs"><span data-i18n="ft_copy_1">© All rights reserved. Made with</span> <i
+                        class="fa-regular fa-heart text-primary px-1"></i>
                     <span data-i18n="ft_copy_2">by Createx Studio</span>
                 </p>
-                <div class="back-top flex gap-3 text-sm items-center cursor-pointer group">
-                    <p class="text-white/80 group-hover:text-white transition-colors" data-i18n="ft_back_top">Go to top
-                    </p>
-                    <button
-                        class="w-10 h-10 bg-[#FF3F3A] rounded-sm text-white flex items-center justify-center group-hover:bg-[#F75E05] transition-colors"><i
+                <div class="flex gap-3 text-sm items-center">
+                    <p class="text-white" data-i18n="ft_back_top">Back to top</p>
+                    <button class="back-top px-4 py-3 bg-[#ff3f3a] rounded-sm text-white cursor-pointer"><i
                             class="fa-solid fa-chevron-up"></i></button>
                 </div>
             </div>
         </div>
     </footer>
-
     <script src="./index.js"></script>
     <script src="../../../i18n.js"></script>
-    <script src="./header.js"></script>
 </body>
 
 </html>
