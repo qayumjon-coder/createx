@@ -31,7 +31,7 @@
 <body class="font-lato overflow-x-hidden">
     <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
         <div class="container flex justify-between items-center">
-            <a class="mr-12 pr-2" href="index.html">
+            <a class="mr-12 pr-2" href="../../index.html">
                 <img src="../../images/logo/logo-dark.svg" width="130" alt="logo" />
             </a>
 
@@ -125,12 +125,12 @@
                     <option value="en">EN</option>
                 </select>
 
-                <div class="">
-                    <a href="../../pages/Contacts/Contacts.html"
+                <div class="flex">
+                    <a href="./pages/Contacts/Contacts.html"
                         class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
                         data-i18n="btn_consultation">Get
                         consultation</a>
-                    <button type="button" class="signUpIn-btn text-primary font-bold" data-i18n="btn_signin_up">Sign in/up</button>
+                    <button type="button" class="signUpIn-btn text-primary font-bold hidden xl:block" data-i18n="btn_signin_up">Sign in/up</button>
                 </div>
 
                 <nav class="">
@@ -215,8 +215,7 @@
 
                             <div class="flex flex-col xl:hidden gap-5">
 
-                                <li><button type="button">Sign
-                                            in/up</button></li>
+                                <li><button type="button" class="signUpIn-btn text-primary font-bold block xl:hidden" data-i18n="btn_signin_up">Sign in/up</button></li>
                                 <li><a href="../../pages/Contacts/Contacts.html"
                                         class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold"
                                         data-i18n="btn_consultation">Get
@@ -608,7 +607,7 @@
         <div class="container">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
                 <div class="col-span-1 lg:col-span-3">
-                    <a href="#" class="mb-4 inline-block">
+                    <a href="../../index.html" class="mb-4 inline-block">
                         <img src="../../images/logo/logo.png" alt="Site Logo">
                     </a>
 

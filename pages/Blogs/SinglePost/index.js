@@ -97,7 +97,6 @@ if (blogSlide) {
     `).join("");
 }
 
-// Qolgan menyu va sidebar funksiyalari o'zgarishsiz qoladi...
 let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     menuBtn = document.querySelector(".menu-btn"),
     menu = document.querySelector(".menu"),
@@ -110,7 +109,7 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     backTop = document.querySelector(".back-top");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 88) {
+    if (window.scrollY > 22) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");

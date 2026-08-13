@@ -40,7 +40,7 @@
 
     <header class="header p-4 fixed z-99 top-0 w-full flex transition h-22 items-center">
       <div class="container flex justify-between items-center">
-        <a class="mr-12 pr-2" href="index.html">
+        <a class="mr-12 pr-2" href="../../../index.html">
           <img src="../../../images/logo/logo-dark.svg" width="130" alt="logo" />
         </a>
 
@@ -53,7 +53,7 @@
             </li>
             <li class="list-item relative px-5">
               <button
-                class="toggle-menu-btn hover:text-primary transition-ease duration-300 text-left text-[#424551] font-bold cursor-pointer">
+                class="toggle-menu-btn text-primary transition-ease duration-300 text-left font-bold cursor-pointer">
                 <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
                     class="fa-solid fa-angle-down text-sm ml-1"></i>
                 </div>
@@ -66,7 +66,7 @@
                     data-i18n="nav_courses_grid">Courses
                     Grid</a>
                   <a href="../../../pages/Courses/CoursesSingle/singlecourses.html"
-                    class="text-secondary-text hover:text-primary transition-ease duration-300"
+                    class="text-primary transition-ease duration-300"
                     data-i18n="nav_single_course">Single
                     Course</a>
                 </div>
@@ -134,12 +134,13 @@
             <option value="en">EN</option>
           </select>
 
-          <div class="">
-            <a href="../../../pages/Contacts/Contacts.html"
+          <div class="flex">
+            <a href="./pages/Contacts/Contacts.html"
               class="py-2.5 hidden sm:inline-block transition ease duration-200 hover:shadow-primary-shadow hover:shadow-lg px-8 ml-6 bg-linear-to-r from-primary to-secondary text-white rounded-md font-bold"
               data-i18n="btn_consultation">Get
               consultation</a>
-            <button type="button" class="signUpIn-btn text-primary font-bold" data-i18n="btn_signin_up">Sign in/up</button>
+            <button type="button" class="signUpIn-btn text-primary font-bold hidden xl:block"
+              data-i18n="btn_signin_up">Sign in/up</button>
           </div>
 
           <nav class="">
@@ -155,7 +156,7 @@
                 </li>
                 <li>
                   <button
-                    class=" hover:text-primary transition-ease duration-300 dropdown-btn w-full text-left text-[#424551] font-bold cursor-pointer">
+                    class="text-primary transition-ease duration-300 dropdown-btn w-full text-left font-bold cursor-pointer">
                     <div class="py-4"><span data-i18n="nav_courses">Courses</span> <i
                         class="fa-solid fa-angle-down text-sm ml-1"></i>
                     </div>
@@ -163,7 +164,7 @@
                   <div class="dr-link transition-ease duration-300">
                     <div class="dr-inner flex flex-col">
                       <a href="../../../pages/Courses/CourseGrid/index.html"
-                        class="text-secondary-text hover:text-primary transition-ease duration-300"
+                        class="text-primary transition-ease duration-300"
                         data-i18n="nav_courses_grid">Courses
                         Grid</a>
                       <a href="../../../pages/Courses/CoursesSingle/singlecourses.html"
@@ -224,8 +225,9 @@
 
                 <div class="flex flex-col xl:hidden gap-5">
 
-                  <li><button type="button">Sign
-                        in/up</button></li>
+                  <li> <button type="button" class="signUpIn-btn text-primary font-bold block xl:hidden"
+                      data-i18n="btn_signin_up">Sign in/up</button>
+                  </li>
                   <li><a href="../../../pages/Contacts/Contacts.html"
                       class="py-2.5 mb-5 px-8 bg-linear-to-r sm:hidden inline-block from-primary to-secondary text-white rounded-md font-bold"
                       data-i18n="btn_consultation">Get
@@ -242,16 +244,16 @@
 
 
     <div class="container">
-      <div class="hero__content mt-[120px] flex flex-col items-center text-center max-[768px]  max-md:mt-[30px]">
+      <div class="hero__content mt-[120px] flex flex-col items-center text-center max-[768px] max-md:mt-[30px]">
         <p class="w-[69px] h-[24px] mt-[120px] uppercase font-lato font-bold text-[16px] leading-[150%] text-[#FF3F3A] max-md:text-[12px] max-md:mt-[167px]"
           data-i18n="course">
           Course
         </p>
         <h1
-          class="max-w[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle max-md:text-[18px]"
-          data-i18n="course-title">
-          User Experience. Principles of Human-Centered <br>
-          Design</h1>
+          class="max-w-[1020px] h-[120px] font-lato font-black text-[46px] text-[#1E212C] leading-[130%] tracking-[0] text-center align-middle max-md:text-[18px]">
+          <span class="block" data-i18n="course-title-line1">User Experience. Principles of Human-Centered</span>
+          <span class="block" data-i18n="course-title-line2">Design</span>
+        </h1>
       </div>
     </div>
 
@@ -322,7 +324,7 @@
         <div class="information__dates">
           <div class="information__content bg-[#FFFFFF]">
             <div
-              class="information__card max-w-[495px] h-[550px] rounded-[4px] border border-[#E5E8ED] shadow-[0px_4px_4px_-4px_#1E212C08,0px_12px_10px_-6px_#9A9CA50A,0px_30px_24px_-10px_#9A9CA50D,0px_80px_80px_-20px_#9A9CA514]">
+              class="information__card max-w-[495px] h-[550px] rounded-[4px] border border-[#E5E8ED] shadow-[0px_4px_4px_-4px_#1E212C08,0px_12px_10px_-6px_#9A9CA50A,0px_30px_24px_-10px_#9A9CA50D,0px_80px_80px_-20px_#9A9CA514] max-[768px]:max-w-[420px] max-[768px]:h-[600px]">
 
               <div class="info__dates w-[431px] h-[90px] gap-[4px] mt-[40px] mx-[32px]">
                 <h6
@@ -338,12 +340,14 @@
                   in elit tellus lacus.</p>
               </div>
 
-              <div class="info__duration w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px]">
+              <div
+                class="info__duration w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] max-[992px]:mb-[40px] max-[768px]:max-w-[400px]">
                 <h6
                   class="font-lato font-bold text-[14px] leading-[150%] uppercase tracking-[1px] text-[#1E212C] mb-[4px]"
                   data-i18n="duration-label">
                   DURATION</h6>
-                <h4 class="font-lato font-bold text-[24px] leading-[130%] text-[#FF3F3A] w-[219px] h-[31px] mb-[8px]"
+                <h4
+                  class="font-lato font-bold text-[24px] leading-[130%] text-[#FF3F3A] w-[219px] h-[31px] mb-[8px] max-[992px]:mb-[40px]"
                   data-i18n="duration-value">2
                   months - 8 lessons</h4>
                 <p class="font-lato font-normal text-[16px] leading-[160%] text-[#787A80]" data-i18n="duration-desc">
@@ -352,7 +356,7 @@
               </div>
 
               <div
-                class="info__price max-w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] mb-[40px] max-[992px]:mb-[60px]">
+                class="info__price max-w-[431px] h-[90px] gap-[4px] mx-[32px] mt-[32px] mb-[40px] max-[992px]:mb-[60px] max-[992px]:mt-[80px] max-[768px]:mb-[80px] ">
                 <h6
                   class="font-lato font-bold text-[14px] leading-[150%] uppercase tracking-[1px] text-[#1E212C] mb-[4px]"
                   data-i18n="price-label">
@@ -366,7 +370,7 @@
                   adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
               </div>
               <div
-                class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
+                class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)] max-[768px]:max-w-[360px]">
                 <a href="#" data-i18n="join-course">Join the course</a>
               </div>
             </div>
@@ -909,7 +913,7 @@
             <div
               class="register__content flex justify-between max-w-[1230px]  mx-auto gap-[20px] h-auto max-md:flex max-md:flex-col max-md:items-center">
               <div
-                class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px]">
+                class="registraion__image max-w-[550px] max-h-[503px] max-[992px]:mt-[150px] max-md:mt-[10px] max-md:max-w-[360px] max-md:max-w-[320px] max-md:mb-[40px] ">
                 <img src="../../../images/singlecourse/illustrationregister.png" alt="Image">
               </div>
               <div class="for_register max-w-[495px]">
@@ -922,25 +926,26 @@
                     data-i18n="register-title">
                     Register for the course </h1>
                 </div>
-                <div class="for__form flex flex-col">
+                <div class="for__form flex flex-col max-[768px]:max-w-[300px]">
                   <form action="#">
-                    <label for="name" class="text-[#424551] font-normal text-base leading-[160%]"
+                    <label for="name"
+                      class="text-[#424551] font-normal text-base leading-[160%] max-[768px]:max-w-[200px] "
                       data-i18n="full-name-label">Full name</label>
                     <input type="text" id="name" data-i18n-placeholder="full-name-placeholder"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none max-[768px]:max-w-[300px]"
                       placeholder="Your full name">
                     <label for="email" class="text-[#424551] font-normal text-base leading-[160%] mb-[8px]"
                       data-i18n="email-label">Email</label>
                     <input type="email" id="email" data-i18n-placeholder="working-email-placeholder"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[24px] max-[768px]:max-w-[300px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
                       placeholder="Your working email">
                     <label for="phone" class="text-[#424551] font-normal text-base leading-[160%] mb-[8px] "
                       data-i18n="phone-label">Phone</label>
                     <input type="tel" id="phone" data-i18n-placeholder="phone-placeholder"
-                      class="w-[495px] h-[52px] mt-[8px] mb-[40px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
+                      class="w-[495px] h-[52px] mt-[8px] mb-[40px] max-[768px]:max-w-[300px] bg-white border border-[#D7DADD] rounded-[4px] px-4 text-[#424551] placeholder:text-[#9A9CA5] focus:outline-none"
                       placeholder="Your phone number">
                     <div
-                      class="info__join flex items-center justify-center text-center mx-[32px] mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
+                      class="info__join flex  text-center items-center justify-center text-center mx-[32px] max-[768px]:max-w-[300px]  mb-[40px] w-[431px] h-[44px] rounded-[4px] gap-[10px] bg-[linear-gradient(55.95deg,#FF3F3A_0%,#F75E05_100%)]">
                       <a href="#" data-i18n="join-course">Join the course</a>
                     </div>
                   </form>
@@ -1205,7 +1210,7 @@
     <div class="container">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 py-10">
         <div class="col-span-1 lg:col-span-3">
-          <a href="#" class="mb-4 inline-block">
+          <a href="../../../index.html" class="mb-4 inline-block">
             <img src="../../../images/logo/logo.png" alt="Site Logo">
           </a>
 
@@ -1289,7 +1294,7 @@
           <h3 class="uppercase font-bold text-white mb-2 pb-1" data-i18n="ft_sub_title">Sign up to our
             newsletter</h3>
 
-          <form action="# flex flex-col">
+          <form class="flex flex-col">
             <div class="mb-2 pb-1 w-full flex items-center relative">
               <input class="py-2.5 pl-4 pr-12 rounded-sm border border-white/10 bg-white/10 text-third-text focus:bg-white transition ease duration-300 outline-0 focus:border-[#ff3f3a66]
  w-full" type="email" placeholder="Email adress" required>
@@ -1326,7 +1331,7 @@
 
 
 
-
+  <script src="./index.js"></script>
   <script src="./script.js"></script>
   <script src="../../../i18n.js"></script>
 </body>
