@@ -1,4 +1,7 @@
-
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+const backTop = document.querySelector('.back-top');
 
 const header = document.querySelector(".header");
 
