@@ -30,7 +30,7 @@ function renderBlogs(data) {
 							</div>
 
 							<div>
-								<a href="${blogsItems.link}" class="font-bold hover:text-primary transition-ease duration-300">${blogsItems.button}</a>
+								<a href="${blogsItems.link}" class="font-bold hover:text-primary transition-ease duration-300" data-i18n="blog_read_more">${blogsItems.button}</a>
 								<i class="fa-solid fa-arrow-right-long text-primary ml-3"></i>
 							</div>
 						</div>
@@ -306,4 +306,4 @@ function bindSignButtons() {
 }
 
 bindSignButtons();
-
+
