@@ -10,6 +10,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
+<<<<<<< HEAD
+=======
 backTop.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
@@ -236,4 +238,5 @@ function bindSignButtons() {
 }
 
 bindSignButtons();
+>>>>>>> e914c8534a6e96c2a4a6cef9b4baca232ec1fa98
 
